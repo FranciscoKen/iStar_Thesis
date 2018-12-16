@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="istarml2">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="diagram">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="actor">
+							<xs:sequence>
+								<xs:complexType>
+									<xs:element name="boundary">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="ielement">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="ielementLink">
+															</xs:element>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="actorLink">
+										
+									</xs:element>
+								</xs:complexType>
+							</xs:sequence>
+						</xs:element>
+						<xs:element name="ielement">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="dependency">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="depender">
+												</xs:element>
+												<xs:element name="dependee">
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
