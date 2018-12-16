@@ -19,16 +19,30 @@
 															<xs:element name="ielementLink">
 															</xs:element>
 														</xs:sequence>
+														<xs:attribute name='type' type='xs:string'/>
+														<xs:attribute name='value' type='xs:string'/>
+														<xs:attribute name='iref' type='xs:string'/>
+														<xs:attribute name='aref' type='xs:string'/>
 													</xs:complexType>
+													<xs:attribute name='name' type='xs:string'/>
+													<xs:attribute name='type' type='xs:string'/>
+													<xs:attribute name='id' type='xs:string'/>
+													<xs:attribute name='state' type='xs:string'/>
 												</xs:element>
 											</xs:sequence>
 										</xs:complexType>
 									</xs:element>
 									<xs:element name="actorLink">
-										
+										<xs:complexType>
+											<xs:attribute name='type' type='xs:string'/>
+											<xs:attribute name='aref' type='xs:string'/>
+										</xs:complexType>
 									</xs:element>
 								</xs:complexType>
 							</xs:sequence>
+							<xs:attribute name='name' type='xs:string'/>
+							<xs:attribute name='type' type='xs:string'/>
+							<xs:attribute name='id' type='xs:string'/>
 						</xs:element>
 						<xs:element name="ielement">
 							<xs:complexType>
@@ -37,18 +51,32 @@
 										<xs:complexType>
 											<xs:sequence>
 												<xs:element name="depender">
+													<xs:complexType>
+														<xs:attribute name='iref' type='xs:string'/>
+														<xs:attribute name='aref' type='xs:string'/>
+													</xs:complexType>
 												</xs:element>
 												<xs:element name="dependee">
+													<xs:complexType>
+														<xs:attribute name='iref' type='xs:string'/>
+														<xs:attribute name='aref' type='xs:string'/>
+													</xs:complexType>
 												</xs:element>
 											</xs:sequence>
 										</xs:complexType>
 									</xs:element>
 								</xs:sequence>
+								<xs:attribute name='name' type='xs:string'/>
+								<xs:attribute name='type' type='xs:string'/>
+								<xs:attribute name='id' type='xs:string'/>
+								<xs:attribute name='state' type='xs:string'/>
 							</xs:complexType>
 						</xs:element>
 					</xs:sequence>
+					<xs:attribute name='name' type='xs:string'/>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
+		<xs:attribute name='version' type='xs:string'/>
 	</xs:complexType>
 </xs:element>
