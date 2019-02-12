@@ -3,10 +3,44 @@
   <!-- Diagram Definition -->
   <xs:element name='istarml2'>
     <xs:complexType>
-      <xs:all minOccurs='0'>
+      <xs:sequence minOccurs='0' maxOccurs='unbounded'>
         <xs:element name='diagram'>
+          <xs:complexType>
+            <xs:sequence>
+							<xs:element name='actor' minOccurs='1' maxOccurs='unbounded'>
+								<xs:complexType>
+									<xs:all>
+										<xs:element name='boundary' maxOccurs='1'>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name='ielement' minOccurs='0' maxOccurs='unbounded'>
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name='ielementLink' minOccurs='0'>
+																	<xs:complexType>
+																		<xs:attribute name='type' type='ielementLinkType' use='required'/>
+																		<xs:attribute name='value' type='ielementLinkValue'/>
+																		<xs:attributeGroup ref='referenceGroup'/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name='ielementType' type='ielementType' use='required'/>
+															<xs:attributeGroup ref='basicIdentityGroup'/>
+															<xs:attribute name='state' type='xs:string'/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+									<xs:attribute name='type' type='actorType' use='required'/>
+									<xs:attributeGroup ref='basicIdentityGroup'/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+          </xs:complexType>
         </xs:element>
-      </xs:all>
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <!-- Attributes -->
