@@ -9,7 +9,7 @@
             <xs:sequence>
 							<xs:element name='actor' minOccurs='1' maxOccurs='unbounded'>
 								<xs:complexType>
-									<xs:all>
+									<xs:sequence>
 										<xs:element name='boundary' maxOccurs='1'>
 											<xs:complexType>
 												<xs:sequence>
@@ -24,7 +24,7 @@
 																	</xs:complexType>
 																</xs:element>
 															</xs:sequence>
-															<xs:attribute name='ielementType' type='ielementType' use='required'/>
+															<xs:attribute name='type' type='ielementType' use='required'/>
 															<xs:attributeGroup ref='basicIdentityGroup'/>
 															<xs:attribute name='state' type='xs:string'/>
 														</xs:complexType>
@@ -32,20 +32,52 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
-									</xs:all>
+										<xs:element name='actorLink' minOccurs='0' maxOccurs='unbounded'>
+											<xs:complexType>
+												<xs:attribute name='type' type='actorLinkType' use='required'/>
+												<xs:attribute name='aref' type='xs:string' use='required'/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
 									<xs:attribute name='type' type='actorType' use='required'/>
 									<xs:attributeGroup ref='basicIdentityGroup'/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name='dependum' minOccurs='0' maxOccurs='unbounded'>
+								<xs:complexType>
+									<xs:all minOccurs='1' maxOccurs='1'>
+										<xs:element name='dependency'>
+											<xs:complexType>
+												<xs:all maxOccurs='1'>
+													<xs:element name='depender'>
+														<xs:complexType>
+															<xs:attributeGroup ref='referenceGroup'/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name='dependee'>
+														<xs:complexType>
+															<xs:attributeGroup ref='referenceGroup'/>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+									<xs:attribute name='type' type='ielementType' use='required'/>
+									<xs:attributeGroup ref='basicIdentityGroup'/>
+									<xs:attribute name='state' type='xs:string'/>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
+			<xs:attribute name='version' type='xs:string'/>
     </xs:complexType>
   </xs:element>
   <!-- Attributes -->
   <xs:attributeGroup name='referenceGroup'>
-		<xs:attribute name='iref' type='xs:string'/>
+		<xs:attribute name='iref' type='xs:string' use='required'/>
 		<xs:attribute name='aref' type='xs:string'/>
 	</xs:attributeGroup>
 
