@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <!-- Diagram Definition -->
+  <xs:element name='istarml2'>
+    <xs:complexType>
+      <xs:all minOccurs='0'>
+        <xs:element name='diagram'>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <!-- Attributes -->
+  <xs:attributeGroup name='referenceGroup'>
+		<xs:attribute name='iref' type='xs:string'/>
+		<xs:attribute name='aref' type='xs:string'/>
+	</xs:attributeGroup>
+
+	<xs:attributeGroup name='basicIdentityGroup'>
+		<xs:attribute name='name' type='xs:string'/>
+		<xs:attribute name='id' type='xs:string' use='required'/>
+	</xs:attributeGroup>
+
+	<xs:simpleType name='ielementType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='goal'/>
+			<xs:enumeration value='quality'/>
+			<xs:enumeration value='task'/>
+			<xs:enumeration value='resource'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='ielementLinkType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='refinement'/>
+			<xs:enumeration value='qualification'/>
+			<xs:enumeration value='neededBy'/>
+			<xs:enumeration value='contribution'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='ielementLinkValue'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='and'/>
+			<xs:enumeration value='or'/>
+			<xs:enumeration value='make'/>
+			<xs:enumeration value='help'/>
+			<xs:enumeration value='hurt'/>
+			<xs:enumeration value='break'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='actorType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='actor'/>
+			<xs:enumeration value='role'/>
+			<xs:enumeration value='agent'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='actorLinkType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='is-a'/>
+			<xs:enumeration value='participates-in'/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

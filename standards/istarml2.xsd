@@ -2,31 +2,31 @@
 <xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
 	<xs:element name='istarml2'>
 		<xs:complexType>
-			<xs:all>
+			<xs:any minOccurs='0'>
 				<xs:element name='diagram'>
 					<xs:complexType>
-						<xs:all>
+						<xs:any minOccurs='0'>
 							<xs:element name='actor'
 										minOccurs='1'>
 								<xs:complexType>
-									<xs:all>
+									<xs:any minOccurs='0'>
 										<xs:element name='boundary'>
 											<xs:complexType>
-												<xs:all>
+												<xs:any minOccurs='0'>
 													<xs:element name='ielement'>
 														<xs:complexType>
-															<xs:all>
+															<xs:any minOccurs='0'>
 																<xs:element name='ielementLink'/>
 																<xs:attribute name='type' type='ielementLinkType' use='required'/>
 																<xs:attribute name='value' type='ielementLinkValue' use='required'/>
 																<xs:attributeGroup ref='referenceGroup'/>
-															</xs:all>
+															</xs:any minOccurs='0'>
 														</xs:complexType>
 														<xs:attribute name='type' type='ielementType' use='required'/>
 														<xs:attributeGroup ref='basicIdentityGroup'/>
 														<xs:attribute name='state' type='xs:string'/>
 													</xs:element>
-												</xs:all>
+												</xs:any minOccurs='0'>
 											</xs:complexType>
 										</xs:element>
 										<xs:element name='actorLink'>
@@ -35,17 +35,17 @@
 												<xs:attribute name='aref' type='xs:string'/>
 											</xs:complexType>
 										</xs:element>
-									</xs:all>
+									</xs:any minOccurs='0'>
 								</xs:complexType>
 								<xs:attribute name='type' type='actorType' use='required'/>
 								<xs:attributeGroup ref='basicIdentityGroup'/>
 							</xs:element>
 							<xs:element name='ielement'>
 								<xs:complexType>
-									<xs:all>
+									<xs:any minOccurs='0'>
 										<xs:element name='dependency'>
 											<xs:complexType>
-												<xs:all>
+												<xs:any minOccurs='0'>
 													<xs:element name='depender'>
 														<xs:complexType>
 															<xs:attributeGroup ref='referenceGroup'/>
@@ -56,21 +56,21 @@
 															<xs:attributeGroup ref='referenceGroup'/>
 														</xs:complexType>
 													</xs:element>
-												</xs:all>
+												</xs:any minOccurs='0'>
 											</xs:complexType>
 										</xs:element>
 										<xs:attribute name='type' type='ielementLinkType'/>
 										<xs:attribute name='state' type='xs:string'/>
 										<xs:attributeGroup ref='basicIdentityGroup'/>
-									</xs:all>
+									</xs:any minOccurs='0'>
 								</xs:complexType>
 							</xs:element>
 							<xs:attribute name='name' type='xs:string'/>
-						</xs:all>
+						</xs:any minOccurs='0'>
 					</xs:complexType>
 				</xs:element>
 				<xs:attribute name='version' type='xs:string'/>
-			</xs:all>
+			</xs:any minOccurs='0'>
 		</xs:complexType>
 	</xs:element>
 
