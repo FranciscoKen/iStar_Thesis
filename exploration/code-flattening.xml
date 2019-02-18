@@ -53,6 +53,63 @@
     </actor>
     <actor id='ac-1' name='Defender' type='role'>
       <boundary>
+        <ielement 
+          id='ie-9'
+          type='quality'
+          name='Inhibit understanding of the program'>
+        </ielement>
+        <ielement 
+          id='ie-10'
+          type='quality'
+          name='Obstruct static analysis of application'>
+          <ielementLink type='contribution' value='help' iref='ie-9'/>
+        </ielement>
+        <ielement
+          id='ie-11'
+          type='quality'
+          name='Run time speed'>
+        </ielement>
+        <ielement
+          id='ie-12'
+          type='quality'
+          name='Program size'>
+        </ielement>
+        <ielement
+          id='ie-13'
+          type='task'
+          name='Obscure the control flow'>
+          <ielementLink type='contribution' value='help' iref='ie-10'/>
+        </ielement>
+        <ielement
+          id='ie-14'
+          type='task'
+          name='Translate the code to explicit basic blocks'>
+          <ielementLink type='refinement' value='and' iref='ie-13'/>
+        </ielement>
+        <ielement
+          id='ie-15'
+          type='task'
+          name='Flatten control flow with while / switch loops'>
+          <ielementLink type='refinement' value='and' iref='ie-13'/>
+        </ielement>
+        <ielement
+          id='ie-16'
+          type='task'
+          name='Replace the block with while loop and switch statement'>
+          <ielementLink type='refinement' value='and' iref='ie-15'/>
+        </ielement>
+        <ielement
+          id='ie-17'
+          type='task'
+          name='Translate go-to label to switch variables'>
+          <ielementLink type='refinement' value='and' iref='ie-15'/>
+        </ielement>
+        <ielement
+          id='ie-18'
+          type='task'
+          name='Randomize the switch blocks'>
+          <ielementLink type='refinement' value='and' iref='ie-15'/>
+        </ielement>
       </boundary>
     </actor>
   </diagram>
