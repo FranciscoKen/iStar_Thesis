@@ -1,0 +1,59 @@
+<istarml2 version='1'>
+  <diagram>
+    <actor type='role' id='ac-1' name='Cracker'>
+      <boundary>
+        <ielement 
+          id='ie-1' 
+          type='goal' 
+          name='Produce modified versions of the program and redistribute it'>
+        </ielement>
+        <ielement
+          id='ie-2'
+          type='task'
+          name='Produce a crack program'>
+          <ielementLink type='refinement' value='or' iref='ie-1'/>
+        </ielement>
+        <ielement
+          id='ie-3'
+          type='goal'
+          name='Produce a crack that changes the original binary'>
+          <ielementLink type='refinement' value='and' iref='ie-2'/>
+        </ielement>
+        <ielement
+          id='ie-4'
+          type='task'
+          name='Code lifting'>
+          <ielementLink type='refinement' value='or' iref='ie-3'/>
+        </ielement>
+        <ielement
+          id='ie-5'
+          type='quality'
+          name='Understand the code'>
+          <ielementLink type='refinement' value='and' iref='ie-4'/>
+        </ielement>
+        <ielement
+          id='ie-6'
+          type='goal'
+          name='Reverse engineer the library program'>
+          <ielementLink type='contribution' value='help' iref='ie-5'/>
+        </ielement>
+        <ielement
+          id='ie-7'
+          type='task'
+          name='Create control flow graph (static analysis) from the binary image'>
+          <ielementLink type='refinement' value='or' iref='ie-6'/>
+        </ielement>
+        <ielement
+          id='ie-8'
+          type='quality'
+          name='Understand the branch instruction targets'>
+          <ielementLink type='refinement' value='and' iref='ie-7'/>
+        </ielement>
+      </boundary>
+    </actor>
+    <actor id='ac-1' name='Defender' type='role'>
+      <boundary>
+      </boundary>
+    </actor>
+  </diagram>
+</istarml2>

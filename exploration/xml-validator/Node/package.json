@@ -9,6 +9,7 @@
   "author": "Francisco",
   "license": "ISC",
   "dependencies": {
+    "libxml-xsd": "^0.5.2",
     "node-gyp": "^3.8.0",
     "rebuild": "^0.1.2"
   }
