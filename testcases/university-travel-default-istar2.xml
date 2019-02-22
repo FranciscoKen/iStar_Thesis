@@ -1,0 +1,248 @@
+<istarml2 version='1.0'>
+  <diagram>
+    <actor type='agent' id='ac-1' name='Mike White'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-2'/>
+    </actor>
+    <actor type='role' id='ac-2' name='PhD student'>
+      <boundary>
+      </boundary>
+      <actorLink type='is-a' aref='ac-3'/>
+    </actor>
+    <actor type='role' id='ac-3' name='Student'>
+      <boundary>
+        <ielement
+          id='ie-1'
+          type='goal'
+          name='Travel organized'>
+        </ielement>
+        <ielement
+          id='ie-2'
+          type='goal'
+          name='Authorization obtained'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+        </ielement>
+        <ielement
+          id='ie-3'
+          type='goal'
+          name='Trip booked'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+        </ielement>
+        <ielement
+          id='ie-4'
+          type='goal'
+          name='Request prepared'>
+          <ielementLink type='refinement' value='and' iref='ie-2'/>
+          <ielementLink type='qualification' iref='ie-8'/>
+        </ielement>
+        <ielement
+          id='ie-5'
+          type='goal'
+          name='Authorization signed'>
+          <ielementLink type='refinement' value='and' iref='ie-2'/>
+        </ielement>
+        <ielement
+          id='ie-6'
+          type='task'
+          name='Fill in paper form'>
+          <ielementLink type='refinement' value='or' iref='ie-4'/>
+          <ielementLink type='contribution' value='hurt' iref='ie-8'/>
+        </ielement>
+        <ielement
+          id='ie-7'
+          type='task'
+          name='Fill in online form'>
+          <ielementLink type='refinement' value='or' iref='ie-4'/>
+          <ielementLink type='contribution' value='help' iref='ie-8'/>
+        </ielement>
+        <ielement
+          id='ie-8'
+          type='quality'
+          name='No errors'>
+        </ielement>
+        <ielement
+          id='ie-9'
+          type='task'
+          name='Supervisor authorizes'>
+          <ielementLink type='refinement' value='or' iref='ie-5'/>
+          <ielementLink type='contribution' value='help' iref='ie-11'/>
+        </ielement>
+        <ielement
+          id='ie-10'
+          type='task'
+          name='Head-of-dept authorizes'>
+          <ielementLink type='refinement' value='or' iref='ie-5'/>
+          <ielementLink type='contribution' value='break' iref='ie-11'/>
+        </ielement>
+        <ielement
+          id='ie-11'
+          type='quality'
+          name='Quick booking'>
+          <ielementLink type='contribution' value='help' iref='ie-21'/>
+        </ielement>
+        <ielement
+          id='ie-12'
+          type='goal'
+          name='Trip parts booked'>
+          <ielementLink type='refinement' value='or' iref='ie-3'/>
+          <ielementLink type='qualification' iref='ie-11'/>
+        </ielement>
+        <ielement
+          id='ie-13'
+          type='task'
+          name='Book bundle'>
+          <ielementLink type='refinement' value='or' iref='ie-3'/>
+          <ielementLink type='contribution' value='make' iref='ie-22'/>
+        </ielement>
+        <ielement
+          id='ie-14'
+          type='goal'
+          name='Tickets booked'>
+          <ielementLink type='refinement' value='and' iref='ie-12'/>
+        </ielement>
+        <ielement
+          id='ie-15'
+          type='goal'
+          name='Accomodation booked'>
+          <ielementLink type='refinement' value='and' iref='ie-12'/>
+        </ielement>
+        <ielement
+          id='ie-16'
+          type='task'
+          name='Agency buys tickets'>
+          <ielementLink type='refinement' value='or' iref='ie-14'/>
+          <ielementLink type='contribution' value='help' iref='ie-22'/>
+        </ielement>
+        <ielement
+          id='ie-17'
+          type='task'
+          name='Self-book tickets'>
+          <ielementLink type='refinement' value='or' iref='ie-14'/>
+          <ielementLink type='contribution' value='hurt' iref='ie-22'/>
+        </ielement>
+        <ielement
+          id='ie-18'
+          type='task'
+          name='Buy tickets'>
+          <ielementLink type='refinement' value='and' iref='ie-17'/>
+        </ielement>
+        <ielement
+          id='ie-19'
+          type='task'
+          name='Pay for tickets'>
+          <ielementLink type='refinement' value='and' iref='ie-17'/>
+        </ielement>
+        <ielement
+          id='ie-20'
+          type='resource'
+          name='Credit card'>
+          <ielementLink type='neededBy' iref='ie-19'/>
+        </ielement>
+        <ielement
+          id='ie-21'
+          type='quality'
+          name='Comfort'>
+        </ielement>
+        <ielement
+          id='ie-22'
+          type='quality'
+          name='Minimal own payments'>
+          <ielementLink type='contribution' value='help' iref='ie-21'/>
+        </ielement>
+        <ielement
+          id='ie-23'
+          type='goal'
+          name='Conference hotel booked'>
+          <ielementLink type='refinement' value='or' iref='ie-15'/>
+        </ielement>
+        <ielement
+          id='ie-24'
+          type='goal'
+          name='Budget hotel booked'>
+          <ielementLink type='refinement' value='or' iref='ie-15'/>
+        </ielement>
+        <ielement
+          id='ie-25'
+          type='task'
+          name='Buy through booking.com'>
+          <ielementLink type='refinement' value='or' iref='ie-24'/>
+        </ielement>
+        <ielement
+          id='ie-26'
+          type='task'
+          name='Buy through hotel website'>
+          <ielementLink type='refinement' value='or' iref='ie-24'/>
+        </ielement>
+      </boundary>
+    </actor>
+    <actor type='agent' id='ac-4' name='Univ. of Wonder-Land'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='agent' id='ac-5' name='Univ. trip mgmt IS'>
+      <boundary>
+        <ielement 
+          id='ie-27'
+          type='task'
+          name='Process form'>
+        </ielement>
+        <ielement
+          id='ie-28'
+          type='goal'
+          name='Details validated'>
+          <ielementLink type='refinement' value='and' iref='ie-27'/>
+        </ielement>
+        <ielement
+          id='ie-29'
+          type='task'
+          name='Request authorization'>
+          <ielementLink type='refinement' value='and' iref='ie-27'/>
+        </ielement>
+        <ielement
+          id='ie-30'
+          type='task'
+          name='Notify applicant'>
+          <ielementLink type='refinement' value='and' iref='ie-27'/>
+        </ielement>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-4'/>
+    </actor>
+    <actor type='actor' id='ac-6' name='Travel agency'>
+      <boundary>
+        <ielement
+          id='ie-31'
+          type='task'
+          name='Book bundle via expedia'>
+        </ielement>
+      </boundary>
+    </actor>
+    <dependum
+      id='de-1'
+      type='goal'
+      name='Online form processed'>
+      <dependency>
+        <depender iref='ie-6' aref='ac-3'/>
+        <dependee aref='ac-5' iref='ie-27'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-2'
+      type='task'
+      name='Buy flight tickets'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-16'/>
+        <dependee aref='ac-6' iref='ie-31'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-3'
+      type='goal'
+      name='Trip bundle booked'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-13'/>
+        <dependee aref='ac-6' iref='ie-31'/>
+      </dependency>
+    </dependum>
+  </diagram>
+</istarml2>

@@ -1,7 +1,7 @@
 var xsd = require('libxml-xsd');
 
 var schemaPath = "../../../standards/alternative.xsd";
-var documentPath = "../../../testcases/primary-care-nurse-SR.xml";
+var documentPath = "../../../testcases/university-travel-default-istar2.xml";
 
 xsd.parseFile(schemaPath, function(err, schema){
   console.log("Err 1:"+err);

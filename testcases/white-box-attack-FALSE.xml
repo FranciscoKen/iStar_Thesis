@@ -1,0 +1,116 @@
+<istarml2 version='1.0'>
+  <diagram>
+    <actor type='role' id='ac-1' name='Consumer'>
+      <boundary>
+        <ielement
+          id='ie-1'
+          type='goal'
+          name='Install and run the free modified program'>
+        </ielement>
+      </boundary>
+    </actor>
+    <actor type='role' id='ac-2' name='Cracker'>
+      <boundary>
+        <ielement
+          id='ie-2'
+          type='goal'
+          name='Produce modified versions of the program or DRM content and redistribute it'>
+        </ielement>
+        <ielement
+          id='ie-3'
+          type='task'
+          name='Produce a crack program'>
+        </ielement>
+        <ielement
+          id='ie-4'
+          type='task'
+          name='Produce a new installable'>
+        </ielement>
+        <ielement
+          id='ie-5'
+          type='task'
+          name='Obtain cryptographic key'>
+        </ielement>
+        <ielement
+          id='ie-6'
+          type='goal'
+          name='Produce a crack that changes the original binary'>
+        </ielement>
+        <ielement
+          id='ie-7'
+          type='task'
+          name='Static and dynamic tampering of the code'>
+        </ielement>
+        <ielement
+          id='ie-8'
+          type='quality'
+          name='Understand the code'>
+        </ielement>
+        <ielement
+          id='ie-9'
+          type='goal'
+          name='Produce an entire installable from the original code'>
+        </ielement>
+        <ielement
+          id='ie-10'
+          type='task'
+          name='Code lifting'>
+        </ielement>
+        <ielement
+          id='ie-11'
+          type='task'
+          name='Bypass code logic'>
+        </ielement>
+        <ielement
+          id='ie-12'
+          type='goal'
+          name='Interfere with the normal function calling'>
+        </ielement>
+        <ielement
+          id='ie-13'
+          type='task'
+          name='Dumping values at the function calls'>
+        </ielement>
+        <ielement
+          id='ie-14'
+          type='task'
+          name='Intercept function call parameters (When? During execution or statically)'>
+        </ielement>
+        <ielement
+          id='ie-15'
+          type='goal'
+          name='Reverse engineer the binary program'>
+        </ielement>
+        <ielement
+          id='ie-16'
+          type='task'
+          name='Differential analysis'>
+        </ielement>
+        <ielement
+          id='ie-17'
+          type='task'
+          name='Create call graph by setting break points at function calls'>
+        </ielement>
+        <ielement
+          id='ie-18'
+          type='task'
+          name='Create control flow graph (static analysis) from the binary image'>
+        </ielement>
+        <ielement
+          id='ie-19'
+          type='task'
+          name='Run the code under interactive debugger (dynamic analysis)'>
+        </ielement>
+        <ielement
+          id='ie-20'
+          type='task'
+          name='Inspect registries and memory and control flow during execution'>
+        </ielement>
+      </boundary>
+    </actor>
+    <dependum 
+      id='de-1'
+      type=''>
+    </dependum>
+  </diagram>
+</istarml2>

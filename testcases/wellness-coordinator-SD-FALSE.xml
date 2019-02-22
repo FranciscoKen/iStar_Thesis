@@ -1,0 +1,100 @@
+<istarml2 version='1.0'>
+  <diagram>
+    <actor type='actor' id='ac-1' name='Wellness Coordinator'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-2' name='Patient'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-3' name='Physical Therapist'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-4' name='Midwives'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-5' name='Health Education Coordinator'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-6' name='Social Worker'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-7' name='Behavioral Health Specialist'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-8' name='Dental Department'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-9' name='Nurse Practitioner'>
+      <boundary>
+      </boundary>
+    </actor>
+    <dependum id='de-1' name='Lead classes' type='task'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-2' name='Healthcare goals be identified' type='goal'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-3' name='Provide reiki and body work' type='task'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-4' name='Teach relaxation tools' type='task'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-5' name='Teach exercises' type='task'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-6' name='Provide education' type='task'>
+      <dependency>
+        <depender aref='ac-3'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-7' name='Provide services to shared patients in fitness center' type='task'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-3'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-8' name='Refer patients when necc' type='task'>
+      <dependency>
+        <depender aref='ac-3'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-9' name='Prenatal yoga exercise' type='resource'>
+      <dependency>
+        <depender aref='ac-4'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-10' name='Who is at risk' type='resource'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-4'/>
+      </dependency>
+    </dependum>
+  </diagram>
+</istarml2>
