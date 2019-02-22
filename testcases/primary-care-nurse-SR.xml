@@ -1,0 +1,128 @@
+<istarml2 version='1'>
+  <diagram>
+    <actor type='actor' id='ac-1' name='Primary care nurse'>
+      <boundary>
+        <ielement
+          id='ie-1'
+          type='goal'
+          name='Illness be Managed'>
+        </ielement>
+        <ielement
+          id='ie-2'
+          type='goal'
+          name='Problem be identified'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+        </ielement>
+        <ielement
+          id='ie-3'
+          type='goal'
+          name='Patient progress be known'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+        </ielement>
+        <ielement
+          id='ie-4'
+          type='goal'
+          name='Services be provided'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+        </ielement>
+        <ielement
+          id='ie-5'
+          type='task'
+          name='Monitor patient'>
+          <ielementLink type='refinement' value='or' iref='ie-3'/>
+        </ielement>
+        <ielement
+          id='ie-6'
+          type='task'
+          name='Collect patient data'>
+          <ielementLink type='refinement' value='and' iref='ie-5'/>
+          <ielementLink type='contribution' value='help' iref='ie-15'/>
+        </ielement>
+        <ielement
+          id='ie-7'
+          type='task'
+          name='Send alert'>
+          <ielementLink type='refinement' value='and' iref='ie-5'/>
+        </ielement>
+        <ielement
+          id='ie-8'
+          type='task'
+          name='Get patient feedback'>
+          <ielementLink type='refinement' value='and' iref='ie-5'/>
+          <ielementLink type='contribution' value='help' iref='ie-15'/>
+        </ielement>
+        <ielement
+          id='ie-9'
+          type='task'
+          name='Ask patient symptom'>
+          <ielementLink type='refinement' value='and' iref='ie-6'/>
+        </ielement>
+        <ielement
+          id='ie-10'
+          type='task'
+          name='Screen patient'>
+          <ielementLink type='refinement' value='and' iref='ie-6'/>
+        </ielement>
+        <ielement
+          id='ie-11'
+          type='task'
+          name='Get data from healthy living programs'>
+          <ielementLink type='refinement' value='and' iref='ie-6'/>
+        </ielement>
+        <ielement
+          id='ie-12'
+          type='task'
+          name='Treat disease'>
+          <ielementLink type='refinement' value='or' iref='ie-4'/>
+        </ielement>
+        <ielement
+          id='ie-13'
+          type='task'
+          name='Ask for lab test'>
+          <ielementLink type='refinement' value='and' iref='ie-12'/>
+        </ielement>
+        <ielement
+          id='ie-14'
+          type='task'
+          name='Prescribe medication'>
+          <ielementLink type='refinement' value='and' iref='ie-12'/>
+        </ielement>
+        <ielement
+          id='ie-15'
+          type='quality'
+          name='High quality healthcare outcome'>
+        </ielement>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-2' name='Patient'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-3' name='Behavioral health staff'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-4' name='Health education coordinator'>
+      <boundary>
+      </boundary>
+    </actor>
+    <dependum type='resource' name='symptom' id='de-1'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-9'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' name='Behavioral health results' id='de-2'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-10'/>
+        <dependee aref='ac-3'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' name='Lifestyle is improved' id='de-3'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-11'/>
+        <dependee aref='ac-4'/>
+      </dependency>
+    </dependum>
+  </diagram>
+</istarml2>
