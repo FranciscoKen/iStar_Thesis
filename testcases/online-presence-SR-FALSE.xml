@@ -1,0 +1,236 @@
+<istarml2 version='1.0'>
+  <diagram>
+    <actor type='role' id='ac-1' name='Counsellor'>
+      <boundary>
+        <ielement
+          id='ie-1.1'
+          type='quality'
+          name='Give kids the help to fully resolve issue'>
+        </ielement>
+        <ielement 
+          id='ie-1.2'
+          type='quality'
+          name='Easy and quick access to Referrals'>
+          <ielementLink type='contribution' value='help' iref='ie-1.1'/>
+        </ielement>
+        <ielement 
+          id='ie-1.3'
+          type='quality'
+          name='User friendly Referral DB'>
+          <ielementLink type='contribution' value='help' iref='ie-1.2'/>
+        </ielement>
+        <ielement
+          id='ie-1.4'
+          type='quality'
+          name='Take less time to find things in referral DB'>
+          <ielementLink type='contribution' value='help' iref='ie-1.2'/>
+        </ielement>
+        <ielement
+          id='ie-1.5'
+          type='quality'
+          name='Category searches should be more reliable'>
+        </ielement>
+        <ielement
+          id='ie-1.6'
+          type='task'
+          name='Give kids access to local services'>
+          <ielementLink type='contribution' value='help' iref='ie-1.1'/>
+        </ielement>
+        <ielement
+          id='ie-1.7'
+          type='goal'
+          name='Reference and/or Provide info'>
+          <ielementLink type='refinement' value='and' iref='ie-1.6'/>
+        </ielement>
+        <ielement
+          id='ie-1.8'
+          type='task'
+          name='Search in physical resources'>
+          <ielementLink type='refinement' value='or' iref='ie-1.7'/>
+        </ielement>
+        <ielement
+          id='ie-1.9'
+          type='task'
+          name='Search in Referral DB'>
+          <ielementLink type='refinement' value='or' iref='ie-1.7'/>
+        </ielement>
+        <ielement
+          id='ie-1.10'
+          type='task'
+          name='Enter province and city'>
+          <ielementLink type='refinement' value='and' iref='ie-1.9'/>
+        </ielement>
+        <ielement
+          id='ie-1.11'
+          type='task'
+          name='Find nearest community or town'>
+          <ielementLink type='refinement' value='and' iref='ie-1.9'/>
+        </ielement>
+        <ielement
+          id='ie-1.12'
+          type='task'
+          name='Choose a category'>
+          <ielementLink type='refinement' value='and' iref='ie-10'/>
+          <ielementLink type='contribution' value='help' iref='ie-1.5'/>
+        </ielement>
+      </boundary>
+    </actor>
+    <actor type='agent' id='ac-2' name='Social service database'>
+      <boundary>
+        <ielement 
+          id='ie-2.1'
+          type='task'
+          name='Provide referrals'>
+        </ielement>
+        <ielement
+          id='ie-2.2'
+          type='quality'
+          name='People must be willing to use it'>
+          <ielementLink type='refinement' value='and' iref='ie-2.1'/>
+        </ielement>
+        <ielement
+          id='ie-2.3'
+          type='quality'
+          name='Maintain quality of entries'>
+          <ielementLink type='refinement' value='and' iref='ie-2.1'/>
+          <ielementLink type='contribution' value='help' iref='ie-2.2'/>
+        </ielement>
+        <ielement
+          id='ie-2.4'
+          type='quality'
+          name='Ensure quality of access'>
+          <ielementLink type='refinement' value='and' iref='ie-2.1'/>
+          <ielementLink type='contribution' value='help' iref='ie-2.2'/>
+        </ielement>
+        <ielement
+          id='ie-2.5'
+          type='quality'
+          name='Improve how well counsellors search'>
+          <ielementLink type='contribution' value='help' iref='ie-2.4'/>
+        </ielement>
+        <ielement
+          id='ie-2.6'
+          type='quality'
+          name='Effective user interface'>
+          <ielementLink type='contribution' value='help' iref='ie-2.4'/>
+          <ielementLink type='contribution' value='help' iref='ie-2.5'/>
+        </ielement>
+        <ielement
+          type='task'
+          id='ie-2.7'
+          name='Improve UI'>
+          <ielementLink type='contribution' value='help' iref='ie-2.6'/>
+        </ielement>
+        <ielement
+          id='ie-2.8'
+          type='task'
+          name='Expand search functionality'>
+          <ielementLink type='contribution' value='help' iref='ie-2.5'/>
+        </ielement>
+        <ielement
+          id='ie-2.9'
+          type='quality'
+          name='Want links across towns'>
+          <ielementLink type='contribution' value='help' iref='ie-2.5'/>
+        </ielement>
+        <ielement
+          id='ie-2.10'
+          type='goal'
+          name='Provide geographical information'>
+          <ielementLink type='contribution' value='make' iref='ie-2.9'/>
+        </ielement>
+        <ielement
+          id='ie-2.11'
+          type='task'
+          name='Geographics information by text'>
+          <ielementLink type='refinement' value='or' iref='ie-2.10'/>
+        </ielement>
+        <ielement
+          id='ie-2.12'
+          type='task'
+          name='Geographical information by Google Maps'>
+          <ielementLink type='refinement' value='or' iref='ie-2.11'/>
+        </ielement>
+        <ielement
+          id='ie-2.13'
+          type='quality'
+          name='better training for database skills'>
+          <ielementLink type='contribution' value='help' iref='ie-2.5'/>
+        </ielement>
+        <ielement
+          id='ie-2.14'
+          type='task'
+          name='DB Training'>
+          <ielementLink type='contribution' value='help' iref='ie-2.13'/>
+        </ielement>
+        <ielement
+          id='ie-2.15'
+          type='goal'
+          name='Implement new taxonomy'>
+          <ielementLink type='contribution' value='help' iref='ie-2.5'/>
+        </ielement>
+        <ielement
+          id='ie-2.16'
+          type='task'
+          name='Faceted taxonomy'>
+          <ielementLink type='refinement' value='or' iref='ie-2.15'/>
+        </ielement>
+        <ielement
+          id='ie-2.17'
+          type='task'
+          name='Snap-to-grid'>
+          <ielementLink type='refinement' value='or' iref='ie-2.15'/>
+        </ielement>
+        <ielement
+          id='ie-2.18'
+          type='task'
+          name='Ad-hoc tagging'>
+          <ielementLink type='refinement' value='or' iref='ie-2.15'/>
+        </ielement>
+        <ielement
+          id='ie-2.19'
+          type='quality'
+          name='Interesting to know how much each piece of information is used'>
+          <ielementLink type='contribution' value='help' iref='ie-2.3'/>
+        </ielement>
+        <ielement
+          id='ie-2.20'
+          type='task'
+          name='Implement usage statistics'>
+          <ielementLink type='contribution' value='make' iref='ie-2.19'/>
+        </ielement>
+        <ielement
+          id='ie-2.21'
+          type='quality'
+          name='Could be good to lot counseliors add annotations'>
+          <ielementLink type='contribution' value='help' iref='ie-2.3'/>
+        </ielement>
+        <ielement
+          id='ie-2.22'
+          type='quality'
+          name='Counselors learn how to update references'>
+          <ielementLink type='contribution' value='help' iref='ie-2.3'/>
+        </ielement>
+        <ielement
+          id='ie-2.23'
+          type='goal'
+          name='Counselors add to DB'>
+          <ielementLink type='contribution' value='make' iref='ie-2.21'/>
+          <ielementLink type='contribution' value='make' iref='ie-2.22'/>
+        </ielement>
+        <ielement
+          id='ie-2.24'
+          type='task'
+          name='Librarian approval update/annotations'>
+          <ielementLink type='refinement' value='or' iref='ie-2.23'/>
+        </ielement>
+        <ielement
+          id='ie-2.25'
+          type='task'
+          name='Live updates annotations'>
+          <ielementLink type='refinement' value='or' iref='ie-2.23'/>
+        </ielement>
+      </boundary>
+    </actor>
+  </diagram>
+</istarml2>

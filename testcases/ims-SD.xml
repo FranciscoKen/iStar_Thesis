@@ -1,0 +1,219 @@
+<istarml2 version='1.0'>
+  <diagram>
+    <actor type='actor' id='ac-1' name='IMS'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-2' name='Construction company'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-3' name='Enviromental management subsytem'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-1'/>
+    </actor>
+    <actor type='actor' id='ac-4' name='OSH subsystem'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-1'/>
+    </actor>
+    <actor type='actor' id='ac-5' name='Mitigation manager'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-1'/>
+    </actor>
+    <actor type='actor' id='ac-6' name='User interface'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-1'/>
+    </actor>
+    <actor type='actor' id='ac-7' name='Acquisition department'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-8' name='Competencies'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-1'/>
+    </actor>
+    <actor type='actor' id='ac-9' name='Competencies DB'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-10' name='Aspects &amp; impacts manager'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-1'/>
+    </actor>
+    <actor type='actor' id='ac-11' name='Legislative authority'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-12' name='Legislative changes manager'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-1'/>
+    </actor>
+    <actor type='actor' id='ac-13' name='Data acquisition system'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-14' name='Manager'>
+      <boundary>
+      </boundary>
+      <actorLink type='is-a' aref='ac-15'/>
+    </actor>
+    <actor type='actor' id='ac-15' name='User'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-16' name='Quality manager'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-2'/>
+      <actorLink type='is-a' aref='ac-15'/>
+    </actor>
+    <actor type='actor' id='ac-17' name='Operational control'>
+      <boundary>
+      </boundary>
+      <actorLink type='participates-in' aref='ac-1'/>
+    </actor>
+    
+    <dependum
+      id='de-1'
+      type='goal'
+      name='Obtain information'>
+      <dependency>
+        <depender aref='ac-7'/>
+        <dependee aref='ac-6'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-2'
+      type='resource'
+      name='Competencies information'>
+      <dependency>
+        <depender aref='ac-8'/>
+        <dependee aref='ac-9'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-3'
+      type='resource'
+      name='Significative Environmental Impact'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-10'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-4'
+      name='List of applicable legislation'
+      type='resource'>
+      <dependency>
+        <depender aref='ac-12'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-5'
+      name='List of applicable legislation'
+      type='resource'>
+      <dependency>
+        <depender aref='ac-10'/>
+        <dependee aref='ac-12'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-6'
+      type='resource'
+      name='Environmental Legislation'>
+      <dependency>
+        <depender aref='ac-12'/>
+        <dependee aref='ac-11'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-7'
+      type='resource'
+      name='OSH Legislation'>
+      <dependency>
+        <depender aref='ac-12'/>
+        <dependee aref='ac-11'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-8'
+      type='resource'
+      name='Construction Quality Legislation'>
+      <dependency>
+        <depender aref='ac-12'/>
+        <dependee aref='ac-11'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-9'
+      name='Collected Information'
+      type='resource'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-13'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-10'
+      type='resource'
+      name='Collected Information'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-13'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-11'
+      type='goal'
+      name='Data be acquired'>
+      <dependency>
+        <depender aref='ac-15'/>
+        <dependee aref='ac-13'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-12'
+      type='quality'
+      name='Easter [Information Collection]'>
+      <dependency>
+        <depender aref='ac-15'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+     <dependum
+      id='de-13'
+      type='goal'
+      name='Information be managed'>
+      <dependency>
+        <depender aref='ac-15'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-14'
+      type='quality'
+      name='Cost Reduction management'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-15'
+      type='quality'
+      name='Quicker delivery [Reports]'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+  </diagram>
+</istarml2>

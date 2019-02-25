@@ -1,0 +1,356 @@
+<istarml2 version='1.0'>
+  <diagram>
+    <actor type='actor' id='ac-1' name='HAP'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-2' name='Information Officer'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-3' name='Nurse'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-4' name='Inputter'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-5' name='Scientist'>
+      <boundary>
+      </boundary>
+    </actor>
+
+    <actor type='actor' id='ac-6' name='Reporter'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-7' name='CD4'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-8' name='SOPHID'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-9' name='ONS'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-10' name='Incidence'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-11' name='ICH'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor type='actor' id='ac-12' name='SCIEH'>
+      <boundary>
+      </boundary>
+    </actor>
+
+    <dependum
+      id='de-1.1'
+      type='quality'
+      name='Patient exposures coded accurately'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-1.2'
+      type='quality'
+      name='Data validation maximised'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-1.3'
+      type='quality'
+      name='Patient linking maximised'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-1.4'
+      type='quality'
+      name='Data completeness maximised'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-1.5'
+      type='resource'
+      name='FUP list'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-1.6'
+      type='goal'
+      name='Death reports validated'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-1.7'
+      type='goal'
+      name='Alt HIV related deaths identified'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='de-2.1'
+      type='quality'
+      name='Data entered accurately'>
+      <dependency>
+        <depender aref='ac-4'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-2.2'
+      type='quality'
+      name='Derived fields accurate'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-4'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-2.3'
+      type='quality'
+      name='Duplicates identified efficiently'>
+      <dependency>
+        <depender aref='ac-4'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-2.4'
+      type='goal'
+      name='New patients identified'>
+      <dependency>
+        <depender aref='ac-4'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-2.5'
+      type='goal'
+      name='Existing patients identified'>
+      <dependency>
+        <depender aref='ac-4'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-2.6'
+      type='goal'
+      name='Input errors corrected'>
+      <dependency>
+        <depender aref='ac-4'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='de-3.1'
+      type='resource'
+      name='Pre-checked forms'>
+      <dependency>
+        <depender aref='ac-4'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='de-4.1'
+      type='quality'
+      name='Analysis dataset accurate'>
+      <dependency>
+        <depender aref='ac-5'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-4.2'
+      type='quality'
+      name='Trends in HIV spread identified efficiently'>
+      <dependency>
+        <depender aref='ac-5'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='de-5.1'
+      type='quality'
+      name='Cause of death category accurate'>
+      <dependency>
+        <depender aref='ac-5'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-5.2'
+      type='quality'
+      name='Exposure code accurate'>
+      <dependency>
+        <depender aref='ac-5'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='de-6.1'
+      type='goal'
+      name='FUP information resolved'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-3'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-6.2'
+      type='resource'
+      name='FUP forms'>
+      <dependency>
+        <depender aref='ac-3'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-6.3'
+      type='goal'
+      name='FUP data updated'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-3'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='de-7.1'
+      type='goal'
+      name='Patients details obtained'>
+      <dependency>
+        <depender aref='ac-3'/>
+        <dependee aref='ac-6'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='8.1'
+      type='resource'
+      name='HIV notifications'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-6'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='8.2'
+      type='goal'
+      name='Data completeness maximised'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-6'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='8.3'
+      type='goal'
+      name='Forms received promptly'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-6'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='8.4'
+      type='goal'
+      name='Forms received accurately'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-6'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='9.1'
+      type='resource'
+      name='CD4 data'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-7'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='10.1'
+      type='resource'
+      name='Treatment data'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-8'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='11.1'
+      type='resource'
+      name='Death reports'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-9'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='12.1'
+      type='resource'
+      name='Incidence data'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-10'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='13.1'
+      type='resource'
+      name='Child data'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-11'/>
+      </dependency>
+    </dependum>
+
+    <dependum
+      id='14.1'
+      type='resource'
+      name='Scottish data'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-12'/>
+      </dependency>
+    </dependum>
+
+  </diagram>
+</istarml2>
