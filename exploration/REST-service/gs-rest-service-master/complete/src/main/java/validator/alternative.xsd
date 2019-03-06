@@ -1,0 +1,137 @@
+<!--<?xml version='1.0'?>-->
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+  <!-- Diagram Definition -->
+  <xs:element name='istarml2'>
+    <xs:complexType>
+      <xs:sequence minOccurs='0' maxOccurs='unbounded'>
+        <xs:element name='diagram'>
+          <xs:complexType>
+            <xs:sequence>
+							<xs:element name='actor' minOccurs='1' maxOccurs='unbounded'>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name='boundary' maxOccurs='1'>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name='ielement' minOccurs='0' maxOccurs='unbounded'>
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name='ielementLink' minOccurs='0' maxOccurs='unbounded'>
+																	<xs:complexType>
+																		<xs:attribute name='type' type='ielementLinkType' use='required'/>
+																		<xs:attribute name='value' type='ielementLinkValue'/>
+																		<xs:attributeGroup ref='referenceGroup'/>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name='type' type='ielementType' use='required'/>
+															<xs:attributeGroup ref='basicIdentityGroup'/>
+															<xs:attribute name='state' type='xs:string'/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name='actorLink' minOccurs='0' maxOccurs='unbounded'>
+											<xs:complexType>
+												<xs:attribute name='type' type='actorLinkType' use='required'/>
+												<xs:attribute name='aref' type='xs:string' use='required'/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name='type' type='actorType' use='required'/>
+									<xs:attributeGroup ref='basicIdentityGroup'/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name='dependum' minOccurs='0' maxOccurs='unbounded'>
+								<xs:complexType>
+									<xs:all minOccurs='1' maxOccurs='1'>
+										<xs:element name='dependency'>
+											<xs:complexType>
+												<xs:all maxOccurs='1'>
+													<xs:element name='depender'>
+														<xs:complexType>
+															<xs:attributeGroup ref='dependencyReference'/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name='dependee'>
+														<xs:complexType>
+															<xs:attributeGroup ref='dependencyReference'/>
+														</xs:complexType>
+													</xs:element>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+									<xs:attribute name='type' type='ielementType' use='required'/>
+									<xs:attributeGroup ref='basicIdentityGroup'/>
+									<xs:attribute name='state' type='xs:string'/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+			<xs:attribute name='version' type='xs:string' use='required'/>
+    </xs:complexType>
+  </xs:element>
+  <!-- Attributes -->
+  <xs:attributeGroup name='referenceGroup'>
+		<xs:attribute name='iref' type='xs:string' use='required'/>
+		<xs:attribute name='aref' type='xs:string'/>
+	</xs:attributeGroup>
+
+	<xs:attributeGroup name='dependencyReference'>
+		<xs:attribute name='iref' type='xs:string'/>
+		<xs:attribute name='aref' type='xs:string' use='required'/>
+	</xs:attributeGroup>	
+
+	<xs:attributeGroup name='basicIdentityGroup'>
+		<xs:attribute name='name' type='xs:string'/>
+		<xs:attribute name='id' type='xs:string' use='required'/>
+	</xs:attributeGroup>
+
+	<xs:simpleType name='ielementType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='goal'/>
+			<xs:enumeration value='quality'/>
+			<xs:enumeration value='task'/>
+			<xs:enumeration value='resource'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='ielementLinkType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='refinement'/>
+			<xs:enumeration value='qualification'/>
+			<xs:enumeration value='neededBy'/>
+			<xs:enumeration value='contribution'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='ielementLinkValue'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='and'/>
+			<xs:enumeration value='or'/>
+			<xs:enumeration value='make'/>
+			<xs:enumeration value='help'/>
+			<xs:enumeration value='hurt'/>
+			<xs:enumeration value='break'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='actorType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='actor'/>
+			<xs:enumeration value='role'/>
+			<xs:enumeration value='agent'/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name='actorLinkType'>
+		<xs:restriction base='xs:string'>
+			<xs:enumeration value='is-a'/>
+			<xs:enumeration value='participates-in'/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
