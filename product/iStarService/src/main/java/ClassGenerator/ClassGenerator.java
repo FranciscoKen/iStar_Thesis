@@ -41,9 +41,9 @@ public class ClassGenerator {
         }
         for(ActorLink acl : model.getActorLinks()){
             if(acl.getType() == ActorLinkType.ISA){
-                source += acl.getFrom() + " --|> " + acl.getTo();
+                source += acl.getFrom() + " --|> " + acl.getTo()+"\n";
             } else {
-                source += acl.getFrom() + " -- " + acl.getTo() + " :  participates-in";
+                source += acl.getFrom() + " -- " + acl.getTo() + " :  participates-in \n";
             }
 
         }
