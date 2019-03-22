@@ -1,6 +1,6 @@
 <istarml2 version='1'>
   <diagram>
-    <actor type='role' id='ac-1' name='Cracker'>
+    <actor type='role' id='ac-1' name='Attacker'>
       <boundary>
         <ielement 
           id='ie-1' 

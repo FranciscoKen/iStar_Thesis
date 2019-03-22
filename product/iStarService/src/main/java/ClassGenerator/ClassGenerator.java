@@ -1,5 +1,9 @@
 package ClassGenerator;
 
+import Model.Actor;
+import Model.ActorLink;
+import Model.ActorLinkType;
+import Model.IStarModel;
 import net.sourceforge.plantuml.SourceStringReader;
 
 import java.io.*;
@@ -14,7 +18,7 @@ public class ClassGenerator {
         this.PATH = "TEMP/class/";
     }
 
-    public void generateClassDiagram(){
+    public void generateClassDiagram(IStarModel model){
         OutputStream png = null;
         File directory = new File(PATH);
         if(! directory.exists()){
@@ -27,8 +31,25 @@ public class ClassGenerator {
             e.printStackTrace();
         }
 
+        //Initialize DSL
         String source = "@startuml\n";
-        source += "Bob -> Alice : hello\n";
+
+
+        //CONVERT IStar object into class diagram
+        for(Actor ac : model.getActors()){
+            source += "Class "+ac.getName()+"\n";
+        }
+        for(ActorLink acl : model.getActorLinks()){
+            if(acl.getType() == ActorLinkType.ISA){
+                source += acl.getFrom() + " --|> " + acl.getTo();
+            } else {
+                source += acl.getFrom() + " -- " + acl.getTo() + " :  participates-in";
+            }
+
+        }
+
+
+        //End DSL
         source += "@enduml\n";
 
         SourceStringReader reader = new SourceStringReader(source);

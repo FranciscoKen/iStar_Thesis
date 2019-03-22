@@ -33,7 +33,7 @@ public class Endpoint {
     public ValidationResult classDiagram(@RequestParam(value="s_id")String s_id){
         ClassGenerator generator = new ClassGenerator(s_id);
         ValidationResult result = new ValidationResult();
-        generator.generateClassDiagram();
+//        generator.generateClassDiagram();
 
         return result;
     }
@@ -42,7 +42,8 @@ public class Endpoint {
     @RequestMapping(path = "/istarml2-xsd", method = RequestMethod.GET)
     public ResponseEntity<Resource> download(String param) throws IOException {
 
-        File file = new File("./Resource/alternative.xsd");
+//        File file = new File("./Resource/alternative.xsd");
+        File file = new File("./src/main/java/validator/alternative.xsd");
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=istarml2.xsd");
 

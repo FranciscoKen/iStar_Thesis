@@ -1,5 +1,8 @@
 package Parser;
 
+import ClassGenerator.ClassGenerator;
+import Model.ActorLinkType;
+import Model.IStarModel;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -17,33 +20,51 @@ public class DOMParser {
         File fxmlFile = new File("src/main/java/validator/code-flattening.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         try {
+            //generate document builder from builder factory
             DocumentBuilder documentBuilder = dbFactory.newDocumentBuilder();
+
+            //get document from file
             Document doc = documentBuilder.parse(fxmlFile);
+
+            //Initialize istar model object
+            IStarModel model = new IStarModel();
+
+            model.setDocument(doc);
+
+            //get Root element
             doc.getDocumentElement().normalize();
+            Element root = doc.getDocumentElement();
+            model.setVersion(root.getAttribute("version"));
+            System.out.println("Root Element: "+root.getNodeName());
+            System.out.println("Model version: "+model.getVersion());
 
-            System.out.println("Root Element: "+doc.getDocumentElement().getNodeName());
 
-            NodeList nodeList = doc.getElementsByTagName("diagram");
+            //get all actor
+            NodeList actorList = doc.getElementsByTagName("actor");
+            System.out.println("---------------------------------------------");
+            for(int i = 0;i<actorList.getLength();i++){
+                Node currentActor = actorList.item(i);
+                Element actorElement = (Element) currentActor;
 
-            System.out.println("----------------------------");
+                String currentActorID = actorElement.getAttribute("id");
 
-            for(int temp = 0;temp<nodeList.getLength();temp++){
-                Node node = nodeList.item(temp);
-                System.out.println("\nCurrent Element : "+node.getNodeName());
+                model.assignActor(actorElement.getAttribute("id"),actorElement.getAttribute("type"),actorElement.getAttribute("name"));
+
+                //check for actor link
+                NodeList actorLinkList = actorElement.getElementsByTagName("actorLink");
+                if(actorLinkList.getLength()>0){
+                    //actor link exist
+                    Node currentActorLink = actorLinkList.item(0);
+                    Element actorLinkElement = (Element) currentActorLink;
+                    model.assignActorLink(actorLinkElement.getAttribute("type").equals("participates-in")? ActorLinkType.PARTICIPATESIN:ActorLinkType.ISA,currentActorID,actorLinkElement.getAttribute("aref"));
+                }
             }
+            model.printActors();
+            System.out.println("=============================================================");
+            model.printActorLinks();
 
-//            for(int temp = 0; temp<nodeList.getLength();temp++){
-//                Node node = nodeList.item(temp);
-//
-//                System.out.println("\nCurrent Element :" + node.getNodeName());
-//
-//                if(node.getNodeType() == Node.ELEMENT_NODE){
-//                    Element element = (Element) node;
-//
-//                    System.out.println("Actor: "+element.getElementsByTagName("actor").item(0).getTextContent());
-//                }
-//            }
-
+            ClassGenerator cg = new ClassGenerator("test-1");
+            cg.generateClassDiagram(model);
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
@@ -53,4 +74,5 @@ public class DOMParser {
             e.printStackTrace();
         }
     }
+
 }
