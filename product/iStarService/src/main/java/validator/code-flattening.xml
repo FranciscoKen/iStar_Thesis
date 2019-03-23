@@ -51,7 +51,7 @@
         </ielement>
       </boundary>
     </actor>
-    <actor id='ac-1' name='Defender' type='role'>
+    <actor id='ac-2' name='Defender' type='role'>
       <boundary>
         <ielement 
           id='ie-9'

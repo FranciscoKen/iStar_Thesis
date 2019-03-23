@@ -11,26 +11,31 @@ public class IStarModel {
     private String version;
     private ArrayList<Actor> actors;
     private ArrayList<ActorLink> actorLinks;
+    private ArrayList<IntentionalElement> iElements;
 
     //Constructor
     public IStarModel(){
         actors = new ArrayList<Actor>();
         actorLinks = new ArrayList<ActorLink>();
+        iElements = new ArrayList<IntentionalElement>();
     }
 
     public void assignActor(String id, String type, String name){
-        Actor ac = new Actor(id,type,name);
-        actors.add(ac);
-    }
-
-    public void assignActor(String id, String type){
         Actor ac = new Actor(id,type);
+        ac.setName(name);
         actors.add(ac);
     }
 
     public void assignActorLink(ActorLinkType type,String from, String to){
         ActorLink acl = new ActorLink(type,from,to);
         actorLinks.add(acl);
+    }
+
+    public void assignIntentionalElement(String id, IntentionalElementType type, String name, String state,String actorID){
+        IntentionalElement ie = new IntentionalElement(id,type,actorID);
+        ie.setName(name);
+        ie.setState(state);
+        iElements.add(ie);
     }
 
     // Getter & Setter
@@ -47,6 +52,15 @@ public class IStarModel {
     }
     public int getNumberofActorLinks(){
         return this.actorLinks.size();
+    }
+    public int getNumberofIntentionalElements(Actor a){
+        int temp_count = 0;
+        for(IntentionalElement ie : iElements){
+            if(a.getId().equals(ie.getActorID())){
+                temp_count++;
+            }
+        }
+        return temp_count;
     }
 
     public ArrayList<Actor> getActors() {
@@ -74,6 +88,8 @@ public class IStarModel {
                 System.out.print(" name "+a.getName());
             }
             System.out.print(" type "+a.getType()+"\n");
+            printIntentionalElements(a);
+            System.out.println("====================================================");
         }
     }
 
@@ -84,6 +100,24 @@ public class IStarModel {
             System.out.print(" type "+al.getType());
             System.out.print(" from "+al.getFrom());
             System.out.print(" to "+al.getTo()+"\n");
+        }
+    }
+
+    public void printIntentionalElements(Actor actor){
+        System.out.println("There are "+getNumberofIntentionalElements(actor)+" intentional elements\n");
+        for(IntentionalElement ie: iElements){
+            if(ie.getActorID().equals(actor.getId())){
+                System.out.print("Intentional Elements "+ ie.getId() + " name "+ie.getName());
+                System.out.print(" type "+ie.getType());
+                System.out.println(" state "+ie.getState());
+            }
+        }
+    }
+
+    public void printAllIntentionalElements(){
+        System.out.println("These are the existing intentional elements : ");
+        for(IntentionalElement ie : iElements){
+            System.out.println("Intentional Element with id "+ie.getId() + " from actor "+ie.getActorID()+" name "+ie.getName()+" type "+ie.getType()+" state "+ie.getState());
         }
     }
 

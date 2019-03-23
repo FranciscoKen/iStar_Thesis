@@ -3,6 +3,7 @@ package Parser;
 import ClassGenerator.ClassGenerator;
 import Model.ActorLinkType;
 import Model.IStarModel;
+import Model.IntentionalElementType;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -39,7 +40,7 @@ public class DOMParser {
             System.out.println("Model version: "+model.getVersion());
 
 
-            //get all actor
+            //extract actors
             NodeList actorList = doc.getElementsByTagName("actor");
             System.out.println("---------------------------------------------");
             for(int i = 0;i<actorList.getLength();i++){
@@ -50,7 +51,7 @@ public class DOMParser {
 
                 model.assignActor(actorElement.getAttribute("id"),actorElement.getAttribute("type"),actorElement.getAttribute("name"));
 
-                //check for actor link
+                //extract actor link
                 NodeList actorLinkList = actorElement.getElementsByTagName("actorLink");
                 if(actorLinkList.getLength()>0){
                     //actor link exist
@@ -58,10 +59,31 @@ public class DOMParser {
                     Element actorLinkElement = (Element) currentActorLink;
                     model.assignActorLink(actorLinkElement.getAttribute("type").equals("participates-in")? ActorLinkType.PARTICIPATESIN:ActorLinkType.ISA,currentActorID,actorLinkElement.getAttribute("aref"));
                 }
+
+                //extract intentional elements
+                NodeList intentionalElementList = actorElement.getElementsByTagName("ielement");
+                if(intentionalElementList.getLength() > 0){
+                    for(int j = 0;j<intentionalElementList.getLength();j++){
+                        Element ieElement = (Element) intentionalElementList.item(j);
+                        IntentionalElementType currentType;
+                        if(ieElement.getAttribute("type").equals("goal")){
+                            currentType = IntentionalElementType.GOAL;
+                        } else if(ieElement.getAttribute("type").equals("quality")){
+                            currentType = IntentionalElementType.QUALITY;
+                        } else if(ieElement.getAttribute("type").equals("resource")){
+                            currentType = IntentionalElementType.RESOURCE;
+                        } else {
+                            currentType = IntentionalElementType.TASK;
+                        }
+                        model.assignIntentionalElement(ieElement.getAttribute("id"),currentType,ieElement.getAttribute("name"),ieElement.getAttribute("state"),currentActorID);
+                    }
+
+                }
             }
             model.printActors();
-            System.out.println("=============================================================");
+//            System.out.println("=============================================================");
             model.printActorLinks();
+//            model.printAllIntentionalElements();
 
             ClassGenerator cg = new ClassGenerator("test-1");
             cg.generateClassDiagram(model);
@@ -73,6 +95,12 @@ public class DOMParser {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public IStarModel extract(){
+        IStarModel model = new IStarModel();
+
+        return model;
     }
 
 }

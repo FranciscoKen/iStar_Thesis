@@ -2,22 +2,18 @@ package Model;
 
 import org.springframework.lang.Nullable;
 
+import java.util.ArrayList;
+
 public class Actor {
     private String id;
     private String name;
     private String type;
-
-
-
-    public Actor(String s_id, String s_type,String s_name){
-        this.id = s_id;
-        this.type = s_type;
-        this.name = s_name;
-    }
+    private ArrayList<IntentionalElement> iElements;
 
     public Actor(String s_id, String s_type){
         this.id = s_id;
         this.type = s_type;
+        iElements = new ArrayList<IntentionalElement>();
     }
 
     public String getName() {
