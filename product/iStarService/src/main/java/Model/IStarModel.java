@@ -12,12 +12,14 @@ public class IStarModel {
     private ArrayList<Actor> actors;
     private ArrayList<ActorLink> actorLinks;
     private ArrayList<IntentionalElement> iElements;
+    private ArrayList<Dependency> dependencies;
 
     //Constructor
     public IStarModel(){
         actors = new ArrayList<Actor>();
         actorLinks = new ArrayList<ActorLink>();
         iElements = new ArrayList<IntentionalElement>();
+        dependencies = new ArrayList<Dependency>();
     }
 
     public void assignActor(String id, String type, String name){
@@ -36,6 +38,15 @@ public class IStarModel {
         ie.setName(name);
         ie.setState(state);
         iElements.add(ie);
+    }
+
+    public void assignDependency(String dependumID,IntentionalElementType type, String dependumName, String dependumState,String depender, String dependee, String dependerElement, String dependeeElement){
+        Dependency d = new Dependency(dependumID,type,depender,dependee);
+        d.setDependeeElement(dependeeElement);
+        d.setDependerElement(dependerElement);
+        d.getDependum().setName(dependumName);
+        d.getDependum().setState(dependumState);
+        dependencies.add(d);
     }
 
     public boolean isHasIElement(Actor a){
@@ -71,6 +82,10 @@ public class IStarModel {
             }
         }
         return temp_count;
+    }
+
+    public int getNumberofDependencies(){
+        return this.dependencies.size();
     }
 
     public ArrayList<Actor> getActors() {
@@ -132,6 +147,13 @@ public class IStarModel {
         System.out.println("These are the existing intentional elements : ");
         for(IntentionalElement ie : iElements){
             System.out.println("Intentional Element with id "+ie.getId() + " from actor "+ie.getActorID()+" name "+ie.getName()+" type "+ie.getType()+" state "+ie.getState());
+        }
+    }
+
+    public void printDependencies(){
+        System.out.println("These are all of the dependencies : ");
+        for(Dependency d : dependencies){
+            System.out.println("Dependency of intentional element "+d.getDependum().getName()+" "+d.getDependum().getId()+" from actor "+d.getDependee()+" "+d.getDependeeElement()+"to "+d.getDepender()+" "+d.getDependerElement());
         }
     }
 

@@ -14,7 +14,6 @@ public class IntentionalElement {
     }
 
 
-
     public String getId() {
         return id;
     }

@@ -1,6 +1,5 @@
-package Parser;
+package Extractor;
 
-import ClassGenerator.ClassGenerator;
 import Model.ActorLinkType;
 import Model.IStarModel;
 import Model.IntentionalElementType;
@@ -28,7 +27,7 @@ public class DOMParser {
     public IStarModel extract(){
         IStarModel model = new IStarModel();
 
-        File fxmlFile = new File("src/main/java/validator/code-flattening.xml");
+        File fxmlFile = new File("src/main/java/validator/developer-SR.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         try {
             //generate document builder from builder factory
@@ -90,10 +89,43 @@ public class DOMParser {
 
                 }
             }
+
+            NodeList dependencyList = doc.getElementsByTagName("dependum");
+            for(int k = 0;k<dependencyList.getLength();k++){
+                Element currentDependency = (Element) dependencyList.item(k);
+                String dependumID = currentDependency.getAttribute("id");
+                String dependumName = currentDependency.getAttribute("name");
+                String dependumState = currentDependency.getAttribute("state");
+                IntentionalElementType type;
+                if(currentDependency.getAttribute("type").equals("goal")){
+                    type = IntentionalElementType.GOAL;
+                } else if(currentDependency.getAttribute("type").equals("quality")){
+                    type = IntentionalElementType.QUALITY;
+                } else if(currentDependency.getAttribute("type").equals("resource")){
+                    type = IntentionalElementType.RESOURCE;
+                } else {
+                    type = IntentionalElementType.TASK;
+                }
+
+                NodeList dependerList = currentDependency.getElementsByTagName("depender");
+                Element elementDepender = (Element) dependerList.item(0);
+
+                String depender = elementDepender.getAttribute("aref");
+                String dependerElement = elementDepender.getAttribute("iref");
+
+                NodeList dependeeList = currentDependency.getElementsByTagName("dependee");
+                Element elementDependee = (Element) dependeeList.item(0);
+
+                String dependee = elementDependee.getAttribute("aref");
+                String dependeeElement = elementDependee.getAttribute("iref");
+
+                model.assignDependency(dependumID,type,dependumName,dependumState,depender,dependee,dependerElement,dependeeElement);
+            }
             model.printActors();
 //            System.out.println("=============================================================");
             model.printActorLinks();
 //            model.printAllIntentionalElements();
+            model.printDependencies();
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();

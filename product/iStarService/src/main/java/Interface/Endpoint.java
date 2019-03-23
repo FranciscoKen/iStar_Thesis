@@ -1,12 +1,9 @@
 package Interface;
 
 import ClassGenerator.ClassGenerator;
-import Model.ActorLinkType;
 import Model.IStarModel;
-import Parser.DOMParser;
-import org.apache.tomcat.util.http.fileupload.IOUtils;
+import Extractor.DOMParser;
 import org.springframework.core.io.ByteArrayResource;
-import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -16,7 +13,6 @@ import validator.XMLValidator;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
