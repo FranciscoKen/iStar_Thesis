@@ -3,6 +3,7 @@ package Interface;
 import ClassGenerator.ClassGenerator;
 import Model.ActorLinkType;
 import Model.IStarModel;
+import Parser.DOMParser;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.InputStreamResource;
@@ -35,10 +36,12 @@ public class Endpoint {
     public ValidationResult classDiagram(@RequestParam(value="s_id")String s_id){
         ClassGenerator generator = new ClassGenerator(s_id);
         ValidationResult result = new ValidationResult();
+        DOMParser parser = new DOMParser();
         //TEMP
         IStarModel temp = new IStarModel();
-        temp.assignActor("ac-1", "role","Attacker");
-        temp.assignActor("ac-2", "role","Defender");
+        temp = parser.extract();
+//        temp.assignActor("ac-1", "role","Attacker");
+//        temp.assignActor("ac-2", "role","Defender");
         generator.generateClassDiagram(temp);
 
         return result;

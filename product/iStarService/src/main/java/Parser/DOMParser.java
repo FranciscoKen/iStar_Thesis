@@ -17,7 +17,17 @@ import java.io.File;
 import java.io.IOException;
 
 public class DOMParser {
-    public static void main(String[] args){
+//    public static void main(String[] args){
+//
+//    }
+
+
+    public DOMParser() {
+    }
+
+    public IStarModel extract(){
+        IStarModel model = new IStarModel();
+
         File fxmlFile = new File("src/main/java/validator/code-flattening.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         try {
@@ -28,7 +38,7 @@ public class DOMParser {
             Document doc = documentBuilder.parse(fxmlFile);
 
             //Initialize istar model object
-            IStarModel model = new IStarModel();
+//            IStarModel model = new IStarModel();
 
             model.setDocument(doc);
 
@@ -95,10 +105,6 @@ public class DOMParser {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    public IStarModel extract(){
-        IStarModel model = new IStarModel();
 
         return model;
     }

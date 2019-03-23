@@ -38,6 +38,16 @@ public class IStarModel {
         iElements.add(ie);
     }
 
+    public boolean isHasIElement(Actor a){
+        boolean hasIElement = false;
+        for(IntentionalElement ie : iElements){
+            if(ie.getActorID().equals(a.getId())){
+                hasIElement = true;
+            }
+        }
+        return hasIElement;
+    }
+
     // Getter & Setter
     public String getVersion() {
         return version;
@@ -69,6 +79,10 @@ public class IStarModel {
 
     public ArrayList<ActorLink> getActorLinks() {
         return actorLinks;
+    }
+
+    public ArrayList<IntentionalElement> getiElements() {
+        return iElements;
     }
 
     public void setVersion(String version) {
