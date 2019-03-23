@@ -95,9 +95,6 @@ public class DOMParser {
             model.printActorLinks();
 //            model.printAllIntentionalElements();
 
-            ClassGenerator cg = new ClassGenerator("test-1");
-            cg.generateClassDiagram(model);
-
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (SAXException e) {

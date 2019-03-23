@@ -4,6 +4,7 @@ import Model.*;
 import net.sourceforge.plantuml.SourceStringReader;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class ClassGenerator {
     private String s_id;
@@ -36,16 +37,17 @@ public class ClassGenerator {
         //actor conversion
         for(Actor ac : model.getActors()){
             //checks if the actor has name (since it's optional).
-            System.out.println("DEBUG "+ac.getName());
             if(!ac.getName().equals("")){
-                source += "Class "+ac.getName();
+                source += "Class "+ac.getName().replaceAll("\\s+","");
             } else {
                 //uses actor ID if name doesn't exist
-                source += "Class "+ac.getId();
+                source += "Class "+ac.getId().replaceAll("\\s+","");
             }
 
+            ArrayList<Resource> temp_resource = new ArrayList<Resource>();
+
             if(model.isHasIElement(ac)){
-                //ielement conversion
+                //ielement conversion (goal, task, quality)
                 //similar rule to actor, if ielement doesn't have a name, we use ID
                 source+= "{ \n";
                 for(IntentionalElement ie : model.getiElements()){
@@ -62,10 +64,21 @@ public class ClassGenerator {
                             } else {
                                 source += "{field} -"+ie.getId()+":boolean\n";
                             }
+                        } else if(ie.getType().equals(IntentionalElementType.RESOURCE)){
+                            Resource r = new Resource(ie.getName().equals("")?ie.getId().replaceAll("\\s+",""):ie.getName().replaceAll("\\s+",""),ac.getName().equals("")?ac.getId().replaceAll("\\s+",""):ac.getName().replaceAll("\\s+",""));
+                            temp_resource.add(r);
                         }
                     }
                 }
                 source += "}\n";
+                //resource conversion
+                for(Resource r : temp_resource){
+                    source += "Class "+r.getName()+"{\n";
+                    source += "{field} +availability : boolean \n";
+                    source +="}\n";
+                    source += r.getActor() + " -- " + r.getName()+"\n";
+                }
+                temp_resource = null;
             } else {
                 source += "\n";
             }
@@ -90,6 +103,25 @@ public class ClassGenerator {
             String desc = reader.outputImage(png).getDescription();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    private class Resource{
+        private String id;
+        private String name;
+        private String actor;
+
+        public Resource(String name, String actor){
+            this.name = name;
+            this.actor = actor;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getActor() {
+            return actor;
         }
     }
 }
