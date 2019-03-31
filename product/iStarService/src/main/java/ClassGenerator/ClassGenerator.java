@@ -122,6 +122,12 @@ public class ClassGenerator {
         }
 
         //Intentional Element Links conversion
+        iStarOCL ocl = new iStarOCL();
+        //TODO PIKIRIN DOSA ANDA OHMAIGAT SUCH A TRAVERSTY DATATYPE HAHAHAHHAHAHAHA
+
+        for(IntentionalElementLink iel : model.getiElementLinks()){
+//            if(iel.getType().equals())
+        }
 
 
         temp_resource = null;

@@ -14,6 +14,7 @@ public class IStarModel {
     private ArrayList<ActorLink> actorLinks;
     private HashMap<String,IntentionalElement> iElements;
     private HashMap<String,Dependency> dependencies;
+    private ArrayList<IntentionalElementLink> iElementLinks;
 
     //Constructor
     public IStarModel(){
@@ -21,8 +22,10 @@ public class IStarModel {
         actorLinks = new ArrayList<ActorLink>();
         iElements = new HashMap<String,IntentionalElement>();
         dependencies = new HashMap<String,Dependency>();
+        iElementLinks = new ArrayList<IntentionalElementLink>();
     }
 
+    //assignment methods
     public void assignActor(String id, ActorType type, String name){
         Actor ac = new Actor(id,type);
         ac.setName(name.equals("")?id:name);
@@ -48,6 +51,12 @@ public class IStarModel {
         d.getDependum().setName(dependumName.equals("")?dependumID:dependumName);
         d.getDependum().setState(dependumState);
         dependencies.put(dependumID,d);
+    }
+
+    public void assignIntentionalElementLink(String from, String to,String actorID, IntentionalElementLinkType type){
+        IntentionalElementLink iel = new IntentionalElementLink(from,to,actorID,type);
+
+        iElementLinks.add(iel);
     }
 
     public boolean isHasIElement(String actorID){
@@ -105,6 +114,10 @@ public class IStarModel {
         return dependencies;
     }
 
+    public ArrayList<IntentionalElementLink> getiElementLinks() {
+        return iElementLinks;
+    }
+
     public void setVersion(String version) {
         this.version = version;
     }
@@ -123,6 +136,7 @@ public class IStarModel {
             }
             System.out.print(" type "+actor.getValue().getType()+"\n");
             printIntentionalElements(actor.getKey());
+            printIntentionalElementLinks(actor.getKey());
             System.out.println("====================================================");
         }
     }
@@ -159,6 +173,15 @@ public class IStarModel {
         System.out.println("These are all of the dependencies : ");
         for(Map.Entry<String,Dependency> d : dependencies.entrySet()){
             System.out.println("Dependency of intentional element "+d.getValue().getDependum().getName()+" "+d.getKey()+" from actor "+d.getValue().getDependee()+"\'s "+d.getValue().getDependeeElement()+"to "+d.getValue().getDepender()+"\'s "+d.getValue().getDependerElement());
+        }
+    }
+
+    public void printIntentionalElementLinks(String actorID){
+        System.out.println("There are some links between these elements: ");
+        for(int i = 0;i<iElementLinks.size();i++){
+            if(iElementLinks.get(i).getActorID().equals(actorID)){
+                System.out.println("from "+iElementLinks.get(i).getFrom() + " to "+iElementLinks.get(i).getTo()+" with type "+iElementLinks.get(i).getType());
+            }
         }
     }
 

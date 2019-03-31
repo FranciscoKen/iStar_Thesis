@@ -1,6 +1,6 @@
 package Model;
 
-enum IntentionalElementLinkType {
+public enum IntentionalElementLinkType {
     REFINEMENT_AND,
     REFINEMENT_OR,
     NEEDEDBY,

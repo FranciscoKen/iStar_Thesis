@@ -1,9 +1,6 @@
 package Extractor;
 
-import Model.ActorLinkType;
-import Model.ActorType;
-import Model.IStarModel;
-import Model.IntentionalElementType;
+import Model.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -87,6 +84,7 @@ public class DOMParser {
                     for(int j = 0;j<intentionalElementList.getLength();j++){
                         Element ieElement = (Element) intentionalElementList.item(j);
                         IntentionalElementType currentType;
+                        String currentIElementID = ieElement.getAttribute("id");
                         if(ieElement.getAttribute("type").equals("goal")){
                             currentType = IntentionalElementType.GOAL;
                         } else if(ieElement.getAttribute("type").equals("quality")){
@@ -101,11 +99,40 @@ public class DOMParser {
                         if(intentionalElementLinkList.getLength() >0){
                             for(int itr = 0;itr < intentionalElementLinkList.getLength();itr++){
                                 Element ieLinkElement = (Element) intentionalElementLinkList.item(itr);
-                                IntentionalElementType linkType;
+                                IntentionalElementLinkType linkType = null;
+
                                 //TODO implement extraction
+                                if(ieLinkElement.getAttribute("type").equals("refinement")){
+
+                                    if(ieLinkElement.getAttribute("value").equals("and")){
+                                        linkType = IntentionalElementLinkType.REFINEMENT_AND;
+                                    } else if(ieLinkElement.getAttribute("value").equals("or")){
+                                        linkType = IntentionalElementLinkType.REFINEMENT_OR;
+                                    } else {
+                                        //TODO implement error handling for wrong value in refinement
+                                    }
+                                } else if(ieLinkElement.getAttribute("type").equals("qualification")){
+                                    linkType = IntentionalElementLinkType.QUALIFICATION;
+                                } else if(ieLinkElement.getAttribute("type").equals("neededby")){
+                                    linkType = IntentionalElementLinkType.NEEDEDBY;
+                                } else if(ieLinkElement.getAttribute("type").equals("contribution")){
+                                    if(ieLinkElement.getAttribute("value").equals("make")){
+                                        linkType = IntentionalElementLinkType.CONTRIBUTION_MAKE;
+                                    } else if(ieLinkElement.getAttribute("value").equals("help")){
+                                        linkType = IntentionalElementLinkType.CONTRIBUTION_HELP;
+                                    } else if(ieLinkElement.getAttribute("value").equals("hurt")){
+                                        linkType = IntentionalElementLinkType.CONTRIBUTION_HURT;
+                                    } else if(ieLinkElement.getAttribute("value").equals("break")){
+                                        linkType = IntentionalElementLinkType.CONTRIBUTION_BREAK;
+                                    } else {
+                                        //TODO implement incorrect value in contribution link
+                                    }
+                                }
+                                model.assignIntentionalElementLink(currentIElementID,ieLinkElement.getAttribute("iref"),currentActorID,linkType);
+
                             }
                         }
-                        model.assignIntentionalElement(ieElement.getAttribute("id"),currentType,ieElement.getAttribute("name"),ieElement.getAttribute("state"),currentActorID);
+                        model.assignIntentionalElement(currentIElementID,currentType,ieElement.getAttribute("name"),ieElement.getAttribute("state"),currentActorID);
                     }
 
                 }
