@@ -1,4 +1,4 @@
-package Interface;
+package Service;
 
 import ClassGenerator.ClassGenerator;
 import Model.IStarModel;

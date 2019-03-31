@@ -60,9 +60,9 @@ public class ClassGenerator {
                             }
                         } else if(ie.getValue().getType().equals(IntentionalElementType.GOAL)||ie.getValue().getType().equals(IntentionalElementType.QUALITY) ){
                             if(!ie.getValue().getName().equals("")){
-                                source += "{field} -"+cleanString(ie.getValue().getName())+":boolean\n";
+                                source += "{field} -"+cleanString(ie.getValue().getName())+" : boolean\n";
                             } else {
-                                source += "{field} -"+cleanString(ie.getKey())+":boolean\n";
+                                source += "{field} -"+cleanString(ie.getKey())+" : boolean\n";
                             }
                         } else if(ie.getValue().getType().equals(IntentionalElementType.RESOURCE)){
                             Resource r = new Resource(cleanString(ie.getKey()),ie.getValue().getName().equals("")?cleanString(ie.getKey()):cleanString(ie.getValue().getName()), renameResource(actor.getValue().getName().equals("")?cleanString(ie.getKey()):cleanString(actor.getValue().getName()),temp_resource));

@@ -1,6 +1,6 @@
 package validator;
 
-import Interface.ValidationResult;
+import Service.ValidationResult;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
