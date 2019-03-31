@@ -1,6 +1,7 @@
 package Extractor;
 
 import Model.ActorLinkType;
+import Model.ActorType;
 import Model.IStarModel;
 import Model.IntentionalElementType;
 import org.w3c.dom.Document;
@@ -57,8 +58,19 @@ public class DOMParser {
                 Element actorElement = (Element) currentActor;
 
                 String currentActorID = actorElement.getAttribute("id");
-
-                model.assignActor(actorElement.getAttribute("id"),actorElement.getAttribute("type"),actorElement.getAttribute("name"));
+                ActorType type =  ActorType.ACTOR;
+                switch (actorElement.getAttribute("type")){
+                    case "actor":
+                        type = ActorType.ACTOR;
+                    break;
+                    case "role":
+                        type = ActorType.ROLE;
+                    break;
+                    case "agent":
+                        type = ActorType.AGENT;
+                    break;
+                }
+                model.assignActor(actorElement.getAttribute("id"),type,actorElement.getAttribute("name"));
 
                 //extract actor link
                 NodeList actorLinkList = actorElement.getElementsByTagName("actorLink");
@@ -84,12 +96,22 @@ public class DOMParser {
                         } else {
                             currentType = IntentionalElementType.TASK;
                         }
+                        //extract intentional element link
+                        NodeList intentionalElementLinkList = ieElement.getElementsByTagName("ielementLink");
+                        if(intentionalElementLinkList.getLength() >0){
+                            for(int itr = 0;itr < intentionalElementLinkList.getLength();itr++){
+                                Element ieLinkElement = (Element) intentionalElementLinkList.item(itr);
+                                IntentionalElementType linkType;
+                                //TODO implement extraction
+                            }
+                        }
                         model.assignIntentionalElement(ieElement.getAttribute("id"),currentType,ieElement.getAttribute("name"),ieElement.getAttribute("state"),currentActorID);
                     }
 
                 }
             }
 
+            //extract dependency
             NodeList dependencyList = doc.getElementsByTagName("dependum");
             for(int k = 0;k<dependencyList.getLength();k++){
                 Element currentDependency = (Element) dependencyList.item(k);
@@ -121,6 +143,9 @@ public class DOMParser {
 
                 model.assignDependency(dependumID,type,dependumName,dependumState,depender,dependee,dependerElement,dependeeElement);
             }
+
+
+
             model.printActors();
 //            System.out.println("=============================================================");
             model.printActorLinks();

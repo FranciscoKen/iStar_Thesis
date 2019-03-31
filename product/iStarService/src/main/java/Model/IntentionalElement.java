@@ -7,15 +7,9 @@ public class IntentionalElement {
     private IntentionalElementType type;
     private String state;
 
-    public IntentionalElement(String input_id, IntentionalElementType input_type,String input_actorID){
-        this.id = input_id;
+    public IntentionalElement(IntentionalElementType input_type,String input_actorID){
         this.type = input_type;
         this.actorID = input_actorID;
-    }
-
-
-    public String getId() {
-        return id;
     }
 
     public String getName() {

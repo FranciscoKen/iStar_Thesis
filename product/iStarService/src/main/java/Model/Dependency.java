@@ -7,8 +7,8 @@ public class Dependency {
     private String dependerElement;
     private String dependeeElement;
 
-    public Dependency(String id,IntentionalElementType type,String input_depender, String input_dependee){
-        this.dependum = new IntentionalElement(id,type,null);
+    public Dependency(IntentionalElementType type,String input_depender, String input_dependee){
+        this.dependum = new IntentionalElement(type,null);
         this.dependee = input_dependee;
         this.depender = input_depender;
     }

@@ -1,31 +1,32 @@
 package Model;
 
-import org.springframework.lang.Nullable;
 import org.w3c.dom.Document;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class IStarModel {
     //Attributes
     private Document document;
     private String version;
-    private ArrayList<Actor> actors;
+    private HashMap<String,Actor> actors;
     private ArrayList<ActorLink> actorLinks;
-    private ArrayList<IntentionalElement> iElements;
-    private ArrayList<Dependency> dependencies;
+    private HashMap<String,IntentionalElement> iElements;
+    private HashMap<String,Dependency> dependencies;
 
     //Constructor
     public IStarModel(){
-        actors = new ArrayList<Actor>();
+        actors = new HashMap<String,Actor>();
         actorLinks = new ArrayList<ActorLink>();
-        iElements = new ArrayList<IntentionalElement>();
-        dependencies = new ArrayList<Dependency>();
+        iElements = new HashMap<String,IntentionalElement>();
+        dependencies = new HashMap<String,Dependency>();
     }
 
-    public void assignActor(String id, String type, String name){
+    public void assignActor(String id, ActorType type, String name){
         Actor ac = new Actor(id,type);
-        ac.setName(name);
-        actors.add(ac);
+        ac.setName(name.equals("")?id:name);
+        actors.put(id,ac);
     }
 
     public void assignActorLink(ActorLinkType type,String from, String to){
@@ -34,25 +35,25 @@ public class IStarModel {
     }
 
     public void assignIntentionalElement(String id, IntentionalElementType type, String name, String state,String actorID){
-        IntentionalElement ie = new IntentionalElement(id,type,actorID);
-        ie.setName(name);
+        IntentionalElement ie = new IntentionalElement(type,actorID);
+        ie.setName(name.equals("")?id:name);
         ie.setState(state);
-        iElements.add(ie);
+        iElements.put(id,ie);
     }
 
     public void assignDependency(String dependumID,IntentionalElementType type, String dependumName, String dependumState,String depender, String dependee, String dependerElement, String dependeeElement){
-        Dependency d = new Dependency(dependumID,type,depender,dependee);
+        Dependency d = new Dependency(type,depender,dependee);
         d.setDependeeElement(dependeeElement);
         d.setDependerElement(dependerElement);
-        d.getDependum().setName(dependumName);
+        d.getDependum().setName(dependumName.equals("")?dependumID:dependumName);
         d.getDependum().setState(dependumState);
-        dependencies.add(d);
+        dependencies.put(dependumID,d);
     }
 
-    public boolean isHasIElement(Actor a){
+    public boolean isHasIElement(String actorID){
         boolean hasIElement = false;
-        for(IntentionalElement ie : iElements){
-            if(ie.getActorID().equals(a.getId())){
+        for(Map.Entry<String,IntentionalElement> entry : iElements.entrySet()){
+            if(entry.getValue().getActorID().equals(actorID)){
                 hasIElement = true;
             }
         }
@@ -74,10 +75,10 @@ public class IStarModel {
     public int getNumberofActorLinks(){
         return this.actorLinks.size();
     }
-    public int getNumberofIntentionalElements(Actor a){
+    public int getNumberofIntentionalElements(String actorID){
         int temp_count = 0;
-        for(IntentionalElement ie : iElements){
-            if(a.getId().equals(ie.getActorID())){
+        for(Map.Entry<String,IntentionalElement> entry: iElements.entrySet()){
+            if(entry.getValue().getActorID().equals(actorID)){
                 temp_count++;
             }
         }
@@ -88,7 +89,7 @@ public class IStarModel {
         return this.dependencies.size();
     }
 
-    public ArrayList<Actor> getActors() {
+    public HashMap<String, Actor> getActors() {
         return actors;
     }
 
@@ -96,8 +97,12 @@ public class IStarModel {
         return actorLinks;
     }
 
-    public ArrayList<IntentionalElement> getiElements() {
+    public HashMap<String, IntentionalElement> getiElements() {
         return iElements;
+    }
+
+    public HashMap<String, Dependency> getDependencies() {
+        return dependencies;
     }
 
     public void setVersion(String version) {
@@ -111,13 +116,13 @@ public class IStarModel {
     //Printers
     public void printActors(){
         System.out.println("There are "+getNumberofActors()+" actors\n");
-        for(Actor a : actors){
-            System.out.print("Actor "+a.getId());
-            if(!a.getName().equals(null)){
-                System.out.print(" name "+a.getName());
+        for(Map.Entry<String,Actor> actor : actors.entrySet()){
+            System.out.print("Actor "+actor.getKey());
+            if(!actor.getValue().getName().equals("")){
+                System.out.print(" name "+actor.getValue().getName());
             }
-            System.out.print(" type "+a.getType()+"\n");
-            printIntentionalElements(a);
+            System.out.print(" type "+actor.getValue().getType()+"\n");
+            printIntentionalElements(actor.getKey());
             System.out.println("====================================================");
         }
     }
@@ -132,28 +137,28 @@ public class IStarModel {
         }
     }
 
-    public void printIntentionalElements(Actor actor){
-        System.out.println("There are "+getNumberofIntentionalElements(actor)+" intentional elements\n");
-        for(IntentionalElement ie: iElements){
-            if(ie.getActorID().equals(actor.getId())){
-                System.out.print("Intentional Elements "+ ie.getId() + " name "+ie.getName());
-                System.out.print(" type "+ie.getType());
-                System.out.println(" state "+ie.getState());
+    public void printIntentionalElements(String actorID){
+        System.out.println("There are "+getNumberofIntentionalElements(actorID)+" intentional elements\n");
+        for(Map.Entry<String,IntentionalElement> entry: iElements.entrySet()){
+            if(entry.getValue().getActorID().equals(actorID)){
+                System.out.print("Intentional Elements "+ entry.getKey() + " name "+entry.getValue().getName());
+                System.out.print(" type "+entry.getValue().getType());
+                System.out.println(" state "+entry.getValue().getState());
             }
         }
     }
 
     public void printAllIntentionalElements(){
         System.out.println("These are the existing intentional elements : ");
-        for(IntentionalElement ie : iElements){
-            System.out.println("Intentional Element with id "+ie.getId() + " from actor "+ie.getActorID()+" name "+ie.getName()+" type "+ie.getType()+" state "+ie.getState());
+        for(Map.Entry<String,IntentionalElement> entry : iElements.entrySet()){
+            System.out.println("Intentional Element with id "+entry.getKey() + " from actor "+entry.getValue().getActorID()+" name "+entry.getValue().getName()+" type "+entry.getValue().getType()+" state "+entry.getValue().getState());
         }
     }
 
     public void printDependencies(){
         System.out.println("These are all of the dependencies : ");
-        for(Dependency d : dependencies){
-            System.out.println("Dependency of intentional element "+d.getDependum().getName()+" "+d.getDependum().getId()+" from actor "+d.getDependee()+" "+d.getDependeeElement()+"to "+d.getDepender()+" "+d.getDependerElement());
+        for(Map.Entry<String,Dependency> d : dependencies.entrySet()){
+            System.out.println("Dependency of intentional element "+d.getValue().getDependum().getName()+" "+d.getKey()+" from actor "+d.getValue().getDependee()+"\'s "+d.getValue().getDependeeElement()+"to "+d.getValue().getDepender()+"\'s "+d.getValue().getDependerElement());
         }
     }
 
