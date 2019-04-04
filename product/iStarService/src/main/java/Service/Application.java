@@ -14,7 +14,10 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableConfigurationProperties(StorageProperties.class)
 public class Application {
     public static void main(String[] args){
-        System.setProperty("jdk.http.auth.tunneling.disabledSchemes", "");
+        System.setProperty("http.proxyHost", "cache.itb.ac.id");
+        System.setProperty("http.proxyPort", "8080");
+        System.setProperty("http.proxyUser", "franciscoken");
+        System.setProperty("http.proxyPassword", "43059269");
         SpringApplication.run(Application.class,args);
     }
 
