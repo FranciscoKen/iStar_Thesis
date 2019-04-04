@@ -18,6 +18,10 @@ public class Application {
         System.setProperty("http.proxyPort", "8080");
         System.setProperty("http.proxyUser", "franciscoken");
         System.setProperty("http.proxyPassword", "43059269");
+        System.setProperty("https.proxyHost", "cache.itb.ac.id");
+        System.setProperty("https.proxyPort", "8080");
+        System.setProperty("https.proxyUser", "franciscoken");
+        System.setProperty("https.proxyPassword", "43059269");
         SpringApplication.run(Application.class,args);
     }
 
