@@ -1,6 +1,6 @@
 package validator;
 
-import Service.ValidationResult;
+import Service.ServiceResult;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
@@ -23,7 +23,7 @@ public class XMLValidator {
         this.xmlPath = xml;
     }
 
-    public void validateXMLSchema(ValidationResult result) {
+    public void validateXMLSchema(ServiceResult result) {
 
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);

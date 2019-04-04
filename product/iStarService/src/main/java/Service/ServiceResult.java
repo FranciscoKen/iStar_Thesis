@@ -2,13 +2,15 @@ package Service;
 
 import java.util.ArrayList;
 
-public class ValidationResult {
+public class ServiceResult {
     private boolean verdict;
+    private ArrayList<String> log;
     private ArrayList<String> message;
 
-    public ValidationResult(){
+    public ServiceResult(){
         this.verdict = true;
         this.message = new ArrayList<String>();
+        this.log = new ArrayList<String>();
     }
 
     public boolean getVerdict() {
@@ -25,5 +27,13 @@ public class ValidationResult {
 
     public void setMessage(String input_message) {
         this.message.add(input_message);
+    }
+
+    public ArrayList<String> getLog() {
+        return log;
+    }
+
+    public void setLog(String log) {
+        this.log.add(log);
     }
 }
