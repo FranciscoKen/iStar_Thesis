@@ -14,6 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableConfigurationProperties(StorageProperties.class)
 public class Application {
     public static void main(String[] args){
+        System.setProperty("jdk.http.auth.tunneling.disabledSchemes", "");
         SpringApplication.run(Application.class,args);
     }
 
