@@ -14,14 +14,10 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableConfigurationProperties(StorageProperties.class)
 public class Application {
     public static void main(String[] args){
-        System.setProperty("http.proxyHost", "cache.itb.ac.id");
-        System.setProperty("http.proxyPort", "8080");
-        System.setProperty("http.proxyUser", "franciscoken");
-        System.setProperty("http.proxyPassword", "43059269");
-        System.setProperty("https.proxyHost", "cache.itb.ac.id");
-        System.setProperty("https.proxyPort", "8080");
-        System.setProperty("https.proxyUser", "franciscoken");
-        System.setProperty("https.proxyPassword", "43059269");
+        System.setProperty("http.proxyHost", "167.205.22.102");
+        System.setProperty("http.proxyPort", "8800");
+        System.setProperty("https.proxyHost", "167.205.22.102");
+        System.setProperty("https.proxyPort", "8800");
         SpringApplication.run(Application.class,args);
     }
 
