@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe08cbdd-9a29-4d0d-81b1-cb36554e5e3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ClassGenerator/ClassGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ClassGenerator/ClassGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Service/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Service/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Service/Endpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Service/Endpoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/validator/XMLValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/validator/XMLValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/ValidationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/ServiceResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/GreetingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validator/XMLValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validator/XMLValidator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/modules/.gradle/" />
@@ -103,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="188" column="60" selection-start-line="188" selection-start-column="56" selection-end-line="188" selection-end-column="60" />
+            <state relative-caret-position="165">
+              <caret line="192" column="9" selection-start-line="192" selection-start-column="9" selection-end-line="192" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TEMP/dummy/developer-SR.istarml2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="180">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -263,7 +242,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,6 +296,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,12 +459,14 @@
       <workItem from="1554226907579" duration="598000" />
       <workItem from="1554272244329" duration="598000" />
       <workItem from="1554321182250" duration="6037000" />
-      <workItem from="1554347743739" duration="3529000" />
+      <workItem from="1554347743739" duration="4372000" />
+      <workItem from="1554359723107" duration="50000" />
+      <workItem from="1554364178231" duration="560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119168000" />
+    <option name="totallyTimeSpent" value="120621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,7 +481,7 @@
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23484848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24242425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -510,7 +491,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -769,6 +750,9 @@
     <entry file="file://$PROJECT_DIR$/RESOURCE/dummy/template.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/TEMP/dummy/class/f9aee4d5-aa1a-4dbf-a1c0-16f5331de463/f9aee4d5-aa1a-4dbf-a1c0-16f5331de463.ocl" />
+    <entry file="file://$PROJECT_DIR$/TEMP/dummy/class/f9aee4d5-aa1a-4dbf-a1c0-16f5331de463/f9aee4d5-aa1a-4dbf-a1c0-16f5331de463.png" />
+    <entry file="file://$PROJECT_DIR$/TEMP/dummy/class/72630a60-e304-4c16-b622-d6da0dc21f07/72630a60-e304-4c16-b622-d6da0dc21f07.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2565">
@@ -779,14 +763,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TEMP/dummy/class/f9aee4d5-aa1a-4dbf-a1c0-16f5331de463/f9aee4d5-aa1a-4dbf-a1c0-16f5331de463.ocl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TEMP/dummy/class/f9aee4d5-aa1a-4dbf-a1c0-16f5331de463/f9aee4d5-aa1a-4dbf-a1c0-16f5331de463.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TEMP/dummy/class/72630a60-e304-4c16-b622-d6da0dc21f07/72630a60-e304-4c16-b622-d6da0dc21f07.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/TEMP/dummy/developer-SR.istarml2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RESOURCE/dummy/template.ocl">
       <provider selected="true" editor-type-id="text-editor">
@@ -830,17 +812,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TEMP/dummy/developer-SR.istarml2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="188" column="60" selection-start-line="188" selection-start-column="56" selection-end-line="188" selection-end-column="60" />
+        <state relative-caret-position="165">
+          <caret line="192" column="9" selection-start-line="192" selection-start-column="9" selection-end-line="192" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

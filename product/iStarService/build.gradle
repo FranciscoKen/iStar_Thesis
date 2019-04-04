@@ -8,7 +8,7 @@ buildscript {
 }
 
 bootRun {
-   jvmArgs = "-Dhttp.proxyHost=cache.itb.ac.id", "-Dhttp.proxyPort=8080", "-Dhttp.proxyUser=franciscoken", "-Dhhtp.proxyPassword=43059269","-Dhttps.proxyHost=cache.itb.ac.id", "-Dhttps.proxyPort=8080", "-Dhttps.proxyUser=franciscoken", "-Dhhtps.proxyPassword=43059269"
+   jvmArgs = ["-Dhttp.proxyHost=cache.itb.ac.id", "-Dhttp.proxyPort=8080", "-Dhttp.proxyUser=franciscoken", "-Dhhtp.proxyPassword=43059269","-Dhttps.proxyHost=cache.itb.ac.id", "-Dhttps.proxyPort=8080", "-Dhttps.proxyUser=franciscoken", "-Dhhtps.proxyPassword=43059269"]
 }
 
 apply plugin: 'java'
