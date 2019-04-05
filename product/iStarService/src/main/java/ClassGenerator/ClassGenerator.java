@@ -1,10 +1,12 @@
 package ClassGenerator;
 
 import Model.*;
+import javafx.util.Pair;
 import net.sourceforge.plantuml.SourceStringReader;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class ClassGenerator {
@@ -120,29 +122,171 @@ public class ClassGenerator {
                 source += r.getName() + " \"dependum\" -- \"dependee\" "+cleanString(model.getActors().get(d.getValue().getDependee()).getName())+" : Dependency\n";
             }
         }
-
-        //Intentional Element Links conversion
-        iStarOCL ocl = new iStarOCL();
-        //TODO PIKIRIN DOSA ANDA OHMAIGAT SUCH A TRAVERSTY DATATYPE HAHAHAHHAHAHAHA
-
-        for(IntentionalElementLink iel : model.getiElementLinks()){
-//            if(iel.getType().equals())
-        }
-
-
-        temp_resource = null;
-        //End DSL
         source += "@enduml\n";
-
-        System.out.println(source);
+        //End DSL
 
         SourceStringReader reader = new SourceStringReader(source);
-
         try{
             String desc = reader.outputImage(png).getDescription();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+        //Intentional Element Links conversion
+        iStarOCL ocl = new iStarOCL();
+        //TODO PIKIRIN DOSA ANDA OHMAIGAT SUCH A TRAVERSTY DATATYPE HAHAHAHHAHAHAHA
+        for(Map.Entry<String,Actor> a : model.getActors().entrySet()){
+            String currentActor = a.getKey();
+            HashMap<String,ArrayList<String>> refinement_pair = new HashMap<>();
+            for(Map.Entry<Pair<String,String>,IntentionalElementLink> iel : model.getiElementLinks().entrySet()){
+                if(iel.getValue().getActorID().equals(currentActor)){
+                    String currentActorName = model.getActors().get(currentActor).getName();
+                    String iElementFromName = model.getiElements().get(iel.getKey().getKey()).getName();
+                    String iElementToName = model.getiElements().get(iel.getKey().getValue()).getName();
+
+                    if(model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.TASK) ||
+                            model.getiElements().get(iel.getKey().getValue()).getType().equals(IntentionalElementType.TASK)){
+                        if(iel.getValue().getType().equals(IntentionalElementLinkType.NEEDEDBY)){
+                            ocl.addPrePostOCL(currentActorName,
+                                    iElementFromName,
+                                    iElementFromName+".preCondition=\"Value\" and "+iElementToName+".availability=true",
+                                    iElementFromName+".postCondition=\"Value\"");
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.QUALIFICATION)){
+                            ocl.addPrePostOCL(currentActorName,
+                                    iElementToName,
+                                    iElementToName+".preCondition=\"Value\"",
+                                    iElementToName+".postCondition=\"Value\" and "+iElementFromName+"=true");
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
+                            //TODO IMPLEMENT REFINEMENT_AND IN TASK
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
+                            //TODO IMPLEMENT REFINEMENT_OR IN TASK
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_MAKE) ||
+                                iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_HELP)){
+                            ocl.addPrePostOCL(currentActorName,
+                                    iElementFromName,
+                                    iElementFromName+".preCondition=\"Value\"",
+                                    iElementFromName+".postCondition=\"Value\" and "+iElementToName+"=true");
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_HURT) ||
+                                iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_BREAK)){
+                            ocl.addPrePostOCL(currentActorName,
+                                    iElementFromName,
+                                    iElementFromName+".preCondition=\"Value\"",
+                                    iElementFromName+".postCondition=\"Value\" and "+iElementToName+"=false");
+                        }
+                    } else { // No Task
+                        if(iel.getValue().getType().equals(IntentionalElementLinkType.QUALIFICATION)){
+                            ocl.addCustomOCL(currentActorName,
+                                    iElementToName,
+                                    iElementFromName+"=true and "+iElementToName+".availability=true");
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_MAKE) ||
+                                iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_HELP)){
+                            if(model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.GOAL) ||
+                                    model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.QUALITY)){
+                                ocl.addImplicationOCL(currentActorName,
+                                        iElementFromName,
+                                        iElementFromName+"=true",
+                                        iElementToName+"=true");
+                            } else {
+                                //RESOURCE
+                                ocl.addImplicationOCL(currentActorName,
+                                        iElementFromName,
+                                        iElementFromName+".availability=true",
+                                        iElementToName+"=true");
+                            }
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_BREAK) ||
+                                iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_HURT)){
+                            if(model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.GOAL) ||
+                                    model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.QUALITY)){
+                                ocl.addImplicationOCL(currentActorName,
+                                        iElementFromName,
+                                        iElementFromName+"=false",
+                                        iElementToName+"=false");
+                            } else {
+                                //RESOURCE
+                                ocl.addImplicationOCL(currentActorName,
+                                        iElementFromName,
+                                        iElementFromName+".availability=false",
+                                        iElementToName+"=false");
+                            }
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
+                            //TODO IMPLEMENT REFINEMENT NON TASK OR
+                        } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
+                            //TODO IMPLEMENT REFINEMENT NON TASK AND
+                        }
+                    }
+
+                    //Extract refinement links
+                    //At this point uda terpusat dalam satu aktor
+
+
+                    if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND) ||
+                            iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
+                        if(refinement_pair.containsKey(iel.getKey().getValue())){
+                            refinement_pair.get(iel.getKey().getValue()).add(iel.getKey().getKey());
+                        } else {
+                            ArrayList<String> pair = new ArrayList<>();
+                            pair.add(iel.getKey().getKey());
+                            refinement_pair.put(iel.getKey().getValue(),pair);
+                        }
+                    }
+                }
+
+
+            }
+
+            //flush semua refinement link OCL
+            for(Map.Entry<String,ArrayList<String>> entry : refinement_pair.entrySet()){
+                String junction="";
+                System.out.println(entry.getKey()+" AAAAAND "+entry.getValue().get(0));
+                if(model.getiElementLinks().get(new Pair<>(entry.getValue().get(0),entry.getKey())).getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
+                    junction = " and ";
+                } else if(model.getiElementLinks().get(new Pair<>(entry.getValue().get(0),entry.getKey())).getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
+                    junction = " or ";
+                }
+                if(isContainTask(entry.getKey(),entry.getValue(),model)){
+                    String temp_pre ="";
+                    String temp_post="";
+                    for(String s : entry.getValue()){
+                        if(model.getiElements().get(s).getType().equals(IntentionalElementType.TASK)){
+                            temp_pre += model.getiElements().get(s).getName()+".preCondition=\"Value\" "+junction;
+                            temp_post += junction + model.getiElements().get(s).getName()+".postCondition=\"Value\" ";
+                        } else {
+                            temp_pre += model.getiElements().get(s).getName()+"=true "+junction;
+                        }
+                    }
+                    if(model.getiElements().get(entry.getKey()).getType().equals(IntentionalElementType.TASK)){
+                        temp_pre += model.getiElements().get(entry.getKey()).getName()+".preCondition=\"Value\" "+junction;
+                        temp_post += model.getiElements().get(entry.getKey()).getName()+".postCondition=\"Value\" ";
+                    } else {
+                        temp_post += model.getiElements().get(entry.getKey()).getName() + "=true";
+                    }
+
+                    ocl.addPrePostOCL(currentActor,
+                            model.getiElements().get(entry.getKey()).getName(),
+                            temp_pre,
+                            temp_post);
+                } else {
+                    String temp_implication="";
+                    String temp_cause = "";
+                    for(String s : entry.getValue()){
+                        temp_cause += model.getiElements().get(s).getName()+"=true";
+                        temp_cause += junction;
+                    }
+                    temp_implication += model.getiElements().get(entry.getKey()).getName()+"=true";
+                    ocl.addImplicationOCL(currentActor,
+                            model.getiElements().get(entry.getKey()).getName(),
+                            temp_cause,
+                            temp_implication);
+                }
+            }
+        }
+
+        temp_resource = null;
+
+        System.out.println(source);
+
+        createOCLFile(ocl.exportString());
     }
 
     private String cleanString(String string){
@@ -199,6 +343,22 @@ public class ClassGenerator {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private boolean isContainTask(String from, ArrayList<String> tos, IStarModel model){
+        boolean taskExist = false;
+
+        if(model.getiElements().get(from).getType().equals(IntentionalElementType.TASK)){
+            taskExist = true;
+        } else {
+            for(String s : tos){
+                if(model.getiElements().get(s).getType().equals(IntentionalElementType.TASK)){
+                    taskExist = true;
+                }
+            }
+        }
+
+        return taskExist;
     }
 
     private class Resource{

@@ -1,31 +1,28 @@
 package Model;
 
+
 public class IntentionalElementLink {
-    private String from;
-    private String to;
     private IntentionalElementLinkType type;
     private String actorID;
 
-    public IntentionalElementLink(String in_from,String in_to,String actorID, IntentionalElementLinkType type){
-        this.from = in_from;
-        this.to = in_to;
+    public IntentionalElementLink(String actorID, IntentionalElementLinkType type){
         this.type = type;
         this.actorID = actorID;
-    }
-
-    public String getFrom() {
-        return from;
-    }
-
-    public String getTo() {
-        return to;
     }
 
     public IntentionalElementLinkType getType() {
         return type;
     }
 
+    public void setType(IntentionalElementLinkType type) {
+        this.type = type;
+    }
+
     public String getActorID() {
         return actorID;
+    }
+
+    public void setActorID(String actorID) {
+        this.actorID = actorID;
     }
 }

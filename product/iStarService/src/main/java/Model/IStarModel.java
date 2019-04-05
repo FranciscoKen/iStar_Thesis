@@ -1,5 +1,6 @@
 package Model;
 
+import javafx.util.Pair;
 import org.w3c.dom.Document;
 
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ public class IStarModel {
     private ArrayList<ActorLink> actorLinks;
     private HashMap<String,IntentionalElement> iElements;
     private HashMap<String,Dependency> dependencies;
-    private ArrayList<IntentionalElementLink> iElementLinks;
+    private HashMap<Pair<String,String>,IntentionalElementLink> iElementLinks;
 
     //Constructor
     public IStarModel(){
@@ -22,7 +23,7 @@ public class IStarModel {
         actorLinks = new ArrayList<ActorLink>();
         iElements = new HashMap<String,IntentionalElement>();
         dependencies = new HashMap<String,Dependency>();
-        iElementLinks = new ArrayList<IntentionalElementLink>();
+        iElementLinks = new HashMap<>();
     }
 
     //assignment methods
@@ -54,9 +55,9 @@ public class IStarModel {
     }
 
     public void assignIntentionalElementLink(String from, String to,String actorID, IntentionalElementLinkType type){
-        IntentionalElementLink iel = new IntentionalElementLink(from,to,actorID,type);
-
-        iElementLinks.add(iel);
+        IntentionalElementLink iel = new IntentionalElementLink(actorID,type);
+        Pair<String,String> pair = new Pair<>(from,to);
+        iElementLinks.put(pair,iel);
     }
 
     public boolean isHasIElement(String actorID){
@@ -114,7 +115,7 @@ public class IStarModel {
         return dependencies;
     }
 
-    public ArrayList<IntentionalElementLink> getiElementLinks() {
+    public HashMap<Pair<String, String>, IntentionalElementLink> getiElementLinks() {
         return iElementLinks;
     }
 
@@ -178,9 +179,9 @@ public class IStarModel {
 
     public void printIntentionalElementLinks(String actorID){
         System.out.println("There are some links between these elements: ");
-        for(int i = 0;i<iElementLinks.size();i++){
-            if(iElementLinks.get(i).getActorID().equals(actorID)){
-                System.out.println("from "+iElementLinks.get(i).getFrom() + " to "+iElementLinks.get(i).getTo()+" with type "+iElementLinks.get(i).getType());
+        for(Map.Entry<Pair<String,String>,IntentionalElementLink> entry : iElementLinks.entrySet()){
+            if(entry.getValue().getActorID().equals(actorID)){
+                System.out.println("From "+entry.getKey().getKey()+" to "+entry.getKey().getValue()+" type "+entry.getValue().getType());
             }
         }
     }

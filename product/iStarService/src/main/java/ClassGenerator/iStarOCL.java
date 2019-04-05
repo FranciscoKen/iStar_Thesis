@@ -24,4 +24,20 @@ public class iStarOCL {
         template += cause + " implies " + implication+"\n\n";
         constraints.add(template);
     }
+
+    public void addCustomOCL(String actor, String ielement, String statement){
+        String template ="";
+        template += actor + ":: " + ielement + "\n";
+        template += statement+"\n\n";
+        constraints.add(template);
+    }
+
+    public String exportString(){
+        String result = "";
+        for(String a : constraints){
+            result += a;
+        }
+
+        return result;
+    }
 }

@@ -4,6 +4,7 @@ import ClassGenerator.ClassGenerator;
 import Model.IStarModel;
 import Extractor.DOMParser;
 import Storage.StorageFileNotFoundException;
+import Storage.StorageProperties;
 import Storage.StorageService;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,33 +34,63 @@ public class Endpoint {
         this.storageService = storageService;
     }
 
-    @RequestMapping("/validate")
-    public ServiceResult validate(@RequestParam(value="path")String path){
+
+    @CrossOrigin
+    @PostMapping("/istar-service/validate")
+    public ServiceResult validate(@RequestParam(value="file")MultipartFile file){
         ServiceResult result = new ServiceResult();
-        XMLValidator validator = new XMLValidator("src/main/java/validator/alternative.xsd",path);
+        result.setLog("Received file "+file.getOriginalFilename()+" with type "+file.getContentType());
+
+        validateiStarML2File(file,result);
+
+        storageService.store(file);
+
+        //VALIDATE SCHEMA
+        XMLValidator validator = new XMLValidator("TEMP/model/"+file.getOriginalFilename());
         validator.validateXMLSchema(result);
 
+        //TODO VALIDASI RULE
+
+
         return result;
     }
 
-    @RequestMapping("/generateClassDiagram")
-    public ServiceResult classDiagram(@RequestParam(value="s_id")String s_id){
-        ClassGenerator generator = new ClassGenerator(s_id);
+    /////////////////////////////////////////////////////////////////////
+    @CrossOrigin
+    @PostMapping("/istar-service/generate-class-diagram")
+    public ServiceResult classDiagram(@RequestParam(value="file")MultipartFile file){
+
         ServiceResult result = new ServiceResult();
-        DOMParser parser = new DOMParser();
-        //TEMP
-        IStarModel temp;
-        temp = parser.extract();
-        generator.generateClassDiagram(temp);
+        result.setVerdict(true);
+
+        validateiStarML2File(file,result);
+
+        storageService.store(file);
+
+        //VALIDATE SCHEMA
+        XMLValidator validator = new XMLValidator("TEMP/model/"+file.getOriginalFilename());
+        boolean confirmSchema = validator.isXMLConfirmSchema();
+
+
+
+        if(confirmSchema){
+            String uid = UUID.randomUUID().toString();
+            ClassGenerator generator = new ClassGenerator(uid);
+            DOMParser extractor = new DOMParser();
+
+            IStarModel model = extractor.extract("TEMP/model/"+file.getOriginalFilename());
+            generator.generateClassDiagram(model);
+            result.setMessage(uid);
+        }
 
         return result;
     }
 
-
+    @CrossOrigin
     @RequestMapping(path = "/istarml2-xsd", method = RequestMethod.GET)
     public ResponseEntity<Resource> download(String param) throws IOException {
 
-        File file = new File("./src/main/java/validator/alternative.xsd");
+        File file = new File("RESOURCE/alternative.xsd");
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=istarml2.xsd");
 
@@ -73,11 +104,40 @@ public class Endpoint {
                 .body(resource);
     }
 
-//    @GetMapping("/demo/upload")
-//    public String listUploadedFiles(Model model) throws IOException {
-//
-//    }
+    @CrossOrigin
+    @GetMapping(value="/istar-service/get-class-image",produces=MediaType.IMAGE_PNG_VALUE)
+    public ResponseEntity<Resource> getClassImage(@RequestParam(value="uid") String uid) throws IOException {
+        File file = new File("TEMP/class/"+uid+"/"+uid+".png");
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=class.png");
 
+        Path path = Paths.get(file.getAbsolutePath());
+        ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
+
+        return ResponseEntity.ok()
+                .headers(headers)
+                .contentLength(file.length())
+                .contentType(MediaType.parseMediaType("image/png"))
+                .body(resource);
+    }
+
+    @CrossOrigin
+    @GetMapping(value="/istar-service/get-class-ocl")
+    public ResponseEntity<Resource> getClassOCL(@RequestParam(value="uid") String uid) throws IOException {
+        File file = new File("TEMP/class/"+uid+"/"+uid+".ocl");
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=class.ocl");
+        Path path = Paths.get(file.getAbsolutePath());
+        ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
+
+        return ResponseEntity.ok()
+                .headers(headers)
+                .contentLength(file.length())
+                .contentType(MediaType.parseMediaType("application/octet-stream"))
+                .body(resource);
+    }
+
+    //////////////////////////////   DUMMY   ///////////////////////////////////////
     @PostMapping("/dummy/upload")
     public ServiceResult handleFileUpload(@RequestParam("file")MultipartFile file){
         ServiceResult result = new ServiceResult();
@@ -101,8 +161,9 @@ public class Endpoint {
     //2. Generate class diagram -> receives file as an input, sends out id of process
     //3. receive the class diagram image
     //4. receive the class diagram ocl
+    @CrossOrigin
     @PostMapping("/dummy/validate")
-    public ServiceResult validate(@RequestParam(value="file")MultipartFile file){
+    public ServiceResult dummyValidate(@RequestParam(value="file")MultipartFile file){
         ServiceResult result = new ServiceResult();
         result.setLog("Received file "+file.getOriginalFilename()+" with type "+file.getContentType());
         result.setVerdict(true);
@@ -110,8 +171,9 @@ public class Endpoint {
         return result;
     }
 
+    @CrossOrigin
     @PostMapping("/dummy/generate-class-diagram")
-    public ServiceResult generateClassDiagram(@RequestParam(value="file")MultipartFile file){
+    public ServiceResult dummyGenerateClassDiagram(@RequestParam(value="file")MultipartFile file){
         ServiceResult result = new ServiceResult();
         result.setVerdict(true);
         validateiStarML2File(file,result);
@@ -149,8 +211,9 @@ public class Endpoint {
         return result;
     }
 
+    @CrossOrigin
     @GetMapping(value="/dummy/get-class-image",produces=MediaType.IMAGE_PNG_VALUE)
-    public ResponseEntity<Resource> getClassImage(@RequestParam(value="uid") String uid) throws IOException {
+    public ResponseEntity<Resource> dummyGetClassImage(@RequestParam(value="uid") String uid) throws IOException {
         File file = new File("TEMP/dummy/class/"+uid+"/"+uid+".png");
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=class.png");
@@ -165,12 +228,12 @@ public class Endpoint {
                 .body(resource);
     }
 
-    @GetMapping(value="/dummy/get-class-OCL")
-    public ResponseEntity<Resource> getClassOCL(@RequestParam(value="uid") String uid) throws IOException {
+    @CrossOrigin
+    @GetMapping(value="/dummy/get-class-ocl")
+    public ResponseEntity<Resource> dummyGetClassOCL(@RequestParam(value="uid") String uid) throws IOException {
         File file = new File("TEMP/dummy/class/"+uid+"/"+uid+".ocl");
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=class.ocl");
-
         Path path = Paths.get(file.getAbsolutePath());
         ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
 
@@ -181,6 +244,7 @@ public class Endpoint {
                 .body(resource);
     }
 
+    @CrossOrigin
     @PostMapping(value="/dummy/convert-istarml")
     public ResponseEntity<Resource> convertiStarML(@RequestParam(value="file") MultipartFile file) throws IOException {
 

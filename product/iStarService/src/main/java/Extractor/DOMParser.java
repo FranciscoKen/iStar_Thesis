@@ -14,18 +14,14 @@ import java.io.File;
 import java.io.IOException;
 
 public class DOMParser {
-//    public static void main(String[] args){
-//
-//    }
-
 
     public DOMParser() {
     }
 
-    public IStarModel extract(){
+    public IStarModel extract(String path){
         IStarModel model = new IStarModel();
 
-        File fxmlFile = new File("src/main/java/validator/developer-SR.xml");
+        File fxmlFile = new File(path);
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         try {
             //generate document builder from builder factory
