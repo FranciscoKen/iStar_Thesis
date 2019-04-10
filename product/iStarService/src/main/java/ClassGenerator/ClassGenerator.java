@@ -238,7 +238,6 @@ public class ClassGenerator {
             //flush semua refinement link OCL
             for(Map.Entry<String,ArrayList<String>> entry : refinement_pair.entrySet()){
                 String junction="";
-                System.out.println(entry.getKey()+" AAAAAND "+entry.getValue().get(0));
                 if(model.getiElementLinks().get(new Pair<>(entry.getValue().get(0),entry.getKey())).getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
                     junction = " and ";
                 } else if(model.getiElementLinks().get(new Pair<>(entry.getValue().get(0),entry.getKey())).getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
@@ -284,7 +283,6 @@ public class ClassGenerator {
 
         temp_resource = null;
 
-        System.out.println(source);
 
         createOCLFile(ocl.exportString());
     }

@@ -1,5 +1,6 @@
 package Service;
 
+import Mainan.ExceptionMessages;
 import Storage.StorageProperties;
 import Storage.StorageService;
 import org.springframework.boot.CommandLineRunner;
@@ -14,11 +15,9 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableConfigurationProperties(StorageProperties.class)
 public class Application {
     public static void main(String[] args){
-//        System.setProperty("http.proxyHost", "167.205.22.102");
-//        System.setProperty("http.proxyPort", "8800");
-//        System.setProperty("https.proxyHost", "167.205.22.102");
-//        System.setProperty("https.proxyPort", "8800");
+        ExceptionMessages messages = new ExceptionMessages();
         SpringApplication.run(Application.class,args);
+
     }
 
     @Bean

@@ -5,6 +5,7 @@ buildscript {
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.5.RELEASE")
     }
+
 }
 
 //bootRun {
@@ -26,6 +27,7 @@ apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
+
 bootJar {
     baseName = 'gs-rest-service'
     version =  '0.1.0'
@@ -38,10 +40,18 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+//plugins {
+//    id 'application'
+//    id 'org.openjfx.javafxplugin' version '0.0.7'
+//}
+//javafx {
+//    modules = [ 'javafx.controls' ]
+//}
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile group: 'net.sourceforge.plantuml', name: 'plantuml', version: '1.2019.4'
     compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile group: 'org.openjfx', name: 'javafx', version: '13-ea+3', ext: 'pom'
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('com.jayway.jsonpath:json-path')
 }
