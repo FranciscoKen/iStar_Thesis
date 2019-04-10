@@ -1,9 +1,7 @@
 package validator;
 
-import Mainan.ExceptionMessages;
-import Mainan.IStarException;
-import Service.ServiceResult;
-import org.springframework.web.multipart.MultipartFile;
+import Exception.ExceptionMessages;
+import Exception.IStarException;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;

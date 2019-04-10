@@ -8,19 +8,6 @@ buildscript {
 
 }
 
-//bootRun {
-//    execSpec {
-//        systemProperties = System.properties
-//    }
-//}
-
-//bootRun {
-//   jvmArgs = ["-Dhttp.proxyHost=cache.itb.ac.id", "-Dhttp.proxyPort=8080", "-Dhttp.proxyUser=franciscoken", "-Dhhtp.proxyPassword=43059269","-Dhttps.proxyHost=cache.itb.ac.id", "-Dhttps.proxyPort=8080", "-Dhttps.proxyUser=franciscoken", "-Dhhtps.proxyPassword=43059269"]
-//    execSpec {
-//        systemProperties = System.properties
-//    }
-//}
-
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -40,18 +27,11 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-//plugins {
-//    id 'application'
-//    id 'org.openjfx.javafxplugin' version '0.0.7'
-//}
-//javafx {
-//    modules = [ 'javafx.controls' ]
-//}
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile group: 'net.sourceforge.plantuml', name: 'plantuml', version: '1.2019.4'
     compile group: 'commons-io', name: 'commons-io', version: '2.6'
-    compile group: 'org.openjfx', name: 'javafx', version: '13-ea+3', ext: 'pom'
+    compile group: 'org.openjfx', name: 'javafx', version: '13-ea+4', ext: 'pom'
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('com.jayway.jsonpath:json-path')
 }

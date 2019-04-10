@@ -139,14 +139,14 @@ public class ClassGenerator {
         for(Map.Entry<String,Actor> a : model.getActors().entrySet()){
             String currentActor = a.getKey();
             HashMap<String,ArrayList<String>> refinement_pair = new HashMap<>();
-            for(Map.Entry<Pair<String,String>,IntentionalElementLink> iel : model.getiElementLinks().entrySet()){
+            for(Map.Entry<ReferencePair,IntentionalElementLink> iel : model.getiElementLinks().entrySet()){
                 if(iel.getValue().getActorID().equals(currentActor)){
                     String currentActorName = model.getActors().get(currentActor).getName();
-                    String iElementFromName = model.getiElements().get(iel.getKey().getKey()).getName();
-                    String iElementToName = model.getiElements().get(iel.getKey().getValue()).getName();
+                    String iElementFromName = model.getiElements().get(iel.getKey().getFrom()).getName();
+                    String iElementToName = model.getiElements().get(iel.getKey().getTo()).getName();
 
-                    if(model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.TASK) ||
-                            model.getiElements().get(iel.getKey().getValue()).getType().equals(IntentionalElementType.TASK)){
+                    if(model.getiElements().get(iel.getKey().getFrom()).getType().equals(IntentionalElementType.TASK) ||
+                            model.getiElements().get(iel.getKey().getTo()).getType().equals(IntentionalElementType.TASK)){
                         if(iel.getValue().getType().equals(IntentionalElementLinkType.NEEDEDBY)){
                             ocl.addPrePostOCL(currentActorName,
                                     iElementFromName,
@@ -181,8 +181,8 @@ public class ClassGenerator {
                                     iElementFromName+"=true and "+iElementToName+".availability=true");
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_MAKE) ||
                                 iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_HELP)){
-                            if(model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.GOAL) ||
-                                    model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.QUALITY)){
+                            if(model.getiElements().get(iel.getKey().getFrom()).getType().equals(IntentionalElementType.GOAL) ||
+                                    model.getiElements().get(iel.getKey().getTo()).getType().equals(IntentionalElementType.QUALITY)){
                                 ocl.addImplicationOCL(currentActorName,
                                         iElementFromName,
                                         iElementFromName+"=true",
@@ -196,8 +196,8 @@ public class ClassGenerator {
                             }
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_BREAK) ||
                                 iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_HURT)){
-                            if(model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.GOAL) ||
-                                    model.getiElements().get(iel.getKey().getKey()).getType().equals(IntentionalElementType.QUALITY)){
+                            if(model.getiElements().get(iel.getKey().getFrom()).getType().equals(IntentionalElementType.GOAL) ||
+                                    model.getiElements().get(iel.getKey().getTo()).getType().equals(IntentionalElementType.QUALITY)){
                                 ocl.addImplicationOCL(currentActorName,
                                         iElementFromName,
                                         iElementFromName+"=false",
@@ -222,12 +222,12 @@ public class ClassGenerator {
 
                     if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND) ||
                             iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
-                        if(refinement_pair.containsKey(iel.getKey().getValue())){
-                            refinement_pair.get(iel.getKey().getValue()).add(iel.getKey().getKey());
+                        if(refinement_pair.containsKey(iel.getKey().getTo())){
+                            refinement_pair.get(iel.getKey().getTo()).add(iel.getKey().getFrom());
                         } else {
                             ArrayList<String> pair = new ArrayList<>();
-                            pair.add(iel.getKey().getKey());
-                            refinement_pair.put(iel.getKey().getValue(),pair);
+                            pair.add(iel.getKey().getFrom());
+                            refinement_pair.put(iel.getKey().getTo(),pair);
                         }
                     }
                 }

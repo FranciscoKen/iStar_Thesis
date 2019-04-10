@@ -39,13 +39,10 @@ public class DOMParser {
             doc.getDocumentElement().normalize();
             Element root = doc.getDocumentElement();
             model.setVersion(root.getAttribute("version"));
-            System.out.println("Root Element: "+root.getNodeName());
-            System.out.println("Model version: "+model.getVersion());
 
 
             //extract actors
             NodeList actorList = doc.getElementsByTagName("actor");
-            System.out.println("---------------------------------------------");
             for(int i = 0;i<actorList.getLength();i++){
                 Node currentActor = actorList.item(i);
                 Element actorElement = (Element) currentActor;
@@ -166,14 +163,6 @@ public class DOMParser {
 
                 model.assignDependency(dependumID,type,dependumName,dependumState,depender,dependee,dependerElement,dependeeElement);
             }
-
-
-
-            model.printActors();
-//            System.out.println("=============================================================");
-            model.printActorLinks();
-//            model.printAllIntentionalElements();
-            model.printDependencies();
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();

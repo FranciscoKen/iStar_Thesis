@@ -1,0 +1,408 @@
+<istarml2 version='1.0'>
+  <diagram>
+    <actor id='ac-1' type='actor' name='Software Vendor'>
+      <boundary>
+        <ielement
+          id='ie-1.1'
+          type='quality'
+          name='large customer base'>
+        </ielement>
+        <ielement
+          id='ie-1.2'
+          type='quality'
+          name='customer loyalty'>
+          <ielementLink type='refinement' value='and' iref='ie-1.1'/>
+        </ielement>
+        <ielement
+          id='ie-1.3'
+          type='quality'
+          name='attractive to new customer'>
+          <ielementLink type='refinement' value='and' iref='ie-1.1'/>
+        </ielement>
+        <ielement
+          id='ie-1.4'
+          type='quality'
+          name='vendor lock-in [customer]'>
+        </ielement>
+        <ielement
+          id='ie-1.5'
+          type='quality'
+          name='solution gravity'>
+          <ielementLink type='contribution' value='help' iref='ie-1.4'/>
+        </ielement>
+        <ielement
+          id='ie-1.6'
+          type='quality'
+          name='high value'>
+          <ielementLink type='contribution' value='help' iref='ie-1.4'/>
+          <ielementLink type='contribution' value='help' iref='ie-1.2'/>
+          <ielementLink type='contribution' value='help' iref='ie-1.3'/>
+        </ielement>
+        <ielement
+          id='ie-1.7'
+          type='quality'
+          name='diversity [product]'>
+          <ielementLink type='contribution' value='help' iref='ie-1.6'/>
+        </ielement>
+        <ielement
+          id='ie-1.8'
+          type='quality'
+          name='innovation [product]'>
+          <ielementLink type='contribution' value='help' iref='ie-1.6'/>
+        </ielement>
+        <ielement
+          id='ie-1.9'
+          type='quality'
+          name='flexibility in platform development'>
+          <ielementLink type='contribution' value='help' iref='ie-1.8'/>
+        </ielement>
+
+        <ielement
+          id='ie-1.10'
+          type='goal'
+          name='software business be run'>
+        </ielement>
+        <ielement
+          id='ie-1.11'
+          type='task'
+          name='run software business using the open ecosystem'>
+          <ielementLink type='refinement' value='or' iref='ie-1.10'/>
+        </ielement>
+        <ielement
+          id='ie-1.12'
+          type='goal'
+          name='platform be produced'>
+          <ielementLink type='refinement' value='and' iref='ie-1.11'/>
+        </ielement>
+        <ielement
+          id='ie-1.13'
+          type='task'
+          name='build platform'>
+          <ielementLink type='refinement' value='or' iref='ie-1.12'/>
+        </ielement>
+        <ielement
+          id='ie-1.14'
+          type='task'
+          name='integrate OEM components'>
+          <ielementLink type='refinement' value='or' iref='ie-1.12'/>
+        </ielement>
+        <ielement
+          id='ie-1.15'
+          type='task'
+          name='sell software platform'>
+          <ielementLink type='refinement' value='and' iref='ie-1.11'/>
+        </ielement>
+        <ielement
+          id='ie-1.16'
+          type='task'
+          name='supply platform to developer'>
+          <ielementLink type='refinement' value='and' iref='ie-1.15'/>
+          <ielementLink type='contribution' value='make' iref='ie-1.5'/>
+          <ielementLink type='contribution' value='hurt' iref='ie-1.9'/>
+        </ielement>
+        <ielement
+          id='ie-1.17'
+          type='quality'
+          name='developer satisfaction'>
+          <ielementLink type='refinement' value='and' iref='ie-1.16'/>
+        </ielement>
+        <ielement
+          id='ie-1.18'
+          type='goal'
+          name='platform-specific applications be supplied'>
+          <ielementLink type='refinement' value='and' iref='ie-1.16'/>
+          <ielementLink type='contribution' value='make' iref='ie-1.7'/>
+          <ielementLink type='contribution' value='help' iref='ie-1.8'/>
+        </ielement>
+        <ielement
+          id='ie-1.19'
+          type='task'
+          name='provide product related services'>
+          <ielementLink type='refinement' value='and' iref='ie-1.15'/>
+        </ielement>
+        <ielement
+          id='ie-1.20'
+          type='quality'
+          name='quick time-to-market'>
+        </ielement>
+        <ielement
+          id='ie-1.21'
+          type='task'
+          name='build market channel for applications'>
+          <ielementLink type='refinement' value='and' iref='ie-1.19'/>
+          <ielementLink type='contribution' value='help' iref='ie-1.20'/>
+        </ielement>
+        <ielement
+          id='ie-1.22'
+          type='quality'
+          name='user satisfaction'>
+          <ielementLink type='refinement' value='and' iref='ie-1.15'/>
+        </ielement>
+      </boundary>
+    </actor>
+    <actor id='ac-2' type='actor' name='End-user'>
+      <boundary>
+        <ielement
+          id='ie-2.1'
+          type='quality'
+          name='satisfaction'>
+        </ielement>
+        <ielement
+          id='ie-2.2'
+          type='quality'
+          name='quality'>
+          <ielementLink type='contribution' value='help' iref='ie-2.1'/>
+        </ielement>
+        <ielement
+          id='ie-2.3'
+          type='quality'
+          name='variety'>
+          <ielementLink type='contribution' value='help' iref='ie-2.1'/>
+        </ielement>
+        <ielement
+          id='ie-2.4'
+          type='goal'
+          name='have software'>
+        </ielement>
+        <ielement
+          id='ie-2.5'
+          type='task'
+          name='acquire software'>
+          <ielementLink type='refinement' value='or' iref='ie-2.4'/>
+        </ielement>
+        <ielement
+          id='ie-2.6'
+          type='task'
+          name='get platform'>
+          <ielementLink type='refinement' value='and' iref='ie-2.5'/>
+        </ielement>
+        <ielement
+          id='ie-2.7'
+          type='task'
+          name='get application'>
+          <ielementLink type='refinement' value='and' iref='ie-2.5'/>
+        </ielement>
+      </boundary>
+    </actor>
+    <actor id='ac-3' type='actor' name='Developer'>
+      <boundary>
+        <ielement
+          id='ie-3.1'
+          type='quality'
+          name='satisfaction with platform'>
+        </ielement>
+        <ielement
+          id='ie-3.2'
+          type='task'
+          name='create platform-specific applications'>
+          <ielementLink type='refinement' value='and' iref='ie-3.1'/>
+          <ielementLink type='contribution' value='help' iref='ie-3.4'/>
+        </ielement>
+        <ielement
+          id='ie-3.3'
+          type='quality'
+          name='the righ platform be used'>
+          <ielementLink type='contribution' value='help' iref='ie-3.4'/>
+        </ielement>
+        <ielement
+          id='ie-3.4'
+          type='quality'
+          name='profitability from platform'>
+          <ielementLink type='contribution' value='help' iref='ie-3.1'/>
+        </ielement>
+        <ielement
+          id='ie-3.5'
+          type='task'
+          name='adopt open platform'>
+          <ielementLink type='contribution' value='help' iref='ie-3.3'/>
+        </ielement>
+        <ielement
+          id='ie-3.6'
+          type='quality'
+          name='easy to use'>
+          <ielementLink type='refinement' value='and' iref='ie-3.5'/>
+          <ielementLink type='contribution' value='help' iref='ie-3.1'/>
+        </ielement>
+        <ielement
+          id='ie-3.7'
+          type='quality'
+          name='big market'>
+          <ielementLink type='refinement' value='and' iref='ie-3.5'/>
+          <ielementLink type='contribution' value='help' iref='ie-3.4'/>
+        </ielement>
+      </boundary>
+    </actor>
+
+    <dependum
+      id='de-1'
+      type='quality'
+      name='user satisfaction'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1.22'/>
+        <dependee aref='ac-2' iref='ie-2.1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-2'
+      type='resource'
+      name='platform'>
+      <dependency>
+        <depender aref='ac-2' iref='ie-2.6'/>
+        <dependee aref='ac-1' iref='ie-1.15'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-3'
+      type='resource'
+      name='license and maintenance fee'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-3.2'/>
+        <dependee aref='ac-2' iref='ie-2.7'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-4'
+      type='goal'
+      name='applications be supported and maintained'>
+      <dependency>
+        <depender aref='ac-2' iref='ie-2.7'/>
+        <dependee aref='ac-3' iref='ie-3.2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-5'
+      type='resource'
+      name='applications'>
+      <dependency>
+        <depender aref='ac-2' iref='ie-2.7'/>
+        <dependee aref='ac-3' iref='ie-3.2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-6'
+      type='quality'
+      name='attractive application'>
+      <dependency>
+        <depender aref='ac-2' iref='ie-2.7'/>
+        <dependee aref='ac-3' iref='ie-3.2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-7'
+      type='quality'
+      name='good quality'>
+      <dependency>
+        <depender aref='ac-2' iref='ie-2.2'/>
+        <dependee aref='ac-3' iref='ie-3.2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-8'
+      type='quality'
+      name='variety'>
+      <dependency>
+        <depender aref='ac-2' iref='ie-2.3'/>
+        <dependee aref='ac-3' iref='ie-3.2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-9'
+      type='quality'
+      name='visible to end-user'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-3.2'/>
+        <dependee aref='ac-1' iref='ie-1.21'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-10'
+      type='quality'
+      name='quick to market'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-3.2'/>
+        <dependee aref='ac-1' iref='ie-1.21'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-11'
+      type='goal'
+      name='market channel be provided'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-3.2'/>
+        <dependee aref='ac-1' iref='ie-1.21'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-12'
+      type='goal'
+      name='platform-specific applications be developed'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1.18'/>
+        <dependee aref='ac-3' iref='ie-3.2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-13'
+      type='quality'
+      name='creative'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1.18'/>
+        <dependee aref='ac-3' iref='ie-3.2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-14'
+      type='resource'
+      name='revenue share'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1.16'/>
+        <dependee aref='ac-3' iref='ie-3.2'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-15'
+      type='quality'
+      name='developer satisfaction'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1.17'/>
+        <dependee aref='ac-3' iref='ie-3.1'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-16'
+      type='goal'
+      name='platform be supported and maintained'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-3.5'/>
+        <dependee aref='ac-1' iref='ie-1.19'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-17'
+      type='quality'
+      name='powerful platform'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-3.5'/>
+        <dependee aref='ac-1' iref='ie-1.16'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-18'
+      type='resource'
+      name='platform'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-3.5'/>
+        <dependee aref='ac-1' iref='ie-1.16'/>
+      </dependency>
+    </dependum>
+    <dependum
+      id='de-19'
+      type='quality'
+      name='fair condition of use'>
+      <dependency>
+        <depender aref='ac-3' iref='ie-3.5'/>
+        <dependee aref='ac-1' iref='ie-1.16'/>
+      </dependency>
+    </dependum>
+  </diagram>
+</istarml2>

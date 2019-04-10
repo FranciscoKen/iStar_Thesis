@@ -1,6 +1,5 @@
 package Model;
 
-import javafx.util.Pair;
 import org.w3c.dom.Document;
 
 import java.util.ArrayList;
@@ -15,7 +14,7 @@ public class IStarModel {
     private ArrayList<ActorLink> actorLinks;
     private HashMap<String,IntentionalElement> iElements;
     private HashMap<String,Dependency> dependencies;
-    private HashMap<Pair<String,String>,IntentionalElementLink> iElementLinks;
+    private HashMap<ReferencePair,IntentionalElementLink> iElementLinks;
 
     //Constructor
     public IStarModel(){
@@ -56,7 +55,7 @@ public class IStarModel {
 
     public void assignIntentionalElementLink(String from, String to,String actorID, IntentionalElementLinkType type){
         IntentionalElementLink iel = new IntentionalElementLink(actorID,type);
-        Pair<String,String> pair = new Pair<>(from,to);
+        ReferencePair pair = new ReferencePair(from,to);
         iElementLinks.put(pair,iel);
     }
 
@@ -115,7 +114,7 @@ public class IStarModel {
         return dependencies;
     }
 
-    public HashMap<Pair<String, String>, IntentionalElementLink> getiElementLinks() {
+    public HashMap<ReferencePair, IntentionalElementLink> getiElementLinks() {
         return iElementLinks;
     }
 
@@ -179,9 +178,9 @@ public class IStarModel {
 
     public void printIntentionalElementLinks(String actorID){
         System.out.println("There are some links between these elements: ");
-        for(Map.Entry<Pair<String,String>,IntentionalElementLink> entry : iElementLinks.entrySet()){
+        for(Map.Entry<ReferencePair,IntentionalElementLink> entry : iElementLinks.entrySet()){
             if(entry.getValue().getActorID().equals(actorID)){
-                System.out.println("From "+entry.getKey().getKey()+" to "+entry.getKey().getValue()+" type "+entry.getValue().getType());
+                System.out.println("From "+entry.getKey().getFrom()+" to "+entry.getKey().getTo()+" type "+entry.getValue().getType());
             }
         }
     }

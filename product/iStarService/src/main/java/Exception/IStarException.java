@@ -1,4 +1,4 @@
-package Mainan;
+package Exception;
 
 public class IStarException extends Exception {
     public IStarException(String message) {

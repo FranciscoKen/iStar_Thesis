@@ -1,8 +1,8 @@
 package Service;
 
 import ClassGenerator.ClassGenerator;
-import Mainan.ExceptionMessages;
-import Mainan.IStarException;
+import Exception.ExceptionMessages;
+import Exception.IStarException;
 import Model.IStarModel;
 import Extractor.DOMParser;
 import Storage.StorageFileNotFoundException;

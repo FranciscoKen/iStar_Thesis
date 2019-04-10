@@ -1,7 +1,7 @@
-package Mainan;
+package Exception;
 
 public class ExceptionMessages {
-    public static final String heading = "ISTAR VALIDATION ERROR : ";
+    public static final String heading = "ISTAR ERROR : ";
     public static final String sameIDException = "Element ID must be unique";
     public static final String falseSchemaException = "Model doesn't comply to the iStarML XSD";
     public static final String falseFileTypeException = "Istar Model should be kept in .istarml2 file";
