@@ -16,7 +16,7 @@ public class IStarModel {
     private ArrayList<ActorLink> actorLinks;
     private HashMap<String,IntentionalElement> iElements;
     private HashMap<String,Dependency> dependencies;
-    private HashMap<ReferencePair,IntentionalElementLink> iElementLinks;
+    private HashMap<HashMap<String,String>,IntentionalElementLink> iElementLinks;
 
     //Constructor
     public IStarModel(){
@@ -60,7 +60,8 @@ public class IStarModel {
 
     public void assignIntentionalElementLink(String from, String to,String actorID, IntentionalElementLinkType type){
         IntentionalElementLink iel = new IntentionalElementLink(actorID,type);
-        ReferencePair pair = new ReferencePair(from,to);
+        HashMap<String,String> pair = new HashMap<>();
+        pair.put(from,to);
         iElementLinks.put(pair,iel);
     }
 
@@ -119,7 +120,7 @@ public class IStarModel {
         return dependencies;
     }
 
-    public HashMap<ReferencePair, IntentionalElementLink> getiElementLinks() {
+    public HashMap<HashMap<String, String>, IntentionalElementLink> getiElementLinks() {
         return iElementLinks;
     }
 
@@ -183,9 +184,9 @@ public class IStarModel {
 
     public void printIntentionalElementLinks(String actorID){
         System.out.println("There are some links between these elements: ");
-        for(Map.Entry<ReferencePair,IntentionalElementLink> entry : iElementLinks.entrySet()){
+        for(Map.Entry<HashMap<String,String>,IntentionalElementLink> entry : iElementLinks.entrySet()){
             if(entry.getValue().getActorID().equals(actorID)){
-                System.out.println("From "+entry.getKey().getFrom()+" to "+entry.getKey().getTo()+" type "+entry.getValue().getType());
+                System.out.println("From "+entry.getKey().entrySet().iterator().next().getKey()+" to "+entry.getKey().entrySet().iterator().next().getValue()+" type "+entry.getValue().getType());
             }
         }
     }
