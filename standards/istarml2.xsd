@@ -1,87 +1,101 @@
-<?xml version='1.0'?>
+<!--<?xml version='1.0'?>-->
 <xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
-	<xs:element name='istarml2'>
-		<xs:complexType>
-			<xs:any minOccurs='0'>
-				<xs:element name='diagram'>
-					<xs:complexType>
-						<xs:any minOccurs='0'>
-							<xs:element name='actor'
-										minOccurs='1'>
-								<xs:complexType>
-									<xs:any minOccurs='0'>
-										<xs:element name='boundary'>
-											<xs:complexType>
-												<xs:any minOccurs='0'>
-													<xs:element name='ielement'>
-														<xs:complexType>
-															<xs:any minOccurs='0'>
-																<xs:element name='ielementLink'/>
-																<xs:attribute name='type' type='ielementLinkType' use='required'/>
-																<xs:attribute name='value' type='ielementLinkValue' use='required'/>
-																<xs:attributeGroup ref='referenceGroup'/>
-															</xs:any minOccurs='0'>
-														</xs:complexType>
-														<xs:attribute name='type' type='ielementType' use='required'/>
-														<xs:attributeGroup ref='basicIdentityGroup'/>
-														<xs:attribute name='state' type='xs:string'/>
-													</xs:element>
-												</xs:any minOccurs='0'>
-											</xs:complexType>
-										</xs:element>
-										<xs:element name='actorLink'>
-											<xs:complexType>
-												<xs:attribute name='type' type='actorLinkType' use='required'/>
-												<xs:attribute name='aref' type='xs:string'/>
-											</xs:complexType>
-										</xs:element>
-									</xs:any minOccurs='0'>
-								</xs:complexType>
-								<xs:attribute name='type' type='actorType' use='required'/>
-								<xs:attributeGroup ref='basicIdentityGroup'/>
-							</xs:element>
-							<xs:element name='ielement'>
-								<xs:complexType>
-									<xs:any minOccurs='0'>
-										<xs:element name='dependency'>
-											<xs:complexType>
-												<xs:any minOccurs='0'>
-													<xs:element name='depender'>
-														<xs:complexType>
-															<xs:attributeGroup ref='referenceGroup'/>
-														</xs:complexType>
-													</xs:element>
-													<xs:element name='dependee'>
-														<xs:complexType>
-															<xs:attributeGroup ref='referenceGroup'/>
-														</xs:complexType>
-													</xs:element>
-												</xs:any minOccurs='0'>
-											</xs:complexType>
-										</xs:element>
-										<xs:attribute name='type' type='ielementLinkType'/>
-										<xs:attribute name='state' type='xs:string'/>
-										<xs:attributeGroup ref='basicIdentityGroup'/>
-									</xs:any minOccurs='0'>
-								</xs:complexType>
-							</xs:element>
-							<xs:attribute name='name' type='xs:string'/>
-						</xs:any minOccurs='0'>
-					</xs:complexType>
-				</xs:element>
-				<xs:attribute name='version' type='xs:string'/>
-			</xs:any minOccurs='0'>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:attributeGroup name='referenceGroup'>
-		<xs:attribute name='iref' type='xs:string'/>
+  <!-- Diagram Definition -->
+  <xs:element name='istarml2'>
+    <xs:complexType>
+      <xs:sequence minOccurs='0' maxOccurs='unbounded'>
+        <xs:element name='diagram'>
+          <xs:complexType>
+            <xs:sequence>
+				<xs:element name='actor' minOccurs='1' maxOccurs='unbounded'>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name='boundary' maxOccurs='1'>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name='ielement' minOccurs='0' maxOccurs='unbounded'>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name='ielementLink' minOccurs='0' maxOccurs='unbounded'>
+													<xs:complexType>
+														<xs:attribute name='type' type='ielementLinkType' use='required'/>
+														<xs:attribute name='value' type='ielementLinkValue'/>
+														<xs:attributeGroup ref='referenceGroup'/>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+											<xs:attribute name='type' type='ielementType' use='required'/>
+											<xs:attributeGroup ref='basicIdentityGroup'/>
+											<xs:attribute name='state' type='xs:string'/>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name='actorLink' minOccurs='0' maxOccurs='unbounded'>
+							<xs:complexType>
+								<xs:attribute name='type' type='actorLinkType' use='required'/>
+								<xs:attribute name='aref' type='xs:string' use='required'/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name='type' type='actorType' use='required'/>
+					<xs:attributeGroup ref='basicIdentityGroup'/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name='dependum' minOccurs='0' maxOccurs='unbounded'>
+				<xs:complexType>
+					<xs:all minOccurs='1' maxOccurs='1'>
+						<xs:element name='dependency'>
+							<xs:complexType>
+								<xs:all maxOccurs='1'>
+									<xs:element name='depender'>
+										<xs:complexType>
+											<xs:attributeGroup ref='dependencyReference'/>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name='dependee'>
+										<xs:complexType>
+											<xs:attributeGroup ref='dependencyReference'/>
+										</xs:complexType>
+									</xs:element>
+								</xs:all>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+					<xs:attribute name='type' type='ielementType' use='required'/>
+					<xs:attributeGroup ref='basicIdentityGroup'/>
+					<xs:attribute name='state' type='xs:string'/>
+				</xs:complexType>
+			</xs:element>
+			</xs:sequence>
+		  	<xs:attributeGroup ref='diagramAttributes'/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+			<xs:attribute name='version' type='xs:string' use='required'/>
+    </xs:complexType>
+  </xs:element>
+  <!-- Attributes -->
+  <xs:attributeGroup name='referenceGroup'>
+		<xs:attribute name='iref' type='xs:string' use='required'/>
 		<xs:attribute name='aref' type='xs:string'/>
 	</xs:attributeGroup>
+
+	<xs:attributeGroup name='dependencyReference'>
+		<xs:attribute name='iref' type='xs:string'/>
+		<xs:attribute name='aref' type='xs:string' use='required'/>
+	</xs:attributeGroup>	
 
 	<xs:attributeGroup name='basicIdentityGroup'>
 		<xs:attribute name='name' type='xs:string'/>
 		<xs:attribute name='id' type='xs:string' use='required'/>
+	</xs:attributeGroup>
+
+	<xs:attributeGroup name='diagramAttributes'>
+		<xs:attribute name='name' type='xs:string'/>
+		<xs:attribute name='id' type='xs:string'/>
+		<xs:attribute name='author' type='xs:string'/>
 	</xs:attributeGroup>
 
 	<xs:simpleType name='ielementType'>

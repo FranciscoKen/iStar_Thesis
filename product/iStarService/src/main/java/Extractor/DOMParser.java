@@ -1,6 +1,7 @@
 package Extractor;
 
 import Model.*;
+import Exception.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -18,7 +19,7 @@ public class DOMParser {
     public DOMParser() {
     }
 
-    public IStarModel extract(String path){
+    public IStarModel extract(String path) throws IStarException{
         IStarModel model = new IStarModel();
 
         File fxmlFile = new File(path);
@@ -30,16 +31,12 @@ public class DOMParser {
             //get document from file
             Document doc = documentBuilder.parse(fxmlFile);
 
-            //Initialize istar model object
-//            IStarModel model = new IStarModel();
-
             model.setDocument(doc);
 
             //get Root element
             doc.getDocumentElement().normalize();
             Element root = doc.getDocumentElement();
             model.setVersion(root.getAttribute("version"));
-
 
             //extract actors
             NodeList actorList = doc.getElementsByTagName("actor");
@@ -60,6 +57,7 @@ public class DOMParser {
                         type = ActorType.AGENT;
                     break;
                 }
+
                 model.assignActor(actorElement.getAttribute("id"),type,actorElement.getAttribute("name"));
 
                 //extract actor link
@@ -164,7 +162,10 @@ public class DOMParser {
                 model.assignDependency(dependumID,type,dependumName,dependumState,depender,dependee,dependerElement,dependeeElement);
             }
 
-        } catch (ParserConfigurationException e) {
+        } catch (IStarException iex){
+            System.out.println(iex.getMessage());
+            throw new IStarException(iex.getMessage(),iex);
+        } catch(ParserConfigurationException e) {
             e.printStackTrace();
         } catch (SAXException e) {
             e.printStackTrace();

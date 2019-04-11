@@ -1,5 +1,7 @@
 package Model;
 
+import Exception.*;
+
 import org.w3c.dom.Document;
 
 import java.util.ArrayList;
@@ -26,7 +28,10 @@ public class IStarModel {
     }
 
     //assignment methods
-    public void assignActor(String id, ActorType type, String name){
+    public void assignActor(String id, ActorType type, String name) throws IStarException {
+        if(actors.containsKey(id)){
+            throw new IStarException(ExceptionMessages.sameIDException+"[Element "+id+"]");
+        }
         Actor ac = new Actor(id,type);
         ac.setName(name.equals("")?id:name);
         actors.put(id,ac);

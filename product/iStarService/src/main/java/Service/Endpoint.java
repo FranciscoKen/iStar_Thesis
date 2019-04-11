@@ -49,9 +49,11 @@ public class Endpoint {
             //VALIDATE SCHEMA
             XMLValidator validator = new XMLValidator("TEMP/model/"+file.getOriginalFilename());
             validator.validateXMLSchema();
+            validator.validateModel();
         } catch(IStarException iex){
             return new ResponseEntity<>(iex.getMessage(), HttpStatus.BAD_REQUEST);
         } catch (Exception e){
+            e.printStackTrace();
             return new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -85,6 +87,7 @@ public class Endpoint {
         } catch (IStarException iex) {
             return new ResponseEntity<>(iex.getMessage(),HttpStatus.BAD_REQUEST);
         } catch (Exception e){
+            e.printStackTrace();
             return new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -118,7 +121,8 @@ public class Endpoint {
         headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=class.png");
 
         if(!file.exists()){
-            return new ResponseEntity<>(ExceptionMessages.classResourceNotExist,HttpStatus.NOT_FOUND);
+            System.out.println("FILE NOT FOUND");
+            return new ResponseEntity<>(ExceptionMessages.classResourceNotExistException,HttpStatus.NOT_FOUND);
         }
         Path path = Paths.get(file.getAbsolutePath());
         ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
@@ -138,7 +142,8 @@ public class Endpoint {
         headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=class.ocl");
 
         if(!file.exists()){
-            return new ResponseEntity<>(ExceptionMessages.classResourceNotExist,HttpStatus.NOT_FOUND);
+            System.out.println("File not exist!");
+            return new ResponseEntity<>(ExceptionMessages.classResourceNotExistException,HttpStatus.NOT_FOUND);
         }
         Path path = Paths.get(file.getAbsolutePath());
         ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));

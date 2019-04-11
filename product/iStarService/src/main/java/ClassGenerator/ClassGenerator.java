@@ -1,7 +1,6 @@
 package ClassGenerator;
 
 import Model.*;
-import javafx.util.Pair;
 import net.sourceforge.plantuml.SourceStringReader;
 
 import java.io.*;
@@ -235,50 +234,54 @@ public class ClassGenerator {
 
             }
 
-            //flush semua refinement link OCL
-            for(Map.Entry<String,ArrayList<String>> entry : refinement_pair.entrySet()){
-                String junction="";
-                if(model.getiElementLinks().get(new Pair<>(entry.getValue().get(0),entry.getKey())).getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
-                    junction = " and ";
-                } else if(model.getiElementLinks().get(new Pair<>(entry.getValue().get(0),entry.getKey())).getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
-                    junction = " or ";
-                }
-                if(isContainTask(entry.getKey(),entry.getValue(),model)){
-                    String temp_pre ="";
-                    String temp_post="";
-                    for(String s : entry.getValue()){
-                        if(model.getiElements().get(s).getType().equals(IntentionalElementType.TASK)){
-                            temp_pre += model.getiElements().get(s).getName()+".preCondition=\"Value\" "+junction;
-                            temp_post += junction + model.getiElements().get(s).getName()+".postCondition=\"Value\" ";
-                        } else {
-                            temp_pre += model.getiElements().get(s).getName()+"=true "+junction;
+            if(refinement_pair.size()>0){
+                //flush semua refinement link OCL
+                for(Map.Entry<String,ArrayList<String>> entry : refinement_pair.entrySet()){
+                    String junction="";
+                    if(model.getiElementLinks().get(new ReferencePair(entry.getValue().get(0),entry.getKey())).getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
+                        junction = " and ";
+                    } else if(model.getiElementLinks().get(new ReferencePair(entry.getValue().get(0),entry.getKey())).getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
+                        junction = " or ";
+                    }
+                    if(isContainTask(entry.getKey(),entry.getValue(),model)){
+                        String temp_pre ="";
+                        String temp_post="";
+                        for(String s : entry.getValue()){
+                            if(model.getiElements().get(s).getType().equals(IntentionalElementType.TASK)){
+                                temp_pre += model.getiElements().get(s).getName()+".preCondition=\"Value\" "+junction;
+                                temp_post += junction + model.getiElements().get(s).getName()+".postCondition=\"Value\" ";
+                            } else {
+                                temp_pre += model.getiElements().get(s).getName()+"=true "+junction;
+                            }
                         }
-                    }
-                    if(model.getiElements().get(entry.getKey()).getType().equals(IntentionalElementType.TASK)){
-                        temp_pre += model.getiElements().get(entry.getKey()).getName()+".preCondition=\"Value\" "+junction;
-                        temp_post += model.getiElements().get(entry.getKey()).getName()+".postCondition=\"Value\" ";
-                    } else {
-                        temp_post += model.getiElements().get(entry.getKey()).getName() + "=true";
-                    }
+                        if(model.getiElements().get(entry.getKey()).getType().equals(IntentionalElementType.TASK)){
+                            temp_pre += model.getiElements().get(entry.getKey()).getName()+".preCondition=\"Value\" "+junction;
+                            temp_post += model.getiElements().get(entry.getKey()).getName()+".postCondition=\"Value\" ";
+                        } else {
+                            temp_post += model.getiElements().get(entry.getKey()).getName() + "=true";
+                        }
 
-                    ocl.addPrePostOCL(currentActor,
-                            model.getiElements().get(entry.getKey()).getName(),
-                            temp_pre,
-                            temp_post);
-                } else {
-                    String temp_implication="";
-                    String temp_cause = "";
-                    for(String s : entry.getValue()){
-                        temp_cause += model.getiElements().get(s).getName()+"=true";
-                        temp_cause += junction;
+                        ocl.addPrePostOCL(currentActor,
+                                model.getiElements().get(entry.getKey()).getName(),
+                                temp_pre,
+                                temp_post);
+                    } else {
+                        String temp_implication="";
+                        String temp_cause = "";
+                        for(String s : entry.getValue()){
+                            temp_cause += model.getiElements().get(s).getName()+"=true";
+                            temp_cause += junction;
+                        }
+                        temp_implication += model.getiElements().get(entry.getKey()).getName()+"=true";
+                        ocl.addImplicationOCL(currentActor,
+                                model.getiElements().get(entry.getKey()).getName(),
+                                temp_cause,
+                                temp_implication);
                     }
-                    temp_implication += model.getiElements().get(entry.getKey()).getName()+"=true";
-                    ocl.addImplicationOCL(currentActor,
-                            model.getiElements().get(entry.getKey()).getName(),
-                            temp_cause,
-                            temp_implication);
                 }
             }
+
+
         }
 
         temp_resource = null;

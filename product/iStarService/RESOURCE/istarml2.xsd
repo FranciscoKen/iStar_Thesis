@@ -69,6 +69,7 @@
 				</xs:complexType>
 			</xs:element>
 			</xs:sequence>
+		  	<xs:attributeGroup ref='diagramAttributes'/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
@@ -89,6 +90,12 @@
 	<xs:attributeGroup name='basicIdentityGroup'>
 		<xs:attribute name='name' type='xs:string'/>
 		<xs:attribute name='id' type='xs:string' use='required'/>
+	</xs:attributeGroup>
+
+	<xs:attributeGroup name='diagramAttributes'>
+		<xs:attribute name='name' type='xs:string'/>
+		<xs:attribute name='id' type='xs:string'/>
+		<xs:attribute name='author' type='xs:string'/>
 	</xs:attributeGroup>
 
 	<xs:simpleType name='ielementType'>
