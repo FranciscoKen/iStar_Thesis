@@ -45,7 +45,4 @@ public class XMLValidator {
         return true;
     }
 
-    public void validateModel(){
-
-    }
 }

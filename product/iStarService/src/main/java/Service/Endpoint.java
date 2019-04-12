@@ -17,6 +17,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import validator.ModelValidator;
 import validator.XMLValidator;
 
 import java.io.File;
@@ -25,6 +26,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.HashMap;
 import java.util.UUID;
 
 @RestController
@@ -39,7 +41,7 @@ public class Endpoint {
 
     @CrossOrigin
     @PostMapping("/istar-service/validate")
-    public ResponseEntity<String> validate(@RequestParam(value="file")MultipartFile file){
+    public ResponseEntity<?> validate(@RequestParam(value="file")MultipartFile file){
 
         try {
             validateiStarML2File(file);
@@ -49,17 +51,25 @@ public class Endpoint {
             //VALIDATE SCHEMA
             XMLValidator validator = new XMLValidator("TEMP/model/"+file.getOriginalFilename());
             validator.validateXMLSchema();
-            validator.validateModel();
+
+            DOMParser parser = new DOMParser();
+            IStarModel model = parser.extract("TEMP/model/"+file.getOriginalFilename());
+
+            //VALIDATE MODEL
+            ModelValidator mv = new ModelValidator();
+            mv.validateModel(model);
         } catch(IStarException iex){
-            return new ResponseEntity<>(iex.getMessage(), HttpStatus.BAD_REQUEST);
+            storageService.deleteAll();
+            return new ResponseEntity<>(jsonify("error",iex.getMessage()), HttpStatus.BAD_REQUEST);
         } catch (Exception e){
             e.printStackTrace();
-            return new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
+            storageService.deleteAll();
+            return new ResponseEntity<>(jsonify("error",e.getMessage()),HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
         //TODO Implement Validation Rule
 
-
+        storageService.deleteAll();
 
         return new ResponseEntity<>("",HttpStatus.OK);
     }
@@ -67,7 +77,7 @@ public class Endpoint {
     /////////////////////////////////////////////////////////////////////
     @CrossOrigin
     @PostMapping("/istar-service/class-diagram")
-    public ResponseEntity<String> classDiagram(@RequestParam(value="file")MultipartFile file){
+    public ResponseEntity<?> classDiagram(@RequestParam(value="file")MultipartFile file){
         String uid = "";
         try {
             validateiStarML2File(file);
@@ -85,15 +95,17 @@ public class Endpoint {
             generator.generateClassDiagram(model);
 
         } catch (IStarException iex) {
-            return new ResponseEntity<>(iex.getMessage(),HttpStatus.BAD_REQUEST);
+            storageService.deleteAll();
+            return new ResponseEntity<>(jsonify("error",iex.getMessage()),HttpStatus.BAD_REQUEST);
         } catch (Exception e){
             e.printStackTrace();
-            return new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
+            storageService.deleteAll();
+            return new ResponseEntity<>(jsonify("error",e.getMessage()),HttpStatus.INTERNAL_SERVER_ERROR);
         }
-
-        return new ResponseEntity<>(uid,HttpStatus.CREATED);
+        storageService.deleteAll();
+        return new ResponseEntity<>(jsonify("uid",uid),HttpStatus.CREATED);
     }
-
+//
     @CrossOrigin
     @RequestMapping(path = "/istarml2-xsd", method = RequestMethod.GET)
     public ResponseEntity<Resource> download(String param) throws IOException {
@@ -122,7 +134,7 @@ public class Endpoint {
 
         if(!file.exists()){
             System.out.println("FILE NOT FOUND");
-            return new ResponseEntity<>(ExceptionMessages.classResourceNotExistException,HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(jsonify("error",ExceptionMessages.classResourceNotExistException),HttpStatus.NOT_FOUND);
         }
         Path path = Paths.get(file.getAbsolutePath());
         ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
@@ -143,7 +155,7 @@ public class Endpoint {
 
         if(!file.exists()){
             System.out.println("File not exist!");
-            return new ResponseEntity<>(ExceptionMessages.classResourceNotExistException,HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(jsonify("error",ExceptionMessages.classResourceNotExistException),HttpStatus.NOT_FOUND);
         }
         Path path = Paths.get(file.getAbsolutePath());
         ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
@@ -296,5 +308,11 @@ public class Endpoint {
         if(!FilenameUtils.getExtension(file.getOriginalFilename()).equals("istarml2")) {
             throw new IStarException(ExceptionMessages.falseFileTypeException);
         }
+    }
+
+    private HashMap<String,String> jsonify(String key, String message){
+        HashMap<String,String> obj = new HashMap<>();
+        obj.put(key,message);
+        return obj;
     }
 }

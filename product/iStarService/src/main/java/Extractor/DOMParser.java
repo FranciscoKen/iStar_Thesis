@@ -92,19 +92,17 @@ public class DOMParser {
                                 Element ieLinkElement = (Element) intentionalElementLinkList.item(itr);
                                 IntentionalElementLinkType linkType = null;
 
-                                //TODO implement extraction
                                 if(ieLinkElement.getAttribute("type").equals("refinement")){
-
                                     if(ieLinkElement.getAttribute("value").equals("and")){
                                         linkType = IntentionalElementLinkType.REFINEMENT_AND;
                                     } else if(ieLinkElement.getAttribute("value").equals("or")){
                                         linkType = IntentionalElementLinkType.REFINEMENT_OR;
                                     } else {
-                                        //TODO implement error handling for wrong value in refinement
+                                        throw new IStarException(ExceptionMessages.heading+ExceptionMessages.refinementValueException);
                                     }
                                 } else if(ieLinkElement.getAttribute("type").equals("qualification")){
                                     linkType = IntentionalElementLinkType.QUALIFICATION;
-                                } else if(ieLinkElement.getAttribute("type").equals("neededby")){
+                                } else if(ieLinkElement.getAttribute("type").equals("neededBy")){
                                     linkType = IntentionalElementLinkType.NEEDEDBY;
                                 } else if(ieLinkElement.getAttribute("type").equals("contribution")){
                                     if(ieLinkElement.getAttribute("value").equals("make")){
@@ -116,7 +114,7 @@ public class DOMParser {
                                     } else if(ieLinkElement.getAttribute("value").equals("break")){
                                         linkType = IntentionalElementLinkType.CONTRIBUTION_BREAK;
                                     } else {
-                                        //TODO implement incorrect value in contribution link
+                                        throw new IStarException(ExceptionMessages.heading+ExceptionMessages.contributionValueException);
                                     }
                                 }
                                 model.assignIntentionalElementLink(currentIElementID,ieLinkElement.getAttribute("iref"),currentActorID,linkType);

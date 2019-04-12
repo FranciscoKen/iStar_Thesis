@@ -134,7 +134,6 @@ public class ClassGenerator {
 
         //Intentional Element Links conversion
         iStarOCL ocl = new iStarOCL();
-        //TODO PIKIRIN DOSA ANDA OHMAIGAT SUCH A TRAVERSTY DATATYPE HAHAHAHHAHAHAHA
         for(Map.Entry<String,Actor> a : model.getActors().entrySet()){
             String currentActor = a.getKey();
             HashMap<String,ArrayList<String>> refinement_pair = new HashMap<>();
@@ -157,9 +156,9 @@ public class ClassGenerator {
                                     iElementToName+".preCondition=\"Value\"",
                                     iElementToName+".postCondition=\"Value\" and "+iElementFromName+"=true");
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
-                            //TODO IMPLEMENT REFINEMENT_AND IN TASK
+
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
-                            //TODO IMPLEMENT REFINEMENT_OR IN TASK
+
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_MAKE) ||
                                 iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_HELP)){
                             ocl.addPrePostOCL(currentActorName,
@@ -209,9 +208,9 @@ public class ClassGenerator {
                                         iElementToName+"=false");
                             }
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
-                            //TODO IMPLEMENT REFINEMENT NON TASK OR
+
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
-                            //TODO IMPLEMENT REFINEMENT NON TASK AND
+
                         }
                     }
 

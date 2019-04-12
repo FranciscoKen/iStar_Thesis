@@ -9,7 +9,15 @@ public class ExceptionMessages {
     public static final String classResourceNotExistException = "Class Resource does not exist. Please make sure that you are using the right UID or please make another class diagram request";
     public static final String referencedElementNotFoundException ="Element in which you referenced does not exist";
 
+    public static final String refinementValueException = "Intentional Element Link refinement only consists of AND and OR value";
+    public static final String refinementElementTypeException = "Intentional Element Link and refinement should be connecting intentional element with type task and goal";
 
+    public static final String contributionValueException ="Intentional Element Link contribution only consists of MAKE, HELP, HURT, and BREAK value";
+    public static final String contributionElementTypeException = "Intentional Element Link contribution should only be connecting between task, resource, or goal to a quality";
+
+    public static final String qualificationElementTypeException = "Intentional Element Link qualification should only connect quality element to a goal, task, or resource";
+
+    public static final String neededByElementTypeException = "Intentional Element Link Needed by should only connect task and resource";
     public static final String isaWrongActorElement = "Actor Element Link with type is-a should be between actors and roles";
     public ExceptionMessages(){
 

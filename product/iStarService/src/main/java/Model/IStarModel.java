@@ -42,7 +42,10 @@ public class IStarModel {
         actorLinks.add(acl);
     }
 
-    public void assignIntentionalElement(String id, IntentionalElementType type, String name, String state,String actorID){
+    public void assignIntentionalElement(String id, IntentionalElementType type, String name, String state,String actorID) throws IStarException{
+        if(iElements.containsKey(id)){
+            throw new IStarException(ExceptionMessages.sameIDException+"[Element "+id+"]");
+        }
         IntentionalElement ie = new IntentionalElement(type,actorID);
         ie.setName(name.equals("")?id:name);
         ie.setState(state);
