@@ -2,25 +2,25 @@ package Mainan;
 
 import Model.ReferencePair;
 
+import java.io.IOException;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.HashMap;
 
 public class Mainan {
-    public static void main(String[] args){
-        ReferencePair pair1 = new ReferencePair("aa","bb");
-        ReferencePair pair2 = new ReferencePair("aa","bb");
-
-        HashMap<String,String> pairMap = new HashMap<>();
-
-        pairMap.put("aa","bb");
-
-//        System.out.println(pair1.equals(pair2));
-
-        HashMap<HashMap<String,String>,String> map = new HashMap<>();
-        map.put(pairMap,"BWEEE");
-//        map.put(pair2,"BWEEE");
+    public static void main(String[] args) throws IOException{
+        Path directory = Paths.get("TEMP/model");
+//        Files.walkFileTree(directory, new SimpleFileVisitor<Path>(){
+//            @Override
+//            public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+//                Files.delete(file);
+//                return FileVisitResult.CONTINUE;
+//            }
 //
-//        System.out.println(map.get(pair1));
-
-        System.out.println(map.get(pairMap));
+//            @Override
+//            public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+//                return FileVisitResult.CONTINUE;
+//            }
+//        });
     }
 }

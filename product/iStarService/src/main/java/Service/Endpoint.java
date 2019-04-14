@@ -60,6 +60,7 @@ public class Endpoint {
             mv.validateModel(model);
         } catch(IStarException iex){
             storageService.deleteAll();
+
             return new ResponseEntity<>(jsonify("error",iex.getMessage()), HttpStatus.BAD_REQUEST);
         } catch (Exception e){
             e.printStackTrace();
@@ -69,7 +70,7 @@ public class Endpoint {
 
         //TODO Implement Validation Rule
 
-//        storageService.deleteAll();
+        storageService.deleteAll();
 
         return new ResponseEntity<>("",HttpStatus.OK);
     }
@@ -102,7 +103,7 @@ public class Endpoint {
             storageService.deleteAll();
             return new ResponseEntity<>(jsonify("error",e.getMessage()),HttpStatus.INTERNAL_SERVER_ERROR);
         }
-//        storageService.deleteAll();
+        storageService.deleteAll();
         return new ResponseEntity<>(jsonify("uid",uid),HttpStatus.CREATED);
     }
 //

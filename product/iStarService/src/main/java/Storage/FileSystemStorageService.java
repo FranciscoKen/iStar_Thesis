@@ -9,9 +9,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.stream.Stream;
 
 @Service
@@ -69,7 +68,26 @@ public class FileSystemStorageService implements StorageService{
 
     @Override
     public void deleteAll(){
-        FileSystemUtils.deleteRecursively(rootLocation.toFile());
+        Path directory = rootLocation;
+        try {
+            Files.walkFileTree(directory, new SimpleFileVisitor<Path>(){
+                @Override
+                public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+                    Files.delete(file);
+                    return FileVisitResult.CONTINUE;
+                }
+
+                @Override
+                public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+                    return FileVisitResult.CONTINUE;
+                }
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+//        FileSystemUtils.deleteRecursively(rootLocation.toFile());
+
     }
 
     @Override

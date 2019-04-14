@@ -70,8 +70,8 @@ public class ModelValidator{
                     throw new IStarException(ExceptionMessages.heading+ExceptionMessages.contributionElementTypeException);
                 }
             } else if(entry.getValue().getType().equals(IntentionalElementLinkType.NEEDEDBY)){
-                if(model.getiElements().get(entry.getKey().entrySet().iterator().next().getValue()).getType().equals(IntentionalElementType.RESOURCE) &&
-                model.getiElements().get(entry.getKey().entrySet().iterator().next().getKey()).getType().equals(IntentionalElementType.TASK)){
+                if(model.getiElements().get(entry.getKey().entrySet().iterator().next().getKey()).getType().equals(IntentionalElementType.RESOURCE) &&
+                model.getiElements().get(entry.getKey().entrySet().iterator().next().getValue()).getType().equals(IntentionalElementType.TASK)){
 
                 } else {
                     throw new IStarException(ExceptionMessages.heading+ExceptionMessages.neededByElementTypeException);
