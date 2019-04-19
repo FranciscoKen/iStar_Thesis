@@ -6,8 +6,7 @@
  * Updated to v0.6.1  on September 20 of 2007 By Carlos Cares
  */
 
-package Mainan.ccistarml;
-import java.awt.event.ItemEvent;
+package IStarML.ccistarml;
 import java.util.*;
 
 public class ERelement {

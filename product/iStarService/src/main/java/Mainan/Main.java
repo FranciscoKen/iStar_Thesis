@@ -8,13 +8,11 @@
  * Updated to v0.6.1  on September 20 of 2007 By Carlos Cares
  */
 package Mainan;
-import Mainan.ccistarml.ERelement;
-import Mainan.ccistarml.ERelementList;
-import Mainan.ccistarml.ccistarmlFile;
+import IStarML.ccistarml.ERelement;
+import IStarML.ccistarml.ERelementList;
+import IStarML.ccistarml.ccistarmlFile;
 
 import java.lang.String;
-import java.util.*;
-import java.io.*;
 
 public class Main {
     

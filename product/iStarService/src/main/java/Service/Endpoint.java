@@ -3,12 +3,12 @@ package Service;
 import ClassGenerator.ClassGenerator;
 import Exception.ExceptionMessages;
 import Exception.IStarException;
-import Mainan.IstarMLHandler;
+import IStarML.IstarMLHandler;
 import Model.IStarModel;
 import Extractor.DOMParser;
-import Storage.StorageFileNotFoundException;
 import Storage.StorageService;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
@@ -21,12 +21,12 @@ import org.springframework.web.multipart.MultipartFile;
 import validator.ModelValidator;
 import validator.XMLValidator;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -170,12 +170,22 @@ public class Endpoint {
 
     @CrossOrigin
     @PostMapping(value="/dummy/validate-istarml")
-    public ResponseEntity<?> validateiStarML(@RequestParam(value="istarml") String model) {
-        IstarMLHandler imlh = new IstarMLHandler(model);
+    public ResponseEntity<?> validateiStarML(@RequestParam(value="istarml") MultipartFile model) {
+        String string_model ="";
+        try {
+            ByteArrayInputStream stream = new ByteArrayInputStream(model.getBytes());
+            string_model = IOUtils.toString(stream,"UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new ResponseEntity<>("",HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        IstarMLHandler imlh = new IstarMLHandler(string_model);
         try {
             imlh.validate();
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println(e.getMessage());
             return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
         }
 
