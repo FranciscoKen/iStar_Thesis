@@ -264,7 +264,7 @@ public class ClassGenerator {
                             temp_post += model.getiElements().get(entry.getKey()).getName() + "=true";
                         }
 
-                        ocl.addPrePostOCL(currentActor,
+                        ocl.addPrePostOCL(model.getActors().get(currentActor).getName(),
                                 model.getiElements().get(entry.getKey()).getName(),
                                 temp_pre,
                                 temp_post);
@@ -276,7 +276,7 @@ public class ClassGenerator {
                             temp_cause += junction;
                         }
                         temp_implication += model.getiElements().get(entry.getKey()).getName()+"=true";
-                        ocl.addImplicationOCL(currentActor,
+                        ocl.addImplicationOCL(model.getActors().get(currentActor).getName(),
                                 model.getiElements().get(entry.getKey()).getName(),
                                 temp_cause,
                                 temp_implication);

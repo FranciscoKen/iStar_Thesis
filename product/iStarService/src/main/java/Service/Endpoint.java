@@ -18,12 +18,23 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 import validator.ModelValidator;
 import validator.XMLValidator;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -169,8 +180,76 @@ public class Endpoint {
     }
 
     @CrossOrigin
-    @PostMapping(value="/dummy/validate-istarml")
-    public ResponseEntity<?> validateiStarML(@RequestParam(value="istarml") MultipartFile model) {
+    @PostMapping(value="/istar-service/convert-istarml")
+    public ResponseEntity<?> convertiStarML(@RequestParam(value="file") MultipartFile model) {
+        String string_model ="";
+        Document doc;
+        try {
+            ByteArrayInputStream stream = new ByteArrayInputStream(model.getBytes());
+            string_model = IOUtils.toString(stream,"UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new ResponseEntity<>("",HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+        IstarMLHandler imlh = new IstarMLHandler(string_model);
+        try {
+            imlh.validate();
+            doc = imlh.translateIStarML(string_model);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+            return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
+        }
+
+
+        try {
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = null;
+            transformer = transformerFactory.newTransformer();
+            DOMSource domSource = new DOMSource(doc);
+            StreamResult streamResult= new StreamResult(new File("TEMP/response.istarml2"));
+            transformer.transform(domSource,streamResult);
+        } catch (TransformerException e) {
+            e.printStackTrace();
+            return new ResponseEntity<>("",HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
+
+//        BufferedWriter fw = null;
+//        try {
+//            fw = new BufferedWriter(new FileWriter("TEMP/response.istarml2"));
+//            fw.write(string_model);
+//            fw.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//            return new ResponseEntity<>("",HttpStatus.INTERNAL_SERVER_ERROR);
+//        }
+
+
+        File responseFile = new File("TEMP/response.istarml2");
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=response.istarml2");
+
+        Path path = Paths.get(responseFile.getAbsolutePath());
+        try {
+            ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
+            return ResponseEntity.ok()
+                    .headers(headers)
+                    .contentLength(responseFile.length())
+                    .contentType(MediaType.parseMediaType("application/octet-stream"))
+                    .body(resource);
+
+        } catch (IOException e) {
+            return new ResponseEntity<>("Something went wrong",HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
+
+    @CrossOrigin
+    @PostMapping(value="/dummy/convert-istarml")
+    public ResponseEntity<?> dummy_convertiStarML(@RequestParam(value="file") MultipartFile model) {
         String string_model ="";
         try {
             ByteArrayInputStream stream = new ByteArrayInputStream(model.getBytes());
@@ -183,26 +262,14 @@ public class Endpoint {
         IstarMLHandler imlh = new IstarMLHandler(string_model);
         try {
             imlh.validate();
+
+            imlh.translateIStarML(string_model);
+
+
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.getMessage());
             return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
-        }
-
-        return new ResponseEntity<>("", HttpStatus.OK);
-    }
-
-
-    @CrossOrigin
-    @PostMapping(value="/dummy/convert-istarml")
-    public ResponseEntity<Resource> convertiStarML(@RequestParam(value="file") MultipartFile file) throws IOException {
-
-        try{
-            if(FilenameUtils.getExtension(file.getOriginalFilename()).equals("istarml") && !file.isEmpty()) {
-                throw new Exception("Wrong file type or file is empty");
-            }
-        } catch (Exception e){
-            e.printStackTrace();
         }
 
         File responseFile = new File("TEMP/dummy/developer-SR.istarml2");
@@ -210,14 +277,17 @@ public class Endpoint {
         headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=developer-SR.istarml2");
 
         Path path = Paths.get(responseFile.getAbsolutePath());
-        ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
+        try {
+            ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
+            return ResponseEntity.ok()
+                    .headers(headers)
+                    .contentLength(responseFile.length())
+                    .contentType(MediaType.parseMediaType("application/octet-stream"))
+                    .body(resource);
 
-
-        return ResponseEntity.ok()
-                .headers(headers)
-                .contentLength(responseFile.length())
-                .contentType(MediaType.parseMediaType("application/octet-stream"))
-                .body(resource);
+        } catch (IOException e) {
+            return new ResponseEntity<>("Something went wrong",HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
 
