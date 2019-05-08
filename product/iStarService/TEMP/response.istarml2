@@ -1,449 +1,449 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><istarml2 version="1.0">
    <diagram name="developer.ood">
-      <graphic content="SVG"/>
+      
       <dependum id="_TYqFoF81EemzhvnfRvHumA" name="User satisfaction" type="quality">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+         
          <dependency>
             <depender aref="_by8RsF8yEemzhvnfRvHumA" iref="_fvrNAF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_SNGG4F80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
       </dependum>
-      <ielement id="_UpDWgF81EemzhvnfRvHumA" name="Platform" type="resource">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      <dependum id="_UpDWgF81EemzhvnfRvHumA" name="Platform" type="resource">
+         
          <dependency>
             <depender aref="_by8RsF8yEemzhvnfRvHumA" iref="_kWaHkF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_GlmfUF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
-      </ielement>
+      </dependum>
       <dependum id="_cNnUIF81EemzhvnfRvHumA" name="Variety" type="quality">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+         
          <dependency>
             <depender aref="_by8RsF8yEemzhvnfRvHumA" iref="_mYf7IF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
       </dependum>
-      <ielement id="_e3p4gF81EemzhvnfRvHumA" name="Good quality" type="softgoal">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      <dependum id="_e3p4gF81EemzhvnfRvHumA" name="Good quality" type="quality">
+         
          <dependency>
             <depender aref="_by8RsF8yEemzhvnfRvHumA" iref="_nDmtoF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
-            </dependee>
-         </dependency>
-      </ielement>
-      <dependum id="_httfoF81EemzhvnfRvHumA" name="Attractive application" type="quality">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-         <dependency>
-            <depender aref="_by8RsF8yEemzhvnfRvHumA" iref="_lXLBAF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
-            </depender>
-            <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
       </dependum>
-      <ielement id="_oJsroF81EemzhvnfRvHumA" name="Applications" type="resource">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      <dependum id="_httfoF81EemzhvnfRvHumA" name="Attractive application" type="quality">
+         
          <dependency>
             <depender aref="_by8RsF8yEemzhvnfRvHumA" iref="_lXLBAF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
-      </ielement>
-      <dependum id="_x204QF81EemzhvnfRvHumA" name="Applications be supported and maintained" type="goal">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      </dependum>
+      <dependum id="_oJsroF81EemzhvnfRvHumA" name="Applications" type="resource">
+         
          <dependency>
             <depender aref="_by8RsF8yEemzhvnfRvHumA" iref="_lXLBAF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
+            </dependee>
+         </dependency>
+      </dependum>
+      <dependum id="_x204QF81EemzhvnfRvHumA" name="Applications be supported and maintained" type="goal">
+         
+         <dependency>
+            <depender aref="_by8RsF8yEemzhvnfRvHumA" iref="_lXLBAF8yEemzhvnfRvHumA">
+               
+            </depender>
+            <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
+               
             </dependee>
          </dependency>
       </dependum>
       <dependum id="__5wngF81EemzhvnfRvHumA" name="License and maintenance fee" type="resource">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+         
          <dependency>
             <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_by8RsF8yEemzhvnfRvHumA" iref="_lXLBAF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
       </dependum>
       <dependum id="_DPAFAF82EemzhvnfRvHumA" name="Market channel be provided" type="goal">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+         
          <dependency>
             <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_sZQ40F80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
       </dependum>
       <dependum id="_ICK5EF82EemzhvnfRvHumA" name="Quick to market" type="quality">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+         
          <dependency>
             <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_sZQ40F80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
       </dependum>
-      <ielement id="_BmRhwF84EemzhvnfRvHumA" name="Visible to end user" type="softgoal">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      <dependum id="_BmRhwF84EemzhvnfRvHumA" name="Visible to end user" type="quality">
+         
          <dependency>
             <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_sZQ40F80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
-      </ielement>
-      <ielement id="_GpkcgF84EemzhvnfRvHumA" name="Platform specific applications be developed" type="goal">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      </dependum>
+      <dependum id="_GpkcgF84EemzhvnfRvHumA" name="Platform specific applications be developed" type="goal">
+         
          <dependency>
             <depender aref="_aUiaAF8yEemzhvnfRvHumA" iref="_fLpoAF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
-      </ielement>
-      <ielement id="_MG_ugF84EemzhvnfRvHumA" name="Creative" type="softgoal">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      </dependum>
+      <dependum id="_MG_ugF84EemzhvnfRvHumA" name="Creative" type="quality">
+         
          <dependency>
             <depender aref="_aUiaAF8yEemzhvnfRvHumA" iref="_fLpoAF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
-      </ielement>
-      <ielement id="_OrZk8F84EemzhvnfRvHumA" name="Revenue share" type="resource">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      </dependum>
+      <dependum id="_OrZk8F84EemzhvnfRvHumA" name="Revenue share" type="resource">
+         
          <dependency>
             <depender aref="_aUiaAF8yEemzhvnfRvHumA" iref="_T8SzoF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_6mh6sF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
-      </ielement>
+      </dependum>
       <dependum id="_Skad4F84EemzhvnfRvHumA" name="Developer satisfaction" type="quality">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+         
          <dependency>
             <depender aref="_aUiaAF8yEemzhvnfRvHumA" iref="_bbIjwF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_dHZjMF8yEemzhvnfRvHumA" iref="_1jPnAF8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
       </dependum>
-      <ielement id="_YsqOgF84EemzhvnfRvHumA" name="Platform be supported and maintained" type="goal">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      <dependum id="_YsqOgF84EemzhvnfRvHumA" name="Platform be supported and maintained" type="goal">
+         
          <dependency>
             <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_5LA-8F8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_YWrUQF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
-            </dependee>
-         </dependency>
-      </ielement>
-      <dependum id="_c5sPoF84EemzhvnfRvHumA" name="Powerful platform" type="quality">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-         <dependency>
-            <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_5LA-8F8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
-            </depender>
-            <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_T8SzoF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
       </dependum>
-      <ielement id="_f0hCAF84EemzhvnfRvHumA" name="Platform" type="resource">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      <dependum id="_c5sPoF84EemzhvnfRvHumA" name="Powerful platform" type="quality">
+         
          <dependency>
             <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_5LA-8F8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_T8SzoF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </dependee>
          </dependency>
-      </ielement>
-      <dependum id="_iKFyQF84EemzhvnfRvHumA" name="Fair condition of use" type="quality">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+      </dependum>
+      <dependum id="_f0hCAF84EemzhvnfRvHumA" name="Platform" type="resource">
+         
          <dependency>
             <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_5LA-8F8yEemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
             </depender>
             <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_T8SzoF80EemzhvnfRvHumA">
-               <graphic content="SVG"/>
+               
+            </dependee>
+         </dependency>
+      </dependum>
+      <dependum id="_iKFyQF84EemzhvnfRvHumA" name="Fair condition of use" type="quality">
+         
+         <dependency>
+            <depender aref="_dHZjMF8yEemzhvnfRvHumA" iref="_5LA-8F8yEemzhvnfRvHumA">
+               
+            </depender>
+            <dependee aref="_aUiaAF8yEemzhvnfRvHumA" iref="_T8SzoF80EemzhvnfRvHumA">
+               
             </dependee>
          </dependency>
       </dependum>
       <actor id="_aUiaAF8yEemzhvnfRvHumA" name="Software Vendor" type="actor">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="100" unit="pt" width="100" xpos="0" ypos="0"/>
+         
          <boundary>
-            <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="744" shape="ellipse" unit="pt" width="1068" xpos="192" ypos="24"/>
+            
             <ielement id="_RrBKAF8zEemzhvnfRvHumA" name="Large customer base" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+               
             </ielement>
-            <dependum id="_Szl7oF8zEemzhvnfRvHumA" name="Customer loyalty" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            <ielement id="_Szl7oF8zEemzhvnfRvHumA" name="Customer loyalty" type="quality">
                
-            </dependum>
-            <dependum id="_UIwXwF8zEemzhvnfRvHumA" name="Attractive to new customer" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
                
-            </dependum>
-            <dependum id="_fKwsoF8zEemzhvnfRvHumA" name="High value" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_UIwXwF8zEemzhvnfRvHumA" name="Attractive to new customer" type="quality">
+               
+               
+            </ielement>
+            <ielement id="_fKwsoF8zEemzhvnfRvHumA" name="High value" type="quality">
+               
                <ielementLink iref="_Szl7oF8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_UIwXwF8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_nXFN0F8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_nXFN0F8zEemzhvnfRvHumA" name="Vendor lock-in [customer]" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-            </dependum>
-            <dependum id="_sCiQUF8zEemzhvnfRvHumA" name="Solution gravity" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_nXFN0F8zEemzhvnfRvHumA" name="Vendor lock-in [customer]" type="quality">
+               
+            </ielement>
+            <ielement id="_sCiQUF8zEemzhvnfRvHumA" name="Solution gravity" type="quality">
+               
                <ielementLink iref="_nXFN0F8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_u1jKgF8zEemzhvnfRvHumA" name="Diversity [product]" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_u1jKgF8zEemzhvnfRvHumA" name="Diversity [product]" type="quality">
+               
                <ielementLink iref="_fKwsoF8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_x5h44F8zEemzhvnfRvHumA" name="Innovation [product]" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_x5h44F8zEemzhvnfRvHumA" name="Innovation [product]" type="quality">
+               
                <ielementLink iref="_fKwsoF8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_0TQwYF8zEemzhvnfRvHumA" name="Quick time-to-market" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-            </dependum>
-            <dependum id="_2GFY4F8zEemzhvnfRvHumA" name="Flexibility in platform development" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_0TQwYF8zEemzhvnfRvHumA" name="Quick time-to-market" type="quality">
+               
+            </ielement>
+            <ielement id="_2GFY4F8zEemzhvnfRvHumA" name="Flexibility in platform development" type="quality">
+               
                <ielementLink iref="_x5h44F8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_7F2egF8zEemzhvnfRvHumA" name="Software business be run" type="goal">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-            </dependum>
-            <dependum id="_9nZ1QF8zEemzhvnfRvHumA" name="Run software business using the open ecosystem" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_7F2egF8zEemzhvnfRvHumA" name="Software business be run" type="goal">
+               
+            </ielement>
+            <ielement id="_9nZ1QF8zEemzhvnfRvHumA" name="Run software business using the open ecosystem" type="task">
+               
                <ielementLink iref="_7F2egF8zEemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_EjCxsF80EemzhvnfRvHumA" name="Platform be produced" type="goal">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_EjCxsF80EemzhvnfRvHumA" name="Platform be produced" type="goal">
+               
                <ielementLink iref="_9nZ1QF8zEemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_GlmfUF80EemzhvnfRvHumA" name="Sell software platform" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_GlmfUF80EemzhvnfRvHumA" name="Sell software platform" type="task">
+               
                <ielementLink iref="_9nZ1QF8zEemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_JBoc4F80EemzhvnfRvHumA" name="Build platform" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_JBoc4F80EemzhvnfRvHumA" name="Build platform" type="task">
+               
                <ielementLink iref="_EjCxsF80EemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_NQeb4F80EemzhvnfRvHumA" name="Integrate OEM Component" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_NQeb4F80EemzhvnfRvHumA" name="Integrate OEM Component" type="task">
+               
                <ielementLink iref="_EjCxsF80EemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_SNGG4F80EemzhvnfRvHumA" name="User satisfaction" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_SNGG4F80EemzhvnfRvHumA" name="User satisfaction" type="quality">
+               
                <ielementLink iref="_GlmfUF80EemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_T8SzoF80EemzhvnfRvHumA" name="Supply platform to developer" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_T8SzoF80EemzhvnfRvHumA" name="Supply platform to developer" type="task">
+               
                <ielementLink iref="_sCiQUF8zEemzhvnfRvHumA" type="contribution" value="make">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_2GFY4F8zEemzhvnfRvHumA" type="contribution" value="hurt">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_GlmfUF80EemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_YWrUQF80EemzhvnfRvHumA" name="Provide product related services" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_YWrUQF80EemzhvnfRvHumA" name="Provide product related services" type="task">
+               
                <ielementLink iref="_GlmfUF80EemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_bbIjwF80EemzhvnfRvHumA" name="Developer satisfaction" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_bbIjwF80EemzhvnfRvHumA" name="Developer satisfaction" type="quality">
+               
                <ielementLink iref="_T8SzoF80EemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_fLpoAF80EemzhvnfRvHumA" name="Platform specific applications be supplied" type="goal">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_fLpoAF80EemzhvnfRvHumA" name="Platform specific applications be supplied" type="goal">
+               
                <ielementLink iref="_x5h44F8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_u1jKgF8zEemzhvnfRvHumA" type="contribution" value="make">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_T8SzoF80EemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_sZQ40F80EemzhvnfRvHumA" name="Build market channel for application" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_sZQ40F80EemzhvnfRvHumA" name="Build market channel for application" type="task">
+               
                <ielementLink iref="_0TQwYF8zEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_YWrUQF80EemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
+            </ielement>
          </boundary>
       </actor>
       <actor id="_by8RsF8yEemzhvnfRvHumA" name="End User" type="actor">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="100" unit="pt" width="100" xpos="0" ypos="0"/>
+         
          <boundary>
-            <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="372" shape="ellipse" unit="pt" width="0" xpos="1044" ypos="216"/>
-            <dependum id="_fvrNAF8yEemzhvnfRvHumA" name="Satisfaction" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-            </dependum>
-            <dependum id="_hDvc8F8yEemzhvnfRvHumA" name="Have software" type="goal">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-            </dependum>
-            <dependum id="_iJ2JYF8yEemzhvnfRvHumA" name="Acquire Software" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            
+            <ielement id="_fvrNAF8yEemzhvnfRvHumA" name="Satisfaction" type="quality">
+               
+            </ielement>
+            <ielement id="_hDvc8F8yEemzhvnfRvHumA" name="Have software" type="goal">
+               
+            </ielement>
+            <ielement id="_iJ2JYF8yEemzhvnfRvHumA" name="Acquire Software" type="task">
+               
                <ielementLink iref="_hDvc8F8yEemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_kWaHkF8yEemzhvnfRvHumA" name="Get platform" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_kWaHkF8yEemzhvnfRvHumA" name="Get platform" type="task">
+               
                <ielementLink iref="_iJ2JYF8yEemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_lXLBAF8yEemzhvnfRvHumA" name="Get applications" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_lXLBAF8yEemzhvnfRvHumA" name="Get applications" type="task">
+               
                <ielementLink iref="_iJ2JYF8yEemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_mYf7IF8yEemzhvnfRvHumA" name="Variety" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_mYf7IF8yEemzhvnfRvHumA" name="Variety" type="quality">
+               
                <ielementLink iref="_fvrNAF8yEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_nDmtoF8yEemzhvnfRvHumA" name="Quality" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_nDmtoF8yEemzhvnfRvHumA" name="Quality" type="quality">
+               
                <ielementLink iref="_fvrNAF8yEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
+            </ielement>
          </boundary>
       </actor>
       <actor id="_dHZjMF8yEemzhvnfRvHumA" name="Developer" type="actor">
-         <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="100" unit="pt" width="100" xpos="0" ypos="0"/>
+         
          <boundary>
-            <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="0" shape="ellipse" unit="pt" width="0" xpos="744" ypos="804"/>
-            <dependum id="_1jPnAF8yEemzhvnfRvHumA" name="Satisfaction with platform" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-            </dependum>
-            <dependum id="_3Z3xcF8yEemzhvnfRvHumA" name="The right platform be used" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            
+            <ielement id="_1jPnAF8yEemzhvnfRvHumA" name="Satisfaction with platform" type="quality">
+               
+            </ielement>
+            <ielement id="_3Z3xcF8yEemzhvnfRvHumA" name="The right platform be used" type="quality">
+               
                <ielementLink iref="_8fp_gF8yEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_5LA-8F8yEemzhvnfRvHumA" name="Adopt open platform" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_5LA-8F8yEemzhvnfRvHumA" name="Adopt open platform" type="task">
+               
                <ielementLink iref="_3Z3xcF8yEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_6mh6sF8yEemzhvnfRvHumA" name="Create platform specific application" type="task">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_6mh6sF8yEemzhvnfRvHumA" name="Create platform specific application" type="task">
+               
                <ielementLink iref="_8fp_gF8yEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_1jPnAF8yEemzhvnfRvHumA" type="qualification" value="and">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_8fp_gF8yEemzhvnfRvHumA" name="Profitability from platform" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
-            </dependum>
-            <dependum id="_97r4oF8yEemzhvnfRvHumA" name="Big market" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_8fp_gF8yEemzhvnfRvHumA" name="Profitability from platform" type="quality">
+               
+            </ielement>
+            <ielement id="_97r4oF8yEemzhvnfRvHumA" name="Big market" type="quality">
+               
                <ielementLink iref="_8fp_gF8yEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_5LA-8F8yEemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
-            <dependum id="_-uzXoF8yEemzhvnfRvHumA" name="Easy to use" type="quality">
-               <graphic bgcolor="FFFFFF" content="basic" fontcolor="000000" fontfamily="Segoe UI" fontsize="12" height="55" unit="pt" width="120" xpos="0" ypos="0"/>
+            </ielement>
+            <ielement id="_-uzXoF8yEemzhvnfRvHumA" name="Easy to use" type="quality">
+               
                <ielementLink iref="_1jPnAF8yEemzhvnfRvHumA" type="contribution" value="help">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
                <ielementLink iref="_5LA-8F8yEemzhvnfRvHumA" type="refinement" value="or">
-                  <graphic content="SVG"/>
+                  
                </ielementLink>
-            </dependum>
+            </ielement>
          </boundary>
       </actor>
    </diagram>

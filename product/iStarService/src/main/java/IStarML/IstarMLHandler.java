@@ -2,6 +2,7 @@ package IStarML;
 
 import IStarML.ccistarml.ccfileError;
 import IStarML.ccistarml.ccistarmlFile;
+import jdk.nashorn.internal.runtime.regexp.joni.constants.NodeType;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -92,21 +93,26 @@ public class IstarMLHandler {
 
             }
 
-            NodeList ielementDependencies = diagram.getElementsByTagName("ielement");
+
+            NodeList ielementDependencies = diagram.getChildNodes();
             for(int a = 0;a<ielementDependencies.getLength();a++){
-                doc.renameNode(ielementDependencies.item(a),null,"dependum");
-                Element currentDependum = (Element) ielementDependencies.item(a);
-                if(currentDependum.getAttribute("type").equals("softgoal")){
-                    currentDependum.setAttribute("type","quality");
+                if(ielementDependencies.item(a).getNodeName().equals("ielement")){
+                    doc.renameNode(ielementDependencies.item(a),null,"dependum");
+                    Element currentDependum = (Element) ielementDependencies.item(a);
+                    if(currentDependum.getAttribute("type").equals("softgoal")){
+                        currentDependum.setAttribute("type","quality");
+                    }
                 }
             }
 
+
+            removeRecursiveNode(doc,"graphic");
+            doc.normalizeDocument();
 
         } catch (ParserConfigurationException | SAXException | IOException e ) {
             e.printStackTrace();
             throw new Exception(e.getMessage());
         }
-
         return doc;
     }
 
@@ -189,6 +195,17 @@ public class IstarMLHandler {
 
     }
 
-
+    private void removeRecursiveNode(Node node, String name){
+        NodeList nodeList = node.getChildNodes();
+        if(nodeList.getLength()>0){
+            for(int i =0;i<nodeList.getLength();i++){
+                if(nodeList.item(i).getNodeName().equals(name)){
+                    nodeList.item(i).getParentNode().removeChild(nodeList.item(i));
+                } else {
+                    removeRecursiveNode(nodeList.item(i),name);
+                }
+            }
+        }
+    }
 
 }
