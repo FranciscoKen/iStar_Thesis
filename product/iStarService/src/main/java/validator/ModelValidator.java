@@ -81,7 +81,7 @@ public class ModelValidator{
 
         for(Map.Entry<String,Dependency> entry : model.getDependencies().entrySet()){
             //checks for the availability of actors
-            if(! (model.getDependencies().containsKey(entry.getValue().getDependee()) && model.getDependencies().containsKey(entry.getValue().getDepender()))){
+            if(! (model.getActors().containsKey(entry.getValue().getDependee()) && model.getActors().containsKey(entry.getValue().getDepender()))){
                 throw new IStarException(ExceptionMessages.heading+ExceptionMessages.referencedElementNotFoundException+"[Dependency between actor "+entry.getValue().getDependee()+" and "+entry.getValue().getDepender()+"]");
             }
             //checks for the availability of intentional element
