@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="player-SD.ood">
+      <graphic content="SVG"/>
+      <ielement type="goal" id="_ZV4koHQTEemozsE8pEOulw" name="Entry of players be closed">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_XflxYHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_cdQlQHQTEemozsE8pEOulw" name="Type of cards be chosen">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_XflxYHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_j5bb4HQTEemozsE8pEOulw" name="Game be started">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_mRk_AHQTEemozsE8pEOulw" name="Availability [Game]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_o3YjoHQTEemozsE8pEOulw" name="Players be registered">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_t1SBAHQTEemozsE8pEOulw" name="Resources be available">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_wUPWwHQTEemozsE8pEOulw" name="Dice">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_zAQ4IHQTEemozsE8pEOulw" name="Software engineers">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_7ElT4HQTEemozsE8pEOulw" name="Project cards">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_8H8OUHQTEemozsE8pEOulw" name="Usability [resources]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_A39nwHQUEemozsE8pEOulw" name="Availability [resources]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_DX7qIHQUEemozsE8pEOulw" name="Security [SimulES-W]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_KIxEwHQUEemozsE8pEOulw" name="Movements be published">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_jxkq8HQUEemozsE8pEOulw" name="Project be accepted">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iOknIHQUEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_meWaQHQUEemozsE8pEOulw"
+                name="Satisfied player [card project]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_iOknIHQUEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_tIbFkHQUEemozsE8pEOulw" name="Software engineer be hired">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_radu8HQUEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_wB6bMHQUEemozsE8pEOulw" name="Satisfied player [engineer]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_radu8HQUEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_iZxnAHQTEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor type="agent" id="_TS_OEHQTEemozsE8pEOulw" name="SimulES">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="role" id="_XflxYHQTEemozsE8pEOulw" name="Administrator">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="role" id="_iZxnAHQTEemozsE8pEOulw" name="Player in turn">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="role" id="_iOknIHQUEemozsE8pEOulw" name="Adversary">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="agent" id="_radu8HQUEemozsE8pEOulw" name="Software engineer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+   </diagram>
+</istarml>
