@@ -2,8 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe08cbdd-9a29-4d0d-81b1-cb36554e5e3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TEMP/response.istarml2" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/response.istarml2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESOURCE/istarml2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/RESOURCE/istarml2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/1640ea19-41cd-4280-b463-f599c83f72e9/1640ea19-41cd-4280-b463-f599c83f72e9.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/1640ea19-41cd-4280-b463-f599c83f72e9/1640ea19-41cd-4280-b463-f599c83f72e9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/237ac8d2-ac81-49eb-97b1-cf41b8e50b75/237ac8d2-ac81-49eb-97b1-cf41b8e50b75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/24196ba9-e1a5-4e03-928f-dffd3a4bc490/24196ba9-e1a5-4e03-928f-dffd3a4bc490.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/2ee481b2-e690-486f-ae74-5ee73b9cfe7b/2ee481b2-e690-486f-ae74-5ee73b9cfe7b.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/2ee481b2-e690-486f-ae74-5ee73b9cfe7b/2ee481b2-e690-486f-ae74-5ee73b9cfe7b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/2ef5dc85-79a6-4e5c-b12f-67d893978794/2ef5dc85-79a6-4e5c-b12f-67d893978794.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/2f0f072d-68a1-4d95-87f2-c810e476da4e/2f0f072d-68a1-4d95-87f2-c810e476da4e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/32152f0d-aa13-4f16-abd1-9f6dd104fe16/32152f0d-aa13-4f16-abd1-9f6dd104fe16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/3ac4382b-9b10-4a81-bbf4-c680af8f4d33/3ac4382b-9b10-4a81-bbf4-c680af8f4d33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/3ef32c3f-c166-4ff5-be53-dffa6ec686a7/3ef32c3f-c166-4ff5-be53-dffa6ec686a7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/419caefd-052b-44d6-9942-b3ac8f854538/419caefd-052b-44d6-9942-b3ac8f854538.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/52b1edc9-8802-4a4d-9f42-c95003104864/52b1edc9-8802-4a4d-9f42-c95003104864.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/5b6ca4f1-f1bc-400b-8112-3a93ad74c1ac/5b6ca4f1-f1bc-400b-8112-3a93ad74c1ac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/686cc835-7f50-46f3-bc00-efd068df6a57/686cc835-7f50-46f3-bc00-efd068df6a57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/76449290-70ef-48e7-8603-981262f341f6/76449290-70ef-48e7-8603-981262f341f6.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/76449290-70ef-48e7-8603-981262f341f6/76449290-70ef-48e7-8603-981262f341f6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/9778000a-7655-428a-a984-b0023113ff59/9778000a-7655-428a-a984-b0023113ff59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/a9c9a6b6-7a2c-4138-a632-18fd7f494748/a9c9a6b6-7a2c-4138-a632-18fd7f494748.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/aee0d9f5-5fa6-4c8d-81f1-0f7b02b0bc5f/aee0d9f5-5fa6-4c8d-81f1-0f7b02b0bc5f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/afc9d3fb-d0bd-4c59-a237-4b9df8ac719d/afc9d3fb-d0bd-4c59-a237-4b9df8ac719d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/b2816280-d84c-4b93-b7f9-eb1748437df0/b2816280-d84c-4b93-b7f9-eb1748437df0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/b30f43d9-563e-4df8-9684-b3e95baf5169/b30f43d9-563e-4df8-9684-b3e95baf5169.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/bc25c6fe-3287-4ff4-bbfe-8f3985611020/bc25c6fe-3287-4ff4-bbfe-8f3985611020.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/bc25c6fe-3287-4ff4-bbfe-8f3985611020/bc25c6fe-3287-4ff4-bbfe-8f3985611020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/c6a94025-45aa-4fcc-82bf-67ded7ad346b/c6a94025-45aa-4fcc-82bf-67ded7ad346b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/c6fc9558-737e-4375-81e9-8b5d1f76e3bd/c6fc9558-737e-4375-81e9-8b5d1f76e3bd.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/c6fc9558-737e-4375-81e9-8b5d1f76e3bd/c6fc9558-737e-4375-81e9-8b5d1f76e3bd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/c8db59ed-a9d5-458d-89ca-230b2714c372/c8db59ed-a9d5-458d-89ca-230b2714c372.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/ca44bcc7-ae86-4636-8e46-8d8e45524415/ca44bcc7-ae86-4636-8e46-8d8e45524415.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/ca44bcc7-ae86-4636-8e46-8d8e45524415/ca44bcc7-ae86-4636-8e46-8d8e45524415.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/d19c5f30-b679-40fe-83aa-8a564fa4087b/d19c5f30-b679-40fe-83aa-8a564fa4087b.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/d19c5f30-b679-40fe-83aa-8a564fa4087b/d19c5f30-b679-40fe-83aa-8a564fa4087b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/d920a7df-00f8-4f01-9aa9-e40d86900961/d920a7df-00f8-4f01-9aa9-e40d86900961.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/ecedee24-97b6-4c7a-a676-a264c7fe3f16/ecedee24-97b6-4c7a-a676-a264c7fe3f16.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/ecedee24-97b6-4c7a-a676-a264c7fe3f16/ecedee24-97b6-4c7a-a676-a264c7fe3f16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/ee1bae53-1447-4789-ac43-a23244b7267a/ee1bae53-1447-4789-ac43-a23244b7267a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/eed638e5-686b-487b-be5b-5e927c7d8cd9/eed638e5-686b-487b-be5b-5e927c7d8cd9.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/eed638e5-686b-487b-be5b-5e927c7d8cd9/eed638e5-686b-487b-be5b-5e927c7d8cd9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/efc4cc14-cfa7-447c-9afe-6cd83d3907ee/efc4cc14-cfa7-447c-9afe-6cd83d3907ee.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/efc4cc14-cfa7-447c-9afe-6cd83d3907ee/efc4cc14-cfa7-447c-9afe-6cd83d3907ee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/f031b92b-1318-472d-91e5-d9f7387366e4/f031b92b-1318-472d-91e5-d9f7387366e4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/f62b8db9-b4ec-4c05-a0ec-81147eaf957f/f62b8db9-b4ec-4c05-a0ec-81147eaf957f.ocl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/class/f62b8db9-b4ec-4c05-a0ec-81147eaf957f/f62b8db9-b4ec-4c05-a0ec-81147eaf957f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/dummy/developer-SR.istarml2" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/dummy/developer-SR.istarml2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ClassGenerator/ClassGenerator$Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ClassGenerator/ClassGenerator$Resource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ClassGenerator/ClassGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ClassGenerator/ClassGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ClassGenerator/iStarOCL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ClassGenerator/iStarOCL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/IStarML/IstarMLHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/IStarML/IstarMLHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/modules/.gradle/" />
@@ -26,11 +80,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1838">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="1350">
+              <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="92" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,28 +93,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Service/Application.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Storage/StorageProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="82" column="44" lean-forward="true" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Exception/IStarException.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Storage/StorageException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -69,25 +111,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="99" column="45" lean-forward="true" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2597">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -95,20 +131,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RESOURCE/istarml2.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+            <state relative-caret-position="315">
+              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Mainan/Mainan.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="4230">
+              <caret line="302" column="26" selection-start-line="302" selection-start-column="26" selection-end-line="302" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -167,6 +212,7 @@
       <find>currentActor</find>
       <find>soft</find>
       <find>dependum</find>
+      <find>+=</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -197,16 +243,17 @@
         <option value="$PROJECT_DIR$/src/main/java/Mainan/ccistarml/ccfileError.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mainan/ccistarml/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mainan/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mainan/IstarMLHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mainan/Mainan.java" />
         <option value="$PROJECT_DIR$/temp.istarml" />
-        <option value="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/XMLValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" />
         <option value="$PROJECT_DIR$/RESOURCE/istarml2.xsd" />
+        <option value="$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" />
       </list>
     </option>
   </component>
@@ -221,8 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,10 +382,19 @@
               <item name="TEMP" type="462c0819:PsiDirectoryNode" />
               <item name="dummy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="iStarService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iStarService" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TEMP" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy" type="462c0819:PsiDirectoryNode" />
+              <item name="class" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,9 +413,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -482,12 +538,13 @@
       <workItem from="1557058926423" duration="10104000" />
       <workItem from="1557110414892" duration="3584000" />
       <workItem from="1557256117535" duration="4274000" />
-      <workItem from="1557306126379" duration="6449000" />
+      <workItem from="1557306126379" duration="9828000" />
+      <workItem from="1557401367544" duration="5956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144669000" />
+    <option name="totallyTimeSpent" value="154004000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,7 +559,7 @@
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37651515" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38257575" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -512,15 +569,15 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26058632" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.26058632" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49848485" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32736155" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49924242" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007576" side_tool="true" weight="0.26058632" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -579,30 +636,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java</url>
-          <line>96</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Mainan/SameIDException.java" />
@@ -677,13 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="107" selection-start-line="15" selection-start-column="107" selection-end-line="15" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Storage/StorageProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -6762,13 +6788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/ccistarml/ccfileError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -6779,20 +6798,6 @@
     <entry file="file://$PROJECT_DIR$/temp.istarml" />
     <entry file="file://$PROJECT_DIR$/TEMP/temp.istarml2" />
     <entry file="file://$PROJECT_DIR$/temp.istarml2" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Storage/StorageException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/ccistarml/ccistarmlContent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5475">
@@ -6818,16 +6823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3817">
-          <caret line="278" column="91" selection-start-line="278" selection-start-column="91" selection-end-line="278" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -6869,13 +6864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -6885,8 +6873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="82" column="44" lean-forward="true" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
+        <state relative-caret-position="1155">
+          <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -6902,7 +6890,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
+        <state relative-caret-position="60">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -6910,26 +6898,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1838">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RESOURCE/istarml2.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Mainan/Mainan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="60">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -6947,10 +6918,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RESOURCE/istarml2.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="99" column="45" lean-forward="true" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
+        <state relative-caret-position="-2597">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4230">
+          <caret line="302" column="26" selection-start-line="302" selection-start-column="26" selection-end-line="302" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Storage/FileSystemStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Storage/StorageProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Storage/StorageException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="92" column="92" selection-start-line="92" selection-start-column="92" selection-end-line="92" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

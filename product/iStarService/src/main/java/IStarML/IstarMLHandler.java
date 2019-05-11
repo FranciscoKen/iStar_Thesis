@@ -2,7 +2,6 @@ package IStarML;
 
 import IStarML.ccistarml.ccfileError;
 import IStarML.ccistarml.ccistarmlFile;
-import jdk.nashorn.internal.runtime.regexp.joni.constants.NodeType;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -45,6 +44,7 @@ public class IstarMLHandler {
         Document doc;
         try {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+
             DocumentBuilder db = dbf.newDocumentBuilder();
             InputSource is = new InputSource();
             is.setCharacterStream(new StringReader(string_model));

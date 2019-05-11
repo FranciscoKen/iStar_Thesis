@@ -38,6 +38,9 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.Timestamp;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.UUID;
 
@@ -54,6 +57,7 @@ public class Endpoint {
     @CrossOrigin
     @PostMapping("/istar-service/validate")
     public ResponseEntity<?> validate(@RequestParam(value="file")MultipartFile file){
+        Instant start = Instant.now();
 
         try {
             validateiStarML2File(file);
@@ -83,6 +87,10 @@ public class Endpoint {
         //TODO Implement Validation Rule
 
         storageService.deleteAll();
+
+        Instant end = Instant.now();
+        Duration dur = Duration.between(start,end);
+        System.out.println("This process [validate] takes "+dur.toMillis()+" milliseconds");
 
         return new ResponseEntity<>("",HttpStatus.OK);
     }

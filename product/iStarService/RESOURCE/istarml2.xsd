@@ -17,7 +17,7 @@
 										<xs:complexType>
 											<xs:sequence>
 												<xs:element name='ielementLink' minOccurs='0' maxOccurs='unbounded'>
-													<xs:complexType>
+													<xs:complexType mixed='true'>
 														<xs:attribute name='type' type='ielementLinkType' use='required'/>
 														<xs:attribute name='value' type='ielementLinkValue'/>
 														<xs:attributeGroup ref='referenceGroup'/>
@@ -50,12 +50,12 @@
 							<xs:complexType>
 								<xs:all maxOccurs='1'>
 									<xs:element name='depender'>
-										<xs:complexType>
+										<xs:complexType mixed='true'>
 											<xs:attributeGroup ref='dependencyReference'/>
 										</xs:complexType>
 									</xs:element>
 									<xs:element name='dependee'>
-										<xs:complexType>
+										<xs:complexType mixed='true'>
 											<xs:attributeGroup ref='dependencyReference'/>
 										</xs:complexType>
 									</xs:element>

@@ -32,7 +32,8 @@ public class ClassGenerator {
         }
 
         //Initialize DSL
-        String source = "@startuml\n";
+        StringBuilder source = new StringBuilder();
+        source.append("@startuml\n");
 
         ArrayList<Resource> temp_resource = new ArrayList<Resource>();
 
@@ -41,29 +42,29 @@ public class ClassGenerator {
         for(Map.Entry<String,Actor> actor : model.getActors().entrySet()){
             //checks if the actor has name (since it's optional).
             if(!actor.getValue().getName().equals("")){
-                source += "Class "+cleanString(actor.getValue().getName());
+                source.append("Class ").append(cleanString(actor.getValue().getName()));
             } else {
                 //uses actor ID if name doesn't exist
-                source += "Class "+cleanString(actor.getKey());
+                source.append("Class ").append(cleanString(actor.getKey()));
             }
 
             if(model.isHasIElement(actor.getKey())){
                 //ielement conversion (goal, task, quality)
                 //similar rule to actor, if ielement doesn't have a name, we use ID
-                source+= "{ \n";
+                source.append("{ \n");
                 for(Map.Entry<String,IntentionalElement> ie : model.getiElements().entrySet()){
                     if(ie.getValue().getActorID().equals(actor.getKey())){
                         if(ie.getValue().getType().equals(IntentionalElementType.TASK)){
                             if(!ie.getValue().getName().equals("")){
-                                source += "{method} -"+cleanString(ie.getValue().getName())+"()\n";
+                                source.append("{method} -").append(cleanString(ie.getValue().getName())).append("()\n");
                             } else {
-                                source += "{method} -"+cleanString(ie.getKey())+"()\n";
+                                source.append("{method} -").append(cleanString(ie.getKey())).append("()\n");
                             }
                         } else if(ie.getValue().getType().equals(IntentionalElementType.GOAL)||ie.getValue().getType().equals(IntentionalElementType.QUALITY) ){
                             if(!ie.getValue().getName().equals("")){
-                                source += "{field} -"+cleanString(ie.getValue().getName())+" : boolean\n";
+                                source.append("{field} -").append(cleanString(ie.getValue().getName())).append(" : boolean\n");
                             } else {
-                                source += "{field} -"+cleanString(ie.getKey())+" : boolean\n";
+                                source.append("{field} -").append(cleanString(ie.getKey())).append(" : boolean\n");
                             }
                         } else if(ie.getValue().getType().equals(IntentionalElementType.RESOURCE)){
                             Resource r = new Resource(cleanString(ie.getKey()),ie.getValue().getName().equals("")?cleanString(ie.getKey()):cleanString(ie.getValue().getName()), renameResource(actor.getValue().getName().equals("")?cleanString(ie.getKey()):cleanString(actor.getValue().getName()),temp_resource));
@@ -71,26 +72,26 @@ public class ClassGenerator {
                         }
                     }
                 }
-                source += "}\n";
+                source.append("}\n");
 
                 //resource conversion
                 for(Resource r : temp_resource){
-                    source += "Class "+cleanString(r.getName())+"{\n";
-                    source += "{field} +availability : boolean \n";
-                    source +="}\n";
-                    source += cleanString(r.getActor()) + " -- " + cleanString(r.getName())+"\n";
+                    source.append("Class ").append(cleanString(r.getName())).append("{\n");
+                    source.append("{field} +availability : boolean \n");
+                    source.append("}\n");
+                    source.append(cleanString(r.getActor())).append(" -- ").append(cleanString(r.getName())).append("\n");
                 }
 
             } else {
-                source += "\n";
+                source.append("\n");
             }
         }
         //actor link conversion
         for(ActorLink acl : model.getActorLinks()){
             if(acl.getType() == ActorLinkType.ISA){
-                source += acl.getFrom() + " --|> " + acl.getTo()+"\n";
+                source.append(acl.getFrom()).append(" --|> ").append(acl.getTo()).append("\n");
             } else {
-                source += acl.getFrom() + " -- " + acl.getTo() + " :  participates-in \n";
+                source.append(acl.getFrom()).append(" -- ").append(acl.getTo()).append(" :  participates-in \n");
             }
 
 
@@ -100,31 +101,31 @@ public class ClassGenerator {
         //Dependency conversion
         for(Map.Entry<String,Dependency> d : model.getDependencies().entrySet()){
             if(d.getValue().getDependum().getType().equals(IntentionalElementType.TASK)){
-                source += "Class "+ cleanString(model.getActors().get(d.getValue().getDependee()).getName())+" {\n";
-                source += "{method} +"+ cleanString(d.getValue().getDependum().getName())+"()\n";
-                source += "}\n";
-                source += cleanString(model.getActors().get(d.getValue().getDepender()).getName()) + " \"depender\" -- \"dependee\" "+cleanString(model.getActors().get(d.getValue().getDependee()).getName())+" :Dependency\n";
+                source.append("Class ").append(cleanString(model.getActors().get(d.getValue().getDependee()).getName())).append(" {\n");
+                source.append("{method} +").append(cleanString(d.getValue().getDependum().getName())).append("()\n");
+                source.append("}\n");
+                source.append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append(" \"depender\" -- \"dependee\" ").append(cleanString(model.getActors().get(d.getValue().getDependee()).getName())).append(" :Dependency\n");
 
             } else if(d.getValue().getDependum().getType().equals(IntentionalElementType.GOAL) || d.getValue().getDependum().getType().equals(IntentionalElementType.QUALITY)){
-                source += "Class "+ cleanString(model.getActors().get(d.getValue().getDepender()).getName()) + "{\n";
-                source += "{field} +"+cleanString(d.getValue().getDependum().getName())+" : boolean \n";
-                source += "}\n";
+                source.append("Class ").append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append("{\n");
+                source.append("{field} +").append(cleanString(d.getValue().getDependum().getName())).append(" : boolean \n");
+                source.append("}\n");
 
             }  else if(d.getValue().getDependum().getType().equals(IntentionalElementType.RESOURCE)){
                 Resource r = new Resource(d.getKey(), renameResource(cleanString(d.getValue().getDependum().getName()),temp_resource),null);
 
                 temp_resource.add(r);
-                source += "Class "+r.getName()+" {\n";
-                source += "{field} +availability : boolean\n";
-                source += "}\n";
-                source += cleanString(model.getActors().get(d.getValue().getDepender()).getName()) + " \"depender\" -- \"dependum\" "+r.getName()+" : Dependency\n";
-                source += r.getName() + " \"dependum\" -- \"dependee\" "+cleanString(model.getActors().get(d.getValue().getDependee()).getName())+" : Dependency\n";
+                source.append("Class ").append(r.getName()).append(" {\n");
+                source.append("{field} +availability : boolean\n");
+                source.append("}\n");
+                source.append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append(" \"depender\" -- \"dependum\" ").append(r.getName()).append(" : Dependency\n");
+                source.append(r.getName()).append(" \"dependum\" -- \"dependee\" ").append(cleanString(model.getActors().get(d.getValue().getDependee()).getName())).append(" : Dependency\n");
             }
         }
-        source += "@enduml\n";
+        source.append("@enduml\n");
         //End DSL
 
-        SourceStringReader reader = new SourceStringReader(source);
+        SourceStringReader reader = new SourceStringReader(source.toString());
         try{
             String desc = reader.outputImage(png).getDescription();
         } catch (IOException e) {
@@ -247,39 +248,39 @@ public class ClassGenerator {
                         junction = " or ";
                     }
                     if(isContainTask(entry.getKey(),entry.getValue(),model)){
-                        String temp_pre ="";
-                        String temp_post="";
+                        StringBuilder temp_pre =new StringBuilder();
+                        StringBuilder temp_post=new StringBuilder();
                         for(String s : entry.getValue()){
                             if(model.getiElements().get(s).getType().equals(IntentionalElementType.TASK)){
-                                temp_pre += model.getiElements().get(s).getName()+".preCondition=\"Value\" "+junction;
-                                temp_post += junction + model.getiElements().get(s).getName()+".postCondition=\"Value\" ";
+                                temp_pre.append(model.getiElements().get(s).getName()).append(".preCondition=\"Value\" ").append(junction);
+                                temp_post.append(junction).append(model.getiElements().get(s).getName()).append(".postCondition=\"Value\" ");
                             } else {
-                                temp_pre += model.getiElements().get(s).getName()+"=true "+junction;
+                                temp_pre.append(model.getiElements().get(s).getName()).append("=true ").append(junction);
                             }
                         }
                         if(model.getiElements().get(entry.getKey()).getType().equals(IntentionalElementType.TASK)){
-                            temp_pre += model.getiElements().get(entry.getKey()).getName()+".preCondition=\"Value\" "+junction;
-                            temp_post += model.getiElements().get(entry.getKey()).getName()+".postCondition=\"Value\" ";
+                            temp_pre.append(model.getiElements().get(entry.getKey()).getName()).append(".preCondition=\"Value\" ").append(junction);
+                            temp_post.append(model.getiElements().get(entry.getKey()).getName()).append(".postCondition=\"Value\" ");
                         } else {
-                            temp_post += model.getiElements().get(entry.getKey()).getName() + "=true";
+                            temp_post.append(model.getiElements().get(entry.getKey()).getName()).append("=true");
                         }
 
                         ocl.addPrePostOCL(model.getActors().get(currentActor).getName(),
                                 model.getiElements().get(entry.getKey()).getName(),
-                                temp_pre,
-                                temp_post);
+                                temp_pre.toString(),
+                                temp_post.toString());
                     } else {
-                        String temp_implication="";
-                        String temp_cause = "";
+                        StringBuilder temp_implication=new StringBuilder();
+                        StringBuilder temp_cause = new StringBuilder();
                         for(String s : entry.getValue()){
-                            temp_cause += model.getiElements().get(s).getName()+"=true";
-                            temp_cause += junction;
+                            temp_cause.append(model.getiElements().get(s).getName()).append("=true");
+                            temp_cause.append(junction);
                         }
-                        temp_implication += model.getiElements().get(entry.getKey()).getName()+"=true";
+                        temp_implication.append(model.getiElements().get(entry.getKey()).getName()).append("=true");
                         ocl.addImplicationOCL(model.getActors().get(currentActor).getName(),
                                 model.getiElements().get(entry.getKey()).getName(),
-                                temp_cause,
-                                temp_implication);
+                                temp_cause.toString(),
+                                temp_implication.toString());
                     }
                 }
             }

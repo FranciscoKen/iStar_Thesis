@@ -10,13 +10,13 @@ public class iStarOCL {
     }
 
     public void addPrePostOCL(String actor, String ielement,String preCondition, String postCondition){
-        String template = "";
+        StringBuilder template = new StringBuilder();
 
-        template += actor + ":: " + ielement + "\n";
-        template += "pre: "+preCondition+"\n";
-        template += "post: "+postCondition+"\n\n";
+        template.append(actor).append(":: ").append(ielement).append("\n");
+        template.append("pre: ").append(preCondition).append("\n");
+        template.append("post: ").append(postCondition).append("\n\n");
 
-        constraints.add(template);
+        constraints.add(template.toString());
     }
     public void addImplicationOCL(String actor, String ielement, String cause, String implication){
         String template ="";
@@ -33,11 +33,11 @@ public class iStarOCL {
     }
 
     public String exportString(){
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for(String a : constraints){
-            result += a;
+            result.append(a);
         }
 
-        return result;
+        return result.toString();
     }
 }

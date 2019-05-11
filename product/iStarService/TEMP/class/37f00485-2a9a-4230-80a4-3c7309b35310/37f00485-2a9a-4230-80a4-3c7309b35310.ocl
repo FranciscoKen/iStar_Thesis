@@ -18,15 +18,15 @@ the righ platform be used=true implies profitability from platform=true
 Developer:: easy to use
 easy to use=true implies satisfaction with platform=true
 
-ac-3:: create platform-specific applications
+Developer:: create platform-specific applications
 pre: satisfaction with platform=true  and create platform-specific applications.preCondition="Value"  and 
 post: create platform-specific applications.postCondition="Value" 
 
-ac-3:: big market
+Developer:: big market
 pre: adopt open platform.preCondition="Value"  and 
 post:  and adopt open platform.postCondition="Value" big market=true
 
-ac-3:: easy to use
+Developer:: easy to use
 pre: adopt open platform.preCondition="Value"  and 
 post:  and adopt open platform.postCondition="Value" easy to use=true
 
@@ -36,15 +36,15 @@ quality=true implies satisfaction=true
 End-user:: variety
 variety=true implies satisfaction=true
 
-ac-2:: get platform
+End-user:: get platform
 pre: acquire software.preCondition="Value"  and get platform.preCondition="Value"  and 
 post:  and acquire software.postCondition="Value" get platform.postCondition="Value" 
 
-ac-2:: acquire software
+End-user:: acquire software
 pre: have software=true  or acquire software.preCondition="Value"  or 
 post: acquire software.postCondition="Value" 
 
-ac-2:: get application
+End-user:: get application
 pre: acquire software.preCondition="Value"  and get application.preCondition="Value"  and 
 post:  and acquire software.postCondition="Value" get application.postCondition="Value" 
 
@@ -87,29 +87,29 @@ Software Vendor:: supply platform to developer
 pre: supply platform to developer.preCondition="Value"
 post: supply platform to developer.postCondition="Value" and solution gravity=true
 
-ac-1:: attractive to new customer
+Software Vendor:: attractive to new customer
 large customer base=true and  implies attractive to new customer=true
 
-ac-1:: customer loyalty
+Software Vendor:: customer loyalty
 large customer base=true and  implies customer loyalty=true
 
-ac-1:: run software business using the open ecosystem
+Software Vendor:: run software business using the open ecosystem
 pre: software business be run=true  or sell software platform.preCondition="Value"  or run software business using the open ecosystem.preCondition="Value"  or 
 post:  or sell software platform.postCondition="Value" run software business using the open ecosystem.postCondition="Value" 
 
-ac-1:: user satisfaction
+Software Vendor:: user satisfaction
 pre: sell software platform.preCondition="Value"  and 
 post:  and sell software platform.postCondition="Value" user satisfaction=true
 
-ac-1:: platform be produced
+Software Vendor:: platform be produced
 pre: run software business using the open ecosystem.preCondition="Value"  and integrate OEM components.preCondition="Value"  and build platform.preCondition="Value"  and 
 post:  and run software business using the open ecosystem.postCondition="Value"  and integrate OEM components.postCondition="Value"  and build platform.postCondition="Value" platform be produced=true
 
-ac-1:: supply platform to developer
+Software Vendor:: supply platform to developer
 pre: sell software platform.preCondition="Value"  and platform-specific applications be supplied=true  and developer satisfaction=true  and supply platform to developer.preCondition="Value"  and 
 post:  and sell software platform.postCondition="Value" supply platform to developer.postCondition="Value" 
 
-ac-1:: provide product related services
+Software Vendor:: provide product related services
 pre: sell software platform.preCondition="Value"  and build market channel for applications.preCondition="Value"  and provide product related services.preCondition="Value"  and 
 post:  and sell software platform.postCondition="Value"  and build market channel for applications.postCondition="Value" provide product related services.postCondition="Value" 
 
