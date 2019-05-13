@@ -1,0 +1,36 @@
+<istarml2 version='1'>
+    <diagram>
+        <actor id='1' type='actor' name='Photographer'>
+            <boundary>
+                <ielement id='1-1' name='Work Opportunity' type='goal'>
+                </ielement>
+                <ielement id='1-2' name='To present work request' type='task'>
+                </ielement>
+                <ielement id='1-3' name='Curriculum' type='resource'>
+                </ielement>
+                <ielement id='1-4' name='Personal data' type='resource'>
+                </ielement>
+            </boundary>
+        </actor>
+        <actor id='2' type='actor' name='Production department'>
+            <boundary>
+                <ielement id='2-1' name='Work request be processed' type='goal'>
+                </ielement>
+                <ielement id='2-2' name='To process work request' type='task'>
+                </ielement>
+                <ielement id='2-3' name='To receive work request' type='task'>
+                </ielement>
+                <ielement id='2-4' name='To refuse work request' type='task'>
+                </ielement>
+                <ielement id='2-5' name='To accept work request' type='task'>
+                </ielement>
+            </boundary>
+        </actor>
+        <dependum id='3' name='Work Request' type='resource'>
+            <dependency>
+                <depender aref='2' iref='2-3'/>
+                <dependee aref='1'  iref='1-2'/>
+            </dependency>
+        </dependum>
+    </diagram>
+</istarml2>

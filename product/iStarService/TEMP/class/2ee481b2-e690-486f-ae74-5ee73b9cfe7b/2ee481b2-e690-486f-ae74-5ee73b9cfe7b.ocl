@@ -1,0 +1,108 @@
+Developer:: adopt open platform
+pre: adopt open platform.preCondition="Value"
+post: adopt open platform.postCondition="Value" and the righ platform be used=true
+
+Developer:: the righ platform be used
+the righ platform be used=true implies profitability from platform=true
+
+Developer:: profitability from platform
+profitability from platform=true implies satisfaction with platform=true
+
+Developer:: create platform-specific applications
+pre: create platform-specific applications.preCondition="Value"
+post: create platform-specific applications.postCondition="Value" and profitability from platform=true
+
+Developer:: big market
+big market=true implies profitability from platform=true
+
+Developer:: easy to use
+easy to use=true implies satisfaction with platform=true
+
+ac-3:: satisfaction with platform
+pre: create platform-specific applications.preCondition="Value"  and 
+post:  and create platform-specific applications.postCondition="Value" satisfaction with platform=true
+
+ac-3:: adopt open platform
+pre: big market=true  and easy to use=true  and adopt open platform.preCondition="Value"  and 
+post: adopt open platform.postCondition="Value" 
+
+End-user:: variety
+variety=true implies satisfaction=true
+
+End-user:: quality
+quality=true implies satisfaction=true
+
+ac-2:: have software
+pre: acquire software.preCondition="Value"  or 
+post:  or acquire software.postCondition="Value" have software=true
+
+ac-2:: acquire software
+pre: get platform.preCondition="Value"  and get application.preCondition="Value"  and acquire software.preCondition="Value"  and 
+post:  and get platform.postCondition="Value"  and get application.postCondition="Value" acquire software.postCondition="Value" 
+
+Software Vendor:: platform-specific applications be supplied
+platform-specific applications be supplied=true implies diversity [product]=true
+
+Software Vendor:: diversity [product]
+diversity [product]=true implies high value=true
+
+Software Vendor:: platform-specific applications be supplied
+platform-specific applications be supplied=true implies innovation [product]=true
+
+Software Vendor:: solution gravity
+solution gravity=true implies vendor lock-in [customer]=true
+
+Software Vendor:: supply platform to developer
+pre: supply platform to developer.preCondition="Value"
+post: supply platform to developer.postCondition="Value" and flexibility in platform development=false
+
+Software Vendor:: high value
+high value=true implies vendor lock-in [customer]=true
+
+Software Vendor:: high value
+high value=true implies customer loyalty=true
+
+Software Vendor:: high value
+high value=true implies attractive to new customer=true
+
+Software Vendor:: build market channel for applications
+pre: build market channel for applications.preCondition="Value"
+post: build market channel for applications.postCondition="Value" and quick time-to-market=true
+
+Software Vendor:: supply platform to developer
+pre: supply platform to developer.preCondition="Value"
+post: supply platform to developer.postCondition="Value" and solution gravity=true
+
+Software Vendor:: flexibility in platform development
+flexibility in platform development=true implies innovation [product]=true
+
+Software Vendor:: innovation [product]
+innovation [product]=true implies high value=true
+
+ac-1:: large customer base
+customer loyalty=true and attractive to new customer=true and  implies large customer base=true
+
+ac-1:: software business be run
+pre: run software business using the open ecosystem.preCondition="Value"  or 
+post:  or run software business using the open ecosystem.postCondition="Value" software business be run=true
+
+ac-1:: run software business using the open ecosystem
+pre: platform be produced=true  and sell software platform.preCondition="Value"  and run software business using the open ecosystem.preCondition="Value"  and 
+post:  and sell software platform.postCondition="Value" run software business using the open ecosystem.postCondition="Value" 
+
+ac-1:: platform be produced
+pre: build platform.preCondition="Value"  or integrate OEM components.preCondition="Value"  or 
+post:  or build platform.postCondition="Value"  or integrate OEM components.postCondition="Value" platform be produced=true
+
+ac-1:: sell software platform
+pre: supply platform to developer.preCondition="Value"  and provide product related services.preCondition="Value"  and user satisfaction=true  and sell software platform.preCondition="Value"  and 
+post:  and supply platform to developer.postCondition="Value"  and provide product related services.postCondition="Value" sell software platform.postCondition="Value" 
+
+ac-1:: supply platform to developer
+pre: developer satisfaction=true  and platform-specific applications be supplied=true  and supply platform to developer.preCondition="Value"  and 
+post: supply platform to developer.postCondition="Value" 
+
+ac-1:: provide product related services
+pre: build market channel for applications.preCondition="Value"  and provide product related services.preCondition="Value"  and 
+post:  and build market channel for applications.postCondition="Value" provide product related services.postCondition="Value" 
+

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="MMO-SR.ood">
+      <graphic content="SVG"/>
+      <ielement type="goal" id="_u6tfcHNMEemozsE8pEOulw" name="Sell games">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_rngpUHNMEemozsE8pEOulw" aref="_nmqDAHNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_pIS04HNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_RB3DkHNQEemozsE8pEOulw" name="Pay for games">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_FMTK0HNQEemozsE8pEOulw" aref="_nmqDAHNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_pIS04HNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_X16KQHNQEemozsE8pEOulw" name="Provide gaming service">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_pIS04HNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_FMTK0HNQEemozsE8pEOulw" aref="_nmqDAHNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_cCccIHNQEemozsE8pEOulw" name="Fee">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_aRDXAHNQEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_FMTK0HNQEemozsE8pEOulw" aref="_nmqDAHNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_fRZrcHNQEemozsE8pEOulw" name="Hosting service">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_OQr8cHNQEemozsE8pEOulw" aref="_nmqDAHNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_aRDXAHNQEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_qIjbMHNQEemozsE8pEOulw" name="Fee">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_jssLAHNQEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_FMTK0HNQEemozsE8pEOulw" aref="_nmqDAHNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_q9UgAHNQEemozsE8pEOulw" name="Shipping Service">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_IUdOkHNQEemozsE8pEOulw" aref="_nmqDAHNMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_jssLAHNQEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor id="_nmqDAHNMEemozsE8pEOulw" name="Game Provider">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="254" ypos="120" width="0" height="0" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_rngpUHNMEemozsE8pEOulw" name="Game sales">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_FMTK0HNQEemozsE8pEOulw" name="Coordinate game provisioning">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_rngpUHNMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_IUdOkHNQEemozsE8pEOulw" name="Deliver CDs">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_FMTK0HNQEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_Jd8mMHNQEemozsE8pEOulw" name="Fast delivery">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_IUdOkHNQEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_OQr8cHNQEemozsE8pEOulw" name="Sell online gaming">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_FMTK0HNQEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="resource" id="_GsvC0HNQEemozsE8pEOulw" name="Game">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_FMTK0HNQEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_pIS04HNMEemozsE8pEOulw" name="Customer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_aRDXAHNQEemozsE8pEOulw" name="ISP">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_jssLAHNQEemozsE8pEOulw" name="Shipping agency">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+   </diagram>
+</istarml>

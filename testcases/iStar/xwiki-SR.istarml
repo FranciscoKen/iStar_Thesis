@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="xwiki-SR.ood">
+      <graphic content="SVG"/>
+      <ielement type="resource" id="_7_G0sHQOEemozsE8pEOulw" name="External OSS feedback">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_BGQKIHQOEemozsE8pEOulw" aref="_GT6MsHQMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_5b1msHQOEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_BTDvsHQREemozsE8pEOulw" name="OSS license info">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_JfpTcHQNEemozsE8pEOulw" aref="_GT6MsHQMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_-htUUHQOEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_C0jXoHQREemozsE8pEOulw"
+                name="OSS comunity activity &amp; trust data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_9_9uoHQNEemozsE8pEOulw" aref="_GT6MsHQMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_-htUUHQOEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_aP5AsHQREemozsE8pEOulw" name="Quality">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_MC7ywHQREemozsE8pEOulw" aref="_Jufq8HQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_U9Y-kHQMEemozsE8pEOulw" aref="_GT6MsHQMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_njpVwHQREemozsE8pEOulw"
+                name="Interraction with other member supported">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_Jufq8HQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_jvUvkHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_wz8ccHQREemozsE8pEOulw" name="Mailing lists">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_TEslUHQREemozsE8pEOulw" aref="_Jufq8HQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_jvUvkHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_07KJcHQREemozsE8pEOulw" name="New functionalities developed">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_U9Y-kHQMEemozsE8pEOulw" aref="_GT6MsHQMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_4-LS8HQREemozsE8pEOulw" name="Bugs fixed">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_U9Y-kHQMEemozsE8pEOulw" aref="_GT6MsHQMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_9DGg8HQREemozsE8pEOulw" name="Free support">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_70tbMHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="__xQwUHQREemozsE8pEOulw" name="Free licenses for IDE">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_B-OXIHQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_KV-FMHQSEemozsE8pEOulw" name="Jira access">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_HgS4kHQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_Zl1hoHQSEemozsE8pEOulw" name="Makers services advertised">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_WxntkHQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_jvUvkHQREemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_e2pT8HQSEemozsE8pEOulw" name="XWiki development guides">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_yTIwkHQMEemozsE8pEOulw" aref="_GT6MsHQMEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_Th0JsHQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_iIamsHQSEemozsE8pEOulw" name="Patches to XWiki code">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_Th0JsHQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_OHen8HQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_m8ZTEHQSEemozsE8pEOulw"
+                name="Patches and functionalities approved">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_OHen8HQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_Th0JsHQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_rdffsHQSEemozsE8pEOulw"
+                name="New XWiki functionalities code">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_Th0JsHQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_OHen8HQSEemozsE8pEOulw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor type="agent" id="_GT6MsHQMEemozsE8pEOulw" name="XWiki developer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="243" ypos="270" width="754" height="643" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_U9Y-kHQMEemozsE8pEOulw" name="XWiki features implemented">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_W8_e0HQMEemozsE8pEOulw" name="Implement XWiki features">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_U9Y-kHQMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_YXsiQHQMEemozsE8pEOulw" name="Adopt OSS components">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_U9Y-kHQMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_vhg9gHQMEemozsE8pEOulw" name="Document code and decisions">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_W8_e0HQMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_yTIwkHQMEemozsE8pEOulw" name="Follow the style guidelines">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_W8_e0HQMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_062ZsHQMEemozsE8pEOulw"
+                      name="Identify components requirements">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_YXsiQHQMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="resource" id="_5IsTIHQMEemozsE8pEOulw"
+                      name="XWiki code and decision documentations">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_vhg9gHQMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_JfpTcHQNEemozsE8pEOulw" name="Analyse license issues">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_YXsiQHQMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="resource" id="_MKSUwHQNEemozsE8pEOulw"
+                      name="Online offline reporting tools">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_JfpTcHQNEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_9_9uoHQNEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_QRpywHQNEemozsE8pEOulw" name="Quality OSS components">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_YXsiQHQMEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_9_9uoHQNEemozsE8pEOulw"
+                      name="Analyse the community of OSS components">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="and" iref="_QRpywHQNEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_BGQKIHQOEemozsE8pEOulw"
+                      name="Feedback from other OSS componentes user">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="and" iref="_QRpywHQNEemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_5b1msHQOEemozsE8pEOulw" name="External OSS user">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_-htUUHQOEemozsE8pEOulw" name="External OSS community">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_Jufq8HQREemozsE8pEOulw" name="Community member">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_jvUvkHQREemozsE8pEOulw">
+            <graphic content="SVG"/>
+         </actorLink>
+         <boundary>
+            <graphic content="basic" xpos="1152" ypos="48" width="0" height="385" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_LHbz0HQREemozsE8pEOulw" name="XWiki promoted">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="softgoal" id="_MC7ywHQREemozsE8pEOulw" name="High quality products">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_LHbz0HQREemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_QtrDkHQREemozsE8pEOulw" name="Interract with community">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_TEslUHQREemozsE8pEOulw"
+                      name="Participate to discussion on mailing lists">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_QtrDkHQREemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_U8sowHQREemozsE8pEOulw" name="Ask for new functionalities">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_QtrDkHQREemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_WEGVsHQREemozsE8pEOulw" name="Report bugs">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_QtrDkHQREemozsE8pEOulw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_d_NLEHQREemozsE8pEOulw" name="Emmeritus Commiter">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_Jufq8HQREemozsE8pEOulw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_jvUvkHQREemozsE8pEOulw" name="XWiki community">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_70tbMHQREemozsE8pEOulw" name="Supporter">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_B-OXIHQSEemozsE8pEOulw" name="Intellij">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="instance_of" aref="_70tbMHQREemozsE8pEOulw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_HgS4kHQSEemozsE8pEOulw" name="Atlassian">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="instance_of" aref="_70tbMHQREemozsE8pEOulw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_OHen8HQSEemozsE8pEOulw" name="Contributor">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_GT6MsHQMEemozsE8pEOulw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_Th0JsHQSEemozsE8pEOulw" name="Active committer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_GT6MsHQMEemozsE8pEOulw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_WxntkHQSEemozsE8pEOulw" name="Maker of XWiki">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_Th0JsHQSEemozsE8pEOulw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+   </diagram>
+</istarml>

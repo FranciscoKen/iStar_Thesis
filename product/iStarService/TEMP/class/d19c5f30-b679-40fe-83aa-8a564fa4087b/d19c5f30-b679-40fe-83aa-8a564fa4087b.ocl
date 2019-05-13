@@ -1,0 +1,65 @@
+Developer:: adopt open platform
+pre: adopt open platform.preCondition="Value"
+post: adopt open platform.postCondition="Value" and the righ platform be used=true
+
+Developer:: the righ platform be used
+the righ platform be used=true implies profitability from platform=true
+
+Developer:: profitability from platform
+profitability from platform=true implies satisfaction with platform=true
+
+Developer:: create platform-specific applications
+pre: create platform-specific applications.preCondition="Value"
+post: create platform-specific applications.postCondition="Value" and profitability from platform=true
+
+Developer:: big market
+big market=true implies profitability from platform=true
+
+Developer:: easy to use
+easy to use=true implies satisfaction with platform=true
+
+End-user:: variety
+variety=true implies satisfaction=true
+
+End-user:: quality
+quality=true implies satisfaction=true
+
+Software Vendor:: platform-specific applications be supplied
+platform-specific applications be supplied=true implies diversity [product]=true
+
+Software Vendor:: diversity [product]
+diversity [product]=true implies high value=true
+
+Software Vendor:: platform-specific applications be supplied
+platform-specific applications be supplied=true implies innovation [product]=true
+
+Software Vendor:: solution gravity
+solution gravity=true implies vendor lock-in [customer]=true
+
+Software Vendor:: supply platform to developer
+pre: supply platform to developer.preCondition="Value"
+post: supply platform to developer.postCondition="Value" and flexibility in platform development=false
+
+Software Vendor:: high value
+high value=true implies vendor lock-in [customer]=true
+
+Software Vendor:: high value
+high value=true implies customer loyalty=true
+
+Software Vendor:: high value
+high value=true implies attractive to new customer=true
+
+Software Vendor:: build market channel for applications
+pre: build market channel for applications.preCondition="Value"
+post: build market channel for applications.postCondition="Value" and quick time-to-market=true
+
+Software Vendor:: supply platform to developer
+pre: supply platform to developer.preCondition="Value"
+post: supply platform to developer.postCondition="Value" and solution gravity=true
+
+Software Vendor:: flexibility in platform development
+flexibility in platform development=true implies innovation [product]=true
+
+Software Vendor:: innovation [product]
+innovation [product]=true implies high value=true
+
