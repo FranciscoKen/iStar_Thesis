@@ -88,9 +88,9 @@ public class ClassGenerator {
         //actor link conversion
         for(ActorLink acl : model.getActorLinks()){
             if(acl.getType() == ActorLinkType.ISA){
-                source += acl.getFrom() + " --|> " + acl.getTo()+"\n";
+                source += cleanString(model.getActors().get(acl.getFrom()).getName()) + " --|> " + cleanString(model.getActors().get(acl.getTo()).getName())+"\n";
             } else {
-                source += acl.getFrom() + " -- " + acl.getTo() + " :  participates-in \n";
+                source += cleanString(model.getActors().get(acl.getFrom()).getName()) + " -- " + cleanString(model.getActors().get(acl.getTo()).getName()) + " :  participates-in \n";
             }
 
 
