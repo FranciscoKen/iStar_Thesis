@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="whitebox.ood">
+      <graphic content="SVG"/>
+      <actor type="role" id="_muKyEHWMEem4ScOhUnnb3g" name="Consumer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="725" ypos="42" width="188" height="271" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_ptH2gHWMEem4ScOhUnnb3g"
+                      name="Install and run the free modified program">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor type="role" id="_rytqAHWMEem4ScOhUnnb3g" name="Cracker">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="-108" ypos="66" width="817" height="811" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_BYpeYHWSEem4ScOhUnnb3g"
+                      name="Produce modified versions of the program or DRM content and redistribute it">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_HfhWAHWSEem4ScOhUnnb3g" name="Produce a crack program">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_BYpeYHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_Jj96AHWSEem4ScOhUnnb3g" name="Produce a new installable">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_BYpeYHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_RI2nwHWSEem4ScOhUnnb3g"
+                      name="Produce a crack that changes the original binary">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_HfhWAHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_0MmeYHWSEem4ScOhUnnb3g" name="Code lifting">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_RI2nwHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_1b_psHWSEem4ScOhUnnb3g" name="Bypass code logic">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_RI2nwHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_5jXHsHWSEem4ScOhUnnb3g"
+                      name="Interfere with the normal function calling">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_1b_psHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_C-tn0HWTEem4ScOhUnnb3g"
+                      name="Dumping values at the function calls">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_5jXHsHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_LsWtYHWTEem4ScOhUnnb3g"
+                      name="Intercept function call parameters (When? During execution or statically)">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_C-tn0HWTEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_7Fw5IHWTEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_RdQVAHWTEem4ScOhUnnb3g"
+                      name="Static and dynamic tampering of the code">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_HfhWAHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_Jj96AHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_UraTEHWTEem4ScOhUnnb3g" name="Understand the code">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_HfhWAHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_Jj96AHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_Zu9FcHWTEem4ScOhUnnb3g"
+                      name="Produce an entire installable from the original code">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_Jj96AHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_tYvIcHWTEem4ScOhUnnb3g" name="Obtain cryptographic keys">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_BYpeYHWSEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_2V0YMHWTEem4ScOhUnnb3g"
+                      name="Inspect registries and memory and control flow during execution">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_tYvIcHWTEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_7Fw5IHWTEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_7Fw5IHWTEem4ScOhUnnb3g"
+                      name="Reverse engineer the binary program">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_UraTEHWTEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_AvCOwHWUEem4ScOhUnnb3g" name="Differential analysis">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_7Fw5IHWTEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_F23EMHWUEem4ScOhUnnb3g"
+                      name="Create call graph by setting break points at function calls">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_7Fw5IHWTEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_MiAGgHWUEem4ScOhUnnb3g"
+                      name="Run the code under interactive debugger (dynamic analysis)">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_7Fw5IHWTEem4ScOhUnnb3g">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml>

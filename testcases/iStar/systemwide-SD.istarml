@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="systemwide-SD.ood">
+      <graphic content="SVG"/>
+      <ielement type="goal" id="_I_yfYHYVEem4ScOhUnnb3g" name="FUP Information resolved">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_HwbwUHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_Kf8DgHYVEem4ScOhUnnb3g" name="FUP forms">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_HwbwUHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_LXxqcHYVEem4ScOhUnnb3g" name="FUP data updated">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_HwbwUHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_UvbWUHYVEem4ScOhUnnb3g" name="Patient details obtained">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_HwbwUHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_XRIeEHYVEem4ScOhUnnb3g" name="HIV notifications">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_ZUakcHYVEem4ScOhUnnb3g" name="Data completeness maximised">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_a42LoHYVEem4ScOhUnnb3g" name="Forms received promptly">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_cGmYMHYVEem4ScOhUnnb3g" name="Forms received accurately">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_nvS5oHYVEem4ScOhUnnb3g" name="CD4 data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_mb270HYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_w8WfEHYVEem4ScOhUnnb3g" name="Treatment data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_rJE44HYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_1AoM0HYVEem4ScOhUnnb3g" name="Death reports">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_zo1TcHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_7MOzcHYVEem4ScOhUnnb3g" name="Incidence data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_5SV5oHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_-3GisHYVEem4ScOhUnnb3g" name="Child dtaa">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_-AV50HYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_HUV0wHYWEem4ScOhUnnb3g" name="Scottish data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_Fg7WYHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_NiIzwHYWEem4ScOhUnnb3g" name="Exposire code accurate">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_LXKJ8HYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_SNB1kHYWEem4ScOhUnnb3g"
+                name="Cause of death category accurate">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_LXKJ8HYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_abzN0HYWEem4ScOhUnnb3g" name="Pre-checked forms">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_lsVG4HYWEem4ScOhUnnb3g" name="Analysis data accurate">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_LXKJ8HYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_phnWYHYWEem4ScOhUnnb3g"
+                name="Trends in HIV spread identify effectively">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_LXKJ8HYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_xwkU0HYWEem4ScOhUnnb3g" name="Data entered accurately">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_0MpVsHYWEem4ScOhUnnb3g" name="Derrived fields accurate">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_VvyxsHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_56trwHYWEem4ScOhUnnb3g"
+                name="Duplicates identified efficiently">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_8sVe0HYWEem4ScOhUnnb3g" name="New patients identified">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_Dl1tQHYXEem4ScOhUnnb3g" name="Existing patients identified">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_LAwmsHYXEem4ScOhUnnb3g" name="Input errors corrected">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_S4vPkHYXEem4ScOhUnnb3g"
+                name="All HIV related deaths identified">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_V92mYHYXEem4ScOhUnnb3g" name="Death reports validated">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_XAVXEHYXEem4ScOhUnnb3g" name="FUP list">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_bRsekHYXEem4ScOhUnnb3g" name="Data completeness maximised">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_hRCK0HYXEem4ScOhUnnb3g" name="Patient linking maximised">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_j3G1MHYXEem4ScOhUnnb3g" name="Data validation maximised">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_lUcV4HYXEem4ScOhUnnb3g"
+                name="Patient exposures coded accurately">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor id="_GHZ9AHYVEem4ScOhUnnb3g" name="Information officer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_HwbwUHYVEem4ScOhUnnb3g" name="Nurse">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_TX0qMHYVEem4ScOhUnnb3g" name="Reporter">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_mb270HYVEem4ScOhUnnb3g" name="CD4">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_rJE44HYVEem4ScOhUnnb3g" name="SOPHID">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_zo1TcHYVEem4ScOhUnnb3g" name="ONS">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_5SV5oHYVEem4ScOhUnnb3g" name="Incidence">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_-AV50HYVEem4ScOhUnnb3g" name="ICH">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_Fg7WYHYWEem4ScOhUnnb3g" name="SCIEH">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_LXKJ8HYWEem4ScOhUnnb3g" name="Scientist">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_VvyxsHYWEem4ScOhUnnb3g" name="Inputter">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_dRb-MHYWEem4ScOhUnnb3g" name="HAP">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+   </diagram>
+</istarml>
