@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe08cbdd-9a29-4d0d-81b1-cb36554e5e3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/modules/.gradle/" />
@@ -61,13 +60,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+            <state relative-caret-position="244">
+              <caret line="250" column="57" selection-start-line="250" selection-start-column="57" selection-end-line="250" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9624#9625#0" expanded="true" />
+                <element signature="e#9665#9666#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="190" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="190" />
+            <state relative-caret-position="390">
+              <caret line="26" column="170" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="170" />
             </state>
           </provider>
         </entry>
@@ -200,13 +201,13 @@
         <option value="$PROJECT_DIR$/src/main/java/Mainan/IstarMLHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Mainan/Mainan.java" />
         <option value="$PROJECT_DIR$/temp.istarml" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/XMLValidator.java" />
         <option value="$PROJECT_DIR$/RESOURCE/istarml2.xsd" />
         <option value="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" />
       </list>
     </option>
   </component>
@@ -262,6 +263,14 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iStarService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iStarService" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iStarService" type="b2602c69:ProjectViewProjectNode" />
@@ -459,12 +468,12 @@
       <workItem from="1557845804112" duration="236000" />
       <workItem from="1557846069659" duration="334000" />
       <workItem from="1557846444960" duration="160000" />
-      <workItem from="1557846629219" duration="2286000" />
+      <workItem from="1557846629219" duration="2716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148967000" />
+    <option name="totallyTimeSpent" value="149397000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -6854,16 +6863,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/plantuml.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
@@ -6927,8 +6926,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="190" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="190" />
+        <state relative-caret-position="390">
+          <caret line="26" column="170" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="250" column="57" selection-start-line="250" selection-start-column="57" selection-end-line="250" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9624#9625#0" expanded="true" />
+            <element signature="e#9665#9666#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

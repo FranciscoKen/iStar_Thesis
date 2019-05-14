@@ -245,6 +245,12 @@ public class Endpoint {
         }
     }
 
+    @CrossOrigin
+    @GetMapping(value="/ping")
+    public ResponseEntity<?> ping(){
+        return new ResponseEntity<>("PING!",HttpStatus.OK);
+    }
+
 
 
     @CrossOrigin
