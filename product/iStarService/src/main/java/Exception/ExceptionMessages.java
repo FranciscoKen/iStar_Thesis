@@ -16,7 +16,7 @@ public class ExceptionMessages {
     public static final String andRefinementLinkCannotBeSingle = "And Refinement Link should minimal be 2";
 
     public static final String contributionValueException ="Intentional Element Link contribution only consists of MAKE, HELP, HURT, and BREAK value";
-    public static final String contributionElementTypeException = "Intentional Element Link contribution should only be connecting between task, resource, or goal to a quality";
+    public static final String contributionElementTypeException = "Intentional Element Link contribution should only be connecting between any intentional element to a quality";
 
     public static final String qualificationElementTypeException = "Intentional Element Link qualification should only connect quality element to a goal, task, or resource";
 

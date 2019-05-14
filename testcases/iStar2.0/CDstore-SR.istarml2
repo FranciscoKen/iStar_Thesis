@@ -32,7 +32,7 @@
               <ielementLink type='refinement' value='and' iref='ie-1-7'/>
             </ielement>
             <ielement id='ie-1-11' name='Have all titles' type='task'>
-              <ielementLink type='refinement' value='and' oref='ie-1-7'/>
+              <ielementLink type='refinement' value='and' iref='ie-1-7'/>
             </ielement>
           </boundary>
         </actor>

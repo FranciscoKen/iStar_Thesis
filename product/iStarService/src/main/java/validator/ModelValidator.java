@@ -63,7 +63,8 @@ public class ModelValidator{
                         (
                                 model.getiElements().get(entry.getKey().entrySet().iterator().next().getKey()).getType().equals(IntentionalElementType.TASK) ||
                                         model.getiElements().get(entry.getKey().entrySet().iterator().next().getKey()).getType().equals(IntentionalElementType.GOAL) ||
-                                        model.getiElements().get(entry.getKey().entrySet().iterator().next().getKey()).getType().equals(IntentionalElementType.RESOURCE)
+                                        model.getiElements().get(entry.getKey().entrySet().iterator().next().getKey()).getType().equals(IntentionalElementType.RESOURCE) ||
+                                        model.getiElements().get(entry.getKey().entrySet().iterator().next().getKey()).getType().equals(IntentionalElementType.QUALITY)
                         )){
 
                 } else {
