@@ -1,0 +1,50 @@
+Internet sales:: Register client
+pre: Interact by site.preCondition="Value"  and Register client.preCondition="Value"  and 
+post:  and Interact by site.postCondition="Value" Register client.postCondition="Value" 
+
+Internet sales:: Assistance to client
+pre: Interact by site.preCondition="Value"  and Assistance to client.preCondition="Value"  and 
+post:  and Interact by site.postCondition="Value" Assistance to client.postCondition="Value" 
+
+Internet sales:: Search CD
+pre: Interact by site.preCondition="Value"  and Search CD.preCondition="Value"  and 
+post:  and Interact by site.postCondition="Value" Search CD.postCondition="Value" 
+
+Internet sales:: Super search
+pre: Search CD.preCondition="Value"  and Super search.preCondition="Value"  and 
+post:  and Search CD.postCondition="Value" Super search.postCondition="Value" 
+
+Internet sales:: Fast search
+pre: Search CD.preCondition="Value"  and Fast search.preCondition="Value"  and 
+post:  and Search CD.postCondition="Value" Fast search.postCondition="Value" 
+
+Store:: To Attract Customers
+pre: To Attract Customers.preCondition="Value"
+post: To Attract Customers.postCondition="Value" and Good Price=true
+
+Store:: To Attract Customers
+pre: To Attract Customers.preCondition="Value"
+post: To Attract Customers.postCondition="Value" and Friendly staff=true
+
+Store:: Volume purchase [High]
+Volume purchase [High]=true implies Good Price=true
+
+Store:: Discount price
+Discount price=true implies Good Price=true
+
+Store:: Delivery
+pre: To Attract Customers.preCondition="Value"  and Delivery.preCondition="Value"  and 
+post:  and To Attract Customers.postCondition="Value" Delivery.postCondition="Value" 
+
+Store:: Sales by web
+pre: To Attract Customers.preCondition="Value"  and Sales by web.preCondition="Value"  and 
+post:  and To Attract Customers.postCondition="Value" Sales by web.postCondition="Value" 
+
+Store:: Maintain stock
+pre: To Attract Customers.preCondition="Value"  and Have all titles.preCondition="Value"  and Replenish.preCondition="Value"  and Maintain stock.preCondition="Value"  and 
+post:  and To Attract Customers.postCondition="Value"  and Have all titles.postCondition="Value"  and Replenish.postCondition="Value" Maintain stock.postCondition="Value" 
+
+Store:: Buy new releases
+pre: Maintain stock.preCondition="Value"  and Buy new releases.preCondition="Value"  and 
+post:  and Maintain stock.postCondition="Value" Buy new releases.postCondition="Value" 
+
