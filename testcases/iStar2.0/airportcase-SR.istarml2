@@ -1,0 +1,361 @@
+<istarml2 version='1'>
+  <diagram>
+    <actor id='ac-1' name='IP Telephony system' type='actor'>
+      <boundary>
+        <ielement type='goal' id='ie-1-1' name='IP telephony services provided'>
+        </ielement>
+        <ielement type='goal' id='ie-1-2' name='Communication established'>
+          <ielementLink type='refinement' value='or' iref='ie-1-1'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-3' name='Services billed'>
+          <ielementLink type='refinement' value='or' iref='ie-1-1'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-4' name='Resources provided'>
+          <ielementLink type='refinement' value='or' iref='ie-1-1'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-5' name='Services managed'>
+          <ielementLink type='refinement' value='or' iref='ie-1-1'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-6' name='Voice &amp; data accessed'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-7' name='Voice &amp; data distributed'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-8' name='Voice &amp; data transported'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-9' name='Connection established'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-10' name='Packages routed'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-11' name='Commun. inf. stored'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-12' name='Voice &amp; data compressed'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-13' name='Voice &amp; data encryption'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-14' name='Signalling provided'>
+          <ielementLink type='refinement' value='or' iref='ie-1-2'/>
+          <ielementLink type='refinement' value='or' iref='ie-1-3'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-15' name='Mobile networks interconnected'>
+          <ielementLink type='refinement' value='or' iref='ie-1-9'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-16' name='International networks interconnected'>
+          <ielementLink type='refinement' value='or' iref='ie-1-9'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-17' name='Local networks interconnected'>
+          <ielementLink type='refinement' value='or' iref='ie-1-9'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-18' name='Services configured'>
+          <ielementLink type='refinement' value='or' iref='ie-1-5'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-19' name='Quality of services configured'>
+          <ielementLink type='refinement' value='or' iref='ie-1-19'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-20' name='Services monitorized'>
+          <ielementLink type='refinement' value='or' iref='ie-1-5'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-21' name='Services recovered'>
+          <ielementLink type='refinement' value='or' iref='ie-1-5'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-22' name='Performance tuned'>
+          <ielementLink type='refinement' value='or' iref='ie-1-5'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-23' name='RI services billed'>
+          <ielementLink type='refinement' value='or' iref='ie-1-3'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-24' name='Prepaid cards emmited'>
+          <ielementLink type='refinement' value='or' iref='ie-1-3'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-25' name='Billing information stored'>
+          <ielementLink type='refinement' value='or' iref='ie-1-3'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-26' name='Users registered'>
+          <ielementLink type='refinement' value='or' iref='ie-1-3'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-27' name='Invoices emmited'>
+          <ielementLink type='refinement' value='or' iref='ie-1-3'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-28' name='Billing plans defined'>
+          <ielementLink type='refinement' value='or' iref='ie-1-3'/>
+        </ielement>
+        <ielement type='goal' id='ie-1-29' name='Complains supported'>
+          <ielementLink type='refinement' value='or' iref='ie-1-3'/>
+        </ielement>
+      </boundary>
+    </actor> 
+    <actor id='ac-2' type='actor' name='HTU'>
+      <boundary>
+      </boundary>
+      <actorLink type='is-a' aref='ac-4'/>
+    </actor>
+    <actor id='ac-3' type='actor' name='TF'>
+      <boundary>
+      </boundary>
+      <actorLink type='is-a' aref='ac-2'/>
+    </actor>
+    <actor id='ac-4' type='actor' name='User'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-5' type='actor' name='Call center'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-6' type='actor' name='TC'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-7' type='actor' name='ISP'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-8' type='actor' name='TBP'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-9' type='actor' name='TSD'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-10' type='actor' name='SA'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-11' type='actor' name='TRA'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-12' type='actor' name='DNS'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-13' type='actor' name='InPr'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-14' type='actor' name='User'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-15' type='actor' name='HTU'>
+      <boundary>
+      </boundary>
+      <actorLink type='is-a' aref='ac-14'/>
+    </actor>
+    <actor id='ac-16' type='actor' name='ISP'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-17' type='actor' name='TC'>
+      <boundary>
+      </boundary>
+    </actor>
+
+    <dependum type='goal' id='de-1' name='Access from home'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1' iref='ie-1-7'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-2' name='Voice and data access infrastructure'>
+      <dependency>
+        <depender aref='ac-3'/>
+        <dependee aref='ac-1' iref='ie-1-6'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-3' name='Added value services provided'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1' iref='ie-1-23'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-4' name='Services invoiced'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1' iref='ie-1-27'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-5' name='Telephone &amp; access resources'>
+      <dependency>
+        <depender aref='ac-4'/>
+        <dependee aref='ac-1' iref='ie-1-4'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-6' name='Users supported'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-29'/>
+        <dependee aref='ac-5'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-7' name='Users account and billing information'>
+      <dependency>
+        <depender aref='ac-5'/>
+        <dependee aref='ac-1' iref='ie-1-26'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-8' name='Invoices emmited'>
+      <dependency>
+        <depender aref='ac-6'/>
+        <dependee aref='ac-1' iref='ie-1-23'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-9' name='Easy definition of services plans'>
+      <dependency>
+        <depender aref='ac-6'/>
+        <dependee aref='ac-1' iref='ie-1-28'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-10' name='Accounting information'>
+      <dependency>
+        <depender aref='ac-6'/>
+        <dependee aref='ac-1' iref='ie-1-26'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-11' name='ISP services invoiced'>
+      <dependency>
+        <depender aref='ac-7'/>
+        <dependee aref='ac-1' iref='ie-1-27'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-12' name='Users information'>
+      <dependency>
+        <depender aref='ac-8'/>
+        <dependee aref='ac-1' iref='ie-1-26'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-13' name='Services consumption controlled'>
+      <dependency>
+        <depender aref='ac-9'/>
+        <dependee aref='ac-1' iref='ie-1-25'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-14' name='Services offered'>
+      <dependency>
+        <depender aref='ac-9'/>
+        <dependee aref='ac-1' iref='ie-1-24'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-15' name='Easy administration'>
+      <dependency>
+        <depender aref='ac-10'/>
+        <dependee aref='ac-1' iref='ie-1-5'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-16' name='Good performance'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-22'/>
+        <dependee aref='ac-10'/>
+      </dependency>
+    </dependum>
+    <dependum type='task' id='de-17' name='Recover from the scratch'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-21'/>
+        <dependee aref='ac-10'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-18' name='Resources monitoriced'>
+      <dependency>
+        <depender aref='ac-10'/>
+        <dependee aref='ac-1' iref='ie-1-20'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-19' name='Parameters values'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-18'/>
+        <dependee aref='ac-10'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-20' name='Quality of services information'>
+      <dependency>
+        <depender aref='ac-11'/>
+        <dependee aref='ac-1' iref='ie-1-19'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-21' name='Up-to-date management of routing tables'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-10'/>
+        <dependee aref='ac-12'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-22' name='Routing status'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-10'/>
+        <dependee aref='ac-12'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-23' name='Destination IP addresses'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-10'/>
+        <dependee aref='ac-12'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-24' name='Local connection'>
+      <dependency>
+        <depender aref='ac-13'/>
+        <dependee aref='ac-1' iref='ie-1-9'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-25' name='Worldwide connection'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-9'/>
+        <dependee aref='ac-13'/>
+      </dependency>
+    </dependum>
+    <dependum type='resource' id='de-26' name='Interconnection infrastructure'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-9'/>
+        <dependee aref='ac-13'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-27' name='Quality of services'>
+      <dependency>
+        <depender aref='ac-1' iref='ie-1-9'/>
+        <dependee aref='ac-13'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-28' name='Quality of services'>
+      <dependency>
+        <dependee aref='ac-14'/>
+        <depender aref='ac-1' iref='ie-1-19'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-29' name='Worldwide connection'>
+      <dependency>
+        <dependee aref='ac-14'/>
+        <depender aref='ac-1' iref='ie-1-9'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-30' name='Information security'>
+      <dependency>
+        <dependee aref='ac-14'/>
+        <depender aref='ac-1' iref='ie-1-12'/>
+      </dependency>
+    </dependum>
+    <dependum type='quality' id='de-31' name='Reachable access'>
+      <dependency>
+        <dependee aref='ac-15'/>
+        <depender aref='ac-1' iref='ie-1-7'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-32' name='Added value services transported'>
+      <dependency>
+        <dependee aref='ac-16'/>
+        <depender aref='ac-1' iref='ie-1-8'/>
+      </dependency>
+    </dependum>
+    <dependum type='goal' id='de-33' name='Telephone services provided'>
+      <dependency>
+        <dependee aref='ac-17'/>
+        <depender aref='ac-1' iref='ie-1-1'/>
+      </dependency>
+    </dependum>
+  </diagram>
+</istarml2>
