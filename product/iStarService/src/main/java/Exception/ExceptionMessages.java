@@ -26,6 +26,8 @@ public class ExceptionMessages {
     public static final String dependendencyDependerElementRefinedException = "Depender Element in Dependency should not be refined (child of a refinement link)";
     public static final String dependendencyDependerElementContributedException = "Depender Element in Dependency should not be contributed (child of a contribution link)";
 
+    public static final String ielementLinkINonexistingiElementException = "Intentional element not found. Intentional element link should only connects an intentional element with other intentional element";
+
     public ExceptionMessages(){
 
     }

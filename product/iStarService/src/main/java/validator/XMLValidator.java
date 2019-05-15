@@ -29,8 +29,7 @@ public class XMLValidator {
             validator.validate(new StreamSource(new File(this.filePath)));
         } catch (SAXException | IOException e) {
             System.out.println(e.getMessage());
-            throw new IStarException(ExceptionMessages.heading+ExceptionMessages.falseSchemaException,e);
-
+            throw new IStarException(ExceptionMessages.heading+ExceptionMessages.falseSchemaException+" : "+e.getMessage(),e);
         }
     }
 

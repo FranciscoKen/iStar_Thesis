@@ -26,13 +26,17 @@ public class ModelValidator{
             if(al.getType().equals(ActorLinkType.ISA)){
                 if(!(model.getActors().get(al.getFrom()).getType().equals(model.getActors().get(al.getTo()).getType())
                 && (model.getActors().get(al.getFrom()).getType().equals(ActorType.ROLE) || model.getActors().get(al.getFrom()).getType().equals(ActorType.ACTOR)))){
-                    throw new IStarException(ExceptionMessages.heading+ExceptionMessages.isaWrongActorElementException +"[Element "+al.getFrom()+" and "+al.getTo());
+                    throw new IStarException(ExceptionMessages.heading+ExceptionMessages.isaWrongActorElementException +"[Element "+al.getFrom()+" and "+al.getTo()+"]");
                 }
             }
         }
 
         //validate ielementLink
         for(Map.Entry<HashMap<String,String>,IntentionalElementLink> entry : model.getiElementLinks().entrySet()){
+            if(!model.getiElements().containsKey(entry.getKey().entrySet().iterator().next().getKey()) ||
+                    !model.getiElements().containsKey(entry.getKey().entrySet().iterator().next().getValue())){
+                throw new IStarException(ExceptionMessages.heading+ExceptionMessages.ielementLinkINonexistingiElementException);
+            }
             if(entry.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND) ||
                     entry.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
                 // intentional element link for refinement should be between task and goal
