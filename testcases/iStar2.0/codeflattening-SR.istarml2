@@ -17,7 +17,7 @@
           id='ie-3'
           type='goal'
           name='Produce a crack that changes the original binary'>
-          <ielementLink type='refinement' value='and' iref='ie-2'/>
+          <ielementLink type='refinement' value='or' iref='ie-2'/>
         </ielement>
         <ielement
           id='ie-4'
@@ -29,7 +29,7 @@
           id='ie-5'
           type='quality'
           name='Understand the code'>
-          <ielementLink type='refinement' value='and' iref='ie-4'/>
+          <ielementLink type='refinement' value='or' iref='ie-4'/>
         </ielement>
         <ielement
           id='ie-6'
@@ -47,11 +47,11 @@
           id='ie-8'
           type='quality'
           name='Understand the branch instruction targets'>
-          <ielementLink type='refinement' value='and' iref='ie-7'/>
+          <ielementLink type='refinement' value='or' iref='ie-7'/>
         </ielement>
       </boundary>
     </actor>
-    <actor id='ac-1' name='Defender' type='role'>
+    <actor id='ac-2' name='Defender' type='role'>
       <boundary>
         <ielement 
           id='ie-9'

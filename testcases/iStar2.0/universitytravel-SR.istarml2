@@ -34,7 +34,6 @@
           type='goal'
           name='Request prepared'>
           <ielementLink type='refinement' value='and' iref='ie-2'/>
-          <ielementLink type='qualification' iref='ie-8'/>
         </ielement>
         <ielement
           id='ie-5'
@@ -60,6 +59,7 @@
           id='ie-8'
           type='quality'
           name='No errors'>
+          <ielementLink type='qualification' iref='ie-4'/>
         </ielement>
         <ielement
           id='ie-9'
@@ -80,13 +80,13 @@
           type='quality'
           name='Quick booking'>
           <ielementLink type='contribution' value='help' iref='ie-21'/>
+          <ielementLink type='qualification' iref='ie-12'/>
         </ielement>
         <ielement
           id='ie-12'
           type='goal'
           name='Trip parts booked'>
           <ielementLink type='refinement' value='or' iref='ie-3'/>
-          <ielementLink type='qualification' iref='ie-11'/>
         </ielement>
         <ielement
           id='ie-13'
