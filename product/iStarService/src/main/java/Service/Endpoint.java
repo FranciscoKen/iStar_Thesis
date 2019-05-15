@@ -246,7 +246,7 @@ public class Endpoint {
     }
 
     @CrossOrigin
-    @GetMapping(value="/ping")
+    @GetMapping(value="/istar-service/ping")
     public ResponseEntity<?> ping(){
         return new ResponseEntity<>("PING!",HttpStatus.OK);
     }
