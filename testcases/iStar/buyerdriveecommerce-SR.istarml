@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="buyerdriveecommerce-SR.ood">
+      <graphic content="SVG"/>
+      <ielement type="softgoal" id="_mUu-IHicEemHjci8NpNM-A" name="Loyalty">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_EdaeYHicEemHjci8NpNM-A" aref="__8NkEHibEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_wq7LUHibEemHjci8NpNM-A" aref="_7qKncHiYEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_p4Md0HicEemHjci8NpNM-A" name="Pay for purchasing [Service]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_H38EgHicEemHjci8NpNM-A" aref="__8NkEHibEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_wq7LUHibEemHjci8NpNM-A" aref="_7qKncHiYEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_tUuPEHicEemHjci8NpNM-A" name="Name a price [Service]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_LrcyYHicEemHjci8NpNM-A" aref="__8NkEHibEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_zi2asHibEemHjci8NpNM-A" aref="_7qKncHiYEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_vxwSMHicEemHjci8NpNM-A"
+                name="Low price service provider be found">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_7dhLMHibEemHjci8NpNM-A" aref="_7qKncHiYEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_RoDTsHicEemHjci8NpNM-A" aref="__8NkEHibEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_tNjaoHidEemHjci8NpNM-A" name="Good quality [Service]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_wq7LUHibEemHjci8NpNM-A" aref="_7qKncHiYEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_hOeO8HicEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_MkZFMHifEemHjci8NpNM-A" name="Acceptable price [Service]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_hOeO8HicEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_zi2asHibEemHjci8NpNM-A" aref="_7qKncHiYEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_VHJwcHifEemHjci8NpNM-A"
+                name="Attract more customers [Service]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_hOeO8HicEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_EdaeYHicEemHjci8NpNM-A" aref="__8NkEHibEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_Xz7fwHifEemHjci8NpNM-A" name="Agreement on price [P]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_RoDTsHicEemHjci8NpNM-A" aref="__8NkEHibEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_hOeO8HicEemHjci8NpNM-A">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor id="_7qKncHiYEemHjci8NpNM-A" name="Customer as buyer [Service]">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="48" ypos="0" width="372" height="384" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="softgoal" id="__Vpv0HiaEemHjci8NpNM-A" name="Low price">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="softgoal" id="_puchYHibEemHjci8NpNM-A" name="Flexibility [Purchasing]">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="goal" id="_rlneYHibEemHjci8NpNM-A" name="Service be purchased [Service]">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_wq7LUHibEemHjci8NpNM-A"
+                      name="Purchase by naming my own price [Service]">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_rlneYHibEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_zi2asHibEemHjci8NpNM-A" name="Name a price [Service]">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="__Vpv0HiaEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_wq7LUHibEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_7dhLMHibEemHjci8NpNM-A"
+                      name="Low price service provider be found">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="hurt" iref="_puchYHibEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_wq7LUHibEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="__8NkEHibEemHjci8NpNM-A" name="Middleman as seller [Service]">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="612" ypos="0" width="0" height="0" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="softgoal" id="_DN6lYHicEemHjci8NpNM-A" name="Profitability">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="softgoal" id="_EdaeYHicEemHjci8NpNM-A"
+                      name="Customer attraction [Service]">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_DN6lYHicEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_GB6XAHicEemHjci8NpNM-A" name="Be Middleman [Service]">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_H38EgHicEemHjci8NpNM-A"
+                      name="Sell in buyer driven style [Service]">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_GB6XAHicEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_LrcyYHicEemHjci8NpNM-A"
+                      name="Accept purchase request with price">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_EdaeYHicEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="hurt" iref="_DN6lYHicEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_H38EgHicEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_OdzlQHicEemHjci8NpNM-A"
+                      name="Send modified request to supplier">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_H38EgHicEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_RoDTsHicEemHjci8NpNM-A"
+                      name="Get price agreement from supplier">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_EdaeYHicEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_H38EgHicEemHjci8NpNM-A">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_hOeO8HicEemHjci8NpNM-A" name="Supplier [Service]">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+   </diagram>
+</istarml>
