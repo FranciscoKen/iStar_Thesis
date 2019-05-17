@@ -73,15 +73,6 @@ public class ClassGenerator {
                     }
                 }
                 source.append("}\n");
-
-                //resource conversion
-                for(Resource r : temp_resource){
-                    source.append("Class ").append(cleanString(r.getName())).append("{\n");
-                    source.append("{field} +availability : boolean \n");
-                    source.append("}\n");
-                    source.append(cleanString(r.getActor())).append(" -- ").append(cleanString(r.getName())).append("\n");
-                }
-
             } else {
                 source.append("\n");
             }
@@ -93,8 +84,14 @@ public class ClassGenerator {
             } else {
                 source.append(cleanString(model.getActors().get(acl.getFrom()).getName())).append(" -- ").append(cleanString(model.getActors().get(acl.getTo()).getName())).append(" :  participates-in \n");
             }
+        }
 
-
+        //resource conversion
+        for(Resource r : temp_resource){
+            source.append("Class ").append(cleanString(r.getName())).append("{\n");
+            source.append("{field} +availability : boolean \n");
+            source.append("}\n");
+            source.append(cleanString(r.getActor())).append(" -- ").append(cleanString(r.getName())).append("\n");
         }
 
 
@@ -110,11 +107,11 @@ public class ClassGenerator {
                 source.append("Class ").append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append("{\n");
                 source.append("{field} +").append(cleanString(d.getValue().getDependum().getName())).append(" : boolean \n");
                 source.append("}\n");
+                source.append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append(" \"depender\" -- \"dependee\" ").append(cleanString(model.getActors().get(d.getValue().getDependee()).getName())).append(" :Dependency\n");
 
             }  else if(d.getValue().getDependum().getType().equals(IntentionalElementType.RESOURCE)){
-                Resource r = new Resource(d.getKey(), renameResource(cleanString(d.getValue().getDependum().getName()),temp_resource),null);
-
-                temp_resource.add(r);
+                // Resource r = new Resource(d.getKey(), renameResource(cleanString(d.getValue().getDependum().getName()),temp_resource),null);
+                // temp_resource.add(r);
                 source.append("Class ").append(r.getName()).append(" {\n");
                 source.append("{field} +availability : boolean\n");
                 source.append("}\n");
@@ -288,7 +285,7 @@ public class ClassGenerator {
 
         }
 
-        temp_resource = null;
+        // temp_resource = null;
 
 
         createOCLFile(ocl.exportString());
