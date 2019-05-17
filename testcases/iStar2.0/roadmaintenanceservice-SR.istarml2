@@ -4,24 +4,24 @@
       <boundary>
       </boundary>
     </actor>
-    <actor type='ac-2' name='Road service system' type=' type='agent'>
+    <actor id='ac-2' name='Road service system' type='agent'>
       <boundary>
         <ielement type='goal' id='ie-2-1' name='Roads maintained as safe for traffic'>
         </ielement>
         <ielement type='goal' id='ie-2-2' name='Data for road maintenance collected'>
-          <ielementLink type='refinement' type='or' iref='ie-2-1'/>
+          <ielementLink type='refinement' value='or' iref='ie-2-1'/>
         </ielement>
         <ielement id='ie-2-3' type='goal' name='Construction related to collected'>
-          <ielementLink type='refinement' type='and' iref='ie-2-2'/>
+          <ielementLink type='refinement' value='and' iref='ie-2-2'/>
         </ielement>
         <ielement id='ie-2-4' type='goal' name='Traffic signal failures detected'>
-          <ielementLink type='refinement' type='and' iref='ie-2-2'/>
+          <ielementLink type='refinement' value='and' iref='ie-2-2'/>
         </ielement>
         <ielement id='ie-2-5' type='goal' name='Road side weather data collected'>
-          <ielementLink type='refinement' type='and' iref='ie-2-2'/>
+          <ielementLink type='refinement' value='and' iref='ie-2-2'/>
         </ielement>
         <ielement id='ie-2-6' type='goal' name='Objects disturbing trafic detected'>
-          <ielementLink type='refinement' type='and' iref='ie-2-2'/>
+          <ielementLink type='refinement' value='and' iref='ie-2-2'/>
         </ielement>
         <ielement id='ie-2-7' type='task' name='Update traffic info'>
           <ielementLink type='refinement' value='or' iref='ie-2-3'/>
