@@ -104,7 +104,7 @@ public class ClassGenerator {
                 source.append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append(" \"depender\" -- \"dependee\" ").append(cleanString(model.getActors().get(d.getValue().getDependee()).getName())).append(" :Dependency\n");
 
             } else if(d.getValue().getDependum().getType().equals(IntentionalElementType.GOAL) || d.getValue().getDependum().getType().equals(IntentionalElementType.QUALITY)){
-                source.append("Class ").append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append("{\n");
+                source.append("Class ").append(cleanString(model.getActors().get(d.getValue().getDependee()).getName())).append("{\n");
                 source.append("{field} +").append(cleanString(d.getValue().getDependum().getName())).append(" : boolean \n");
                 source.append("}\n");
                 source.append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append(" \"depender\" -- \"dependee\" ").append(cleanString(model.getActors().get(d.getValue().getDependee()).getName())).append(" :Dependency\n");
