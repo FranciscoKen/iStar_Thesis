@@ -110,8 +110,8 @@ public class ClassGenerator {
                 source.append(cleanString(model.getActors().get(d.getValue().getDepender()).getName())).append(" \"depender\" -- \"dependee\" ").append(cleanString(model.getActors().get(d.getValue().getDependee()).getName())).append(" :Dependency\n");
 
             }  else if(d.getValue().getDependum().getType().equals(IntentionalElementType.RESOURCE)){
-                // Resource r = new Resource(d.getKey(), renameResource(cleanString(d.getValue().getDependum().getName()),temp_resource),null);
-                // temp_resource.add(r);
+                 Resource r = new Resource(d.getKey(), renameResource(cleanString(d.getValue().getDependum().getName()),temp_resource),null);
+                 //temp_resource.add(r);
                 source.append("Class ").append(r.getName()).append(" {\n");
                 source.append("{field} +availability : boolean\n");
                 source.append("}\n");
