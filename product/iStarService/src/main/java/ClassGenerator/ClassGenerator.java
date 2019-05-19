@@ -77,6 +77,15 @@ public class ClassGenerator {
                 source.append("\n");
             }
         }
+
+        //resource conversion
+        for(Resource r : temp_resource){
+            source.append("Class ").append(cleanString(r.getName())).append("{\n");
+            source.append("{field} +availability : boolean \n");
+            source.append("}\n");
+            source.append(cleanString(r.getActor())).append(" -- ").append(cleanString(r.getName())).append("\n");
+        }
+        
         //actor link conversion
         for(ActorLink acl : model.getActorLinks()){
             if(acl.getType() == ActorLinkType.ISA){
@@ -86,13 +95,7 @@ public class ClassGenerator {
             }
         }
 
-        //resource conversion
-        for(Resource r : temp_resource){
-            source.append("Class ").append(cleanString(r.getName())).append("{\n");
-            source.append("{field} +availability : boolean \n");
-            source.append("}\n");
-            source.append(cleanString(r.getActor())).append(" -- ").append(cleanString(r.getName())).append("\n");
-        }
+        
 
 
         //Dependency conversion

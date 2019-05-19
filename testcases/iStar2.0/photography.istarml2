@@ -5,10 +5,13 @@
                 <ielement id='1-1' name='Work Opportunity' type='goal'>
                 </ielement>
                 <ielement id='1-2' name='To present work request' type='task'>
+                    <ielementLink type='refinement' value='or' iref='1-1'/>
                 </ielement>
                 <ielement id='1-3' name='Curriculum' type='resource'>
+                    <ielementLink type='neededBy' iref='1-2'/>
                 </ielement>
                 <ielement id='1-4' name='Personal data' type='resource'>
+                    <ielementLink type='neededBy' iref='1-2'/>
                 </ielement>
             </boundary>
         </actor>
@@ -17,12 +20,16 @@
                 <ielement id='2-1' name='Work request be processed' type='goal'>
                 </ielement>
                 <ielement id='2-2' name='To process work request' type='task'>
+                    <ielementLink type='refinement' value='or' iref='2-1'/>
                 </ielement>
                 <ielement id='2-3' name='To receive work request' type='task'>
+                    <ielementLink type='refinement' value='and' iref='2-2'/>
                 </ielement>
                 <ielement id='2-4' name='To refuse work request' type='task'>
+                    <ielementLink type='refinement' value='and' iref='2-2'/>
                 </ielement>
                 <ielement id='2-5' name='To accept work request' type='task'>
+                    <ielementLink type='refinement' value='and' iref='2-2'/>
                 </ielement>
             </boundary>
         </actor>
