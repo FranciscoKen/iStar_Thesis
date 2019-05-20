@@ -160,7 +160,6 @@ public class IstarMLHandler {
         NodeList ielementLinkNodes = currentiElement.getElementsByTagName("ielementLink");
         for(int l = 0 ; l<ielementLinkNodes.getLength();l++){
             Element currentiElementLink = (Element) ielementLinkNodes.item(l);
-            //TODO ini masih asumsi pertama, yang direference
             if(currentiElementLink.getAttribute("type").equals("means-end")){
                 //TODO means end
                 currentiElementLink.setAttribute("type","refinement");

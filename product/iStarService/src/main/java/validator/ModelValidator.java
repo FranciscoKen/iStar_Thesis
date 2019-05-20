@@ -92,8 +92,21 @@ public class ModelValidator{
             //checks for the availability of intentional element
             if(!entry.getValue().getDependeeElement().equals("")){
                 if(!model.getiElements().containsKey(entry.getValue().getDependeeElement())){
-                    throw new IStarException(ExceptionMessages.heading+ExceptionMessages.referencedElementNotFoundException+"[Intentional Element "+entry.getValue().getDependeeElement());
+                    throw new IStarException(ExceptionMessages.heading+ExceptionMessages.referencedElementNotFoundException+"[Intentional Element "+entry.getValue().getDependeeElement()+"]");
                 }
+            }
+
+            //checks that dependerelmt / dependeelemt is indeed from the depender/dependee
+            if(!model.getiElements().get(entry.getValue().getDependeeElement()).getActorID().equals(entry.getValue().getDependee())){
+                throw new IStarException(ExceptionMessages.heading+ExceptionMessages.dependencyElementNotFromDependencyActorException+"[Dependee Element "+model.getiElements().get(entry.getValue().getDependeeElement()).getName()+"]");
+            }
+            if(!model.getiElements().get(entry.getValue().getDependerElement()).getActorID().equals(entry.getValue().getDepender())){
+                throw new IStarException(ExceptionMessages.heading+ExceptionMessages.dependencyElementNotFromDependencyActorException+"[Depender Element "+model.getiElements().get(entry.getValue().getDependerElement()).getName()+"]");
+            }
+
+            //checks for cyclical dependency
+            if(entry.getValue().getDependee().equals(entry.getValue().getDepender())){
+                throw new IStarException(ExceptionMessages.heading+ExceptionMessages.cyclicalDependencyException+"[Dependency between "+model.getActors().get(entry.getValue().getDependee()).getName()+" and "+model.getActors().get(entry.getValue().getDepender()).getName()+"]");
             }
 
             if(!entry.getValue().getDependerElement().equals("")){
