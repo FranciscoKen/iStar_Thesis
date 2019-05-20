@@ -13,6 +13,9 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.HashMap;
@@ -112,6 +115,13 @@ public class IstarMLHandler {
         } catch (ParserConfigurationException | SAXException | IOException e ) {
             e.printStackTrace();
             throw new Exception(e.getMessage());
+        }
+        XPath xp = XPathFactory.newInstance().newXPath();
+        NodeList nl = (NodeList) xp.evaluate("//text()[normalize-space(.)='']", doc, XPathConstants.NODESET);
+
+        for (int i=0; i < nl.getLength(); ++i) {
+            Node node = nl.item(i);
+            node.getParentNode().removeChild(node);
         }
         return doc;
     }
