@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe08cbdd-9a29-4d0d-81b1-cb36554e5e3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/response.istarml2" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/response.istarml2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../testcases/iStar2.0/photography.istarml2" beforeDir="false" afterPath="$PROJECT_DIR$/../../testcases/iStar2.0/photography.istarml2" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/modules/.gradle/" />
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
+            <state relative-caret-position="89">
               <caret line="100" column="218" lean-forward="true" selection-start-line="100" selection-start-column="218" selection-end-line="100" selection-end-column="218" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="171" column="62" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
+            <state relative-caret-position="214">
+              <caret line="170" column="74" lean-forward="true" selection-start-line="170" selection-start-column="74" selection-end-line="170" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,6 +184,7 @@
       <find>ielementLink</find>
       <find>throw new</find>
       <find>refinement</find>
+      <find>qualification</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -221,9 +222,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/XMLValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" />
       </list>
     </option>
   </component>
@@ -519,12 +520,12 @@
       <workItem from="1557903416446" duration="1416000" />
       <workItem from="1558062252980" duration="905000" />
       <workItem from="1558096990508" duration="399000" />
-      <workItem from="1558316946748" duration="4596000" />
+      <workItem from="1558316946748" duration="6760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157364000" />
+    <option name="totallyTimeSpent" value="159528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,9 +538,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23106061" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23106061" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -549,7 +549,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25895765" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25895765" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -6927,16 +6927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="171" column="62" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-236">
@@ -6963,8 +6953,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="89">
           <caret line="100" column="218" lean-forward="true" selection-start-line="100" selection-start-column="218" selection-end-line="100" selection-end-column="218" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="170" column="74" lean-forward="true" selection-start-line="170" selection-start-column="74" selection-end-line="170" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

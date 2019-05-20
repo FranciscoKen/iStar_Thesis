@@ -174,6 +174,10 @@ public class IstarMLHandler {
                     currentiElementLink.setAttribute("type","neededBy");
                 } else if(ielements.get(currentiElementLink.getAttribute("iref")).equals("softgoal")){
                     currentiElementLink.setAttribute("type","qualification");
+                    //TODO move to quality's child
+                    currentiElementLink.setAttribute("iref",currentiElement.getAttribute("id"));
+                    node.appendChild((Node) currentiElementLink);
+                    currentiElementLink.getParentNode().removeChild(currentiElementLink);
                 }
             } else if(currentiElementLink.getAttribute("type").equals("contribution")){
                 //TODO Contribution some+ some-
@@ -190,13 +194,6 @@ public class IstarMLHandler {
                     currentiElement.removeChild(ielementLinkNodes.item(l));
                 }
             }
-
-//            if(currentiElementLink.hasChildNodes()){
-//                NodeList childIElement = currentiElementLink.getChildNodes();
-//                for(int i = 0;i<childIElement.getLength();i++){
-//                    parseIElementSubTree(childIElement.item(i));
-//                }
-//            }
         }
     }
 
