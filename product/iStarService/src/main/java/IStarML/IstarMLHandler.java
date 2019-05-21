@@ -21,6 +21,7 @@ import java.io.StringReader;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 
 public class IstarMLHandler {
     private String model;
@@ -28,6 +29,7 @@ public class IstarMLHandler {
 
     public IstarMLHandler(String model){
         this.model = model;
+        model = model.replaceAll("(<\\?xml(.*?)\\?>\n)","");
         this.file = new ccistarmlFile(model);
     }
 
@@ -108,8 +110,33 @@ public class IstarMLHandler {
                 }
             }
 
+            XPath xpath = XPathFactory.newInstance().newXPath();
+            String refinementLinkExpression = "//ielementLink[@type='refinement' and @value='and']";
+            NodeList refinementList = (NodeList) xpath.compile(refinementLinkExpression).evaluate(doc,XPathConstants.NODESET);
+
+            HashMap<String,Integer> andRefinementParents = new HashMap<>();
+
+            for(int b = 0;b<refinementList.getLength();b++){
+                Element currElmt = (Element) refinementList.item(b);
+
+                String currentID = currElmt.getAttribute("iref");
+                if(andRefinementParents.containsKey(currentID)){
+                    andRefinementParents.put(currentID,andRefinementParents.get(currentID)+1);
+                } else {
+                    andRefinementParents.put(currentID,1);
+                }
+            }
+            for(Map.Entry<String,Integer> entry : andRefinementParents.entrySet()){
+                if(entry.getValue().equals(1)){
+                    String singleElementExpression = "//ielementLink[@type='refinement' and @value='and' and @iref='"+entry.getKey()+"']";
+                    NodeList singleLinkNode = (NodeList) xpath.compile(singleElementExpression).evaluate(doc,XPathConstants.NODESET);
+                    Element singleElement = (Element) singleLinkNode.item(0);
+                    singleElement.setAttribute("value","or");
+                }
+            }
 
             removeRecursiveNode(doc,"graphic");
+
             doc.normalizeDocument();
 
         } catch (ParserConfigurationException | SAXException | IOException e ) {
@@ -169,12 +196,11 @@ public class IstarMLHandler {
                 if(ielements.get(currentiElementLink.getAttribute("iref")).equals("goal") ||
                         ielements.get(currentiElementLink.getAttribute("iref")).equals("task")){
                     currentiElementLink.setAttribute("type","refinement");
-                    currentiElementLink.setAttribute("value","or");
+                    currentiElementLink.setAttribute("value","and");
                 } else if(ielements.get(currentiElementLink.getAttribute("iref")).equals("resource")){
                     currentiElementLink.setAttribute("type","neededBy");
                 } else if(ielements.get(currentiElementLink.getAttribute("iref")).equals("softgoal")){
                     currentiElementLink.setAttribute("type","qualification");
-                    //TODO move to quality's child
                     currentiElementLink.setAttribute("iref",currentiElement.getAttribute("id"));
                     node.appendChild((Node) currentiElementLink);
                     currentiElementLink.getParentNode().removeChild(currentiElementLink);
