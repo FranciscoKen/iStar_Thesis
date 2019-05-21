@@ -41,7 +41,7 @@
         <ielement id='ie-2-12' type='task' name='Report object details'>
           <ielementLink type='refinement' value='or' iref='ie-2-6'/>
         </ielement>
-        <ielement id='ie-2-13' type='task' name='Predict road prediction'>
+        <ielement id='ie-2-13' type='task' name='Predict road condition'>
           <ielementLink type='refinement' value='and' iref='ie-2-11'/>
         </ielement>
         <ielement id='ie-2-14' type='task' name='Collect temperature'>
@@ -99,19 +99,19 @@
     </dependum>
     <dependum id='de-4' type='resource' name='Construction details'>
       <dependency>
-        <depender aref='ac-2'/>
+        <depender aref='ac-2' iref='ie-2-3'/>
         <dependee aref='ac-3'/>
       </dependency>
     </dependum>
     <dependum id='de-5' type='resource' name='Traffic light failure info'>
       <dependency>
-        <depender aref='ac-2'/>
+        <depender aref='ac-2' iref='ie-2-8'/>
         <dependee aref='ac-4'/>
       </dependency>
     </dependum>
     <dependum id='de-6' type='resource' name='Weather forecast'>
       <dependency>
-        <depender aref='ac-2'/>
+        <depender aref='ac-2' iref='ie-2-10'/>
         <dependee aref='ac-5'/>
       </dependency>
     </dependum>
@@ -129,19 +129,19 @@
     </dependum>
     <dependum id='de-9' type='resource' name='Road condition'>
       <dependency>
-        <depender aref='ac-2'/>
+        <depender aref='ac-2' iref='ie-2-13'/>
         <dependee aref='ac-6'/>
       </dependency>
     </dependum>
     <dependum id='de-10' type='resource' name='Temperature'>
       <dependency>
-        <depender aref='ac-2'/>
+        <depender aref='ac-2' iref='ie-2-14'/>
         <dependee aref='ac-6'/>
       </dependency>
     </dependum>
     <dependum id='de-11' type='resource' name='Object details'>
       <dependency>
-        <depender aref='ac-2'/>
+        <depender aref='ac-2' iref='ie-2-12'/>
         <dependee aref='ac-7'/>
       </dependency>
     </dependum>

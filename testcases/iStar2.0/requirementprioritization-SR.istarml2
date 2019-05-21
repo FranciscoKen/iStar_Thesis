@@ -1,0 +1,59 @@
+<istarml2 version='1'>
+  <diagram>
+    <actor id='ac-1' name='RE Team' type='actor'>
+      <boundary>
+        <ielement id='ie-1' name='New features added' type='goal'>
+        </ielement>
+        <ielement id='ie-2' name='New requirements collected' type='goal'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+        </ielement>
+        <ielement id='ie-3' name='Requirements priority set' type='goal'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+          <ielementLink type='contribution' value='help' iref='ie-15'/>
+          <ielementLink type='contribution' value='help' iref='ie-16'/>
+          <ielementLink type='contribution' value='help' iref='ie-17'/>
+        </ielement>
+        <ielement id='ie-4' name='New release plan made' type='goal'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+        </ielement>
+        <ielement id='ie-5' name='Features implemented' type='goal'>
+          <ielementLink type='refinement' value='and' iref='ie-1'/>
+        </ielement>
+        <ielement id='ie-6' name='With project managers' type='task'>
+          <ielementLink type='refinement' value='or' iref='ie-2'/>
+        </ielement>
+        <ielement id='ie-7' name='With customers' type='task'>
+          <ielementLink type='refinement' value='or' iref='ie-2'/>
+        </ielement>
+        <ielement id='ie-8' name='Priority set with argumentation' type='goal'>
+          <ielementLink type='refinement' value='or' iref='ie-3'/>
+        </ielement>
+        <ielement id='ie-9' name='Priority set directly' type='goal'>
+          <ielementLink type='refinement' value='or' iref='ie-3'/>
+        </ielement>
+        <ielement id='ie-10' name='Have meeting to collect arguments' type='task'>
+          <ielementLink type='refinement' value='and' iref='ie-8'/>
+        </ielement>
+        <ielement id='ie-11' name='Set priorities based on arguments' type='task'>
+          <ielementLink type='refinement' value='and' iref='ie-8'/>
+        </ielement>
+        <ielement id='ie-12' name='Set priorities' type='task'>
+          <ielementLink type='refinement' value='or' iref='ie-9'/>
+        </ielement>
+        <ielement id='ie-13' name='List of arguments' type='resource'>
+          <ielementLink type='neededBy' iref='ie-11'/>
+        </ielement>
+        <ielement id='ie-14' name='List of requirements' type='resource'>
+          <ielementLink type='neededBy' iref='ie-11'/>
+          <ielementLink type='neededBy' iref='ie-12'/>
+        </ielement>
+        <ielement id='ie-15' name='Minimizing development effort' type='quality'>
+        </ielement>
+        <ielement id='ie-16' name='Maximized number of users pleased' type='quality'>
+        </ielement>
+        <ielement id='ie-17' name='Maximizing deadlines met' type='quality'>
+        </ielement>
+      </boundary>
+    </actor>
+  </diagram>
+</istarml2>
