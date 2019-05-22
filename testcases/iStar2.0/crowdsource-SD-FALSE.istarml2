@@ -43,6 +43,7 @@
       </dependency>
     </dependum>
     <dependum id='de-6' name='SE solution' type='resource'>
+      <ielementLink type='qualification' iref='de-7'/>
       <dependency>
         <depender aref='ac-2'/>
         <dependee aref='ac-3'/>
