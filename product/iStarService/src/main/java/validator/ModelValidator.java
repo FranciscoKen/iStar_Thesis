@@ -174,7 +174,7 @@ public class ModelValidator{
             if(entry.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND) ||
                     entry.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
                 if(entry.getKey().entrySet().iterator().next().getValue().equals(iElementID)){
-                    throw new IStarException(ExceptionMessages.heading+ExceptionMessages.dependendencyDependerElementRefinedException);
+                    throw new IStarException(ExceptionMessages.heading+ExceptionMessages.dependendencyDependerElementRefinedException+" [intentional element "+model.getiElements().get(iElementID).getName()+"]");
                 }
             }
             if(entry.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_MAKE) ||

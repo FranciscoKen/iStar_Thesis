@@ -99,7 +99,7 @@
     </dependum>
     <dependum id='de-4' type='resource' name='Construction details'>
       <dependency>
-        <depender aref='ac-2' iref='ie-2-3'/>
+        <depender aref='ac-2' iref='ie-2-7'/>
         <dependee aref='ac-3'/>
       </dependency>
     </dependum>
