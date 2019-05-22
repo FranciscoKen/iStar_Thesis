@@ -1,0 +1,101 @@
+Student:: Fill in online form
+pre: Fill in online form.preCondition="Value"
+post: Fill in online form.postCondition="Value" and No errors=true
+
+Student:: Head-of-dept authorizes
+pre: Head-of-dept authorizes.preCondition="Value"
+post: Head-of-dept authorizes.postCondition="Value" and Quick booking=false
+
+Student:: Minimal own payments
+Minimal own payments=true implies Comfort=true
+
+Student:: Fill in paper form
+pre: Fill in paper form.preCondition="Value"
+post: Fill in paper form.postCondition="Value" and No errors=false
+
+Student:: Trip parts booked
+Quick booking=true and Trip parts booked.availability=true
+
+Student:: Request prepared
+No errors=true and Request prepared.availability=true
+
+Student:: Quick booking
+Quick booking=true implies Comfort=true
+
+Student:: Book bundle
+pre: Book bundle.preCondition="Value"
+post: Book bundle.postCondition="Value" and Minimal own payments=true
+
+Student:: Self-book tickets
+pre: Self-book tickets.preCondition="Value"
+post: Self-book tickets.postCondition="Value" and Minimal own payments=false
+
+Student:: Agency buys tickets
+pre: Agency buys tickets.preCondition="Value"
+post: Agency buys tickets.postCondition="Value" and Minimal own payments=true
+
+Student:: Credit card
+pre: Credit card.preCondition="Value" and Pay for tickets.availability=true
+post: Credit card.postCondition="Value"
+
+Student:: Supervisor authorizes
+pre: Supervisor authorizes.preCondition="Value"
+post: Supervisor authorizes.postCondition="Value" and Quick booking=true
+
+Student:: Authorization obtained
+Travel organized=true and Request prepared=true and Authorization signed=true and  implies Authorization obtained=true
+
+Student:: Agency buys tickets
+pre: Tickets booked=true  or Agency buys tickets.preCondition="Value"  or 
+post: Agency buys tickets.postCondition="Value" 
+
+Student:: Self-book tickets
+pre: Tickets booked=true  or Pay for tickets.preCondition="Value"  or Buy tickets.preCondition="Value"  or Self-book tickets.preCondition="Value"  or 
+post:  or Pay for tickets.postCondition="Value"  or Buy tickets.postCondition="Value" Self-book tickets.postCondition="Value" 
+
+Student:: Tickets booked
+Trip parts booked=true and  implies Tickets booked=true
+
+Student:: Buy through booking.com
+pre: Budget hotel booked=true  or Buy through booking.com.preCondition="Value"  or 
+post: Buy through booking.com.postCondition="Value" 
+
+Student:: Trip booked
+pre: Travel organized=true  and Book bundle.preCondition="Value"  and Trip parts booked=true  and 
+post:  and Book bundle.postCondition="Value" Trip booked=true
+
+Student:: Buy through hotel website
+pre: Budget hotel booked=true  or Buy through hotel website.preCondition="Value"  or 
+post: Buy through hotel website.postCondition="Value" 
+
+Student:: Accomodation booked
+Trip parts booked=true and Budget hotel booked=true and Conference hotel booked=true and  implies Accomodation booked=true
+
+Student:: Fill in paper form
+pre: Request prepared=true  or Fill in paper form.preCondition="Value"  or 
+post: Fill in paper form.postCondition="Value" 
+
+Student:: Head-of-dept authorizes
+pre: Authorization signed=true  or Head-of-dept authorizes.preCondition="Value"  or 
+post: Head-of-dept authorizes.postCondition="Value" 
+
+Student:: Fill in online form
+pre: Request prepared=true  or Fill in online form.preCondition="Value"  or 
+post: Fill in online form.postCondition="Value" 
+
+Student:: Supervisor authorizes
+pre: Authorization signed=true  or Supervisor authorizes.preCondition="Value"  or 
+post: Supervisor authorizes.postCondition="Value" 
+
+Univ. trip mgmt IS:: Details validated
+pre: Process form.preCondition="Value"  and 
+post:  and Process form.postCondition="Value" Details validated=true
+
+Univ. trip mgmt IS:: Notify applicant
+pre: Process form.preCondition="Value"  and Notify applicant.preCondition="Value"  and 
+post:  and Process form.postCondition="Value" Notify applicant.postCondition="Value" 
+
+Univ. trip mgmt IS:: Request authorization
+pre: Process form.preCondition="Value"  and Request authorization.preCondition="Value"  and 
+post:  and Process form.postCondition="Value" Request authorization.postCondition="Value" 
+

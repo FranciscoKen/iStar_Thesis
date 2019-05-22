@@ -125,6 +125,8 @@ public class ClassGenerator {
         source.append("@enduml\n");
         //End DSL
 
+        System.out.println(source);
+
         SourceStringReader reader = new SourceStringReader(source.toString());
         try{
             String desc = reader.outputImage(png).getDescription();
@@ -295,7 +297,7 @@ public class ClassGenerator {
     }
 
     private String cleanString(String string){
-        return string.replaceAll("[(\\)(\\s+)(\\-+)]","_");
+        return string.replaceAll("[(\\)(\\s+)(\\-+)(\\.)]","_");
     }
 
     private boolean isResourceNameExist(String name,ArrayList<Resource> resources){
