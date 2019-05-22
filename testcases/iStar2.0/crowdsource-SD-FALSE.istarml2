@@ -1,0 +1,59 @@
+<istarml2 version='1.0'>
+  <diagram>
+    <actor id='ac-1' name='Requester' type='actor'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-2' name='CSE organization' type='actor'>
+      <boundary>
+      </boundary>
+    </actor>
+    <actor id='ac-3' name='Worker' type='actor'>
+      <boundary>
+      </boundary>
+    </actor>
+    <dependum id='de-1' name='Requester%27s satisfaction' type='quality'>
+      <dependency>
+        <depender aref='ac-3'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-2' name='Outsource SE task' type='task'>
+      <dependency>
+        <depender aref='ac-1'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-3' name='Task requirements' type='resource'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-4' name='Payment of solution' type='resource'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-1'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-5' name='Develop SE task' type='task'>
+      <dependency>
+        <depender aref='ac-3'/>
+        <dependee aref='ac-2'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-6' name='SE solution' type='resource'>
+      <ielementLink type='qualification' iref='de-7'/>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-3'/>
+      </dependency>
+    </dependum>
+    <dependum id='de-7' name='High quality solution' type='quality'>
+      <dependency>
+        <depender aref='ac-2'/>
+        <dependee aref='ac-3'/>
+      </dependency>
+    </dependum>
+  </diagram>
+</istarml2>
