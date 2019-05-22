@@ -53,6 +53,7 @@ public class IstarMLHandler {
             DocumentBuilder db = dbf.newDocumentBuilder();
             InputSource is = new InputSource();
             is.setCharacterStream(new StringReader(string_model));
+            XPath xpath = XPathFactory.newInstance().newXPath();
 
             doc = db.parse(is);
             //TODO update intentional element link
@@ -72,9 +73,12 @@ public class IstarMLHandler {
                     currentActor.setAttribute("type","actor");
                 }
 
-                Node currentBoundaryNode = currentActor.getElementsByTagName("boundary").item(0);
-                Element currentBoundary = (Element) currentBoundaryNode;
-                NodeList ielementNodes = currentBoundary.getElementsByTagName("ielement");
+                NodeList currentBoundaryNodeList = currentActor.getElementsByTagName("boundary");
+                if(currentBoundaryNodeList.getLength()<1){
+                    Element boundary = doc.createElement("boundary");
+                    currentActor.appendChild(boundary);
+                }
+                NodeList ielementNodes = currentActor.getElementsByTagName("ielement");
                 for(int l = 0;l<ielementNodes.getLength();l++){
                     Element iel = (Element) ielementNodes.item(l);
                     ielements.put(iel.getAttribute("id"),iel.getAttribute("type"));
@@ -107,10 +111,19 @@ public class IstarMLHandler {
                     if(currentDependum.getAttribute("type").equals("softgoal")){
                         currentDependum.setAttribute("type","quality");
                     }
+
+                    Element depender = (Element) currentDependum.getElementsByTagName("depender").item(0);
+                    String dependerElmt = depender.getAttribute("iref");
+                    if(!dependerElmt.equals("")){
+                        String dependerElmtPath = "//actor[@id='"+depender.getAttribute("aref")+"']/boundary/ielement/ielementLink[@iref='"+dependerElmt+"' and (@type='refinement' or @type='contribution')]";
+                        NodeList refinedOrContributedElement = (NodeList) xpath.compile(dependerElmtPath).evaluate(doc,XPathConstants.NODESET);
+                        if(refinedOrContributedElement.getLength()>0){
+                            currentDependum.getParentNode().removeChild(currentDependum);
+                        }
+                    }
                 }
             }
 
-            XPath xpath = XPathFactory.newInstance().newXPath();
             String refinementLinkExpression = "//ielementLink[@type='refinement' and @value='and']";
             NodeList refinementList = (NodeList) xpath.compile(refinementLinkExpression).evaluate(doc,XPathConstants.NODESET);
 

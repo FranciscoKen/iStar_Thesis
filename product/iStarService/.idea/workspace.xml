@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe08cbdd-9a29-4d0d-81b1-cb36554e5e3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/response.istarml2" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/response.istarml2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/modules/.gradle/" />
@@ -36,7 +38,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
@@ -48,11 +50,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/ccistarml/ccistarmlContent.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9600">
-              <caret line="690" column="47" selection-start-line="690" selection-start-column="47" selection-end-line="690" selection-end-column="47" />
+            <state relative-caret-position="239">
+              <caret line="120" column="89" selection-start-line="120" selection-start-column="89" selection-end-line="120" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="129" column="30" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="30" />
+            <state relative-caret-position="124">
+              <caret line="72" column="93" selection-start-line="72" selection-start-column="85" selection-end-line="72" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,8 +157,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pair</find>
-      <find>System.out</find>
       <find>System.out.</find>
       <find>Pair</find>
       <find>ielementlink</find>
@@ -180,6 +183,10 @@
       <find>throw new</find>
       <find>refinement</find>
       <find>qualification</find>
+      <find>some+</find>
+      <find>ielement</find>
+      <find>getparent</find>
+      <find>boundary</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -218,8 +225,8 @@
         <option value="$PROJECT_DIR$/src/main/java/validator/XMLValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" />
       </list>
     </option>
   </component>
@@ -234,7 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -342,6 +348,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -531,12 +538,13 @@
       <workItem from="1558420411650" duration="5640000" />
       <workItem from="1558462384825" duration="1588000" />
       <workItem from="1558467587514" duration="1701000" />
-      <workItem from="1558471695702" duration="1702000" />
+      <workItem from="1558471695702" duration="2229000" />
+      <workItem from="1558521821652" duration="5192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175016000" />
+    <option name="totallyTimeSpent" value="180735000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,8 +557,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25757575" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -560,8 +569,8 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25895765" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39739415" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25895765" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
@@ -628,24 +637,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java</url>
-          <line>173</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java</url>
-          <line>175</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Mainan/ExceptMain.java" />
@@ -6891,16 +6882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="132" column="76" selection-start-line="132" selection-start-column="76" selection-end-line="132" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/ccistarml/ccfileError.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -6952,16 +6933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="129" column="30" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -6990,6 +6961,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="72" column="93" selection-start-line="72" selection-start-column="85" selection-end-line="72" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="120" column="89" selection-start-line="120" selection-start-column="89" selection-end-line="120" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

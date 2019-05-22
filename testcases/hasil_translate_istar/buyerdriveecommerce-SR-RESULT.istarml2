@@ -1,0 +1,83 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml2 version="1.0">
+   <diagram name="buyerdriveecommerce-SR.ood">
+      <dependum id="_tUuPEHicEemHjci8NpNM-A" name="Name a price [Service]" type="task">
+         <dependency>
+            <depender aref="__8NkEHibEemHjci8NpNM-A" iref="_LrcyYHicEemHjci8NpNM-A" />
+            <dependee aref="_7qKncHiYEemHjci8NpNM-A" iref="_zi2asHibEemHjci8NpNM-A" />
+         </dependency>
+      </dependum>
+      <dependum id="_vxwSMHicEemHjci8NpNM-A" name="Low price service provider be found" type="goal">
+         <dependency>
+            <depender aref="_7qKncHiYEemHjci8NpNM-A" iref="_7dhLMHibEemHjci8NpNM-A" />
+            <dependee aref="__8NkEHibEemHjci8NpNM-A" iref="_RoDTsHicEemHjci8NpNM-A" />
+         </dependency>
+      </dependum>
+      <dependum id="_MkZFMHifEemHjci8NpNM-A" name="Acceptable price [Service]" type="quality">
+         <dependency>
+            <depender aref="_hOeO8HicEemHjci8NpNM-A" />
+            <dependee aref="_7qKncHiYEemHjci8NpNM-A" iref="_zi2asHibEemHjci8NpNM-A" />
+         </dependency>
+      </dependum>
+      <dependum id="_VHJwcHifEemHjci8NpNM-A" name="Attract more customers [Service]" type="quality">
+         <dependency>
+            <depender aref="_hOeO8HicEemHjci8NpNM-A" />
+            <dependee aref="__8NkEHibEemHjci8NpNM-A" iref="_EdaeYHicEemHjci8NpNM-A" />
+         </dependency>
+      </dependum>
+      <dependum id="_Xz7fwHifEemHjci8NpNM-A" name="Agreement on price [P]" type="resource">
+         <dependency>
+            <depender aref="__8NkEHibEemHjci8NpNM-A" iref="_RoDTsHicEemHjci8NpNM-A" />
+            <dependee aref="_hOeO8HicEemHjci8NpNM-A" />
+         </dependency>
+      </dependum>
+      <actor id="_7qKncHiYEemHjci8NpNM-A" name="Customer as buyer [Service]" type="actor">
+         <boundary>
+            <ielement id="__Vpv0HiaEemHjci8NpNM-A" name="Low price" type="quality" />
+            <ielement id="_puchYHibEemHjci8NpNM-A" name="Flexibility [Purchasing]" type="quality" />
+            <ielement id="_rlneYHibEemHjci8NpNM-A" name="Service be purchased [Service]" type="goal" />
+            <ielement id="_wq7LUHibEemHjci8NpNM-A" name="Purchase by naming my own price [Service]" type="task">
+               <ielementLink iref="_rlneYHibEemHjci8NpNM-A" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_zi2asHibEemHjci8NpNM-A" name="Name a price [Service]" type="task">
+               <ielementLink iref="__Vpv0HiaEemHjci8NpNM-A" type="contribution" value="help" />
+               <ielementLink iref="_wq7LUHibEemHjci8NpNM-A" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_7dhLMHibEemHjci8NpNM-A" name="Low price service provider be found" type="goal">
+               <ielementLink iref="_puchYHibEemHjci8NpNM-A" type="contribution" value="hurt" />
+               <ielementLink iref="_wq7LUHibEemHjci8NpNM-A" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="__8NkEHibEemHjci8NpNM-A" name="Middleman as seller [Service]" type="actor">
+         <boundary>
+            <ielement id="_DN6lYHicEemHjci8NpNM-A" name="Profitability" type="quality" />
+            <ielement id="_EdaeYHicEemHjci8NpNM-A" name="Customer attraction [Service]" type="quality">
+               <ielementLink iref="_DN6lYHicEemHjci8NpNM-A" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_GB6XAHicEemHjci8NpNM-A" name="Be Middleman [Service]" type="goal" />
+            <ielement id="_H38EgHicEemHjci8NpNM-A" name="Sell in buyer driven style [Service]" type="task">
+               <ielementLink iref="_GB6XAHicEemHjci8NpNM-A" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_LrcyYHicEemHjci8NpNM-A" name="Accept purchase request with price" type="task">
+               <ielementLink iref="_EdaeYHicEemHjci8NpNM-A" type="contribution" value="help" />
+               <ielementLink iref="_DN6lYHicEemHjci8NpNM-A" type="contribution" value="hurt" />
+               <ielementLink iref="_H38EgHicEemHjci8NpNM-A" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_OdzlQHicEemHjci8NpNM-A" name="Send modified request to supplier" type="task">
+               <ielementLink iref="_H38EgHicEemHjci8NpNM-A" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_RoDTsHicEemHjci8NpNM-A" name="Get price agreement from supplier" type="task">
+               <ielementLink iref="_EdaeYHicEemHjci8NpNM-A" type="contribution" value="help" />
+               <ielementLink iref="_H38EgHicEemHjci8NpNM-A" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_hOeO8HicEemHjci8NpNM-A" name="Supplier [Service]" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

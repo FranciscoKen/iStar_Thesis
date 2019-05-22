@@ -1,0 +1,77 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml2 version="1.0">
+   <diagram name="reviewer-SR.ood">
+      <actor id="_7_8RUHNBEemozsE8pEOulw" name="Reviewer" type="role">
+         <boundary>
+            <ielement id="_F0GTAHNCEemozsE8pEOulw" name="Articles be reviewed" type="goal" />
+            <ielement id="_K5XjsHNCEemozsE8pEOulw" name="Review Articles" type="task">
+               <ielementLink iref="_F0GTAHNCEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_NoUdQHNCEemozsE8pEOulw" name="Make review" type="task">
+               <ielementLink iref="_K5XjsHNCEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_kd9Q4HNFEemozsE8pEOulw" name="External confidentiality [Reviewed Article]" type="quality">
+               <ielementLink iref="_K5XjsHNCEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_qVnAwHNFEemozsE8pEOulw" name="Consistency [Article reviewed]" type="quality">
+               <ielementLink iref="_K5XjsHNCEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_sAE-gHNFEemozsE8pEOulw" name="Internal confidentiality [Reviewed articles]" type="quality">
+               <ielementLink iref="_K5XjsHNCEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_txwXgHNFEemozsE8pEOulw" name="User-Friendliness" type="quality">
+               <ielementLink iref="_K5XjsHNCEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_1sCGcHNFEemozsE8pEOulw" name="Cust" type="quality">
+               <ielementLink iref="_K5XjsHNCEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_NzXygHNJEemozsE8pEOulw" name="User be authenticated" type="goal">
+               <ielementLink iref="_jc2m8HNKEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_PnpzkHNJEemozsE8pEOulw" name="Use biometric authentication" type="task">
+               <ielementLink iref="_1sCGcHNFEemozsE8pEOulw" type="contribution" value="hurt" />
+               <ielementLink iref="_txwXgHNFEemozsE8pEOulw" type="contribution" value="help" />
+               <ielementLink iref="_NzXygHNJEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Rv7HoHNJEemozsE8pEOulw" name="Authenticate with password" type="task">
+               <ielementLink iref="_NzXygHNJEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_UPceEHNJEemozsE8pEOulw" name="Use CardKey authentication" type="task">
+               <ielementLink iref="_txwXgHNFEemozsE8pEOulw" type="contribution" value="help" />
+               <ielementLink iref="_1sCGcHNFEemozsE8pEOulw" type="contribution" value="hurt" />
+               <ielementLink iref="_NzXygHNJEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_X6nS0HNKEemozsE8pEOulw" name="Be authenticated by password" type="goal">
+               <ielementLink iref="_Rv7HoHNJEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_ZhvosHNKEemozsE8pEOulw" name="Use multiple password" type="task">
+               <ielementLink iref="_txwXgHNFEemozsE8pEOulw" type="contribution" value="hurt" />
+               <ielementLink iref="_X6nS0HNKEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_aziAsHNKEemozsE8pEOulw" name="Use single password" type="task">
+               <ielementLink iref="_X6nS0HNKEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_jc2m8HNKEemozsE8pEOulw" name="Access authorize" type="task">
+               <ielementLink iref="_sAE-gHNFEemozsE8pEOulw" type="contribution" value="make" />
+               <ielementLink iref="_qVnAwHNFEemozsE8pEOulw" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_mb-DcHNKEemozsE8pEOulw" name="Access be validated" type="goal">
+               <ielementLink iref="_jc2m8HNKEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_n_u8QHNKEemozsE8pEOulw" name="Use access validation rules" type="task">
+               <ielementLink iref="_mb-DcHNKEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_rhdWkHNKEemozsE8pEOulw" name="User be identified" type="goal">
+               <ielementLink iref="_jc2m8HNKEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_tAlnAHNKEemozsE8pEOulw" name="Use an indentification key" type="task">
+               <ielementLink iref="_rhdWkHNKEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+
+
