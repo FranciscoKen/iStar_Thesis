@@ -99,6 +99,8 @@ public class IstarMLHandler {
                         currentActor.removeChild(currentActorLink);
                     } else if(currentActorLink.getAttribute("type").equals("is_a")){
                         currentActorLink.setAttribute("type","is-a");
+                    } else {
+                        currentActor.removeChild(currentActorLink);
                     }
                 }
 
@@ -230,7 +232,6 @@ public class IstarMLHandler {
                         currentiElementLink.getAttribute("value").equals("hurt") ||
                         currentiElementLink.getAttribute("value").equals("make") ||
                         currentiElementLink.getAttribute("value").equals("break")){
-
                 } else {
                     currentiElement.removeChild(ielementLinkNodes.item(l));
                 }
