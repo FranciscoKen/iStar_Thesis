@@ -1,0 +1,182 @@
+
+<istarml2 version="1.0">
+   <diagram name="xwiki-SR.ood">
+      <dependum id="_7_G0sHQOEemozsE8pEOulw" name="External OSS feedback" type="resource">
+         <dependency>
+            <depender aref="_GT6MsHQMEemozsE8pEOulw" iref="_BGQKIHQOEemozsE8pEOulw" />
+            <dependee aref="_5b1msHQOEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_aP5AsHQREemozsE8pEOulw" name="Quality" type="quality">
+         <dependency>
+            <depender aref="_Jufq8HQREemozsE8pEOulw" iref="_MC7ywHQREemozsE8pEOulw" />
+            <dependee aref="_GT6MsHQMEemozsE8pEOulw" iref="_U9Y-kHQMEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_njpVwHQREemozsE8pEOulw" name="Interraction with other member supported" type="goal">
+         <dependency>
+            <depender aref="_Jufq8HQREemozsE8pEOulw" />
+            <dependee aref="_jvUvkHQREemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_wz8ccHQREemozsE8pEOulw" name="Mailing lists" type="resource">
+         <dependency>
+            <depender aref="_Jufq8HQREemozsE8pEOulw" iref="_TEslUHQREemozsE8pEOulw" />
+            <dependee aref="_jvUvkHQREemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_07KJcHQREemozsE8pEOulw" name="New functionalities developed" type="goal">
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw" />
+            <dependee aref="_GT6MsHQMEemozsE8pEOulw" iref="_U9Y-kHQMEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_4-LS8HQREemozsE8pEOulw" name="Bugs fixed" type="goal">
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw" />
+            <dependee aref="_GT6MsHQMEemozsE8pEOulw" iref="_U9Y-kHQMEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_9DGg8HQREemozsE8pEOulw" name="Free support" type="goal">
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw" />
+            <dependee aref="_70tbMHQREemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="__xQwUHQREemozsE8pEOulw" name="Free licenses for IDE" type="resource">
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw" />
+            <dependee aref="_B-OXIHQSEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_KV-FMHQSEemozsE8pEOulw" name="Jira access" type="resource">
+         <dependency>
+            <depender aref="_jvUvkHQREemozsE8pEOulw" />
+            <dependee aref="_HgS4kHQSEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_Zl1hoHQSEemozsE8pEOulw" name="Makers services advertised" type="goal">
+         <dependency>
+            <depender aref="_WxntkHQSEemozsE8pEOulw" />
+            <dependee aref="_jvUvkHQREemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_e2pT8HQSEemozsE8pEOulw" name="XWiki development guides" type="resource">
+         <dependency>
+            <depender aref="_GT6MsHQMEemozsE8pEOulw" iref="_yTIwkHQMEemozsE8pEOulw" />
+            <dependee aref="_Th0JsHQSEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_iIamsHQSEemozsE8pEOulw" name="Patches to XWiki code" type="resource">
+         <dependency>
+            <depender aref="_Th0JsHQSEemozsE8pEOulw" />
+            <dependee aref="_OHen8HQSEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_m8ZTEHQSEemozsE8pEOulw" name="Patches and functionalities approved" type="goal">
+         <dependency>
+            <depender aref="_OHen8HQSEemozsE8pEOulw" />
+            <dependee aref="_Th0JsHQSEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_rdffsHQSEemozsE8pEOulw" name="New XWiki functionalities code" type="resource">
+         <dependency>
+            <depender aref="_Th0JsHQSEemozsE8pEOulw" />
+            <dependee aref="_OHen8HQSEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <actor id="_GT6MsHQMEemozsE8pEOulw" name="XWiki developer" type="agent">
+         <boundary>
+            <ielement id="_U9Y-kHQMEemozsE8pEOulw" name="XWiki features implemented" type="goal" />
+            <ielement id="_W8_e0HQMEemozsE8pEOulw" name="Implement XWiki features" type="task">
+               <ielementLink iref="_U9Y-kHQMEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_YXsiQHQMEemozsE8pEOulw" name="Adopt OSS components" type="task">
+               <ielementLink iref="_U9Y-kHQMEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_vhg9gHQMEemozsE8pEOulw" name="Document code and decisions" type="task">
+               <ielementLink iref="_W8_e0HQMEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_yTIwkHQMEemozsE8pEOulw" name="Follow the style guidelines" type="task">
+               <ielementLink iref="_W8_e0HQMEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_062ZsHQMEemozsE8pEOulw" name="Identify components requirements" type="task">
+               <ielementLink iref="_YXsiQHQMEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_5IsTIHQMEemozsE8pEOulw" name="XWiki code and decision documentations" type="resource">
+               <ielementLink iref="_vhg9gHQMEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_JfpTcHQNEemozsE8pEOulw" name="Analyse license issues" type="task">
+               <ielementLink iref="_YXsiQHQMEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_MKSUwHQNEemozsE8pEOulw" name="Online offline reporting tools" type="resource">
+               <ielementLink iref="_JfpTcHQNEemozsE8pEOulw" type="refinement" value="or" />
+               <ielementLink iref="_9_9uoHQNEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_QRpywHQNEemozsE8pEOulw" name="Quality OSS components" type="quality">
+               <ielementLink iref="_YXsiQHQMEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_9_9uoHQNEemozsE8pEOulw" name="Analyse the community of OSS components" type="task" />
+            <ielement id="_BGQKIHQOEemozsE8pEOulw" name="Feedback from other OSS componentes user" type="task" />
+         </boundary>
+      </actor>
+      <actor id="_5b1msHQOEemozsE8pEOulw" name="External OSS user" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_-htUUHQOEemozsE8pEOulw" name="External OSS community" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_Jufq8HQREemozsE8pEOulw" name="Community member" type="actor">
+         <boundary>
+            <ielement id="_LHbz0HQREemozsE8pEOulw" name="XWiki promoted" type="goal" />
+            <ielement id="_MC7ywHQREemozsE8pEOulw" name="High quality products" type="quality">
+               <ielementLink iref="_LHbz0HQREemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_QtrDkHQREemozsE8pEOulw" name="Interract with community" type="task" />
+            <ielement id="_TEslUHQREemozsE8pEOulw" name="Participate to discussion on mailing lists" type="task">
+               <ielementLink iref="_QtrDkHQREemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_U8sowHQREemozsE8pEOulw" name="Ask for new functionalities" type="task">
+               <ielementLink iref="_QtrDkHQREemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_WEGVsHQREemozsE8pEOulw" name="Report bugs" type="task">
+               <ielementLink iref="_QtrDkHQREemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+         <actorLink aref="_jvUvkHQREemozsE8pEOulw" type="participates-in" />
+      </actor>
+      <actor id="_d_NLEHQREemozsE8pEOulw" name="Emmeritus Commiter" type="actor">
+         
+         <boundary />
+         <actorLink aref="_Jufq8HQREemozsE8pEOulw" type="is-a" />
+      </actor>
+      <actor id="_jvUvkHQREemozsE8pEOulw" name="XWiki community" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_70tbMHQREemozsE8pEOulw" name="Supporter" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_B-OXIHQSEemozsE8pEOulw" name="Intellij" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_HgS4kHQSEemozsE8pEOulw" name="Atlassian" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_OHen8HQSEemozsE8pEOulw" name="Contributor" type="actor">
+         
+         <boundary />
+         <actorLink aref="_GT6MsHQMEemozsE8pEOulw" type="is-a" />
+      </actor>
+      <actor id="_Th0JsHQSEemozsE8pEOulw" name="Active committer" type="actor">
+         
+         <boundary />
+         <actorLink aref="_GT6MsHQMEemozsE8pEOulw" type="is-a" />
+      </actor>
+      <actor id="_WxntkHQSEemozsE8pEOulw" name="Maker of XWiki" type="actor">
+         
+         <boundary />
+         <actorLink aref="_Th0JsHQSEemozsE8pEOulw" type="is-a" />
+      </actor>
+   </diagram>
+</istarml2>
+

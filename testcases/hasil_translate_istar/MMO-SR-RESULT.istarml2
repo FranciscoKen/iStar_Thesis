@@ -1,0 +1,59 @@
+
+<istarml2 version="1.0">
+   <diagram name="MMO-SR.ood">
+      <dependum id="_X16KQHNQEemozsE8pEOulw" name="Provide gaming service" type="goal">
+         <dependency>
+            <depender aref="_pIS04HNMEemozsE8pEOulw" />
+            <dependee aref="_nmqDAHNMEemozsE8pEOulw" iref="_FMTK0HNQEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_cCccIHNQEemozsE8pEOulw" name="Fee" type="resource">
+         <dependency>
+            <depender aref="_aRDXAHNQEemozsE8pEOulw" />
+            <dependee aref="_nmqDAHNMEemozsE8pEOulw" iref="_FMTK0HNQEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_fRZrcHNQEemozsE8pEOulw" name="Hosting service" type="resource">
+         <dependency>
+            <depender aref="_nmqDAHNMEemozsE8pEOulw" iref="_OQr8cHNQEemozsE8pEOulw" />
+            <dependee aref="_aRDXAHNQEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_qIjbMHNQEemozsE8pEOulw" name="Fee" type="resource">
+         <dependency>
+            <depender aref="_jssLAHNQEemozsE8pEOulw" />
+            <dependee aref="_nmqDAHNMEemozsE8pEOulw" iref="_FMTK0HNQEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <actor id="_nmqDAHNMEemozsE8pEOulw" name="Game Provider" type="actor">
+         <boundary>
+            <ielement id="_rngpUHNMEemozsE8pEOulw" name="Game sales" type="goal" />
+            <ielement id="_FMTK0HNQEemozsE8pEOulw" name="Coordinate game provisioning" type="task">
+               <ielementLink iref="_rngpUHNMEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_IUdOkHNQEemozsE8pEOulw" name="Deliver CDs" type="task">
+               <ielementLink iref="_FMTK0HNQEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Jd8mMHNQEemozsE8pEOulw" name="Fast delivery" type="quality">
+               <ielementLink iref="_IUdOkHNQEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_OQr8cHNQEemozsE8pEOulw" name="Sell online gaming" type="task">
+               <ielementLink iref="_FMTK0HNQEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_GsvC0HNQEemozsE8pEOulw" name="Game" type="resource">
+               <ielementLink iref="_FMTK0HNQEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_pIS04HNMEemozsE8pEOulw" name="Customer" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_aRDXAHNQEemozsE8pEOulw" name="ISP" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_jssLAHNQEemozsE8pEOulw" name="Shipping agency" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

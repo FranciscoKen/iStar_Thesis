@@ -1,0 +1,106 @@
+
+<istarml2 version="1.0">
+   <diagram name="media.ood">
+      <dependum id="_dLRl0HPnEemozsE8pEOulw" name="Get item detail" type="task">
+         <dependency>
+            <depender aref="_Ws1iwHPnEemozsE8pEOulw" />
+            <dependee aref="_hri98HPlEemozsE8pEOulw" iref="_AO_5MHPmEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_0rQisHQFEemozsE8pEOulw" name="Security" type="quality">
+         <dependency>
+            <depender aref="_hri98HPlEemozsE8pEOulw" iref="_p9ov8HPlEemozsE8pEOulw" />
+            <dependee aref="_tq7PIHPnEemozsE8pEOulw" iref="_G3dJAHPoEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_LoBZYHQGEemozsE8pEOulw" name="Security" type="quality">
+         <dependency>
+            <depender aref="_hri98HPlEemozsE8pEOulw" iref="_p9ov8HPlEemozsE8pEOulw" />
+            <dependee aref="_8WBO8HQFEemozsE8pEOulw" iref="_97xr0HQFEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <actor id="_hri98HPlEemozsE8pEOulw" name="Medi@" type="actor">
+         <boundary>
+            <ielement id="_jAUYgHPlEemozsE8pEOulw" name="Internet shop managed" type="task" />
+            <ielement id="_kMWGwHPlEemozsE8pEOulw" name="item searching handled" type="goal">
+               <ielementLink iref="_jAUYgHPlEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_nJIoAHPlEemozsE8pEOulw" name="Attract new customers" type="quality">
+               <ielementLink iref="_jAUYgHPlEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_od9F4HPlEemozsE8pEOulw" name="Internet orders handled" type="goal">
+               <ielementLink iref="_jAUYgHPlEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_wrmcwHPlEemozsE8pEOulw" name="Query database" type="task">
+               <ielementLink iref="_kMWGwHPlEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_-BrtEHPlEemozsE8pEOulw" name="Keyword search" type="task">
+               <ielementLink iref="_wrmcwHPlEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_AO_5MHPmEemozsE8pEOulw" name="Get item detail" type="task">
+               <ielementLink iref="_wrmcwHPlEemozsE8pEOulw" type="refinement" value="and" />
+               <ielementLink iref="_zijmUHPmEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_zijmUHPmEemozsE8pEOulw" name="Catalog consulting" type="task">
+               <ielementLink iref="_nJIoAHPlEemozsE8pEOulw" type="contribution" value="help" />
+               <ielementLink iref="_kMWGwHPlEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_7jev0HPmEemozsE8pEOulw" name="Catalogue" type="resource">
+               <ielementLink iref="_zijmUHPmEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_9mUxUHPmEemozsE8pEOulw" name="Shopping cart" type="task">
+               <ielementLink iref="_od9F4HPlEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="__goh4HPmEemozsE8pEOulw" name="Item to be selected" type="goal">
+               <ielementLink iref="_9mUxUHPmEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_AtjoAHPnEemozsE8pEOulw" name="Choose available item" type="task">
+               <ielementLink iref="__goh4HPmEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Df07UHPnEemozsE8pEOulw" name="Choose non available item" type="task">
+               <ielementLink iref="__goh4HPmEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_H80EAHPnEemozsE8pEOulw" name="Add item" type="task">
+               <ielementLink iref="_9mUxUHPmEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Ipj1QHPnEemozsE8pEOulw" name="Checkout" type="task">
+               <ielementLink iref="_9mUxUHPmEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_p9ov8HPlEemozsE8pEOulw" name="Security" type="quality">
+               <ielementLink iref="_jAUYgHPlEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_N6VyYHPnEemozsE8pEOulw" name="Statistics producer" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_Ws1iwHPnEemozsE8pEOulw" name="Database" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_ii4jsHPnEemozsE8pEOulw" name="Profile manager" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_tq7PIHPnEemozsE8pEOulw" name="Details identifier" type="actor">
+         <boundary>
+            <ielement id="_G3dJAHPoEemozsE8pEOulw" name="Security" type="quality">
+               <ielementLink iref="_HubNQHPoEemozsE8pEOulw" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_HubNQHPoEemozsE8pEOulw" name="Use form with encryption" type="task">
+               <ielementLink iref="_MsK5oHPoEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_MsK5oHPoEemozsE8pEOulw" name="Identification details collected" type="goal" />
+         </boundary>
+      </actor>
+      <actor id="_8WBO8HQFEemozsE8pEOulw" name="Details Identifier" type="actor">
+         <boundary>
+            <ielement id="_97xr0HQFEemozsE8pEOulw" name="Security" type="quality" />
+            <ielement id="_-rkxEHQFEemozsE8pEOulw" name="Use standard form" type="task">
+               <ielementLink iref="_97xr0HQFEemozsE8pEOulw" type="contribution" value="hurt" />
+               <ielementLink iref="_AOvM8HQGEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_AOvM8HQGEemozsE8pEOulw" name="Identification details collected" type="goal" />
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

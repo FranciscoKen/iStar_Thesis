@@ -1,0 +1,64 @@
+<istarml2 version="1.0">
+   <diagram name="MMO-SR.ood">
+      <dependum id="_u6tfcHNMEemozsE8pEOulw" name="Sell games" type="goal">
+         <dependency>
+            <depender aref="_nmqDAHNMEemozsE8pEOulw" />
+            <dependee aref="_pIS04HNMEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_RB3DkHNQEemozsE8pEOulw" name="Pay for games" type="task">
+         <dependency>
+            <depender aref="_nmqDAHNMEemozsE8pEOulw" />
+            <dependee aref="_pIS04HNMEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_X16KQHNQEemozsE8pEOulw" name="Provide gaming service" type="goal">
+         <dependency>
+            <depender aref="_pIS04HNMEemozsE8pEOulw" />
+            <dependee aref="_nmqDAHNMEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_cCccIHNQEemozsE8pEOulw" name="Fee" type="resource">
+         <dependency>
+            <depender aref="_aRDXAHNQEemozsE8pEOulw" />
+            <dependee aref="_nmqDAHNMEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_fRZrcHNQEemozsE8pEOulw" name="Hosting service" type="resource">
+         <dependency>
+            <depender aref="_nmqDAHNMEemozsE8pEOulw" iref="_OQr8cHNQEemozsE8pEOulw" />
+            <depender aref="_nmqDAHNMEemozsE8pEOulw" />
+            <dependee aref="_aRDXAHNQEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_qIjbMHNQEemozsE8pEOulw" name="Fee" type="resource">
+         <dependency>
+            <depender aref="_jssLAHNQEemozsE8pEOulw" />
+            <dependee aref="_nmqDAHNMEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_q9UgAHNQEemozsE8pEOulw" name="Shipping Service" type="resource">
+         <dependency>
+            <depender aref="_nmqDAHNMEemozsE8pEOulw" iref="_IUdOkHNQEemozsE8pEOulw" />
+            <depender aref="_nmqDAHNMEemozsE8pEOulw" />
+            <dependee aref="_jssLAHNQEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <actor id="_nmqDAHNMEemozsE8pEOulw" name="Game Provider" type="actor">
+         <boundary>
+            <ielement id="_IUdOkHNQEemozsE8pEOulw" name="Deliver CDs" type="task" />
+            <ielement id="_OQr8cHNQEemozsE8pEOulw" name="Sell online gaming" type="task" />
+         </boundary>
+      </actor>
+      <actor id="_pIS04HNMEemozsE8pEOulw" name="Customer" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_aRDXAHNQEemozsE8pEOulw" name="ISP" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_jssLAHNQEemozsE8pEOulw" name="Shipping agency" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

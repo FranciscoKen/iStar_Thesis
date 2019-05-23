@@ -1,0 +1,45 @@
+
+<istarml2 version="1.0">
+   <diagram name="Lorem-SR.ood">
+      <dependum id="_aQU0oHQIEemozsE8pEOulw" name="Monitoring data" type="resource">
+         <dependency>
+            <depender aref="_HzdQsHQIEemozsE8pEOulw" iref="_Vc8lMHQIEemozsE8pEOulw" />
+            <dependee aref="_skNtoHQGEemozsE8pEOulw" iref="_wkVUIHQGEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <actor id="_skNtoHQGEemozsE8pEOulw" name="Monitoring mechanism" type="role">
+         <boundary>
+            <ielement id="_uRLlwHQGEemozsE8pEOulw" name="Monitoring latency" type="task">
+               <ielementLink iref="_wkVUIHQGEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_wkVUIHQGEemozsE8pEOulw" name="Provide monitoring data" type="goal" />
+         </boundary>
+      </actor>
+      <actor id="_1I0zAHQGEemozsE8pEOulw" name="Adaptation mechanism" type="role">
+         <boundary>
+            <ielement id="_2lC5YHQGEemozsE8pEOulw" name="Effect adaptation" type="goal" />
+            <ielement id="_5BGsIHQGEemozsE8pEOulw" name="Adapt from S1 to S2" type="task">
+               <ielementLink iref="_2lC5YHQGEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_HzdQsHQIEemozsE8pEOulw" name="Decision making mechanism" type="role">
+         <boundary>
+            <ielement id="_J6EX4HQIEemozsE8pEOulw" name="Fire HIGH_LATENCY event" type="task">
+               <ielementLink iref="_MUbhgHQIEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_MUbhgHQIEemozsE8pEOulw" name="Fire event when enveironment change" type="task">
+               <ielementLink iref="_REiagHQIEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_REiagHQIEemozsE8pEOulw" name="Trigger adaptation at correct time" type="goal" />
+            <ielement id="_THz50HQIEemozsE8pEOulw" name="Identify environment switch from D1 to D2" type="task">
+               <ielementLink iref="_MUbhgHQIEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Vc8lMHQIEemozsE8pEOulw" name="Analyse monitoring data" type="task">
+               <ielementLink iref="_THz50HQIEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+
