@@ -97,6 +97,8 @@ public class IstarMLHandler {
                         currentActorLink.setAttribute("type","participates-in");
                     } else if(currentActorLink.getAttribute("type").equals("instance_of")){
                         currentActor.removeChild(currentActorLink);
+                    } else if(currentActorLink.getAttribute("type").equals("is_a")){
+                        currentActorLink.setAttribute("type","is-a");
                     }
                 }
 
