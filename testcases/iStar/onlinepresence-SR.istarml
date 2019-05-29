@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="onlinepresence-SR.ood">
+      <graphic content="SVG"/>
+      <ielement type="task" id="_-j3xgICFEemEIaXDJT8g1Q" name="Choose a category">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <ielementLink type="contribution" value="help" iref="_HemQ0ICGEemEIaXDJT8g1Q">
+            <graphic content="SVG"/>
+         </ielementLink>
+         <ielementLink type="decomposition" value="and" iref="_CIoRsICGEemEIaXDJT8g1Q">
+            <graphic content="SVG"/>
+         </ielementLink>
+      </ielement>
+      <ielement type="resource" id="_c3_2UICREemEIaXDJT8g1Q" name="Referrals">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_7WgdoICFEemEIaXDJT8g1Q" aref="_I_1PgICFEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_TeW1IICLEemEIaXDJT8g1Q" aref="_LyDDAICGEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_hPkTgICREemEIaXDJT8g1Q" name="Effective user interface">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_v6shoICFEemEIaXDJT8g1Q" aref="_I_1PgICFEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_ruMdQICLEemEIaXDJT8g1Q" aref="_LyDDAICGEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_mIUyMICREemEIaXDJT8g1Q" name="Effective search features">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_1DeZUICFEemEIaXDJT8g1Q" aref="_I_1PgICFEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_ruMdQICLEemEIaXDJT8g1Q" aref="_LyDDAICGEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_rGWycICREemEIaXDJT8g1Q" name="Categories">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_-j3xgICFEemEIaXDJT8g1Q" aref="_HpuYMICFEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_eM-egICMEemEIaXDJT8g1Q" aref="_LyDDAICGEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor type="role" id="_I_1PgICFEemEIaXDJT8g1Q" name="Counsellor">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="11" ypos="10" width="602" height="627" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="softgoal" id="_Kw16IICFEemEIaXDJT8g1Q"
+                      name="Give kids the help to fully resolve issue">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_iSWcoICFEemEIaXDJT8g1Q"
+                      name="Give kids access to local services">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_Kw16IICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_lXj6EICFEemEIaXDJT8g1Q"
+                      name="Easy and quick access to referrals">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_Kw16IICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_nvFyIICFEemEIaXDJT8g1Q" name="Reference and/or provide info">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_iSWcoICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_v6shoICFEemEIaXDJT8g1Q" name="User friendly referral DB">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_lXj6EICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_1DeZUICFEemEIaXDJT8g1Q"
+                      name="Take less time to find things in referral DB">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_Kw16IICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_4_ZcUICFEemEIaXDJT8g1Q" name="Search in physical resources">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_v6shoICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_7WgdoICFEemEIaXDJT8g1Q" name="Search in referral DB">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_v6shoICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_CIoRsICGEemEIaXDJT8g1Q" name="Enter province and city">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_7WgdoICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_DewXIICGEemEIaXDJT8g1Q" name="Find nearest community &amp; town">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_7WgdoICFEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_HemQ0ICGEemEIaXDJT8g1Q"
+                      name="Category searches should be more reliable">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor type="agent" id="_LyDDAICGEemEIaXDJT8g1Q" name="Social service DB">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="780" ypos="-96" width="745" height="769" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="task" id="_TeW1IICLEemEIaXDJT8g1Q" name="Provide referrals">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="softgoal" id="_VsPB8ICLEemEIaXDJT8g1Q"
+                      name="People must be willing to use it">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_TeW1IICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_XLz-UICLEemEIaXDJT8g1Q" name="Maintain quality of entries">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_VsPB8ICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_TeW1IICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_ZsjcwICLEemEIaXDJT8g1Q" name="Ensure quality of access">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_VsPB8ICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_TeW1IICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_luHxMICLEemEIaXDJT8g1Q"
+                      name="Improve how well counsellors search">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_ZsjcwICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_ruMdQICLEemEIaXDJT8g1Q" name="Effective user interface">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_luHxMICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="help" iref="_ZsjcwICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_2F7tIICLEemEIaXDJT8g1Q"
+                      name="Could be good to let counsellors add annotations">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_XLz-UICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_6U62EICLEemEIaXDJT8g1Q"
+                      name="Counselors learn how to update references">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_XLz-UICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_ALF_QICMEemEIaXDJT8g1Q"
+                      name="Interesting to know how much each piece of information is used">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_XLz-UICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_HV2VwICMEemEIaXDJT8g1Q" name="Counselors add to DB">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="make" iref="_6U62EICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="make" iref="_2F7tIICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_Ka1JsICMEemEIaXDJT8g1Q"
+                      name="Librarian approval update/annotations">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_HV2VwICMEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_a-B2QICMEemEIaXDJT8g1Q" name="Live updates/annotations">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_HV2VwICMEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_eM-egICMEemEIaXDJT8g1Q" name="Implement new taxonomy">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_luHxMICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_fzwPEICMEemEIaXDJT8g1Q" name="Faceted taxonomy">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_eM-egICMEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_hizx4ICMEemEIaXDJT8g1Q" name="Snap-to-grid">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_eM-egICMEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_rTlIYICMEemEIaXDJT8g1Q" name="Ad-hoc tagging">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_eM-egICMEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_xqJB0ICMEemEIaXDJT8g1Q" name="Improve UI">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_ruMdQICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_057-oICMEemEIaXDJT8g1Q" name="Expand search functionality">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_luHxMICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_7K3KIICMEemEIaXDJT8g1Q" name="Want links across towns">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_luHxMICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_-2nDIICMEemEIaXDJT8g1Q"
+                      name="Provide geographical information">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="make" iref="_7K3KIICMEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_DcCWIICNEemEIaXDJT8g1Q"
+                      name="Better training for database skills">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_luHxMICLEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_IDUqUICNEemEIaXDJT8g1Q" name="Db Training">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_DcCWIICNEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_NoN2QICNEemEIaXDJT8g1Q" name="Implement usage statistics">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="make" iref="_ALF_QICMEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml>

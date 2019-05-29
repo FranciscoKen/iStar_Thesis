@@ -1,133 +1,123 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <istarml version="1.0">
-   <diagram name="Photography.ood">
+   <diagram name="ossadoption-SR.ood">
       <graphic content="SVG"/>
-      <ielement type="resource" id="_EjoHkHGrEemri5Qqy10gDg" name="Work request">
-         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
-                  bgcolor="FFFFFF"
-                  fontfamily="Segoe UI"
-                  fontcolor="000000"
-                  fontsize="12"/>
-         <dependency>
-            <depender iref="_8ysh4HGqEemri5Qqy10gDg" aref="_o6zKYHGqEemri5Qqy10gDg">
-               <graphic content="SVG"/>
-            </depender>
-            <dependee iref="_vREv8HGqEemri5Qqy10gDg" aref="_nlrKgHGqEemri5Qqy10gDg">
-               <graphic content="SVG"/>
-            </dependee>
-         </dependency>
-      </ielement>
-      <actor id="_nlrKgHGqEemri5Qqy10gDg" name="Photographer">
+      <actor type="agent" id="_nbT3MIIJEemtIaruMjdpGw" name="OSS Adopter">
          <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
                   bgcolor="FFFFFF"
                   fontfamily="Segoe UI"
                   fontcolor="000000"
                   fontsize="12"/>
          <boundary>
-            <graphic content="basic" xpos="191" ypos="80" width="350" height="305" shape="ellipse"
+            <graphic content="basic" xpos="36" ypos="74" width="397" height="359" shape="ellipse"
                      unit="pt"
                      bgcolor="FFFFFF"
                      fontfamily="Segoe UI"
                      fontcolor="000000"
                      fontsize="12"/>
-            <ielement type="goal" id="_t_iPkHGqEemri5Qqy10gDg" name="Work opportunity">
+            <ielement type="goal" id="_oWXKMIIJEemtIaruMjdpGw" name="OSS community contributed">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
             </ielement>
-            <ielement type="task" id="_vREv8HGqEemri5Qqy10gDg" name="To present work request">
+            <ielement type="task" id="_pfJXMIIJEemtIaruMjdpGw" name="Maintain code">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="or" iref="_t_iPkHGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="or" iref="_oWXKMIIJEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
-            <ielement type="resource" id="_x3W1sHGqEemri5Qqy10gDg" name="Curriculum">
+            <ielement type="task" id="_r25RsIIJEemtIaruMjdpGw" name="Report bugs">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_vREv8HGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="and" iref="_pfJXMIIJEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
-            <ielement type="resource" id="_yv0uwHGqEemri5Qqy10gDg" name="Personal data">
+            <ielement type="task" id="_s7gwYIIJEemtIaruMjdpGw" name="Fix bugs">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_vREv8HGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="and" iref="_pfJXMIIJEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
          </boundary>
       </actor>
-      <actor id="_o6zKYHGqEemri5Qqy10gDg" name="Production department">
+      <actor type="role" id="_xpSHEIIJEemtIaruMjdpGw" name="Developer">
          <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
                   bgcolor="FFFFFF"
                   fontfamily="Segoe UI"
                   fontcolor="000000"
                   fontsize="12"/>
          <boundary>
-            <graphic content="basic" xpos="696" ypos="60" width="433" height="361" shape="ellipse"
+            <graphic content="basic" xpos="552" ypos="12" width="361" height="275" shape="ellipse"
                      unit="pt"
                      bgcolor="FFFFFF"
                      fontfamily="Segoe UI"
                      fontcolor="000000"
                      fontsize="12"/>
-            <ielement type="goal" id="_5HjF0HGqEemri5Qqy10gDg" name="Work request be processed">
+            <ielement type="task" id="_yXTqsIIJEemtIaruMjdpGw" name="Maintain code">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
             </ielement>
-            <ielement type="task" id="_7gFDcHGqEemri5Qqy10gDg" name="To process work request">
+            <ielement type="task" id="_zRGZcIIJEemtIaruMjdpGw" name="Report bugs">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="or" iref="_5HjF0HGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="and" iref="_yXTqsIIJEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
-            <ielement type="task" id="_8ysh4HGqEemri5Qqy10gDg" name="To receive work request">
+            <ielement type="task" id="_0CjEgIIJEemtIaruMjdpGw" name="Fix bugs">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_7gFDcHGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="and" iref="_yXTqsIIJEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
-            <ielement type="task" id="_-wnAEHGqEemri5Qqy10gDg" name="To refuse work request">
+         </boundary>
+      </actor>
+      <actor type="agent" id="_5nfTwIIJEemtIaruMjdpGw" name="OSS Adopter">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="plays" aref="_xpSHEIIJEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+         <boundary>
+            <graphic content="basic" xpos="432" ypos="300" width="240" height="170" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_6lM5MIIJEemtIaruMjdpGw" name="OSS community contributed">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_7gFDcHGqEemri5Qqy10gDg">
-                  <graphic content="SVG"/>
-               </ielementLink>
-            </ielement>
-            <ielement type="task" id="_AWeKoHGrEemri5Qqy10gDg" name="To accept work request">
-               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
-                        bgcolor="FFFFFF"
-                        fontfamily="Segoe UI"
-                        fontcolor="000000"
-                        fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_7gFDcHGqEemri5Qqy10gDg">
-                  <graphic content="SVG"/>
-               </ielementLink>
             </ielement>
          </boundary>
       </actor>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="medicine-SD.ood">
+      <graphic content="SVG"/>
+      <ielement type="goal" id="_0JJ4cIItEemtIaruMjdpGw" name="Coaching">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_vFGIsIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_yVErsIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_2y9MQIItEemtIaruMjdpGw" name="Patient info">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_yVErsIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_vFGIsIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_-ajPwIItEemtIaruMjdpGw" name="Improve health status">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_vFGIsIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_8ZFHQIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_AnK4UIIuEemtIaruMjdpGw" name="Do business">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_8ZFHQIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_vFGIsIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_EwYwcIIuEemtIaruMjdpGw" name="Individual support for patients">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_8ZFHQIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_5HCuwIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_IaY9AIIuEemtIaruMjdpGw" name="Data management">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_5HCuwIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_8ZFHQIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_X9AWUIIuEemtIaruMjdpGw" name="Medication plan">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_LU_s8IIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_S9yqUIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_acScMIIuEemtIaruMjdpGw" name="Vital signals">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_Vp2n8IIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_Nqj2IIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_j10-cIIuEemtIaruMjdpGw" name="Provide certificate">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_8ZFHQIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_iHP8wIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_nGy_8IIuEemtIaruMjdpGw" name="Provide certificate">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_e5WdYIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_iHP8wIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_rqi38IIuEemtIaruMjdpGw" name="Do business">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_e5WdYIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_qRJcEIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_to5bAIIuEemtIaruMjdpGw" name="Data management">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_qRJcEIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_e5WdYIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor type="agent" id="_sz9MgIItEemtIaruMjdpGw" name="Patient">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="plays" aref="_vFGIsIItEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor type="role" id="_vFGIsIItEemtIaruMjdpGw" name="Data owner">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="role" id="_yVErsIItEemtIaruMjdpGw" name="Data user">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_5HCuwIItEemtIaruMjdpGw" name="Coach">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="plays" aref="_yVErsIItEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor type="agent" id="_8ZFHQIItEemtIaruMjdpGw" name="TeLiPro Portal">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="plays" aref="_LU_s8IIuEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+         <actorLink type="plays" aref="_Nqj2IIIuEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor type="role" id="_LU_s8IIuEemtIaruMjdpGw" name="Data consumer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="role" id="_Nqj2IIIuEemtIaruMjdpGw" name="Data provider">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="role" id="_S9yqUIIuEemtIaruMjdpGw" name="Data provider">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="role" id="_Vp2n8IIuEemtIaruMjdpGw" name="Data consumer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_e5WdYIIuEemtIaruMjdpGw" name="EHR provider">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="plays" aref="_S9yqUIIuEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+         <actorLink type="plays" aref="_Vp2n8IIuEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_iHP8wIIuEemtIaruMjdpGw" name="Identity provider">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="role" id="_qRJcEIIuEemtIaruMjdpGw" name="Data owner">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="agent" id="_vO0P8IIuEemtIaruMjdpGw" name="Doctor">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="plays" aref="_qRJcEIIuEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+   </diagram>
+</istarml>

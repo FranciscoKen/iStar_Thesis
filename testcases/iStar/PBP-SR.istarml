@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="PBP-SR.ood">
+      <graphic content="SVG"/>
+      <ielement type="softgoal" id="_D0iWwIIvEemtIaruMjdpGw"
+                name="Production traces be transmitted">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_8twhUIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_AIvacIIvEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_HblV8IIvEemtIaruMjdpGw"
+                name="Market forecasts be disclosed">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_AIvacIIvEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_8twhUIIuEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_ArGOsIIxEemtIaruMjdpGw"
+                name="Sharing governance be transparent">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_YduoUIIvEemtIaruMjdpGw" aref="_Ks6j0IIvEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_ePJX4IIwEemtIaruMjdpGw" aref="_Re-GcIIvEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_E8hAkIIxEemtIaruMjdpGw"
+                name="Sharing obligations be complied">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_ePJX4IIwEemtIaruMjdpGw" aref="_Re-GcIIvEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_YduoUIIvEemtIaruMjdpGw" aref="_Ks6j0IIvEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor type="agent" id="_8twhUIIuEemtIaruMjdpGw"
+             name="Branded Pharmaceutical Company (BPC)">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="plays" aref="_Ks6j0IIvEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor type="agent" id="_AIvacIIvEemtIaruMjdpGw"
+             name="Generic Pharmaceutical Compounder (GPC)">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="plays" aref="_Ks6j0IIvEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor type="role" id="_Ks6j0IIvEemtIaruMjdpGw"
+             name="Pharmaceutical Business Partner (PBP)">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="240" ypos="192" width="661" height="649" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_UcV2gIIvEemtIaruMjdpGw"
+                      name="Decision on data requests be made">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_WY5CwIIvEemtIaruMjdpGw" name="Share data directly">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="hurt" iref="_gWG50IIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="help" iref="_hT1tYIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_UcV2gIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_Xb8bMIIvEemtIaruMjdpGw" name="Withhold data">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_gWG50IIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="hurt" iref="_hT1tYIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_UcV2gIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_YduoUIIvEemtIaruMjdpGw" name="Share data via mediating party">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_hT1tYIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="help" iref="_gWG50IIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="help" iref="_TvrvYIIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_UcV2gIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_gWG50IIvEemtIaruMjdpGw" name="Own data be secured">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="softgoal" id="_hT1tYIIvEemtIaruMjdpGw"
+                      name="Collaboration be mutually beneficial">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_1nbiYIIvEemtIaruMjdpGw" name="Give full access to own data">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="hurt" iref="_TvrvYIIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_WY5CwIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_3Vql0IIvEemtIaruMjdpGw" name="Demand partner data">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_TvrvYIIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_WY5CwIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_D3KXgIIwEemtIaruMjdpGw" name="Secrete own data">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_TvrvYIIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_Xb8bMIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_FWjtsIIwEemtIaruMjdpGw" name="Hoard partner data">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="hurt" iref="_TvrvYIIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_Xb8bMIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_I0HZsIIwEemtIaruMjdpGw"
+                      name="Co-develop data sharing protocol">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_YduoUIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_LR0yQIIwEemtIaruMjdpGw"
+                      name="Comply with data sharing protocol">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_YduoUIIvEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_TvrvYIIwEemtIaruMjdpGw" name="Data asymmetry be reduced">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor type="agent" id="_Re-GcIIvEemtIaruMjdpGw" name="Industrial Data Space (IDS)">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="1020" ypos="192" width="469" height="469" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_cWLrIIIwEemtIaruMjdpGw"
+                      name="Data sharing infrastructure be operated">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_ePJX4IIwEemtIaruMjdpGw"
+                      name="Support data sharing commitments">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_cWLrIIIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_ifz70IIwEemtIaruMjdpGw" name="Track data exchanges">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_ePJX4IIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_j47D0IIwEemtIaruMjdpGw" name="Monitor data usage">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_ePJX4IIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_mzafAIIwEemtIaruMjdpGw"
+                      name="Implement data sharing protocols">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_ePJX4IIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_qonO8IIwEemtIaruMjdpGw" name="Provide data sharing reports">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_ePJX4IIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="resource" id="_z_EA8IIwEemtIaruMjdpGw" name="IDS Connector">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_ifz70IIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="resource" id="_02vP0IIwEemtIaruMjdpGw" name="IDS Monitor">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_j47D0IIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="resource" id="_3MFWkIIwEemtIaruMjdpGw" name="IDS Broker">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_mzafAIIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="resource" id="_5L3dAIIwEemtIaruMjdpGw" name="IDS Reporting">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_qonO8IIwEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml>

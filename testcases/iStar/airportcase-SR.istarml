@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="airportcase-SR.ood">
+      <graphic content="SVG"/>
+      <ielement type="goal" id="_Ujsx8ICeEemEIaXDJT8g1Q" name="Telephone services provided">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_Tk3yMICeEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_123YkICaEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_cxDN4ICeEemEIaXDJT8g1Q"
+                name="Added value services transported">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_bfNLgICeEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_2YYUwICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+            <dependee iref="_40z68ICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+            <dependee iref="_novQgICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+            <dependee iref="__PVuYICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_4OVpcICeEemEIaXDJT8g1Q" name="Reachable access">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_ok2MEICeEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_40z68ICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_771O4ICeEemEIaXDJT8g1Q" name="Full availability">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_123YkICaEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_-4lT4ICeEemEIaXDJT8g1Q" name="Telephone services provided">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_123YkICaEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_H9QZYICfEemEIaXDJT8g1Q" name="Information security">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_lLZ18ICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_SOAQcICfEemEIaXDJT8g1Q" name="Worldwide connections">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_DmWx8ICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_VZ5ksICfEemEIaXDJT8g1Q" name="Quality of services">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_qyXpAICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_bj6P4ICfEemEIaXDJT8g1Q" name="Quality of services">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_DmWx8ICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_aP-i0ICfEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_gXXX0ICfEemEIaXDJT8g1Q"
+                name="Interconnected infrastructure">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_DmWx8ICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_aP-i0ICfEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_jgmZoICfEemEIaXDJT8g1Q" name="Worldwide connections">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_DmWx8ICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_aP-i0ICfEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_qOGMYICfEemEIaXDJT8g1Q" name="Local connections">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_DmWx8ICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_aP-i0ICfEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_7cE7UICfEemEIaXDJT8g1Q" name="Destination IP addresses">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_F9RmAICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_5PfvAICfEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_-2Du4ICfEemEIaXDJT8g1Q" name="Routing status">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_F9RmAICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_5PfvAICfEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_CJ3pAICgEemEIaXDJT8g1Q"
+                name="Up to date management of routing tables">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_F9RmAICcEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_5PfvAICfEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_XcPacICgEemEIaXDJT8g1Q"
+                name="Quality of services information">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_V1EoUICgEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_qyXpAICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_dTED4ICgEemEIaXDJT8g1Q" name="Parameter values">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_oUIE8ICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_cTKGEICgEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_gL2O4ICgEemEIaXDJT8g1Q" name="Resources monitored">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_cTKGEICgEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_ycfcEICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_ja6L4ICgEemEIaXDJT8g1Q" name="Recover from scratch">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_0T2mUICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_cTKGEICgEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_t5iG4ICgEemEIaXDJT8g1Q" name="Good performance">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_1hlkwICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_cTKGEICgEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_4cST8ICgEemEIaXDJT8g1Q" name="Easy administration">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_cTKGEICgEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_G5Xv8ICeEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_fGBZ0IChEemEIaXDJT8g1Q" name="Services consumption controlled">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_EGppUIChEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_FGNwQICeEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_hAzEcIChEemEIaXDJT8g1Q" name="Services offered">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_EGppUIChEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_1hlkwICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_vlO-QIChEemEIaXDJT8g1Q" name="Users information">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_tgqecIChEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_DII6AICeEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_0MbL0IChEemEIaXDJT8g1Q" name="ISP services invoiced">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_ytvnUIChEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_9i_PYICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_46XhoIChEemEIaXDJT8g1Q" name="Invoices emmited">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_34spQIChEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_Mdff0ICeEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_7e0bYIChEemEIaXDJT8g1Q"
+                name="Easy definition of services plan">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_34spQIChEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_8bgC4ICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_97hHUIChEemEIaXDJT8g1Q" name="Accounting information">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_34spQIChEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_DII6AICeEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_GimR4ICiEemEIaXDJT8g1Q" name="Users supported">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_6rgr8ICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_FOnhgICiEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_I-0csICiEemEIaXDJT8g1Q"
+                name="User account and billing information">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_FOnhgICiEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_6rgr8ICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+            <dependee iref="_9i_PYICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+            <dependee iref="_DII6AICeEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_ZiqCcICiEemEIaXDJT8g1Q"
+                name="Telephone &amp; access resources">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_XjrNQICiEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_uerNkICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+            <dependee iref="_2YYUwICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_iD1ZUICiEemEIaXDJT8g1Q" name="Services invoiced">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_WSstkICiEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_9i_PYICdEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_j3LmQICiEemEIaXDJT8g1Q"
+                name="Added value services provided">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_WSstkICiEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_Mdff0ICeEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_xsrWcICiEemEIaXDJT8g1Q"
+                name="Voice and data infrastructure">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_uZIiEICiEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_40z68ICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_3H-hgICiEemEIaXDJT8g1Q" name="Access from home">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_WSstkICiEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_40z68ICbEemEIaXDJT8g1Q" aref="_zxH0EICaEemEIaXDJT8g1Q">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor id="_zxH0EICaEemEIaXDJT8g1Q" name="IP Telephony system">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="273" ypos="164" width="1060" height="689" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="goal" id="_123YkICaEemEIaXDJT8g1Q" name="IP Telephony service provided">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="goal" id="_novQgICbEemEIaXDJT8g1Q" name="Communication established">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_123YkICaEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_pQ5hIICbEemEIaXDJT8g1Q" name="Services managed">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_123YkICaEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_qf_KcICbEemEIaXDJT8g1Q" name="Services billed">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_123YkICaEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_uerNkICbEemEIaXDJT8g1Q" name="Resources provided">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_123YkICaEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_2YYUwICbEemEIaXDJT8g1Q" name="Voices &amp; data accessed">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_40z68ICbEemEIaXDJT8g1Q" name="Voices &amp; data distributed">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="__PVuYICbEemEIaXDJT8g1Q" name="Voices &amp; data transported">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_DmWx8ICcEemEIaXDJT8g1Q" name="Connection established">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_F9RmAICcEemEIaXDJT8g1Q" name="Packages routed">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_euIQgICcEemEIaXDJT8g1Q" name="Commun. inf. stored">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_lLZ18ICcEemEIaXDJT8g1Q" name="Voice &amp; data compressed">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_o9QW8ICcEemEIaXDJT8g1Q" name="Voices &amp; data encryption">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_rV_I4ICcEemEIaXDJT8g1Q" name="Signalling provided">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_novQgICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_qf_KcICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_yWc68ICcEemEIaXDJT8g1Q" name="Mobile network interconnected">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_DmWx8ICcEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_efAZ8ICdEemEIaXDJT8g1Q"
+                      name="International networks interconnected">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_DmWx8ICcEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_hCMvcICdEemEIaXDJT8g1Q" name="Local networks interconnected">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_DmWx8ICcEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_oUIE8ICdEemEIaXDJT8g1Q" name="Services configured">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_pQ5hIICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_qyXpAICdEemEIaXDJT8g1Q" name="Quality of services configured">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_oUIE8ICdEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_ycfcEICdEemEIaXDJT8g1Q" name="Services monitorized">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_pQ5hIICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_0T2mUICdEemEIaXDJT8g1Q" name="Services recovered">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_pQ5hIICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_1hlkwICdEemEIaXDJT8g1Q" name="Performance tuned">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_pQ5hIICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_6rgr8ICdEemEIaXDJT8g1Q" name="Complaints supported">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_qf_KcICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_8bgC4ICdEemEIaXDJT8g1Q" name="Billing plans defined">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_qf_KcICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_9i_PYICdEemEIaXDJT8g1Q" name="Invoices emmited">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_qf_KcICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_DII6AICeEemEIaXDJT8g1Q" name="Users registered">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_qf_KcICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_FGNwQICeEemEIaXDJT8g1Q" name="Billing information stored">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_qf_KcICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_G5Xv8ICeEemEIaXDJT8g1Q" name="Prepaid cards emmited">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_qf_KcICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="goal" id="_Mdff0ICeEemEIaXDJT8g1Q" name="RI services billed">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="_qf_KcICbEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_Tk3yMICeEemEIaXDJT8g1Q" name="TC">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_bfNLgICeEemEIaXDJT8g1Q" name="ISP">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_mY1ngICeEemEIaXDJT8g1Q" name="User">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_ok2MEICeEemEIaXDJT8g1Q" name="HTU">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_mY1ngICeEemEIaXDJT8g1Q">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_aP-i0ICfEemEIaXDJT8g1Q" name="InPr">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_5PfvAICfEemEIaXDJT8g1Q" name="DNS">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_V1EoUICgEemEIaXDJT8g1Q" name="TRA">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_cTKGEICgEemEIaXDJT8g1Q" name="SA">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_EGppUIChEemEIaXDJT8g1Q" name="TSD">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_tgqecIChEemEIaXDJT8g1Q" name="TBP">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_ytvnUIChEemEIaXDJT8g1Q" name="ISP">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_34spQIChEemEIaXDJT8g1Q" name="TC">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_FOnhgICiEemEIaXDJT8g1Q" name="Call center">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_WSstkICiEemEIaXDJT8g1Q" name="HTU">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_XjrNQICiEemEIaXDJT8g1Q">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_XjrNQICiEemEIaXDJT8g1Q" name="User">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_uZIiEICiEemEIaXDJT8g1Q" name="TF">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_WSstkICiEemEIaXDJT8g1Q">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+   </diagram>
+</istarml>

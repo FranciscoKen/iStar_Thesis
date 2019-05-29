@@ -1,0 +1,43 @@
+
+<istarml2 version="1.0">
+   <diagram name="Photography.ood">
+      <dependum id="_EjoHkHGrEemri5Qqy10gDg" name="Work request" type="resource">
+         <dependency>
+            <depender aref="_o6zKYHGqEemri5Qqy10gDg" iref="_8ysh4HGqEemri5Qqy10gDg" />
+            <dependee aref="_nlrKgHGqEemri5Qqy10gDg" iref="_vREv8HGqEemri5Qqy10gDg" />
+         </dependency>
+      </dependum>
+      <actor id="_nlrKgHGqEemri5Qqy10gDg" name="Photographer" type="actor">
+         <boundary>
+            <ielement id="_t_iPkHGqEemri5Qqy10gDg" name="Work opportunity" type="goal" />
+            <ielement id="_vREv8HGqEemri5Qqy10gDg" name="To present work request" type="task">
+               <ielementLink iref="_t_iPkHGqEemri5Qqy10gDg" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_x3W1sHGqEemri5Qqy10gDg" name="Curriculum" type="resource">
+               <ielementLink iref="_vREv8HGqEemri5Qqy10gDg" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_yv0uwHGqEemri5Qqy10gDg" name="Personal data" type="resource">
+               <ielementLink iref="_vREv8HGqEemri5Qqy10gDg" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_o6zKYHGqEemri5Qqy10gDg" name="Production department" type="actor">
+         <boundary>
+            <ielement id="_5HjF0HGqEemri5Qqy10gDg" name="Work request be processed" type="goal" />
+            <ielement id="_7gFDcHGqEemri5Qqy10gDg" name="To process work request" type="task">
+               <ielementLink iref="_5HjF0HGqEemri5Qqy10gDg" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_8ysh4HGqEemri5Qqy10gDg" name="To receive work request" type="task">
+               <ielementLink iref="_7gFDcHGqEemri5Qqy10gDg" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_-wnAEHGqEemri5Qqy10gDg" name="To refuse work request" type="task">
+               <ielementLink iref="_7gFDcHGqEemri5Qqy10gDg" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_AWeKoHGrEemri5Qqy10gDg" name="To accept work request" type="task">
+               <ielementLink iref="_7gFDcHGqEemri5Qqy10gDg" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

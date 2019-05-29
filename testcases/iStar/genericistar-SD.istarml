@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="genericistar-SD.ood">
+      <graphic content="SVG"/>
+      <ielement type="goal" id="_0q5QMIIEEemtIaruMjdpGw"
+                name="Technology, products or services acquired">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_yTdewIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_48lu4IIEEemtIaruMjdpGw"
+                name="Technology, products or services">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_yTdewIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_-4uWIIIEEemtIaruMjdpGw" name="Timely payments">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_yTdewIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_Bum-IIIFEemtIaruMjdpGw" name="Invoiced purchases">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_yTdewIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_En3DMIIFEemtIaruMjdpGw"
+                name="Quality of products and services">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_yTdewIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_IdClAIIFEemtIaruMjdpGw" name="Bill">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_yTdewIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_Z7Z5UIIFEemtIaruMjdpGw" name="Membership card provided">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_e1LEoIIFEemtIaruMjdpGw" name="Membership card">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_h7tXwIIFEemtIaruMjdpGw" name="Special introduction prices">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_kkKnwIIFEemtIaruMjdpGw" name="Personal information registered">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_sqo_oIIFEemtIaruMjdpGw" name="Product availability guaranteed">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_wP2LwIIFEemtIaruMjdpGw"
+                name="Product distribution agreement signed">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_1mgucIIFEemtIaruMjdpGw"
+                name="Increase sales through the distribution chain">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_9DonUIIFEemtIaruMjdpGw"
+                name="Product distribution agreement">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_CoNDIIIGEemtIaruMjdpGw"
+                name="Product distribution chain achieved">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_OpqC0IIGEemtIaruMjdpGw" name="Deferred payments">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_admK8IIGEemtIaruMjdpGw" name="Credit flexibility">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_cbsPUIIGEemtIaruMjdpGw" name="Voucher">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_dr4r4IIGEemtIaruMjdpGw" name="Waranty documents">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_gHFjAIIGEemtIaruMjdpGw"
+                name="Acceptance of various credit cards">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor id="_wnMKMIIEEemtIaruMjdpGw" name="Organization">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_yTdewIIEEemtIaruMjdpGw" name="Customer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_N5bVMIIFEemtIaruMjdpGw" name="New credit wholesaler customer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_yTdewIIEEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+   </diagram>
+</istarml>

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="tourismnetwork-SR.ood">
+      <graphic content="SVG"/>
+      <ielement type="softgoal" id="_A0cJMII3EemtIaruMjdpGw" name="Ideas be discussed">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_0UcwMIIyEemtIaruMjdpGw" aref="_hXog4IIyEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_VnTQ8IIzEemtIaruMjdpGw" aref="_IOPlIIIzEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_B1_s0II3EemtIaruMjdpGw" name="Client list be shared">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_VnTQ8IIzEemtIaruMjdpGw" aref="_IOPlIIIzEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_0UcwMIIyEemtIaruMjdpGw" aref="_hXog4IIyEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_3crTIII3EemtIaruMjdpGw" name="Cost be shared">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_cpGfwIIzEemtIaruMjdpGw" aref="_IOPlIIIzEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_b5oN0II3EemtIaruMjdpGw" aref="_G1u9QII3EemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_66dBkII3EemtIaruMjdpGw" name="New guests be acquired">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_iZei8IIzEemtIaruMjdpGw" aref="_IOPlIIIzEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_QFFowII3EemtIaruMjdpGw" aref="_G1u9QII3EemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_CPG68II4EemtIaruMjdpGw" name="Offerings be substitutive">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </ielement>
+      <ielement type="softgoal" id="_Hdu78II4EemtIaruMjdpGw" name="Business be protected">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_yLe4kIIyEemtIaruMjdpGw" aref="_hXog4IIyEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_OaehEII3EemtIaruMjdpGw" aref="_G1u9QII3EemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_IoDaAII4EemtIaruMjdpGw" name="Service quality be high">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender iref="_OaehEII3EemtIaruMjdpGw" aref="_G1u9QII3EemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_yLe4kIIyEemtIaruMjdpGw" aref="_hXog4IIyEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor type="role" id="_hXog4IIyEemtIaruMjdpGw" name="Mature Tourism Business (MB)">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="40" ypos="51" width="561" height="526" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="softgoal" id="_kVeyEIIyEemtIaruMjdpGw" name="Protect own business">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="softgoal" id="_ld5ysIIyEemtIaruMjdpGw" name="Alliances be maintained">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="goal" id="_oAENcIIyEemtIaruMjdpGw" name="Business be promoted">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_o65eAIIyEemtIaruMjdpGw" name="Advertise individually">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_kVeyEIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_oAENcIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_qPIGAIIyEemtIaruMjdpGw" name="Promote collectively">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_ld5ysIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_oAENcIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_uHoBkIIyEemtIaruMjdpGw" name="Advertise self locally">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="unknown" iref="_DWxf4IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_o65eAIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_vzrTsIIyEemtIaruMjdpGw" name="Advertise self externally">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="hurt" iref="_ld5ysIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="hurt" iref="_DWxf4IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_o65eAIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_yLe4kIIyEemtIaruMjdpGw" name="Promote region externally">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_kVeyEIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="help" iref="_DWxf4IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_qPIGAIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_0UcwMIIyEemtIaruMjdpGw" name="Launch joint offerings">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_DWxf4IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_qPIGAIIyEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_DWxf4IIzEemtIaruMjdpGw" name="Trustworthiness">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor type="role" id="_IOPlIIIzEemtIaruMjdpGw" name="New Tourism Venture (NV)">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="852" ypos="24" width="505" height="505" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="softgoal" id="_MGXtQIIzEemtIaruMjdpGw" name="Alliances be forged">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="softgoal" id="_OL-u4IIzEemtIaruMjdpGw"
+                      name="Customers be gained for self">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="goal" id="_UHd14IIzEemtIaruMjdpGw" name="Revenue be increased">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_VnTQ8IIzEemtIaruMjdpGw" name="Invest in community">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_MGXtQIIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_UHd14IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_WsiasIIzEemtIaruMjdpGw" name="Challenge incumbents">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_OL-u4IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="hurt" iref="_MGXtQIIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_UHd14IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_bQUu8IIzEemtIaruMjdpGw" name="Sponsor local events">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_OL-u4IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="help" iref="_l0R14IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_VnTQ8IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_cpGfwIIzEemtIaruMjdpGw" name="Maintain common spaces">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="hurt" iref="_OL-u4IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="help" iref="_l0R14IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_VnTQ8IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_gjQBIIIzEemtIaruMjdpGw" name="Undercut market prices">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="hurt" iref="_l0R14IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_WsiasIIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_iZei8IIzEemtIaruMjdpGw" name="Imitate mature rival offers">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="unknown" iref="_l0R14IIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_WsiasIIzEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_l0R14IIzEemtIaruMjdpGw" name="Turstworthiness">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+         </boundary>
+      </actor>
+      <actor type="role" id="_G1u9QII3EemtIaruMjdpGw"
+             name="Regional Tourism Organization (RO)">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <boundary>
+            <graphic content="basic" xpos="504" ypos="576" width="573" height="528" shape="ellipse"
+                     unit="pt"
+                     bgcolor="FFFFFF"
+                     fontfamily="Segoe UI"
+                     fontcolor="000000"
+                     fontsize="12"/>
+            <ielement type="softgoal" id="_JYa8cII3EemtIaruMjdpGw"
+                      name="Reputation of region be maintained">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="softgoal" id="_LBwRwII3EemtIaruMjdpGw"
+                      name="Offerings in region be innovative">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="goal" id="_M3YWoII3EemtIaruMjdpGw" name="Visitors be increased">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_OaehEII3EemtIaruMjdpGw" name="Favor incumbent business">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_JYa8cII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_M3YWoII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_QFFowII3EemtIaruMjdpGw" name="Prioritize new ventures">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_LBwRwII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="or" iref="_M3YWoII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_T8TK4II3EemtIaruMjdpGw" name="Invest in infrastructure">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_LBwRwII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="help" iref="_llbkwII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_OaehEII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_VSs9III3EemtIaruMjdpGw" name="Offer targeted programs">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="hurt" iref="_LBwRwII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="contribution" value="some+" iref="_llbkwII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_OaehEII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_W7F3QII3EemtIaruMjdpGw" name="Fund new ventures">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="some+" iref="_llbkwII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_QFFowII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_ZZOtoII3EemtIaruMjdpGw" name="Subsidize new ventures">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_llbkwII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_QFFowII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_b5oN0II3EemtIaruMjdpGw" name="Provide free services">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_llbkwII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_QFFowII3EemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="softgoal" id="_llbkwII3EemtIaruMjdpGw" name="Trustworthiness">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml>

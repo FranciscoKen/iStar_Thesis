@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="IDS-SD.ood">
+      <graphic content="SVG"/>
+      <ielement type="task" id="_cDJpIIIqEemtIaruMjdpGw" name="Use data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_azv2wIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_ei8sYIIqEemtIaruMjdpGw" name="Secure data exchange">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_azv2wIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_ho3UcIIqEemtIaruMjdpGw" name="Confirm reception">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_c3fsoIIpEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_l125UIIqEemtIaruMjdpGw" name="Confirmation report">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_c3fsoIIpEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_pA0ZcIIqEemtIaruMjdpGw" name="Log transactions">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_c3fsoIIpEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_rPU4YIIqEemtIaruMjdpGw" name="Data governance">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_c3fsoIIpEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_01jy0IIqEemtIaruMjdpGw" name="Data provenance">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_yzYfsIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_65N-YIIqEemtIaruMjdpGw" name="Search data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_4PZccIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_82HI4IIqEemtIaruMjdpGw" name="Metadata">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_4PZccIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_TPEH4IIrEemtIaruMjdpGw" name="Describe data apps">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_PEI_kIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_SBpSgIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_WEp08IIrEemtIaruMjdpGw" name="Manage info">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_SBpSgIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_PEI_kIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_fAnDUIIrEemtIaruMjdpGw" name="Metadata">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_4PZccIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_iJCz4IIrEemtIaruMjdpGw" name="Exchange data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_khggEIIrEemtIaruMjdpGw" name="Data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_Ye3YIIIsEemtIaruMjdpGw" name="App usage request">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_SBpSgIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_irN3YIIsEemtIaruMjdpGw" name="Data apps">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_SBpSgIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_qM1OsIIsEemtIaruMjdpGw" name="Confirm transmission">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_c3fsoIIpEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_vDNu0IIsEemtIaruMjdpGw" name="Verify identity">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_yzYfsIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_zOp0gIIsEemtIaruMjdpGw" name="Secure data exchange">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_yzYfsIIqEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_5COVoIIsEemtIaruMjdpGw" name="Vocabularies">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_2ReFQIIsEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_56y8YIIsEemtIaruMjdpGw" name="Provide vocabularies">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_2ReFQIIsEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_DekYsIItEemtIaruMjdpGw" name="Contract">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_BjsncIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="task" id="_FzQYIIItEemtIaruMjdpGw" name="Authorise to publish data">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_BjsncIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_I_PL8IItEemtIaruMjdpGw" name="Data governance">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_BjsncIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_NU6ywIItEemtIaruMjdpGw" name="Secure data exchange">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_BjsncIItEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor id="_c3fsoIIpEemtIaruMjdpGw" name="Clearing house">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="agent" id="_YwRjIIIqEemtIaruMjdpGw" name="Data consumer">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_azv2wIIqEemtIaruMjdpGw" name="Data user">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_yzYfsIIqEemtIaruMjdpGw" name="Identity provider">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_4PZccIIqEemtIaruMjdpGw" name="Broker">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_PEI_kIIrEemtIaruMjdpGw" name="App store provider">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_SBpSgIIrEemtIaruMjdpGw" name="Data app store">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor type="agent" id="_bmAksIIrEemtIaruMjdpGw" name="Data provider">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_2ReFQIIsEemtIaruMjdpGw" name="Vocabulary manager">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_BjsncIItEemtIaruMjdpGw" name="Data owner">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+   </diagram>
+</istarml>

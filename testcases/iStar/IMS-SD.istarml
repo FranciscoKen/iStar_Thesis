@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<istarml version="1.0">
+   <diagram name="IMS-SD.ood">
+      <graphic content="SVG"/>
+      <ielement type="resource" id="_kGx7kIBtEemwA-quvuhgqw" name="Competencies Information">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_dlsNIIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_hM2hEIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_1Y1SMIBtEemwA-quvuhgqw" name="Obtain information">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_yfGsAIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_vgYREIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_dVdjUIBuEemwA-quvuhgqw" name="Cost reduction management">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_ZTFTAIBuEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_hFdDIIBuEemwA-quvuhgqw" name="Quicker Delivery [Reports]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_ZTFTAIBuEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="softgoal" id="_R0uOkIBvEemwA-quvuhgqw"
+                name="Easier [Information collectin]">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_IbEXkIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_W3mSkIBvEemwA-quvuhgqw" name="Information be managed">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_IbEXkIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_jK3bAIBvEemwA-quvuhgqw" name="Data be acquired">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_IbEXkIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_gVFgsIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="goal" id="_m0i3cIBvEemwA-quvuhgqw" name="Information be collected">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_a3MmkIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_gVFgsIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_rJ9_kIBvEemwA-quvuhgqw" name="Collected information">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_a3MmkIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_gVFgsIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_0i3BkIBvEemwA-quvuhgqw"
+                name="List of applicable legislation">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_u0voMIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_9E9lgIBvEemwA-quvuhgqw" name="Environmental legislation">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_u0voMIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_6rJ1gIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="__3eJYIBvEemwA-quvuhgqw" name="OSH legislation">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_u0voMIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_6rJ1gIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_DD5CEIBwEemwA-quvuhgqw"
+                name="Construction quality legislation">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_u0voMIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_6rJ1gIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_UkzUEIBwEemwA-quvuhgqw"
+                name="Significative environmenral impact">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_a3MmkIBtEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_OrpvYIBwEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <ielement type="resource" id="_wit7AIBxEemwA-quvuhgqw" name="List of applicable impact">
+         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <dependency>
+            <depender aref="_OrpvYIBwEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee aref="_u0voMIBvEemwA-quvuhgqw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
+      </ielement>
+      <actor id="_a3MmkIBtEemwA-quvuhgqw" name="IMS">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_dlsNIIBtEemwA-quvuhgqw" name="Competencies">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_a3MmkIBtEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_hM2hEIBtEemwA-quvuhgqw" name="Competencies DB">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_vgYREIBtEemwA-quvuhgqw" name="User Interface">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_a3MmkIBtEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_yfGsAIBtEemwA-quvuhgqw" name="Acquisition department">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_41j3wIBtEemwA-quvuhgqw" name="Mitigation manager">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_a3MmkIBtEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="__qAAAIBtEemwA-quvuhgqw" name="OSH subsystem">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_a3MmkIBtEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_HTh9MIBuEemwA-quvuhgqw" name="Environmental management subsystem">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_a3MmkIBtEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_NIMDcIBuEemwA-quvuhgqw" name="Operational control">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_a3MmkIBtEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_ZTFTAIBuEemwA-quvuhgqw" name="Construction company">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_qEW30IBuEemwA-quvuhgqw" name="Quality Manager">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_ZTFTAIBuEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+         <actorLink type="is_a" aref="_IbEXkIBvEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_IbEXkIBvEemwA-quvuhgqw" name="User">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_b-D2EIBvEemwA-quvuhgqw" name="Manager">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_a" aref="_qEW30IBuEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_gVFgsIBvEemwA-quvuhgqw" name="Data acquisition system">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_u0voMIBvEemwA-quvuhgqw" name="Legislative changes manager">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_a3MmkIBtEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+      <actor id="_6rJ1gIBvEemwA-quvuhgqw" name="Legislative authority">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+      </actor>
+      <actor id="_OrpvYIBwEemwA-quvuhgqw" name="Aspects &amp; impacts manager">
+         <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
+                  bgcolor="FFFFFF"
+                  fontfamily="Segoe UI"
+                  fontcolor="000000"
+                  fontsize="12"/>
+         <actorLink type="is_part_of" aref="_a3MmkIBtEemwA-quvuhgqw">
+            <graphic content="SVG"/>
+         </actorLink>
+      </actor>
+   </diagram>
+</istarml>

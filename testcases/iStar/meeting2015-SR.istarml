@@ -1,131 +1,139 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <istarml version="1.0">
-   <diagram name="Photography.ood">
+   <diagram name="meeting2015-SR.ood">
       <graphic content="SVG"/>
-      <ielement type="resource" id="_EjoHkHGrEemri5Qqy10gDg" name="Work request">
+      <ielement type="goal" id="_SS5vgIIIEemtIaruMjdpGw" name="Scheduled meeting">
          <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                   bgcolor="FFFFFF"
                   fontfamily="Segoe UI"
                   fontcolor="000000"
                   fontsize="12"/>
+         <ielementLink type="decomposition" value="and" iref="_AyHZUIIIEemtIaruMjdpGw">
+            <graphic content="SVG"/>
+         </ielementLink>
          <dependency>
-            <depender iref="_8ysh4HGqEemri5Qqy10gDg" aref="_o6zKYHGqEemri5Qqy10gDg">
+            <depender iref="_AyHZUIIIEemtIaruMjdpGw" aref="_9r8SkIIHEemtIaruMjdpGw">
                <graphic content="SVG"/>
             </depender>
-            <dependee iref="_vREv8HGqEemri5Qqy10gDg" aref="_nlrKgHGqEemri5Qqy10gDg">
+            <dependee iref="_GwVrQIIIEemtIaruMjdpGw" aref="_FSLEIIIIEemtIaruMjdpGw">
                <graphic content="SVG"/>
             </dependee>
          </dependency>
       </ielement>
-      <actor id="_nlrKgHGqEemri5Qqy10gDg" name="Photographer">
+      <actor id="_9r8SkIIHEemtIaruMjdpGw" name="Meeting starter">
          <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
                   bgcolor="FFFFFF"
                   fontfamily="Segoe UI"
                   fontcolor="000000"
                   fontsize="12"/>
          <boundary>
-            <graphic content="basic" xpos="191" ypos="80" width="350" height="305" shape="ellipse"
+            <graphic content="basic" xpos="38" ypos="64" width="0" height="0" shape="ellipse"
                      unit="pt"
                      bgcolor="FFFFFF"
                      fontfamily="Segoe UI"
                      fontcolor="000000"
                      fontsize="12"/>
-            <ielement type="goal" id="_t_iPkHGqEemri5Qqy10gDg" name="Work opportunity">
+            <ielement type="goal" id="_-y8W4IIHEemtIaruMjdpGw" name="Scheduled meeting">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
             </ielement>
-            <ielement type="task" id="_vREv8HGqEemri5Qqy10gDg" name="To present work request">
+            <ielement type="softgoal" id="__kH8MIIHEemtIaruMjdpGw" name="Fast">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="or" iref="_t_iPkHGqEemri5Qqy10gDg">
+            </ielement>
+            <ielement type="softgoal" id="_ACIG0IIIEemtIaruMjdpGw" name="Less effort">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_AyHZUIIIEemtIaruMjdpGw"
+                      name="Let scheduler to schedule a meeting">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="or" iref="__kH8MIIHEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
-            </ielement>
-            <ielement type="resource" id="_x3W1sHGqEemri5Qqy10gDg" name="Curriculum">
-               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
-                        bgcolor="FFFFFF"
-                        fontfamily="Segoe UI"
-                        fontcolor="000000"
-                        fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_vREv8HGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="or" iref="_ACIG0IIIEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
-            </ielement>
-            <ielement type="resource" id="_yv0uwHGqEemri5Qqy10gDg" name="Personal data">
-               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
-                        bgcolor="FFFFFF"
-                        fontfamily="Segoe UI"
-                        fontcolor="000000"
-                        fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_vREv8HGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="or" iref="_-y8W4IIHEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
          </boundary>
       </actor>
-      <actor id="_o6zKYHGqEemri5Qqy10gDg" name="Production department">
+      <actor id="_FSLEIIIIEemtIaruMjdpGw" name="Meeting scheduler">
          <graphic content="basic" xpos="0" ypos="0" width="100" height="100" unit="pt"
                   bgcolor="FFFFFF"
                   fontfamily="Segoe UI"
                   fontcolor="000000"
                   fontsize="12"/>
          <boundary>
-            <graphic content="basic" xpos="696" ypos="60" width="433" height="361" shape="ellipse"
+            <graphic content="basic" xpos="612" ypos="60" width="0" height="0" shape="ellipse"
                      unit="pt"
                      bgcolor="FFFFFF"
                      fontfamily="Segoe UI"
                      fontcolor="000000"
                      fontsize="12"/>
-            <ielement type="goal" id="_5HjF0HGqEemri5Qqy10gDg" name="Work request be processed">
+            <ielement type="task" id="_GwVrQIIIEemtIaruMjdpGw"
+                      name="Schedule a meeting automatically">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-            </ielement>
-            <ielement type="task" id="_7gFDcHGqEemri5Qqy10gDg" name="To process work request">
-               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
-                        bgcolor="FFFFFF"
-                        fontfamily="Segoe UI"
-                        fontcolor="000000"
-                        fontsize="12"/>
-               <ielementLink type="decomposition" value="or" iref="_5HjF0HGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="or" iref="_SS5vgIIIEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
-            <ielement type="task" id="_8ysh4HGqEemri5Qqy10gDg" name="To receive work request">
+            <ielement type="task" id="_IF2FoIIIEemtIaruMjdpGw" name="Find a better data">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_7gFDcHGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="and" iref="_GwVrQIIIEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
-            <ielement type="task" id="_-wnAEHGqEemri5Qqy10gDg" name="To refuse work request">
+            <ielement type="task" id="_JrJPgIIIEemtIaruMjdpGw" name="Obtain available dates">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_7gFDcHGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="and" iref="_GwVrQIIIEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>
-            <ielement type="task" id="_AWeKoHGrEemri5Qqy10gDg" name="To accept work request">
+            <ielement type="task" id="_MFcHsIIIEemtIaruMjdpGw" name="Propose a date">
                <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                         bgcolor="FFFFFF"
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
-               <ielementLink type="decomposition" value="and" iref="_7gFDcHGqEemri5Qqy10gDg">
+               <ielementLink type="decomposition" value="and" iref="_GwVrQIIIEemtIaruMjdpGw">
+                  <graphic content="SVG"/>
+               </ielementLink>
+            </ielement>
+            <ielement type="task" id="_NGKk4IIIEemtIaruMjdpGw" name="Obtain agreement">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="decomposition" value="and" iref="_GwVrQIIIEemtIaruMjdpGw">
                   <graphic content="SVG"/>
                </ielementLink>
             </ielement>

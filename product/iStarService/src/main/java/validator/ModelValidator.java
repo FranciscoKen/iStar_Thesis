@@ -26,7 +26,7 @@ public class ModelValidator{
             if(al.getType().equals(ActorLinkType.ISA)){
                 if(!(model.getActors().get(al.getFrom()).getType().equals(model.getActors().get(al.getTo()).getType())
                 && (model.getActors().get(al.getFrom()).getType().equals(ActorType.ROLE) || model.getActors().get(al.getFrom()).getType().equals(ActorType.ACTOR)))){
-                    throw new IStarException(ExceptionMessages.heading+ExceptionMessages.isaWrongActorElementException +"[Element "+al.getFrom()+" and "+al.getTo()+"]");
+                    throw new IStarException(ExceptionMessages.heading+ExceptionMessages.isaWrongActorElementException +"[Element "+model.getActors().get(al.getFrom()).getName()+" and "+model.getActors().get(al.getTo()).getName()+"]");
                 }
             }
         }
