@@ -19,10 +19,9 @@ public class DOMParser {
     public DOMParser() {
     }
 
-    public IStarModel extract(String path) throws IStarException{
+    public IStarModel extract(File fxmlFile) throws IStarException{
         IStarModel model = new IStarModel();
 
-        File fxmlFile = new File(path);
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         try {
             //generate document builder from builder factory

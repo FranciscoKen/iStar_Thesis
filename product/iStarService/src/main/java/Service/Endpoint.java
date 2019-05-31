@@ -7,6 +7,7 @@ import IStarML.IstarMLHandler;
 import Model.IStarModel;
 import Extractor.DOMParser;
 import Storage.StorageService;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.w3c.dom.Document;
@@ -55,14 +57,17 @@ public class Endpoint {
         try {
             validateiStarML2File(file);
 
-            storageService.store(file);
+            String multipartFileName = file.getOriginalFilename();
+            File xml = File.createTempFile(FilenameUtils.getBaseName(multipartFileName),FilenameUtils.getExtension(multipartFileName));
+
+            FileUtils.writeByteArrayToFile(xml,file.getBytes());
 
             //VALIDATE SCHEMA
-            XMLValidator validator = new XMLValidator("TEMP/model/"+file.getOriginalFilename());
+            XMLValidator validator = new XMLValidator(xml);
             validator.validateXMLSchema();
 
             DOMParser parser = new DOMParser();
-            IStarModel model = parser.extract("TEMP/model/"+file.getOriginalFilename());
+            IStarModel model = parser.extract(xml);
 
             //VALIDATE MODEL
             ModelValidator mv = new ModelValidator();
@@ -91,16 +96,23 @@ public class Endpoint {
         try {
             validateiStarML2File(file);
 
-            storageService.store(file);
+            String multipartFileName = file.getOriginalFilename();
+            File xml = File.createTempFile(FilenameUtils.getBaseName(multipartFileName),FilenameUtils.getExtension(multipartFileName));
+            FileUtils.writeByteArrayToFile(xml,file.getBytes());
 
-            //VALIDATE SCHEMA
-            XMLValidator validator = new XMLValidator("TEMP/model/"+file.getOriginalFilename());
+            //VALIDATE INPUT FILE BEFORE
+            XMLValidator xmlValidator = new XMLValidator(xml);
+            xmlValidator.validateXMLSchema();
 
             uid = UUID.randomUUID().toString();
             ClassGenerator generator = new ClassGenerator(uid);
             DOMParser extractor = new DOMParser();
 
-            IStarModel model = extractor.extract("TEMP/model/"+file.getOriginalFilename());
+            IStarModel model = extractor.extract(xml);
+
+            ModelValidator modelValidator = new ModelValidator();
+            modelValidator.validateModel(model);
+
             generator.generateClassDiagram(model);
 
         } catch (IStarException iex) {
