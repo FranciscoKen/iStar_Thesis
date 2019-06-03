@@ -73,18 +73,12 @@ public class Endpoint {
             ModelValidator mv = new ModelValidator();
             mv.validateModel(model);
         } catch(IStarException iex){
-            storageService.deleteAll();
-
+            iex.printStackTrace();
             return new ResponseEntity<>(jsonify("error",iex.getMessage()), HttpStatus.BAD_REQUEST);
         } catch (Exception e){
             e.printStackTrace();
-            storageService.deleteAll();
             return new ResponseEntity<>(jsonify("error",e.getMessage()),HttpStatus.INTERNAL_SERVER_ERROR);
         }
-
-        //TODO Implement Validation Rule
-
-        storageService.deleteAll();
 
         return new ResponseEntity<>("",HttpStatus.OK);
     }
@@ -116,14 +110,11 @@ public class Endpoint {
             generator.generateClassDiagram(model);
 
         } catch (IStarException iex) {
-            storageService.deleteAll();
             return new ResponseEntity<>(jsonify("error",iex.getMessage()),HttpStatus.BAD_REQUEST);
         } catch (Exception e){
             e.printStackTrace();
-            storageService.deleteAll();
             return new ResponseEntity<>(jsonify("error",e.getMessage()),HttpStatus.INTERNAL_SERVER_ERROR);
         }
-        storageService.deleteAll();
         return new ResponseEntity<>(jsonify("uid",uid),HttpStatus.CREATED);
     }
 //
@@ -192,7 +183,6 @@ public class Endpoint {
     @PostMapping(value="/istar-service/convert-istarml")
     public ResponseEntity<?> convertiStarML(@RequestParam(value="file") MultipartFile model) {
         String string_model ="";
-        Document doc;
         try {
             ByteArrayInputStream stream = new ByteArrayInputStream(model.getBytes());
             string_model = IOUtils.toString(stream,"UTF-8");
@@ -202,9 +192,9 @@ public class Endpoint {
         }
 
         IstarMLHandler imlh = new IstarMLHandler(string_model);
+
         try {
             imlh.validate();
-            doc = imlh.translateIStarML(string_model);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.getMessage());
@@ -217,25 +207,17 @@ public class Endpoint {
             Transformer transformer = null;
             transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION,"yes");
-            DOMSource domSource = new DOMSource(doc);
+            DOMSource domSource = new DOMSource(imlh.translateIStarML());
             StreamResult streamResult= new StreamResult(new File("TEMP/response.istarml2"));
             transformer.transform(domSource,streamResult);
         } catch (TransformerException e) {
             e.printStackTrace();
             return new ResponseEntity<>("",HttpStatus.INTERNAL_SERVER_ERROR);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+            return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
         }
-
-
-//        BufferedWriter fw = null;
-//        try {
-//            fw = new BufferedWriter(new FileWriter("TEMP/response.istarml2"));
-//            fw.write(string_model);
-//            fw.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//            return new ResponseEntity<>("",HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-
 
         File responseFile = new File("TEMP/response.istarml2");
         HttpHeaders headers = new HttpHeaders();
@@ -259,51 +241,6 @@ public class Endpoint {
     @GetMapping(value="/istar-service/ping")
     public ResponseEntity<?> ping(){
         return new ResponseEntity<>("PING!",HttpStatus.OK);
-    }
-
-
-
-    @CrossOrigin
-    @PostMapping(value="/dummy/convert-istarml")
-    public ResponseEntity<?> dummy_convertiStarML(@RequestParam(value="file") MultipartFile model) {
-        String string_model ="";
-        try {
-            ByteArrayInputStream stream = new ByteArrayInputStream(model.getBytes());
-            string_model = IOUtils.toString(stream,"UTF-8");
-        } catch (IOException e) {
-            e.printStackTrace();
-            return new ResponseEntity<>("",HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-
-        IstarMLHandler imlh = new IstarMLHandler(string_model);
-        try {
-            imlh.validate();
-
-            imlh.translateIStarML(string_model);
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println(e.getMessage());
-            return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
-        }
-
-        File responseFile = new File("TEMP/dummy/developer-SR.istarml2");
-        HttpHeaders headers = new HttpHeaders();
-        headers.add(HttpHeaders.CONTENT_DISPOSITION,"attachment;filename=developer-SR.istarml2");
-
-        Path path = Paths.get(responseFile.getAbsolutePath());
-        try {
-            ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));
-            return ResponseEntity.ok()
-                    .headers(headers)
-                    .contentLength(responseFile.length())
-                    .contentType(MediaType.parseMediaType("application/octet-stream"))
-                    .body(resource);
-
-        } catch (IOException e) {
-            return new ResponseEntity<>("Something went wrong",HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
 

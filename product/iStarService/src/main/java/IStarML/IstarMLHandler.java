@@ -26,11 +26,30 @@ import java.util.Map;
 public class IstarMLHandler {
     private String model;
     private ccistarmlFile file;
+    private Document doc;
 
     public IstarMLHandler(String model){
         this.model = model;
         model = model.replaceAll("(<\\?xml(.*?)\\?>\n)","");
         this.file = new ccistarmlFile(model);
+
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            InputSource is = new InputSource();
+            is.setCharacterStream(new StringReader(this.model));
+
+            this.doc = db.parse(is);
+
+            removeRecursiveNode(doc,"graphic");
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void validate() throws Exception{
@@ -45,121 +64,106 @@ public class IstarMLHandler {
         }
     }
 
-    public Document translateIStarML(String string_model) throws Exception{
+    public Document translateIStarML() throws Exception{
         HashMap<String,String> ielements = new HashMap<>();
-        Document doc;
-        try {
-            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            DocumentBuilder db = dbf.newDocumentBuilder();
-            InputSource is = new InputSource();
-            is.setCharacterStream(new StringReader(string_model));
-            XPath xpath = XPathFactory.newInstance().newXPath();
 
-            doc = db.parse(is);
-            //TODO update intentional element link
+        XPath xpath = XPathFactory.newInstance().newXPath();
 
-            Node root = doc.getElementsByTagName("istarml").item(0);
+        Node root = this.doc.getElementsByTagName("istarml").item(0);
 
-            doc.renameNode(root,null,"istarml2");
+        this.doc.renameNode(root,null,"istarml2");
 
-            Element diagram = (Element) doc.getElementsByTagName("diagram").item(0);
+        Element diagram = (Element) doc.getElementsByTagName("diagram").item(0);
 
-            NodeList actorNodes = doc.getElementsByTagName("actor");
-            Element currentActor = null;
-            for(int i = 0 ; i<actorNodes.getLength();i++){
+        NodeList actorNodes = doc.getElementsByTagName("actor");
+        Element currentActor = null;
+        for(int i = 0 ; i<actorNodes.getLength();i++){
 
-                currentActor = (Element) actorNodes.item(i);
-                if(currentActor.getAttribute("type").equals("position") || currentActor.getAttribute("type").equals("")){
-                    currentActor.setAttribute("type","actor");
-                }
-
-                NodeList currentBoundaryNodeList = currentActor.getElementsByTagName("boundary");
-                if(currentBoundaryNodeList.getLength()<1){
-                    Element boundary = doc.createElement("boundary");
-                    currentActor.appendChild(boundary);
-                }
-                NodeList ielementNodes = currentActor.getElementsByTagName("ielement");
-                for(int l = 0;l<ielementNodes.getLength();l++){
-                    Element iel = (Element) ielementNodes.item(l);
-                    ielements.put(iel.getAttribute("id"),iel.getAttribute("type"));
-                }
-                for(int k = 0; k<ielementNodes.getLength();k++){
-                    parseIElementSubTree(ielementNodes.item(k),ielements);
-                }
-
-                NodeList actorLinkNodes = currentActor.getElementsByTagName("actorLink");
-                for(int j = 0 ; j<actorLinkNodes.getLength();j++){
-                    Element currentActorLink = (Element) actorLinkNodes.item(j);
-                    if(currentActorLink.getAttribute("type").equals("is_part_of") ||
-                            currentActorLink.getAttribute("type").equals("plays") ||
-                            currentActorLink.getAttribute("type").equals("covers") ||
-                            currentActorLink.getAttribute("type").equals("occupies")){
-                        currentActorLink.setAttribute("type","participates-in");
-                    } else if(currentActorLink.getAttribute("type").equals("instance_of")){
-                        currentActor.removeChild(currentActorLink);
-                    } else if(currentActorLink.getAttribute("type").equals("is_a")){
-                        currentActorLink.setAttribute("type","is-a");
-                    } else {
-                        currentActor.removeChild(currentActorLink);
-                    }
-                }
-
+            currentActor = (Element) actorNodes.item(i);
+            if(currentActor.getAttribute("type").equals("position") || currentActor.getAttribute("type").equals("")){
+                currentActor.setAttribute("type","actor");
             }
 
-
-            NodeList ielementDependencies = diagram.getChildNodes();
-            for(int a = 0;a<ielementDependencies.getLength();a++){
-                if(ielementDependencies.item(a).getNodeName().equals("ielement")){
-                    doc.renameNode(ielementDependencies.item(a),null,"dependum");
-                    Element currentDependum = (Element) ielementDependencies.item(a);
-                    if(currentDependum.getAttribute("type").equals("softgoal")){
-                        currentDependum.setAttribute("type","quality");
-                    }
-
-                    Element depender = (Element) currentDependum.getElementsByTagName("depender").item(0);
-                    String dependerElmt = depender.getAttribute("iref");
-                    if(!dependerElmt.equals("")){
-                        String dependerElmtPath = "//actor[@id='"+depender.getAttribute("aref")+"']/boundary/ielement/ielementLink[@iref='"+dependerElmt+"' and (@type='refinement' or @type='contribution')]";
-                        NodeList refinedOrContributedElement = (NodeList) xpath.compile(dependerElmtPath).evaluate(doc,XPathConstants.NODESET);
-                        if(refinedOrContributedElement.getLength()>0){
-                            currentDependum.getParentNode().removeChild(currentDependum);
-                        }
-                    }
-                }
+            NodeList currentBoundaryNodeList = currentActor.getElementsByTagName("boundary");
+            if(currentBoundaryNodeList.getLength()<1){
+                Element boundary = doc.createElement("boundary");
+                currentActor.appendChild(boundary);
+            }
+            NodeList ielementNodes = currentActor.getElementsByTagName("ielement");
+            for(int l = 0;l<ielementNodes.getLength();l++){
+                Element iel = (Element) ielementNodes.item(l);
+                ielements.put(iel.getAttribute("id"),iel.getAttribute("type"));
+            }
+            for(int k = 0; k<ielementNodes.getLength();k++){
+                parseIElementSubTree(ielementNodes.item(k),ielements);
             }
 
-            String refinementLinkExpression = "//ielementLink[@type='refinement' and @value='and']";
-            NodeList refinementList = (NodeList) xpath.compile(refinementLinkExpression).evaluate(doc,XPathConstants.NODESET);
-
-            HashMap<String,Integer> andRefinementParents = new HashMap<>();
-
-            for(int b = 0;b<refinementList.getLength();b++){
-                Element currElmt = (Element) refinementList.item(b);
-
-                String currentID = currElmt.getAttribute("iref");
-                if(andRefinementParents.containsKey(currentID)){
-                    andRefinementParents.put(currentID,andRefinementParents.get(currentID)+1);
+            NodeList actorLinkNodes = currentActor.getElementsByTagName("actorLink");
+            for(int j = 0 ; j<actorLinkNodes.getLength();j++){
+                Element currentActorLink = (Element) actorLinkNodes.item(j);
+                if(currentActorLink.getAttribute("type").equals("is_part_of") ||
+                        currentActorLink.getAttribute("type").equals("plays") ||
+                        currentActorLink.getAttribute("type").equals("covers") ||
+                        currentActorLink.getAttribute("type").equals("occupies")){
+                    currentActorLink.setAttribute("type","participates-in");
+                } else if(currentActorLink.getAttribute("type").equals("instance_of")){
+                    currentActor.removeChild(currentActorLink);
+                } else if(currentActorLink.getAttribute("type").equals("is_a")){
+                    currentActorLink.setAttribute("type","is-a");
                 } else {
-                    andRefinementParents.put(currentID,1);
-                }
-            }
-            for(Map.Entry<String,Integer> entry : andRefinementParents.entrySet()){
-                if(entry.getValue().equals(1)){
-                    String singleElementExpression = "//ielementLink[@type='refinement' and @value='and' and @iref='"+entry.getKey()+"']";
-                    NodeList singleLinkNode = (NodeList) xpath.compile(singleElementExpression).evaluate(doc,XPathConstants.NODESET);
-                    Element singleElement = (Element) singleLinkNode.item(0);
-                    singleElement.setAttribute("value","or");
+                    currentActor.removeChild(currentActorLink);
                 }
             }
 
-            removeRecursiveNode(doc,"graphic");
-
-            doc.normalizeDocument();
-
-        } catch (ParserConfigurationException | SAXException | IOException e ) {
-            e.printStackTrace();
-            throw new Exception(e.getMessage());
         }
+
+
+        NodeList ielementDependencies = diagram.getChildNodes();
+        for(int a = 0;a<ielementDependencies.getLength();a++){
+            if(ielementDependencies.item(a).getNodeName().equals("ielement")){
+                doc.renameNode(ielementDependencies.item(a),null,"dependum");
+                Element currentDependum = (Element) ielementDependencies.item(a);
+                if(currentDependum.getAttribute("type").equals("softgoal")){
+                    currentDependum.setAttribute("type","quality");
+                }
+
+                Element depender = (Element) currentDependum.getElementsByTagName("depender").item(0);
+                String dependerElmt = depender.getAttribute("iref");
+                if(!dependerElmt.equals("")){
+                    String dependerElmtPath = "//actor[@id='"+depender.getAttribute("aref")+"']/boundary/ielement/ielementLink[@iref='"+dependerElmt+"' and (@type='refinement' or @type='contribution')]";
+                    NodeList refinedOrContributedElement = (NodeList) xpath.compile(dependerElmtPath).evaluate(doc,XPathConstants.NODESET);
+                    if(refinedOrContributedElement.getLength()>0){
+                        currentDependum.getParentNode().removeChild(currentDependum);
+                    }
+                }
+            }
+        }
+
+        String refinementLinkExpression = "//ielementLink[@type='refinement' and @value='and']";
+        NodeList refinementList = (NodeList) xpath.compile(refinementLinkExpression).evaluate(doc,XPathConstants.NODESET);
+
+        HashMap<String,Integer> andRefinementParents = new HashMap<>();
+
+        for(int b = 0;b<refinementList.getLength();b++){
+            Element currElmt = (Element) refinementList.item(b);
+
+            String currentID = currElmt.getAttribute("iref");
+            if(andRefinementParents.containsKey(currentID)){
+                andRefinementParents.put(currentID,andRefinementParents.get(currentID)+1);
+            } else {
+                andRefinementParents.put(currentID,1);
+            }
+        }
+        for(Map.Entry<String,Integer> entry : andRefinementParents.entrySet()){
+            if(entry.getValue().equals(1)){
+                String singleElementExpression = "//ielementLink[@type='refinement' and @value='and' and @iref='"+entry.getKey()+"']";
+                NodeList singleLinkNode = (NodeList) xpath.compile(singleElementExpression).evaluate(doc,XPathConstants.NODESET);
+                Element singleElement = (Element) singleLinkNode.item(0);
+                singleElement.setAttribute("value","or");
+            }
+        }
+        doc.normalizeDocument();
+
         XPath xp = XPathFactory.newInstance().newXPath();
         NodeList nl = (NodeList) xp.evaluate("//text()[normalize-space(.)='']", doc, XPathConstants.NODESET);
 
@@ -167,7 +171,7 @@ public class IstarMLHandler {
             Node node = nl.item(i);
             node.getParentNode().removeChild(node);
         }
-        return doc;
+        return this.doc;
     }
 
     private String gatherErrors(){
@@ -184,15 +188,6 @@ public class IstarMLHandler {
     }
 
     private void parseIElementSubTree(Node ielementNode,HashMap<String,String> ielements){
-//        if(!ielementNode.hasChildNodes()){
-//            //TODO process ielement
-//            Element currentiElement = (Element) ielementNode;
-//            if(currentiElement.getAttribute("type").equals("softgoal")){
-//                currentiElement.setAttribute("type","quality");
-//            }
-//        } else {
-//            validateIElementTree(ielementNode,ielements);
-//        }
         validateIElementTree(ielementNode,ielements);
     }
 
@@ -237,10 +232,6 @@ public class IstarMLHandler {
                 }
             }
         }
-    }
-
-    private void moveToIElementRoot(Node currentNode, Node rootElement){
-
     }
 
     private void removeRecursiveNode(Node node, String name){
