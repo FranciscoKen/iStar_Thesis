@@ -29,9 +29,15 @@ public class IstarMLHandler {
     private Document doc;
 
     public IstarMLHandler(String model){
-        this.model = model;
+
         model = model.replaceAll("(<\\?xml(.*?)\\?>\n)","");
-        this.file = new ccistarmlFile(model);
+        model = model.replaceAll("ypos=\"([-]([0-9])*)\"","ypos=\"0\"");
+        model = model.replaceAll("xpos=\"([-]([0-9])*)\"","xpos=\"0\"");
+
+        System.out.println(model);
+
+        this.model = model;
+        this.file = new ccistarmlFile(this.model);
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         try {
@@ -40,8 +46,6 @@ public class IstarMLHandler {
             is.setCharacterStream(new StringReader(this.model));
 
             this.doc = db.parse(is);
-
-            removeRecursiveNode(doc,"graphic");
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (SAXException e) {
@@ -162,6 +166,7 @@ public class IstarMLHandler {
                 singleElement.setAttribute("value","or");
             }
         }
+        removeRecursiveNode(doc,"graphic");
         doc.normalizeDocument();
 
         XPath xp = XPathFactory.newInstance().newXPath();

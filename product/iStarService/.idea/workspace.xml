@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe08cbdd-9a29-4d0d-81b1-cb36554e5e3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/response.istarml2" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/response.istarml2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/modules/.gradle/" />
@@ -77,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="2535">
               <caret line="209" column="71" selection-start-line="209" selection-start-column="71" selection-end-line="209" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+            <state relative-caret-position="114">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>iterator</find>
       <find>error</find>
       <find>assign</find>
       <find>istarml2-x</find>
@@ -190,6 +189,7 @@
       <find>string_model</find>
       <find>db</find>
       <find>doc</find>
+      <find>remove</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -551,12 +551,13 @@
       <workItem from="1558535868196" duration="594000" />
       <workItem from="1558626179084" duration="774000" />
       <workItem from="1559322510453" duration="4277000" />
-      <workItem from="1559553924113" duration="1147000" />
+      <workItem from="1559553924113" duration="1607000" />
+      <workItem from="1559556878117" duration="784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188130000" />
+    <option name="totallyTimeSpent" value="189374000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,7 +582,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25895765" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14006515" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -6939,6 +6940,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2535">
+          <caret line="209" column="71" selection-start-line="209" selection-start-column="71" selection-end-line="209" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -6980,20 +6991,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="209" column="71" selection-start-line="209" selection-start-column="71" selection-end-line="209" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+        <state relative-caret-position="114">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
