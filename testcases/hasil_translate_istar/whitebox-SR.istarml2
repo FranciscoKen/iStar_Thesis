@@ -1,0 +1,71 @@
+
+<istarml2 version="1.0">
+   <diagram name="whitebox.ood">
+      <actor id="_muKyEHWMEem4ScOhUnnb3g" name="Consumer" type="role">
+         <boundary>
+            <ielement id="_ptH2gHWMEem4ScOhUnnb3g" name="Install and run the free modified program" type="goal" />
+         </boundary>
+      </actor>
+      <actor id="_rytqAHWMEem4ScOhUnnb3g" name="Cracker" type="role">
+         <boundary>
+            <ielement id="_BYpeYHWSEem4ScOhUnnb3g" name="Produce modified versions of the program or DRM content and redistribute it" type="goal" />
+            <ielement id="_HfhWAHWSEem4ScOhUnnb3g" name="Produce a crack program" type="task">
+               <ielementLink iref="_BYpeYHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Jj96AHWSEem4ScOhUnnb3g" name="Produce a new installable" type="task">
+               <ielementLink iref="_BYpeYHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_RI2nwHWSEem4ScOhUnnb3g" name="Produce a crack that changes the original binary" type="goal">
+               <ielementLink iref="_HfhWAHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_0MmeYHWSEem4ScOhUnnb3g" name="Code lifting" type="task">
+               <ielementLink iref="_RI2nwHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_1b_psHWSEem4ScOhUnnb3g" name="Bypass code logic" type="task">
+               <ielementLink iref="_RI2nwHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_5jXHsHWSEem4ScOhUnnb3g" name="Interfere with the normal function calling" type="goal">
+               <ielementLink iref="_1b_psHWSEem4ScOhUnnb3g" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_C-tn0HWTEem4ScOhUnnb3g" name="Dumping values at the function calls" type="task">
+               <ielementLink iref="_5jXHsHWSEem4ScOhUnnb3g" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_LsWtYHWTEem4ScOhUnnb3g" name="Intercept function call parameters (When? During execution or statically)" type="task">
+               <ielementLink iref="_C-tn0HWTEem4ScOhUnnb3g" type="refinement" value="or" />
+               <ielementLink iref="_7Fw5IHWTEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_RdQVAHWTEem4ScOhUnnb3g" name="Static and dynamic tampering of the code" type="task">
+               <ielementLink iref="_HfhWAHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+               <ielementLink iref="_Jj96AHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_UraTEHWTEem4ScOhUnnb3g" name="Understand the code" type="quality">
+               <ielementLink iref="_HfhWAHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+               <ielementLink iref="_Jj96AHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Zu9FcHWTEem4ScOhUnnb3g" name="Produce an entire installable from the original code" type="goal">
+               <ielementLink iref="_Jj96AHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_tYvIcHWTEem4ScOhUnnb3g" name="Obtain cryptographic keys" type="task">
+               <ielementLink iref="_BYpeYHWSEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_2V0YMHWTEem4ScOhUnnb3g" name="Inspect registries and memory and control flow during execution" type="task">
+               <ielementLink iref="_tYvIcHWTEem4ScOhUnnb3g" type="refinement" value="or" />
+               <ielementLink iref="_7Fw5IHWTEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_7Fw5IHWTEem4ScOhUnnb3g" name="Reverse engineer the binary program" type="goal">
+               <ielementLink iref="_UraTEHWTEem4ScOhUnnb3g" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_AvCOwHWUEem4ScOhUnnb3g" name="Differential analysis" type="task">
+               <ielementLink iref="_7Fw5IHWTEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_F23EMHWUEem4ScOhUnnb3g" name="Create call graph by setting break points at function calls" type="task">
+               <ielementLink iref="_7Fw5IHWTEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_MiAGgHWUEem4ScOhUnnb3g" name="Run the code under interactive debugger (dynamic analysis)" type="task">
+               <ielementLink iref="_7Fw5IHWTEem4ScOhUnnb3g" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

@@ -1,0 +1,16 @@
+
+<istarml2 version="1.0">
+   <diagram name="carpassenger.ood">
+      <actor id="_8-JekHQIEemozsE8pEOulw" name="Car passenger" type="agent">
+         <boundary>
+            <ielement id="_97EZ0HQIEemozsE8pEOulw" name="Car sickness prevented" type="goal" />
+            <ielement id="_G8-fMHQJEemozsE8pEOulw" name="Take a car sick pill" type="task">
+               <ielementLink iref="_IeWLUHQJEemozsE8pEOulw" type="contribution" value="make" />
+               <ielementLink iref="_97EZ0HQIEemozsE8pEOulw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_IeWLUHQJEemozsE8pEOulw" name="Fallen asleep" type="goal" />
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

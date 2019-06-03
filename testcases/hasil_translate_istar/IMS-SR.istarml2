@@ -1,0 +1,156 @@
+
+<istarml2 version="1.0">
+   <diagram name="IMS-SD.ood">
+      <dependum id="_kGx7kIBtEemwA-quvuhgqw" name="Competencies Information" type="resource">
+         <dependency>
+            <depender aref="_dlsNIIBtEemwA-quvuhgqw" />
+            <dependee aref="_hM2hEIBtEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_1Y1SMIBtEemwA-quvuhgqw" name="Obtain information" type="goal">
+         <dependency>
+            <depender aref="_yfGsAIBtEemwA-quvuhgqw" />
+            <dependee aref="_vgYREIBtEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_dVdjUIBuEemwA-quvuhgqw" name="Cost reduction management" type="quality">
+         <dependency>
+            <depender aref="_ZTFTAIBuEemwA-quvuhgqw" />
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_hFdDIIBuEemwA-quvuhgqw" name="Quicker Delivery [Reports]" type="quality">
+         <dependency>
+            <depender aref="_ZTFTAIBuEemwA-quvuhgqw" />
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_R0uOkIBvEemwA-quvuhgqw" name="Easier [Information collectin]" type="quality">
+         <dependency>
+            <depender aref="_IbEXkIBvEemwA-quvuhgqw" />
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_W3mSkIBvEemwA-quvuhgqw" name="Information be managed" type="goal">
+         <dependency>
+            <depender aref="_IbEXkIBvEemwA-quvuhgqw" />
+            <dependee aref="_a3MmkIBtEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_jK3bAIBvEemwA-quvuhgqw" name="Data be acquired" type="goal">
+         <dependency>
+            <depender aref="_IbEXkIBvEemwA-quvuhgqw" />
+            <dependee aref="_gVFgsIBvEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_m0i3cIBvEemwA-quvuhgqw" name="Information be collected" type="goal">
+         <dependency>
+            <depender aref="_a3MmkIBtEemwA-quvuhgqw" />
+            <dependee aref="_gVFgsIBvEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_rJ9_kIBvEemwA-quvuhgqw" name="Collected information" type="resource">
+         <dependency>
+            <depender aref="_a3MmkIBtEemwA-quvuhgqw" />
+            <dependee aref="_gVFgsIBvEemwA-quvuhgqw" />
+         </dependency>
+      </dependum>
+      <dependum id="_UkzUEIBwEemwA-quvuhgqw" name="Significative environmenral impact" type="resource">
+         <dependency>
+            <depender aref="_a3MmkIBtEemwA-quvuhgqw" />
+            <dependee aref="_OrpvYIBwEemwA-quvuhgqw" iref="_zzZjcICDEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_9b-nQICDEemEIaXDJT8g1Q" name="List of applicable legislation" type="resource">
+         <dependency>
+            <depender aref="_OrpvYIBwEemwA-quvuhgqw" iref="_2Fb3gICDEemEIaXDJT8g1Q" />
+            <dependee aref="_u0voMIBvEemwA-quvuhgqw" iref="_H1QvQICEEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <actor id="_a3MmkIBtEemwA-quvuhgqw" name="IMS" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_dlsNIIBtEemwA-quvuhgqw" name="Competencies" type="actor">
+         <actorLink aref="_a3MmkIBtEemwA-quvuhgqw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_hM2hEIBtEemwA-quvuhgqw" name="Competencies DB" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_vgYREIBtEemwA-quvuhgqw" name="User Interface" type="actor">
+         <actorLink aref="_a3MmkIBtEemwA-quvuhgqw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_yfGsAIBtEemwA-quvuhgqw" name="Acquisition department" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_41j3wIBtEemwA-quvuhgqw" name="Mitigation manager" type="actor">
+         <actorLink aref="_a3MmkIBtEemwA-quvuhgqw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="__qAAAIBtEemwA-quvuhgqw" name="OSH subsystem" type="actor">
+         <actorLink aref="_a3MmkIBtEemwA-quvuhgqw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_HTh9MIBuEemwA-quvuhgqw" name="Environmental management subsystem" type="actor">
+         <actorLink aref="_a3MmkIBtEemwA-quvuhgqw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_NIMDcIBuEemwA-quvuhgqw" name="Operational control" type="actor">
+         <actorLink aref="_a3MmkIBtEemwA-quvuhgqw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_ZTFTAIBuEemwA-quvuhgqw" name="Construction company" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_qEW30IBuEemwA-quvuhgqw" name="Quality Manager" type="actor">
+         <actorLink aref="_ZTFTAIBuEemwA-quvuhgqw" type="participates-in" />
+         <actorLink aref="_IbEXkIBvEemwA-quvuhgqw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_IbEXkIBvEemwA-quvuhgqw" name="User" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_b-D2EIBvEemwA-quvuhgqw" name="Manager" type="actor">
+         <actorLink aref="_qEW30IBuEemwA-quvuhgqw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_gVFgsIBvEemwA-quvuhgqw" name="Data acquisition system" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_u0voMIBvEemwA-quvuhgqw" name="Legislative changes manager" type="actor">
+         <actorLink aref="_a3MmkIBtEemwA-quvuhgqw" type="participates-in" />
+         <boundary>
+            <ielement id="_H1QvQICEEemEIaXDJT8g1Q" name="Identify applicable legislation" type="task" />
+            <ielement id="_Lo2VoICEEemEIaXDJT8g1Q" name="Evaluate each legislation" type="task">
+               <ielementLink iref="_H1QvQICEEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_6rJ1gIBvEemwA-quvuhgqw" name="Legislative authority" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_OrpvYIBwEemwA-quvuhgqw" name="Aspects &amp; impacts manager" type="actor">
+         <actorLink aref="_a3MmkIBtEemwA-quvuhgqw" type="participates-in" />
+         <boundary>
+            <ielement id="_hQ_YMICDEemEIaXDJT8g1Q" name="Manage aspects" type="goal" />
+            <ielement id="_iwTO0ICDEemEIaXDJT8g1Q" name="Identify aspects &amp; impacts on environment" type="task">
+               <ielementLink iref="_hQ_YMICDEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_l2BCkICDEemEIaXDJT8g1Q" name="Identify aspects &amp; impacts on quality" type="task">
+               <ielementLink iref="_hQ_YMICDEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_skeeoICDEemEIaXDJT8g1Q" name="Identify aspactes &amp; impacts on OSH" type="task">
+               <ielementLink iref="_hQ_YMICDEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_zzZjcICDEemEIaXDJT8g1Q" name="Evaluate environmental impact" type="task">
+               <ielementLink iref="_iwTO0ICDEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_2Fb3gICDEemEIaXDJT8g1Q" name="Analyze all activities" type="task">
+               <ielementLink iref="_iwTO0ICDEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

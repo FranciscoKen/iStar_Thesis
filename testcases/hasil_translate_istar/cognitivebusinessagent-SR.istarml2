@@ -1,0 +1,77 @@
+
+<istarml2 version="1.0">
+   <diagram name="cognitivebusinessagent-SR.ood">
+      <dependum id="_GrHRYIImEemtIaruMjdpGw" name="Consisting" type="quality">
+         <dependency>
+            <depender aref="_CuMI0IImEemtIaruMjdpGw" />
+            <dependee aref="_tfmykIIiEemtIaruMjdpGw" iref="_r0yIIIIlEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_HiEukIImEemtIaruMjdpGw" name="Speed" type="quality">
+         <dependency>
+            <depender aref="_CuMI0IImEemtIaruMjdpGw" />
+            <dependee aref="_tfmykIIiEemtIaruMjdpGw" iref="_mkc28IIlEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_JrcO0IImEemtIaruMjdpGw" name="Efficiency" type="quality">
+         <dependency>
+            <depender aref="_CuMI0IImEemtIaruMjdpGw" />
+            <dependee aref="_tfmykIIiEemtIaruMjdpGw" iref="_qqIS4IIlEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <actor id="_wV1gMIIfEemtIaruMjdpGw" name="Human Agent" type="agent">
+         <actorLink aref="_2Nmk0IIfEemtIaruMjdpGw" type="participates-in" />
+         <boundary>
+            <ielement id="_xQcHQIIfEemtIaruMjdpGw" name="Recognition" type="quality" />
+            <ielement id="_yJzYMIIfEemtIaruMjdpGw" name="Personal Growth" type="quality" />
+         </boundary>
+      </actor>
+      <actor id="_2Nmk0IIfEemtIaruMjdpGw" name="Governance Officer" type="role">
+         <boundary>
+            <ielement id="_41NgQIIfEemtIaruMjdpGw" name="Cognitive decision be audited" type="goal" />
+            <ielement id="_G-Am8IIgEemtIaruMjdpGw" name="Monitor decision accuracy" type="task">
+               <ielementLink iref="_41NgQIIfEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_tfmykIIiEemtIaruMjdpGw" name="Loan reviewer" type="role">
+         <boundary>
+            <ielement id="_mkc28IIlEemtIaruMjdpGw" name="Customers be served" type="goal" />
+            <ielement id="_oBomoIIlEemtIaruMjdpGw" name="Accuracy" type="quality" />
+            <ielement id="_o2w30IIlEemtIaruMjdpGw" name="Confidence" type="quality" />
+            <ielement id="_pxmvcIIlEemtIaruMjdpGw" name="Reliability" type="quality" />
+            <ielement id="_qqIS4IIlEemtIaruMjdpGw" name="Process loan application" type="task">
+               <ielementLink iref="_o2w30IIlEemtIaruMjdpGw" type="contribution" value="make" />
+               <ielementLink iref="_pxmvcIIlEemtIaruMjdpGw" type="contribution" value="make" />
+               <ielementLink iref="_mkc28IIlEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_r0yIIIIlEemtIaruMjdpGw" name="Make cognitive decision" type="task">
+               <ielementLink iref="_oBomoIIlEemtIaruMjdpGw" type="contribution" value="make" />
+               <ielementLink iref="_mkc28IIlEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_wnK5EIIlEemtIaruMjdpGw" name="Gather context" type="task">
+               <ielementLink iref="_qqIS4IIlEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_xt0YEIIlEemtIaruMjdpGw" name="Communicate decision parameters" type="task">
+               <ielementLink iref="_qqIS4IIlEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_6MJPQIIlEemtIaruMjdpGw" name="generate recommendation" type="task">
+               <ielementLink iref="_r0yIIIIlEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_7wLN0IIlEemtIaruMjdpGw" name="Process loan data" type="task">
+               <ielementLink iref="_r0yIIIIlEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="___u-gIIlEemtIaruMjdpGw" name="Analytical model" type="resource">
+               <ielementLink iref="_6MJPQIIlEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_h0d5wIIlEemtIaruMjdpGw" name="Cognitive business agent" type="agent">
+         <actorLink aref="_tfmykIIiEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_CuMI0IImEemtIaruMjdpGw" name="Loans Department" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>

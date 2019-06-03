@@ -1,0 +1,201 @@
+
+<istarml2 version="1.0">
+   <diagram name="developer-SR.ood">
+      <dependum id="_Rr9e4ICVEemEIaXDJT8g1Q" name="User satisfaction" type="quality">
+         <dependency>
+            <depender aref="_pTOygICSEemEIaXDJT8g1Q" iref="_5GVCYICTEemEIaXDJT8g1Q" />
+            <dependee aref="_BLtYoICVEemEIaXDJT8g1Q" iref="_Cpp9UICVEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_VCbEYICVEemEIaXDJT8g1Q" name="Platform" type="resource">
+         <dependency>
+            <depender aref="_BLtYoICVEemEIaXDJT8g1Q" iref="_HltAkICVEemEIaXDJT8g1Q" />
+            <dependee aref="_pTOygICSEemEIaXDJT8g1Q" iref="_3CmQEICTEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_lf01gICWEemEIaXDJT8g1Q" name="License and maintenance fee" type="resource">
+         <dependency>
+            <depender aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+            <dependee aref="_BLtYoICVEemEIaXDJT8g1Q" iref="_IfyqQICVEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_pVvXIICWEemEIaXDJT8g1Q" name="Application be supported and maintained" type="goal">
+         <dependency>
+            <depender aref="_BLtYoICVEemEIaXDJT8g1Q" iref="_IfyqQICVEemEIaXDJT8g1Q" />
+            <dependee aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_zx2JoICWEemEIaXDJT8g1Q" name="Applications" type="resource">
+         <dependency>
+            <depender aref="_BLtYoICVEemEIaXDJT8g1Q" iref="_IfyqQICVEemEIaXDJT8g1Q" />
+            <dependee aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_5ZvmQICWEemEIaXDJT8g1Q" name="Attractive application" type="quality">
+         <dependency>
+            <depender aref="_BLtYoICVEemEIaXDJT8g1Q" iref="_IfyqQICVEemEIaXDJT8g1Q" />
+            <dependee aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_9t48AICWEemEIaXDJT8g1Q" name="Good quality" type="quality">
+         <dependency>
+            <depender aref="_BLtYoICVEemEIaXDJT8g1Q" iref="_LRTvoICVEemEIaXDJT8g1Q" />
+            <dependee aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_FlE6sICXEemEIaXDJT8g1Q" name="Variety" type="quality">
+         <dependency>
+            <depender aref="_BLtYoICVEemEIaXDJT8g1Q" iref="_KsdWIICVEemEIaXDJT8g1Q" />
+            <dependee aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_XUXm8ICXEemEIaXDJT8g1Q" name="Market channel be provided" type="goal">
+         <dependency>
+            <depender aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+            <dependee aref="_pTOygICSEemEIaXDJT8g1Q" iref="_N7ZMwICUEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_cEFeYICXEemEIaXDJT8g1Q" name="Quick to market" type="quality">
+         <dependency>
+            <depender aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+            <dependee aref="_pTOygICSEemEIaXDJT8g1Q" iref="_N7ZMwICUEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_g0sGoICXEemEIaXDJT8g1Q" name="Visible to end user" type="quality">
+         <dependency>
+            <depender aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+            <dependee aref="_pTOygICSEemEIaXDJT8g1Q" iref="_N7ZMwICUEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_qArfoICYEemEIaXDJT8g1Q" name="Platform specific applications be developed" type="goal">
+         <dependency>
+            <depender aref="_pTOygICSEemEIaXDJT8g1Q" iref="_kYN_IICUEemEIaXDJT8g1Q" />
+            <dependee aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_xp4FoICYEemEIaXDJT8g1Q" name="Creative" type="quality">
+         <dependency>
+            <depender aref="_pTOygICSEemEIaXDJT8g1Q" iref="_kYN_IICUEemEIaXDJT8g1Q" />
+            <dependee aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_JTQ5IICWEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_8LecIICYEemEIaXDJT8g1Q" name="Developer satisfaction" type="quality">
+         <dependency>
+            <depender aref="_pTOygICSEemEIaXDJT8g1Q" iref="_pJvNYICUEemEIaXDJT8g1Q" />
+            <dependee aref="_B1bOkICWEemEIaXDJT8g1Q" iref="_GlwKAICWEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <actor id="_pTOygICSEemEIaXDJT8g1Q" name="Software vendor" type="actor">
+         <boundary>
+            <ielement id="_rPAisICSEemEIaXDJT8g1Q" name="Large customer base" type="quality" />
+            <ielement id="_syxbgICSEemEIaXDJT8g1Q" name="Customer loyalty" type="quality" />
+            <ielement id="_uab84ICSEemEIaXDJT8g1Q" name="Attractive new customer" type="quality" />
+            <ielement id="_0HniIICSEemEIaXDJT8g1Q" name="Vendor lock-in [Customer]" type="quality" />
+            <ielement id="_3hb9oICSEemEIaXDJT8g1Q" name="High value" type="quality">
+               <ielementLink iref="_uab84ICSEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_syxbgICSEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_0HniIICSEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_RqB3IICTEemEIaXDJT8g1Q" name="Solution gravity" type="quality">
+               <ielementLink iref="_0HniIICSEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_U4PfkICTEemEIaXDJT8g1Q" name="Diversity [Product]" type="quality">
+               <ielementLink iref="_3hb9oICSEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_YAjUUICTEemEIaXDJT8g1Q" name="Innovation [Product]" type="quality">
+               <ielementLink iref="_3hb9oICSEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_dUQpoICTEemEIaXDJT8g1Q" name="Quick time-to-market" type="quality" />
+            <ielement id="_f3EkoICTEemEIaXDJT8g1Q" name="Software business be run" type="goal" />
+            <ielement id="_kZ1lMICTEemEIaXDJT8g1Q" name="Run software business with the open ecosystem" type="task">
+               <ielementLink iref="_f3EkoICTEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_wDLm4ICTEemEIaXDJT8g1Q" name="Platform be produced" type="goal">
+               <ielementLink iref="_kZ1lMICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_yCCgQICTEemEIaXDJT8g1Q" name="Build platform" type="task">
+               <ielementLink iref="_wDLm4ICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_zi7EMICTEemEIaXDJT8g1Q" name="Integrate OEM components" type="task">
+               <ielementLink iref="_wDLm4ICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_3CmQEICTEemEIaXDJT8g1Q" name="Sell software platform" type="task">
+               <ielementLink iref="_kZ1lMICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_5GVCYICTEemEIaXDJT8g1Q" name="User satisfaction" type="quality">
+               <ielementLink iref="_3CmQEICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_72GbUICTEemEIaXDJT8g1Q" name="Provide product related services" type="task">
+               <ielementLink iref="_3CmQEICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="__RT98ICTEemEIaXDJT8g1Q" name="Supply platform to developer" type="task">
+               <ielementLink iref="_RqB3IICTEemEIaXDJT8g1Q" type="contribution" value="make" />
+               <ielementLink iref="_apKf4ICUEemEIaXDJT8g1Q" type="contribution" value="hurt" />
+               <ielementLink iref="_3CmQEICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_N7ZMwICUEemEIaXDJT8g1Q" name="Build market channel for application" type="task">
+               <ielementLink iref="_dUQpoICTEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_72GbUICTEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_apKf4ICUEemEIaXDJT8g1Q" name="Flexibility in platform development" type="quality">
+               <ielementLink iref="_YAjUUICTEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_kYN_IICUEemEIaXDJT8g1Q" name="Platform specific application be supplied" type="goal">
+               <ielementLink iref="_U4PfkICTEemEIaXDJT8g1Q" type="contribution" value="make" />
+               <ielementLink iref="_YAjUUICTEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="__RT98ICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_pJvNYICUEemEIaXDJT8g1Q" name="Developer satisfaction" type="quality">
+               <ielementLink iref="__RT98ICTEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_BLtYoICVEemEIaXDJT8g1Q" name="End-user" type="actor">
+         <boundary>
+            <ielement id="_Cpp9UICVEemEIaXDJT8g1Q" name="Satisfaction" type="quality" />
+            <ielement id="_EDeP8ICVEemEIaXDJT8g1Q" name="Have software" type="goal" />
+            <ielement id="_FefccICVEemEIaXDJT8g1Q" name="Acquire software" type="task">
+               <ielementLink iref="_EDeP8ICVEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_HltAkICVEemEIaXDJT8g1Q" name="Get platform" type="task">
+               <ielementLink iref="_FefccICVEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_IfyqQICVEemEIaXDJT8g1Q" name="Get application" type="task">
+               <ielementLink iref="_FefccICVEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_KsdWIICVEemEIaXDJT8g1Q" name="Variety" type="quality">
+               <ielementLink iref="_Cpp9UICVEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_LRTvoICVEemEIaXDJT8g1Q" name="Quality" type="quality">
+               <ielementLink iref="_Cpp9UICVEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_B1bOkICWEemEIaXDJT8g1Q" name="Developer" type="actor">
+         <boundary>
+            <ielement id="_GlwKAICWEemEIaXDJT8g1Q" name="Satisfaction with platform" type="quality" />
+            <ielement id="_JTQ5IICWEemEIaXDJT8g1Q" name="Create platform specific application" type="task">
+               <ielementLink iref="_SmfYAICWEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_NyIRIICWEemEIaXDJT8g1Q" name="The right platform be used" type="quality">
+               <ielementLink iref="_SmfYAICWEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_SmfYAICWEemEIaXDJT8g1Q" name="Profitability from platform" type="quality">
+               <ielementLink iref="_GlwKAICWEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_XYLlYICWEemEIaXDJT8g1Q" name="Adopt open platform" type="task">
+               <ielementLink iref="_NyIRIICWEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_aY8AoICWEemEIaXDJT8g1Q" name="Easy to use" type="quality">
+               <ielementLink iref="_GlwKAICWEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_XYLlYICWEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_bUCW8ICWEemEIaXDJT8g1Q" name="Big market" type="quality">
+               <ielementLink iref="_SmfYAICWEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_XYLlYICWEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

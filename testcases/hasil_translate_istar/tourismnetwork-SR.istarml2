@@ -1,0 +1,135 @@
+
+<istarml2 version="1.0">
+   <diagram name="tourismnetwork-SR.ood">
+      <dependum id="_A0cJMII3EemtIaruMjdpGw" name="Ideas be discussed" type="quality">
+         <dependency>
+            <depender aref="_hXog4IIyEemtIaruMjdpGw" iref="_0UcwMIIyEemtIaruMjdpGw" />
+            <dependee aref="_IOPlIIIzEemtIaruMjdpGw" iref="_VnTQ8IIzEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_3crTIII3EemtIaruMjdpGw" name="Cost be shared" type="quality">
+         <dependency>
+            <depender aref="_IOPlIIIzEemtIaruMjdpGw" iref="_cpGfwIIzEemtIaruMjdpGw" />
+            <dependee aref="_G1u9QII3EemtIaruMjdpGw" iref="_b5oN0II3EemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_66dBkII3EemtIaruMjdpGw" name="New guests be acquired" type="quality">
+         <dependency>
+            <depender aref="_IOPlIIIzEemtIaruMjdpGw" iref="_iZei8IIzEemtIaruMjdpGw" />
+            <dependee aref="_G1u9QII3EemtIaruMjdpGw" iref="_QFFowII3EemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_Hdu78II4EemtIaruMjdpGw" name="Business be protected" type="quality">
+         <dependency>
+            <depender aref="_hXog4IIyEemtIaruMjdpGw" iref="_yLe4kIIyEemtIaruMjdpGw" />
+            <dependee aref="_G1u9QII3EemtIaruMjdpGw" iref="_OaehEII3EemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <actor id="_hXog4IIyEemtIaruMjdpGw" name="Mature Tourism Business (MB)" type="role">
+         <boundary>
+            <ielement id="_kVeyEIIyEemtIaruMjdpGw" name="Protect own business" type="quality" />
+            <ielement id="_ld5ysIIyEemtIaruMjdpGw" name="Alliances be maintained" type="quality" />
+            <ielement id="_oAENcIIyEemtIaruMjdpGw" name="Business be promoted" type="goal" />
+            <ielement id="_o65eAIIyEemtIaruMjdpGw" name="Advertise individually" type="task">
+               <ielementLink iref="_kVeyEIIyEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_oAENcIIyEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_qPIGAIIyEemtIaruMjdpGw" name="Promote collectively" type="task">
+               <ielementLink iref="_ld5ysIIyEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_oAENcIIyEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_uHoBkIIyEemtIaruMjdpGw" name="Advertise self locally" type="task">
+               <ielementLink iref="_o65eAIIyEemtIaruMjdpGw" type="decomposition" value="and" />
+            </ielement>
+            <ielement id="_vzrTsIIyEemtIaruMjdpGw" name="Advertise self externally" type="task">
+               <ielementLink iref="_ld5ysIIyEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_DWxf4IIzEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_o65eAIIyEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_yLe4kIIyEemtIaruMjdpGw" name="Promote region externally" type="task">
+               <ielementLink iref="_kVeyEIIyEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_DWxf4IIzEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_qPIGAIIyEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_0UcwMIIyEemtIaruMjdpGw" name="Launch joint offerings" type="task">
+               <ielementLink iref="_DWxf4IIzEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_qPIGAIIyEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_DWxf4IIzEemtIaruMjdpGw" name="Trustworthiness" type="quality" />
+         </boundary>
+      </actor>
+      <actor id="_IOPlIIIzEemtIaruMjdpGw" name="New Tourism Venture (NV)" type="role">
+         <boundary>
+            <ielement id="_MGXtQIIzEemtIaruMjdpGw" name="Alliances be forged" type="quality" />
+            <ielement id="_OL-u4IIzEemtIaruMjdpGw" name="Customers be gained for self" type="quality" />
+            <ielement id="_UHd14IIzEemtIaruMjdpGw" name="Revenue be increased" type="goal" />
+            <ielement id="_VnTQ8IIzEemtIaruMjdpGw" name="Invest in community" type="task">
+               <ielementLink iref="_MGXtQIIzEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_UHd14IIzEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_WsiasIIzEemtIaruMjdpGw" name="Challenge incumbents" type="task">
+               <ielementLink iref="_OL-u4IIzEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_MGXtQIIzEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_UHd14IIzEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_bQUu8IIzEemtIaruMjdpGw" name="Sponsor local events" type="task">
+               <ielementLink iref="_OL-u4IIzEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_l0R14IIzEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_VnTQ8IIzEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_cpGfwIIzEemtIaruMjdpGw" name="Maintain common spaces" type="task">
+               <ielementLink iref="_OL-u4IIzEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_l0R14IIzEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_VnTQ8IIzEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_gjQBIIIzEemtIaruMjdpGw" name="Undercut market prices" type="task">
+               <ielementLink iref="_l0R14IIzEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_WsiasIIzEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_iZei8IIzEemtIaruMjdpGw" name="Imitate mature rival offers" type="task">
+               <ielementLink iref="_WsiasIIzEemtIaruMjdpGw" type="decomposition" value="and" />
+            </ielement>
+            <ielement id="_l0R14IIzEemtIaruMjdpGw" name="Turstworthiness" type="quality" />
+         </boundary>
+      </actor>
+      <actor id="_G1u9QII3EemtIaruMjdpGw" name="Regional Tourism Organization (RO)" type="role">
+         <boundary>
+            <ielement id="_JYa8cII3EemtIaruMjdpGw" name="Reputation of region be maintained" type="quality" />
+            <ielement id="_LBwRwII3EemtIaruMjdpGw" name="Offerings in region be innovative" type="quality" />
+            <ielement id="_M3YWoII3EemtIaruMjdpGw" name="Visitors be increased" type="goal" />
+            <ielement id="_OaehEII3EemtIaruMjdpGw" name="Favor incumbent business" type="task">
+               <ielementLink iref="_JYa8cII3EemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_M3YWoII3EemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_QFFowII3EemtIaruMjdpGw" name="Prioritize new ventures" type="task">
+               <ielementLink iref="_LBwRwII3EemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_M3YWoII3EemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_T8TK4II3EemtIaruMjdpGw" name="Invest in infrastructure" type="task">
+               <ielementLink iref="_LBwRwII3EemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_llbkwII3EemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_OaehEII3EemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_VSs9III3EemtIaruMjdpGw" name="Offer targeted programs" type="task">
+               <ielementLink iref="_LBwRwII3EemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_llbkwII3EemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_OaehEII3EemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_W7F3QII3EemtIaruMjdpGw" name="Fund new ventures" type="task">
+               <ielementLink iref="_llbkwII3EemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_QFFowII3EemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_ZZOtoII3EemtIaruMjdpGw" name="Subsidize new ventures" type="task">
+               <ielementLink iref="_llbkwII3EemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_QFFowII3EemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_b5oN0II3EemtIaruMjdpGw" name="Provide free services" type="task">
+               <ielementLink iref="_llbkwII3EemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_QFFowII3EemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_llbkwII3EemtIaruMjdpGw" name="Trustworthiness" type="quality" />
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

@@ -1,0 +1,74 @@
+
+<istarml2 version="1.0">
+   <diagram name="primarycarenurse-SR.ood">
+      <dependum id="_VsVy0ICPEemEIaXDJT8g1Q" name="Symptom" type="resource">
+         <dependency>
+            <depender aref="_BBJyoICOEemEIaXDJT8g1Q" iref="_IAZnQICPEemEIaXDJT8g1Q" />
+            <dependee aref="_TVvu4ICPEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_ZcN94ICPEemEIaXDJT8g1Q" name="Behavioral health results" type="resource">
+         <dependency>
+            <depender aref="_BBJyoICOEemEIaXDJT8g1Q" iref="_JsHiMICPEemEIaXDJT8g1Q" />
+            <dependee aref="_XuWG0ICPEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_d2eisICPEemEIaXDJT8g1Q" name="Lifestyle is improved" type="quality">
+         <dependency>
+            <depender aref="_BBJyoICOEemEIaXDJT8g1Q" iref="_MFMSYICPEemEIaXDJT8g1Q" />
+            <dependee aref="_cM25gICPEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <actor id="_BBJyoICOEemEIaXDJT8g1Q" name="Primary care nurse" type="actor">
+         <boundary>
+            <ielement id="_CiH2IICOEemEIaXDJT8g1Q" name="Illness be managed" type="goal" />
+            <ielement id="_DrSdoICOEemEIaXDJT8g1Q" name="Problem be identified" type="goal" />
+            <ielement id="_E4TDUICOEemEIaXDJT8g1Q" name="Patient progress be known" type="goal" />
+            <ielement id="_HZIBUICOEemEIaXDJT8g1Q" name="Services be provided" type="goal" />
+            <ielement id="_Kq4tAICOEemEIaXDJT8g1Q" name="High quality healthcare outcome" type="quality" />
+            <ielement id="_MxnI8ICOEemEIaXDJT8g1Q" name="Monitor patient" type="task">
+               <ielementLink iref="_E4TDUICOEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_v1Q48ICOEemEIaXDJT8g1Q" name="Collect patient data" type="task">
+               <ielementLink iref="_Kq4tAICOEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_MxnI8ICOEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_xSo14ICOEemEIaXDJT8g1Q" name="Send alert" type="task">
+               <ielementLink iref="_MxnI8ICOEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_yLZC0ICOEemEIaXDJT8g1Q" name="Get patient feedback" type="task">
+               <ielementLink iref="_Kq4tAICOEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_MxnI8ICOEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_1ukOoICOEemEIaXDJT8g1Q" name="Treat disease" type="task">
+               <ielementLink iref="_HZIBUICOEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_5qFpAICOEemEIaXDJT8g1Q" name="Ask for lab test" type="task">
+               <ielementLink iref="_1ukOoICOEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_7UGTwICOEemEIaXDJT8g1Q" name="Prescribe medication" type="task">
+               <ielementLink iref="_1ukOoICOEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_IAZnQICPEemEIaXDJT8g1Q" name="Ask patient symptom" type="task">
+               <ielementLink iref="_v1Q48ICOEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_JsHiMICPEemEIaXDJT8g1Q" name="Screen patient" type="task">
+               <ielementLink iref="_v1Q48ICOEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_MFMSYICPEemEIaXDJT8g1Q" name="Get data from healthy living programs" type="task">
+               <ielementLink iref="_v1Q48ICOEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_TVvu4ICPEemEIaXDJT8g1Q" name="Patient" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_XuWG0ICPEemEIaXDJT8g1Q" name="Behavioral health staff" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_cM25gICPEemEIaXDJT8g1Q" name="Health education coordinator" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

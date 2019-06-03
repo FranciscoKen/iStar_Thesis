@@ -1,0 +1,108 @@
+
+<istarml2 version="1.0">
+   <diagram name="airporttrainsystem-SD.ood">
+      <dependum id="_sJg6cIIDEemtIaruMjdpGw" name="Schedule, prices" type="resource">
+         <dependency>
+            <depender aref="_aeitgIIDEemtIaruMjdpGw" />
+            <dependee aref="_qJIXEIIDEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_x1wEgIIDEemtIaruMjdpGw" name="Schedule, prices" type="resource">
+         <dependency>
+            <depender aref="_vgvU8IIDEemtIaruMjdpGw" />
+            <dependee aref="_qJIXEIIDEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_20xjQIIDEemtIaruMjdpGw" name="Schedule, prices" type="resource">
+         <dependency>
+            <depender aref="_aeitgIIDEemtIaruMjdpGw" />
+            <dependee aref="_1CUuMIIDEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_5bgU8IIDEemtIaruMjdpGw" name="Schedule, prices" type="resource">
+         <dependency>
+            <depender aref="_vgvU8IIDEemtIaruMjdpGw" />
+            <dependee aref="_1CUuMIIDEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_8mqCUIIDEemtIaruMjdpGw" name="Schedule, prices" type="resource">
+         <dependency>
+            <depender aref="_aeitgIIDEemtIaruMjdpGw" />
+            <dependee aref="_vgvU8IIDEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_C2MtwIIEEemtIaruMjdpGw" name="Info, Choices" type="resource">
+         <dependency>
+            <depender aref="_aeitgIIDEemtIaruMjdpGw" />
+            <dependee aref="_-zz2YIIDEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_FiXZEIIEEemtIaruMjdpGw" name="Info, Choices" type="resource">
+         <dependency>
+            <depender aref="_aeitgIIDEemtIaruMjdpGw" />
+            <dependee aref="_-zz2YIIDEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_LjUO4IIEEemtIaruMjdpGw" name="Schedule, prices" type="resource">
+         <dependency>
+            <depender aref="_vgvU8IIDEemtIaruMjdpGw" />
+            <dependee aref="_Is4NQIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_OvNjIIIEEemtIaruMjdpGw" name="Schedule, prices" type="resource">
+         <dependency>
+            <depender aref="_aeitgIIDEemtIaruMjdpGw" />
+            <dependee aref="_Is4NQIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_T82ssIIEEemtIaruMjdpGw" name="Info, choices" type="resource">
+         <dependency>
+            <depender aref="_RfR3AIIEEemtIaruMjdpGw" />
+            <dependee aref="_aeitgIIDEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_V_w_oIIEEemtIaruMjdpGw" name="Info, choices" type="resource">
+         <dependency>
+            <depender aref="_aeitgIIDEemtIaruMjdpGw" />
+            <dependee aref="_RfR3AIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <actor id="_aeitgIIDEemtIaruMjdpGw" name="System" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_b_fi4IIDEemtIaruMjdpGw" name="Worker PCs" type="actor">
+         <actorLink aref="_aeitgIIDEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_iUmq0IIDEemtIaruMjdpGw" name="Ticket Kiosks" type="actor">
+         <actorLink aref="_aeitgIIDEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_lIMMwIIDEemtIaruMjdpGw" name="Info Screens" type="actor">
+         <actorLink aref="_aeitgIIDEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_n7ieIIIDEemtIaruMjdpGw" name="Airport" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_qJIXEIIDEemtIaruMjdpGw" name="Gatwick Express System" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_vgvU8IIDEemtIaruMjdpGw" name="TfL (Transport for London)" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_1CUuMIIDEemtIaruMjdpGw" name="Thameslink Train System" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_-zz2YIIDEemtIaruMjdpGw" name="Ticket Sales Workers" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_Is4NQIIEEemtIaruMjdpGw" name="Southern Train System" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_RfR3AIIEEemtIaruMjdpGw" name="Travellers" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

@@ -1,0 +1,96 @@
+
+<istarml2 version="1.0">
+   <diagram name="login-SR.ood">
+      <dependum id="_qfWDIHQXEemozsE8pEOulw" name="Access secure content" type="goal">
+         <dependency>
+            <depender aref="_o4_JUHQXEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_iQ1woHQXEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_tr-XMHQXEemozsE8pEOulw" name="Customize account" type="goal">
+         <dependency>
+            <depender aref="_o4_JUHQXEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_svsVIHQXEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_wQ_4sHQXEemozsE8pEOulw" name="User name" type="resource">
+         <dependency>
+            <depender aref="_o4_JUHQXEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_svsVIHQXEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_3m-AsHQXEemozsE8pEOulw" name="Customize password" type="goal">
+         <dependency>
+            <depender aref="_o4_JUHQXEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_2Jwb0HQXEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_55W6EHQXEemozsE8pEOulw" name="User password" type="resource">
+         <dependency>
+            <depender aref="_o4_JUHQXEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_2Jwb0HQXEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="__IQA0HQXEemozsE8pEOulw" name="Remember the password" type="goal">
+         <dependency>
+            <depender aref="_o4_JUHQXEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_9B3jIHQXEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_CB02AHQYEemozsE8pEOulw" name="Password reminder" type="resource">
+         <dependency>
+            <depender aref="_o4_JUHQXEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_9B3jIHQXEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_SDOdEHQYEemozsE8pEOulw" name="Automated registration" type="goal">
+         <dependency>
+            <depender aref="_P9Q2IHQYEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_T_risHQYEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_YLajUHQYEemozsE8pEOulw" name="Confirm the account confirmation email" type="goal">
+         <dependency>
+            <depender aref="_P9Q2IHQYEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_Wdg3EHQYEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_eU304HQYEemozsE8pEOulw" name="Ensuring security of content" type="goal">
+         <dependency>
+            <depender aref="_P9Q2IHQYEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_id44sHQYEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_krCFsHQYEemozsE8pEOulw" name="Confirm user" type="goal">
+         <dependency>
+            <depender aref="_P9Q2IHQYEemozsE8pEOulw" />
+            <dependee aref="_g4YI4HQXEemozsE8pEOulw" iref="_l9z8MHQYEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <actor id="_g4YI4HQXEemozsE8pEOulw" name="System" type="actor">
+         <boundary>
+            <ielement id="_iQ1woHQXEemozsE8pEOulw" name="Provide secure content" type="task" />
+            <ielement id="_kab6YHQXEemozsE8pEOulw" name="Having username" type="task">
+               <ielementLink iref="_iQ1woHQXEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_lrJUUHQXEemozsE8pEOulw" name="Having password" type="task">
+               <ielementLink iref="_iQ1woHQXEemozsE8pEOulw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_svsVIHQXEemozsE8pEOulw" name="Choose your username" type="task" />
+            <ielement id="_2Jwb0HQXEemozsE8pEOulw" name="Change the default password" type="task" />
+            <ielement id="_9B3jIHQXEemozsE8pEOulw" name="Register password reminder" type="task" />
+            <ielement id="_T_risHQYEemozsE8pEOulw" name="Assign the user password" type="task" />
+            <ielement id="_Wdg3EHQYEemozsE8pEOulw" name="Send email registry" type="task" />
+            <ielement id="_id44sHQYEemozsE8pEOulw" name="Request to login user" type="task" />
+            <ielement id="_l9z8MHQYEemozsE8pEOulw" name="Request information password reminder" type="task" />
+         </boundary>
+      </actor>
+      <actor id="_o4_JUHQXEemozsE8pEOulw" name="User" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_P9Q2IHQYEemozsE8pEOulw" name="Administrator" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+
