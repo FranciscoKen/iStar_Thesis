@@ -156,8 +156,8 @@ public class ClassGenerator {
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.QUALIFICATION)){
                             ocl.addPrePostOCL(currentActorName,
                                     iElementToName,
-                                    iElementToName+".preCondition=\"Value\"",
-                                    iElementToName+".postCondition=\"Value\" and "+iElementFromName+"=true");
+                                    iElementToName+".preCondition=\"Value\" and "+iElementFromName+"=true",
+                                    iElementToName+".postCondition=\"Value\"");
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_AND)){
 
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.REFINEMENT_OR)){
@@ -180,6 +180,7 @@ public class ClassGenerator {
                             ocl.addCustomOCL(currentActorName,
                                     iElementToName,
                                     iElementFromName+"=true and "+iElementToName+".availability=true");
+                            //TODO diversify between goal and resource
                         } else if(iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_MAKE) ||
                                 iel.getValue().getType().equals(IntentionalElementLinkType.CONTRIBUTION_HELP)){
                             if(model.getiElements().get(getFrom(iel.getKey())).getType().equals(IntentionalElementType.GOAL) ||
