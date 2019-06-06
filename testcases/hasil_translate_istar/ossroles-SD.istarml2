@@ -1,0 +1,57 @@
+
+<istarml2 version="1.0">
+   <diagram name="ossroles-SD.ood">
+      <actor id="_Sc8KYIIKEemtIaruMjdpGw" name="OSS Community" type="role">
+         <boundary />
+      </actor>
+      <actor id="_wH-KsIIcEemtIaruMjdpGw" name="User" type="role">
+         <actorLink aref="_Sc8KYIIKEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_zracQIIcEemtIaruMjdpGw" name="Governance Role" type="role">
+         <actorLink aref="_Sc8KYIIKEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_4GlnEIIcEemtIaruMjdpGw" name="Community Manager" type="role">
+         <actorLink aref="_zracQIIcEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_6V2T8IIcEemtIaruMjdpGw" name="Communicator" type="role">
+         <actorLink aref="_zracQIIcEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_9XijUIIcEemtIaruMjdpGw" name="Contributor" type="role">
+         <actorLink aref="_Sc8KYIIKEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_A_wnMIIdEemtIaruMjdpGw" name="Administrator" type="role">
+         <actorLink aref="_9XijUIIcEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_C0MZQIIdEemtIaruMjdpGw" name="Developer" type="role">
+         <actorLink aref="_9XijUIIcEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_JqBBkIIdEemtIaruMjdpGw" name="Disseminator" type="role">
+         <actorLink aref="_9XijUIIcEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_Met90IIdEemtIaruMjdpGw" name="Documenter" type="role">
+         <actorLink aref="_9XijUIIcEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_QYdPgIIdEemtIaruMjdpGw" name="Project Manager" type="role">
+         <actorLink aref="_9XijUIIcEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_SP1n4IIdEemtIaruMjdpGw" name="Tester" type="role">
+         <actorLink aref="_9XijUIIcEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_WssNsIIdEemtIaruMjdpGw" name="Commiter" type="role">
+         <actorLink aref="_C0MZQIIdEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

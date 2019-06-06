@@ -1,0 +1,132 @@
+
+<istarml2 version="1.0">
+   <diagram name="onlinepresence-SR.ood">
+      <dependum id="_hPkTgICREemEIaXDJT8g1Q" name="Effective user interface" type="quality">
+         <dependency>
+            <depender aref="_I_1PgICFEemEIaXDJT8g1Q" iref="_v6shoICFEemEIaXDJT8g1Q" />
+            <dependee aref="_LyDDAICGEemEIaXDJT8g1Q" iref="_ruMdQICLEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_mIUyMICREemEIaXDJT8g1Q" name="Effective search features" type="quality">
+         <dependency>
+            <depender aref="_I_1PgICFEemEIaXDJT8g1Q" iref="_1DeZUICFEemEIaXDJT8g1Q" />
+            <dependee aref="_LyDDAICGEemEIaXDJT8g1Q" iref="_ruMdQICLEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_rGWycICREemEIaXDJT8g1Q" name="Categories" type="resource">
+         <dependency>
+            <depender aref="_I_1PgICFEemEIaXDJT8g1Q" iref="_-j3xgICFEemEIaXDJT8g1Q" />
+            <dependee aref="_LyDDAICGEemEIaXDJT8g1Q" iref="_eM-egICMEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <actor id="_I_1PgICFEemEIaXDJT8g1Q" name="Counsellor" type="role">
+         <boundary>
+            <ielement id="_Kw16IICFEemEIaXDJT8g1Q" name="Give kids the help to fully resolve issue" type="quality" />
+            <ielement id="_iSWcoICFEemEIaXDJT8g1Q" name="Give kids access to local services" type="task">
+               <ielementLink iref="_Kw16IICFEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_lXj6EICFEemEIaXDJT8g1Q" name="Easy and quick access to referrals" type="quality">
+               <ielementLink iref="_Kw16IICFEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_nvFyIICFEemEIaXDJT8g1Q" name="Reference and/or provide info" type="goal">
+               <ielementLink iref="_iSWcoICFEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_v6shoICFEemEIaXDJT8g1Q" name="User friendly referral DB" type="quality">
+               <ielementLink iref="_lXj6EICFEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_1DeZUICFEemEIaXDJT8g1Q" name="Take less time to find things in referral DB" type="quality">
+               <ielementLink iref="_Kw16IICFEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_4_ZcUICFEemEIaXDJT8g1Q" name="Search in physical resources" type="task" />
+            <ielement id="_7WgdoICFEemEIaXDJT8g1Q" name="Search in referral DB" type="task" />
+            <ielement id="_CIoRsICGEemEIaXDJT8g1Q" name="Enter province and city" type="task">
+               <ielementLink iref="_7WgdoICFEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_DewXIICGEemEIaXDJT8g1Q" name="Find nearest community &amp; town" type="task">
+               <ielementLink iref="_7WgdoICFEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_HemQ0ICGEemEIaXDJT8g1Q" name="Category searches should be more reliable" type="quality" />
+            <ielement id="_-j3xgICFEemEIaXDJT8g1Q" name="Choose a category" type="task">
+               <ielementLink iref="_HemQ0ICGEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_CIoRsICGEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_LyDDAICGEemEIaXDJT8g1Q" name="Social service DB" type="agent">
+         <boundary>
+            <ielement id="_TeW1IICLEemEIaXDJT8g1Q" name="Provide referrals" type="task" />
+            <ielement id="_VsPB8ICLEemEIaXDJT8g1Q" name="People must be willing to use it" type="quality">
+               <ielementLink iref="_TeW1IICLEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_XLz-UICLEemEIaXDJT8g1Q" name="Maintain quality of entries" type="quality">
+               <ielementLink iref="_VsPB8ICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_TeW1IICLEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_ZsjcwICLEemEIaXDJT8g1Q" name="Ensure quality of access" type="quality">
+               <ielementLink iref="_VsPB8ICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_TeW1IICLEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_luHxMICLEemEIaXDJT8g1Q" name="Improve how well counsellors search" type="quality">
+               <ielementLink iref="_ZsjcwICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_ruMdQICLEemEIaXDJT8g1Q" name="Effective user interface" type="quality">
+               <ielementLink iref="_luHxMICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+               <ielementLink iref="_ZsjcwICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_2F7tIICLEemEIaXDJT8g1Q" name="Could be good to let counsellors add annotations" type="quality">
+               <ielementLink iref="_XLz-UICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_6U62EICLEemEIaXDJT8g1Q" name="Counselors learn how to update references" type="quality">
+               <ielementLink iref="_XLz-UICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_ALF_QICMEemEIaXDJT8g1Q" name="Interesting to know how much each piece of information is used" type="quality">
+               <ielementLink iref="_XLz-UICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_HV2VwICMEemEIaXDJT8g1Q" name="Counselors add to DB" type="goal">
+               <ielementLink iref="_6U62EICLEemEIaXDJT8g1Q" type="contribution" value="make" />
+               <ielementLink iref="_2F7tIICLEemEIaXDJT8g1Q" type="contribution" value="make" />
+            </ielement>
+            <ielement id="_Ka1JsICMEemEIaXDJT8g1Q" name="Librarian approval update/annotations" type="task">
+               <ielementLink iref="_HV2VwICMEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_a-B2QICMEemEIaXDJT8g1Q" name="Live updates/annotations" type="task">
+               <ielementLink iref="_HV2VwICMEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_eM-egICMEemEIaXDJT8g1Q" name="Implement new taxonomy" type="goal">
+               <ielementLink iref="_luHxMICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_fzwPEICMEemEIaXDJT8g1Q" name="Faceted taxonomy" type="task">
+               <ielementLink iref="_eM-egICMEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_hizx4ICMEemEIaXDJT8g1Q" name="Snap-to-grid" type="task">
+               <ielementLink iref="_eM-egICMEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_rTlIYICMEemEIaXDJT8g1Q" name="Ad-hoc tagging" type="task">
+               <ielementLink iref="_eM-egICMEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_xqJB0ICMEemEIaXDJT8g1Q" name="Improve UI" type="task">
+               <ielementLink iref="_ruMdQICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_057-oICMEemEIaXDJT8g1Q" name="Expand search functionality" type="task">
+               <ielementLink iref="_luHxMICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_7K3KIICMEemEIaXDJT8g1Q" name="Want links across towns" type="quality">
+               <ielementLink iref="_luHxMICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_-2nDIICMEemEIaXDJT8g1Q" name="Provide geographical information" type="goal">
+               <ielementLink iref="_7K3KIICMEemEIaXDJT8g1Q" type="contribution" value="make" />
+            </ielement>
+            <ielement id="_DcCWIICNEemEIaXDJT8g1Q" name="Better training for database skills" type="quality">
+               <ielementLink iref="_luHxMICLEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_IDUqUICNEemEIaXDJT8g1Q" name="Db Training" type="task">
+               <ielementLink iref="_DcCWIICNEemEIaXDJT8g1Q" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_NoN2QICNEemEIaXDJT8g1Q" name="Implement usage statistics" type="task">
+               <ielementLink iref="_ALF_QICMEemEIaXDJT8g1Q" type="contribution" value="make" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

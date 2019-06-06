@@ -2,19 +2,6 @@
 <istarml version="1.0">
    <diagram name="onlinepresence-SR.ood">
       <graphic content="SVG"/>
-      <ielement type="task" id="_-j3xgICFEemEIaXDJT8g1Q" name="Choose a category">
-         <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
-                  bgcolor="FFFFFF"
-                  fontfamily="Segoe UI"
-                  fontcolor="000000"
-                  fontsize="12"/>
-         <ielementLink type="contribution" value="help" iref="_HemQ0ICGEemEIaXDJT8g1Q">
-            <graphic content="SVG"/>
-         </ielementLink>
-         <ielementLink type="decomposition" value="and" iref="_CIoRsICGEemEIaXDJT8g1Q">
-            <graphic content="SVG"/>
-         </ielementLink>
-      </ielement>
       <ielement type="resource" id="_c3_2UICREemEIaXDJT8g1Q" name="Referrals">
          <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
                   bgcolor="FFFFFF"
@@ -67,7 +54,7 @@
                   fontcolor="000000"
                   fontsize="12"/>
          <dependency>
-            <depender iref="_-j3xgICFEemEIaXDJT8g1Q" aref="_HpuYMICFEemEIaXDJT8g1Q">
+            <depender iref="_-j3xgICFEemEIaXDJT8g1Q" aref="_I_1PgICFEemEIaXDJT8g1Q">
                <graphic content="SVG"/>
             </depender>
             <dependee iref="_eM-egICMEemEIaXDJT8g1Q" aref="_LyDDAICGEemEIaXDJT8g1Q">
@@ -196,6 +183,19 @@
                         fontfamily="Segoe UI"
                         fontcolor="000000"
                         fontsize="12"/>
+            </ielement>
+            <ielement type="task" id="_-j3xgICFEemEIaXDJT8g1Q" name="Choose a category">
+               <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
+                        bgcolor="FFFFFF"
+                        fontfamily="Segoe UI"
+                        fontcolor="000000"
+                        fontsize="12"/>
+               <ielementLink type="contribution" value="help" iref="_HemQ0ICGEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
+               <ielementLink type="decomposition" value="and" iref="_CIoRsICGEemEIaXDJT8g1Q">
+                  <graphic content="SVG"/>
+               </ielementLink>
             </ielement>
          </boundary>
       </actor>

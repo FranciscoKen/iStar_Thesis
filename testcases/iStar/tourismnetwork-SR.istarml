@@ -68,6 +68,14 @@
                   fontfamily="Segoe UI"
                   fontcolor="000000"
                   fontsize="12"/>
+         <dependency>
+            <depender iref="_QFFowII3EemtIaruMjdpGw" aref="_G1u9QII3EemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </depender>
+            <dependee iref="_iZei8IIzEemtIaruMjdpGw" aref="_IOPlIIIzEemtIaruMjdpGw">
+               <graphic content="SVG"/>
+            </dependee>
+         </dependency>
       </ielement>
       <ielement type="softgoal" id="_Hdu78II4EemtIaruMjdpGw" name="Business be protected">
          <graphic content="basic" xpos="0" ypos="0" width="120" height="55" unit="pt"
@@ -365,7 +373,7 @@
                   fontcolor="000000"
                   fontsize="12"/>
          <boundary>
-            <graphic content="basic" xpos="504" ypos="576" width="573" height="528" shape="ellipse"
+            <graphic content="basic" xpos="588" ypos="576" width="709" height="528" shape="ellipse"
                      unit="pt"
                      bgcolor="FFFFFF"
                      fontfamily="Segoe UI"

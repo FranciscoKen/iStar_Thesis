@@ -1,0 +1,54 @@
+
+<istarml2 version="1.0">
+   <diagram name="ossadopteruserrelation-SR.ood">
+      <dependum id="_VW1lIIIJEemtIaruMjdpGw" name="Support provided for newbies" type="goal">
+         <dependency>
+            <depender aref="_0Oz0UIIIEemtIaruMjdpGw" iref="__bbdwIIIEemtIaruMjdpGw" />
+            <dependee aref="_FmRPYIIJEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <actor id="_pgxkUIIIEemtIaruMjdpGw" name="OSS Adopter" type="agent">
+         <actorLink aref="_0Oz0UIIIEemtIaruMjdpGw" type="participates-in" />
+         <boundary>
+            <ielement id="_qXph8IIIEemtIaruMjdpGw" name="Develop product" type="task" />
+            <ielement id="_rUIYUIIIEemtIaruMjdpGw" name="Select OSS" type="task">
+               <ielementLink iref="_qXph8IIIEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_sQ4UcIIIEemtIaruMjdpGw" name="User OSS" type="task">
+               <ielementLink iref="_qXph8IIIEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_tKrqQIIIEemtIaruMjdpGw" name="Test product" type="task">
+               <ielementLink iref="_qXph8IIIEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_upZrAIIIEemtIaruMjdpGw" name="Maintain product" type="task">
+               <ielementLink iref="_qXph8IIIEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_0Oz0UIIIEemtIaruMjdpGw" name="User" type="role">
+         <actorLink aref="_FmRPYIIJEemtIaruMjdpGw" type="participates-in" />
+         <boundary>
+            <ielement id="_1CeF4IIIEemtIaruMjdpGw" name="OSS component usedd" type="goal" />
+            <ielement id="_2QL2MIIIEemtIaruMjdpGw" name="Deploy OSS" type="task">
+               <ielementLink iref="_1CeF4IIIEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_3VobUIIIEemtIaruMjdpGw" name="Learn using OSS" type="task">
+               <ielementLink iref="_2QL2MIIIEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_5UbqUIIIEemtIaruMjdpGw" name="Integrate OSS" type="task">
+               <ielementLink iref="_1CeF4IIIEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_68J2EIIIEemtIaruMjdpGw" name="Acquire technicall skills" type="task">
+               <ielementLink iref="_5UbqUIIIEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="__bbdwIIIEemtIaruMjdpGw" name="Ask questions" type="task">
+               <ielementLink iref="_3VobUIIIEemtIaruMjdpGw" type="refinement" value="or" />
+               <ielementLink iref="_68J2EIIIEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_FmRPYIIJEemtIaruMjdpGw" name="OSS Community" type="role">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>

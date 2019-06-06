@@ -1,0 +1,123 @@
+
+<istarml2 version="1.0">
+   <diagram name="player-SD.ood">
+      <dependum id="_ZV4koHQTEemozsE8pEOulw" name="Entry of players be closed" type="goal">
+         <dependency>
+            <depender aref="_TS_OEHQTEemozsE8pEOulw" />
+            <dependee aref="_XflxYHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_cdQlQHQTEemozsE8pEOulw" name="Type of cards be chosen" type="goal">
+         <dependency>
+            <depender aref="_TS_OEHQTEemozsE8pEOulw" />
+            <dependee aref="_XflxYHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_j5bb4HQTEemozsE8pEOulw" name="Game be started" type="goal">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_mRk_AHQTEemozsE8pEOulw" name="Availability [Game]" type="quality">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_o3YjoHQTEemozsE8pEOulw" name="Players be registered" type="goal">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_t1SBAHQTEemozsE8pEOulw" name="Resources be available" type="goal">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_wUPWwHQTEemozsE8pEOulw" name="Dice" type="resource">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_zAQ4IHQTEemozsE8pEOulw" name="Software engineers" type="resource">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_7ElT4HQTEemozsE8pEOulw" name="Project cards" type="resource">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_8H8OUHQTEemozsE8pEOulw" name="Usability [resources]" type="quality">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_A39nwHQUEemozsE8pEOulw" name="Availability [resources]" type="quality">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_DX7qIHQUEemozsE8pEOulw" name="Security [SimulES-W]" type="quality">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_KIxEwHQUEemozsE8pEOulw" name="Movements be published" type="goal">
+         <dependency>
+            <depender aref="_iZxnAHQTEemozsE8pEOulw" />
+            <dependee aref="_TS_OEHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_jxkq8HQUEemozsE8pEOulw" name="Project be accepted" type="goal">
+         <dependency>
+            <depender aref="_iOknIHQUEemozsE8pEOulw" />
+            <dependee aref="_iZxnAHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_meWaQHQUEemozsE8pEOulw" name="Satisfied player [card project]" type="quality">
+         <dependency>
+            <depender aref="_iOknIHQUEemozsE8pEOulw" />
+            <dependee aref="_iZxnAHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_tIbFkHQUEemozsE8pEOulw" name="Software engineer be hired" type="goal">
+         <dependency>
+            <depender aref="_radu8HQUEemozsE8pEOulw" />
+            <dependee aref="_iZxnAHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <dependum id="_wB6bMHQUEemozsE8pEOulw" name="Satisfied player [engineer]" type="quality">
+         <dependency>
+            <depender aref="_radu8HQUEemozsE8pEOulw" />
+            <dependee aref="_iZxnAHQTEemozsE8pEOulw" />
+         </dependency>
+      </dependum>
+      <actor id="_TS_OEHQTEemozsE8pEOulw" name="SimulES" type="agent">
+         <boundary />
+      </actor>
+      <actor id="_XflxYHQTEemozsE8pEOulw" name="Administrator" type="role">
+         <boundary />
+      </actor>
+      <actor id="_iZxnAHQTEemozsE8pEOulw" name="Player in turn" type="role">
+         <boundary />
+      </actor>
+      <actor id="_iOknIHQUEemozsE8pEOulw" name="Adversary" type="role">
+         <boundary />
+      </actor>
+      <actor id="_radu8HQUEemozsE8pEOulw" name="Software engineer" type="agent">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

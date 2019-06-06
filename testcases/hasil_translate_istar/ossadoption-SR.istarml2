@@ -1,0 +1,37 @@
+
+<istarml2 version="1.0">
+   <diagram name="ossadoption-SR.ood">
+      <actor id="_nbT3MIIJEemtIaruMjdpGw" name="OSS Adopter" type="agent">
+         <boundary>
+            <ielement id="_oWXKMIIJEemtIaruMjdpGw" name="OSS community contributed" type="goal" />
+            <ielement id="_pfJXMIIJEemtIaruMjdpGw" name="Maintain code" type="task">
+               <ielementLink iref="_oWXKMIIJEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_r25RsIIJEemtIaruMjdpGw" name="Report bugs" type="task">
+               <ielementLink iref="_pfJXMIIJEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_s7gwYIIJEemtIaruMjdpGw" name="Fix bugs" type="task">
+               <ielementLink iref="_pfJXMIIJEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_xpSHEIIJEemtIaruMjdpGw" name="Developer" type="role">
+         <boundary>
+            <ielement id="_yXTqsIIJEemtIaruMjdpGw" name="Maintain code" type="task" />
+            <ielement id="_zRGZcIIJEemtIaruMjdpGw" name="Report bugs" type="task">
+               <ielementLink iref="_yXTqsIIJEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_0CjEgIIJEemtIaruMjdpGw" name="Fix bugs" type="task">
+               <ielementLink iref="_yXTqsIIJEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_5nfTwIIJEemtIaruMjdpGw" name="OSS Adopter" type="agent">
+         <actorLink aref="_xpSHEIIJEemtIaruMjdpGw" type="participates-in" />
+         <boundary>
+            <ielement id="_6lM5MIIJEemtIaruMjdpGw" name="OSS community contributed" type="goal" />
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

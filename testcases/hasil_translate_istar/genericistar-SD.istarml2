@@ -1,0 +1,136 @@
+
+<istarml2 version="1.0">
+   <diagram name="genericistar-SD.ood">
+      <dependum id="_0q5QMIIEEemtIaruMjdpGw" name="Technology, products or services acquired" type="goal">
+         <dependency>
+            <depender aref="_yTdewIIEEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_48lu4IIEEemtIaruMjdpGw" name="Technology, products or services" type="resource">
+         <dependency>
+            <depender aref="_yTdewIIEEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_-4uWIIIEEemtIaruMjdpGw" name="Timely payments" type="quality">
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw" />
+            <dependee aref="_yTdewIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_Bum-IIIFEemtIaruMjdpGw" name="Invoiced purchases" type="goal">
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw" />
+            <dependee aref="_yTdewIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_En3DMIIFEemtIaruMjdpGw" name="Quality of products and services" type="quality">
+         <dependency>
+            <depender aref="_yTdewIIEEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_IdClAIIFEemtIaruMjdpGw" name="Bill" type="resource">
+         <dependency>
+            <depender aref="_yTdewIIEEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_Z7Z5UIIFEemtIaruMjdpGw" name="Membership card provided" type="goal">
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_e1LEoIIFEemtIaruMjdpGw" name="Membership card" type="resource">
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_h7tXwIIFEemtIaruMjdpGw" name="Special introduction prices" type="quality">
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_kkKnwIIFEemtIaruMjdpGw" name="Personal information registered" type="goal">
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw" />
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_sqo_oIIFEemtIaruMjdpGw" name="Product availability guaranteed" type="goal">
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw" />
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_wP2LwIIFEemtIaruMjdpGw" name="Product distribution agreement signed" type="quality">
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw" />
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_1mgucIIFEemtIaruMjdpGw" name="Increase sales through the distribution chain" type="quality">
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw" />
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_9DonUIIFEemtIaruMjdpGw" name="Product distribution agreement" type="resource">
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw" />
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_CoNDIIIGEemtIaruMjdpGw" name="Product distribution chain achieved" type="quality">
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_OpqC0IIGEemtIaruMjdpGw" name="Deferred payments" type="goal">
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_admK8IIGEemtIaruMjdpGw" name="Credit flexibility" type="quality">
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_cbsPUIIGEemtIaruMjdpGw" name="Voucher" type="resource">
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_dr4r4IIGEemtIaruMjdpGw" name="Waranty documents" type="resource">
+         <dependency>
+            <depender aref="_wnMKMIIEEemtIaruMjdpGw" />
+            <dependee aref="_N5bVMIIFEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_gHFjAIIGEemtIaruMjdpGw" name="Acceptance of various credit cards" type="quality">
+         <dependency>
+            <depender aref="_N5bVMIIFEemtIaruMjdpGw" />
+            <dependee aref="_wnMKMIIEEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <actor id="_wnMKMIIEEemtIaruMjdpGw" name="Organization" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_yTdewIIEEemtIaruMjdpGw" name="Customer" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_N5bVMIIFEemtIaruMjdpGw" name="New credit wholesaler customer" type="actor">
+         <actorLink aref="_yTdewIIEEemtIaruMjdpGw" type="is-a" />
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

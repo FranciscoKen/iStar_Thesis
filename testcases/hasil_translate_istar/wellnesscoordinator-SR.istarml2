@@ -1,0 +1,133 @@
+
+<istarml2 version="1.0">
+   <diagram name="wellnesscoordinator-SR.ood">
+      <dependum id="_w8f4MHWVEem4ScOhUnnb3g" name="Provide education" type="task">
+         <dependency>
+            <depender aref="_uyEA8HWVEem4ScOhUnnb3g" />
+            <dependee aref="_KguV0HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_G_bj4HWWEem4ScOhUnnb3g" name="Provide services to shared patients in fitness center" type="task">
+         <dependency>
+            <depender aref="_KguV0HWVEem4ScOhUnnb3g" />
+            <dependee aref="_uyEA8HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_KODcAHWWEem4ScOhUnnb3g" name="Refer patients when necc" type="task">
+         <dependency>
+            <depender aref="_uyEA8HWVEem4ScOhUnnb3g" />
+            <dependee aref="_KguV0HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_W7-jUHWaEem4ScOhUnnb3g" name="Lead classes" type="task">
+         <dependency>
+            <depender aref="_KguV0HWVEem4ScOhUnnb3g" />
+            <dependee aref="_PSm-MHWaEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_c1vMAHWaEem4ScOhUnnb3g" name="Healthcare goals be identified" type="goal">
+         <dependency>
+            <depender aref="_KguV0HWVEem4ScOhUnnb3g" />
+            <dependee aref="_PSm-MHWaEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_g7v_IHWaEem4ScOhUnnb3g" name="Provide reiki and body works" type="task">
+         <dependency>
+            <depender aref="_PSm-MHWaEem4ScOhUnnb3g" />
+            <dependee aref="_KguV0HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_ldBK4HWaEem4ScOhUnnb3g" name="Teach relaxation tools" type="task">
+         <dependency>
+            <depender aref="_PSm-MHWaEem4ScOhUnnb3g" />
+            <dependee aref="_KguV0HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_oZC3IHWaEem4ScOhUnnb3g" name="Teach exercises" type="task">
+         <dependency>
+            <depender aref="_PSm-MHWaEem4ScOhUnnb3g" />
+            <dependee aref="_KguV0HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_wTpWMHWaEem4ScOhUnnb3g" name="Prenatal yoga exercise" type="resource">
+         <dependency>
+            <depender aref="_vVfE0HWaEem4ScOhUnnb3g" />
+            <dependee aref="_KguV0HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_xau6EHWaEem4ScOhUnnb3g" name="Who is at risk" type="resource">
+         <dependency>
+            <depender aref="_KguV0HWVEem4ScOhUnnb3g" />
+            <dependee aref="_vVfE0HWaEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_0iBlsHWbEem4ScOhUnnb3g" name="How often visits unique encounters" type="resource">
+         <dependency>
+            <depender aref="_2vW_8HWbEem4ScOhUnnb3g" />
+            <dependee aref="_KguV0HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_7aJ7IHWbEem4ScOhUnnb3g" name="Discuss patients goals" type="task">
+         <dependency>
+            <depender aref="_KguV0HWVEem4ScOhUnnb3g" />
+            <depender aref="_KguV0HWVEem4ScOhUnnb3g" />
+            <dependee aref="_ANXLcHWcEem4ScOhUnnb3g" />
+            <dependee aref="_2vW_8HWbEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_GuIw0HWcEem4ScOhUnnb3g" name="Follow / talk about patients" type="task">
+         <dependency>
+            <depender aref="_KguV0HWVEem4ScOhUnnb3g" />
+            <dependee aref="_Isi-QHWcEem4ScOhUnnb3g" />
+            <dependee aref="_2vW_8HWbEem4ScOhUnnb3g" />
+            <dependee aref="_ANXLcHWcEem4ScOhUnnb3g" />
+            <dependee aref="_ehregHWcEem4ScOhUnnb3g" />
+            <dependee aref="_rD5B4HWcEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_hAwwEHWcEem4ScOhUnnb3g" name="Refer patients" type="task">
+         <dependency>
+            <depender aref="_KguV0HWVEem4ScOhUnnb3g" />
+            <dependee aref="_ehregHWcEem4ScOhUnnb3g" />
+            <dependee aref="_2vW_8HWbEem4ScOhUnnb3g" />
+            <dependee aref="_ANXLcHWcEem4ScOhUnnb3g" />
+            <dependee aref="_Isi-QHWcEem4ScOhUnnb3g" />
+            <dependee aref="_rD5B4HWcEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_tfwAUHWcEem4ScOhUnnb3g" name="Improved chronic cond" type="quality">
+         <dependency>
+            <depender aref="_rD5B4HWcEem4ScOhUnnb3g" />
+            <dependee aref="_KguV0HWVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <actor id="_KguV0HWVEem4ScOhUnnb3g" name="Wellness coordinator" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_uyEA8HWVEem4ScOhUnnb3g" name="Physical therapist" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_PSm-MHWaEem4ScOhUnnb3g" name="Patient" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_vVfE0HWaEem4ScOhUnnb3g" name="Midwives" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_2vW_8HWbEem4ScOhUnnb3g" name="Health education coordinator" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_ANXLcHWcEem4ScOhUnnb3g" name="Social worker" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_Isi-QHWcEem4ScOhUnnb3g" name="Behavioral health specialist" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_ehregHWcEem4ScOhUnnb3g" name="Dental department" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_rD5B4HWcEem4ScOhUnnb3g" name="Nurse practitioner" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

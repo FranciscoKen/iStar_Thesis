@@ -1,0 +1,188 @@
+<istarml2 version="1.0">
+   <diagram name="IDS-SD.ood">
+      <dependum id="_cDJpIIIqEemtIaruMjdpGw" name="Use data" type="task">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_azv2wIIqEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_ei8sYIIqEemtIaruMjdpGw" name="Secure data exchange" type="quality">
+         <dependency>
+            <depender aref="_azv2wIIqEemtIaruMjdpGw" />
+            <dependee aref="_YwRjIIIqEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_ho3UcIIqEemtIaruMjdpGw" name="Confirm reception" type="task">
+         <dependency>
+            <depender aref="_c3fsoIIpEemtIaruMjdpGw" />
+            <dependee aref="_YwRjIIIqEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_l125UIIqEemtIaruMjdpGw" name="Confirmation report" type="resource">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_c3fsoIIpEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_pA0ZcIIqEemtIaruMjdpGw" name="Log transactions" type="task">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_c3fsoIIpEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_rPU4YIIqEemtIaruMjdpGw" name="Data governance" type="quality">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_c3fsoIIpEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_01jy0IIqEemtIaruMjdpGw" name="Data provenance" type="quality">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_yzYfsIIqEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_65N-YIIqEemtIaruMjdpGw" name="Search data" type="task">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_4PZccIIqEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_82HI4IIqEemtIaruMjdpGw" name="Metadata" type="resource">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_4PZccIIqEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_TPEH4IIrEemtIaruMjdpGw" name="Describe data apps" type="task">
+         <dependency>
+            <depender aref="_PEI_kIIrEemtIaruMjdpGw" />
+            <dependee aref="_SBpSgIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_WEp08IIrEemtIaruMjdpGw" name="Manage info" type="task">
+         <dependency>
+            <depender aref="_SBpSgIIrEemtIaruMjdpGw" />
+            <dependee aref="_PEI_kIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_fAnDUIIrEemtIaruMjdpGw" name="Metadata" type="resource">
+         <dependency>
+            <depender aref="_4PZccIIqEemtIaruMjdpGw" />
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_iJCz4IIrEemtIaruMjdpGw" name="Exchange data" type="goal">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_khggEIIrEemtIaruMjdpGw" name="Data" type="resource">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_Ye3YIIIsEemtIaruMjdpGw" name="App usage request" type="task">
+         <dependency>
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <depender aref="_bmAksIIrEemtIaruMjdpGw" />
+            <dependee aref="_SBpSgIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_irN3YIIsEemtIaruMjdpGw" name="Data apps" type="resource">
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw" />
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_SBpSgIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_qM1OsIIsEemtIaruMjdpGw" name="Confirm transmission" type="task">
+         <dependency>
+            <depender aref="_c3fsoIIpEemtIaruMjdpGw" />
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_vDNu0IIsEemtIaruMjdpGw" name="Verify identity" type="task">
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw" />
+            <depender aref="_YwRjIIIqEemtIaruMjdpGw" />
+            <dependee aref="_yzYfsIIqEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_zOp0gIIsEemtIaruMjdpGw" name="Secure data exchange" type="quality">
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw" />
+            <dependee aref="_yzYfsIIqEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_5COVoIIsEemtIaruMjdpGw" name="Vocabularies" type="resource">
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw" />
+            <dependee aref="_2ReFQIIsEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_56y8YIIsEemtIaruMjdpGw" name="Provide vocabularies" type="task">
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw" />
+            <dependee aref="_2ReFQIIsEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_DekYsIItEemtIaruMjdpGw" name="Contract" type="resource">
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw" />
+            <dependee aref="_BjsncIItEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_FzQYIIItEemtIaruMjdpGw" name="Authorise to publish data" type="task">
+         <dependency>
+            <depender aref="_bmAksIIrEemtIaruMjdpGw" />
+            <dependee aref="_BjsncIItEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_I_PL8IItEemtIaruMjdpGw" name="Data governance" type="quality">
+         <dependency>
+            <depender aref="_BjsncIItEemtIaruMjdpGw" />
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_NU6ywIItEemtIaruMjdpGw" name="Secure data exchange" type="quality">
+         <dependency>
+            <depender aref="_BjsncIItEemtIaruMjdpGw" />
+            <dependee aref="_bmAksIIrEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <actor id="_c3fsoIIpEemtIaruMjdpGw" name="Clearing house" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_YwRjIIIqEemtIaruMjdpGw" name="Data consumer" type="agent">
+         <boundary />
+      </actor>
+      <actor id="_azv2wIIqEemtIaruMjdpGw" name="Data user" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_yzYfsIIqEemtIaruMjdpGw" name="Identity provider" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_4PZccIIqEemtIaruMjdpGw" name="Broker" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_PEI_kIIrEemtIaruMjdpGw" name="App store provider" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_SBpSgIIrEemtIaruMjdpGw" name="Data app store" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_bmAksIIrEemtIaruMjdpGw" name="Data provider" type="agent">
+         <boundary />
+      </actor>
+      <actor id="_2ReFQIIsEemtIaruMjdpGw" name="Vocabulary manager" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_BjsncIItEemtIaruMjdpGw" name="Data owner" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

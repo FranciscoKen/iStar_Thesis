@@ -1,0 +1,99 @@
+
+<istarml2 version="1.0">
+   <diagram name="dataconsumer-SR.ood">
+      <dependum id="_khUaMIIoEemtIaruMjdpGw" name="Connect to IDS" type="task">
+         <dependency>
+            <depender aref="_yLevAIImEemtIaruMjdpGw" iref="_y8lb0IImEemtIaruMjdpGw" />
+            <dependee aref="_jMYAgIIoEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_ssivMIIoEemtIaruMjdpGw" name="Get identified" type="task">
+         <dependency>
+            <depender aref="_yLevAIImEemtIaruMjdpGw" iref="_BZtMsIInEemtIaruMjdpGw" />
+            <dependee aref="_rQrOIIIoEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_wYAUUIIoEemtIaruMjdpGw" name="Exchanged data" type="resource">
+         <dependency>
+            <depender aref="_yLevAIImEemtIaruMjdpGw" iref="_Jm2-4IIoEemtIaruMjdpGw" />
+            <dependee aref="_xvSQUIIoEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_ATzpsIIpEemtIaruMjdpGw" name="Metadata" type="resource">
+         <dependency>
+            <depender aref="_yLevAIImEemtIaruMjdpGw" iref="_RBsYwIIoEemtIaruMjdpGw" />
+            <dependee aref="_-OqiIIIoEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_EXL_kIIpEemtIaruMjdpGw" name="Transactional details" type="resource">
+         <dependency>
+            <depender aref="_yLevAIImEemtIaruMjdpGw" iref="_BK9woIIoEemtIaruMjdpGw" />
+            <dependee aref="_F1PR8IIpEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <actor id="_yLevAIImEemtIaruMjdpGw" name="Data Consumer" type="actor">
+         <boundary>
+            <ielement id="_y8lb0IImEemtIaruMjdpGw" name="Data exchange through IDS" type="goal" />
+            <ielement id="_6Da7oIImEemtIaruMjdpGw" name="Data usage control/data sovereignity" type="goal" />
+            <ielement id="_-W0qgIImEemtIaruMjdpGw" name="Data be exchanged" type="goal" />
+            <ielement id="_BZtMsIInEemtIaruMjdpGw" name="Secure data supply chain" type="goal" />
+            <ielement id="_GORu8IInEemtIaruMjdpGw" name="Data economy" type="goal" />
+            <ielement id="_J24NUIInEemtIaruMjdpGw" name="Agrees to usage policies" type="task">
+               <ielementLink iref="_6Da7oIImEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_LrQVAIInEemtIaruMjdpGw" name="Log data usage" type="task">
+               <ielementLink iref="_6Da7oIImEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_PGshIIInEemtIaruMjdpGw" name="Send transaction report" type="task">
+               <ielementLink iref="_LrQVAIInEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_BK9woIIoEemtIaruMjdpGw" name="Get log confirmation" type="task">
+               <ielementLink iref="_LrQVAIInEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_EA5b8IIoEemtIaruMjdpGw" name="Search datasets" type="task">
+               <ielementLink iref="_-W0qgIImEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Jm2-4IIoEemtIaruMjdpGw" name="Request data" type="task">
+               <ielementLink iref="_-W0qgIImEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_KxrzQIIoEemtIaruMjdpGw" name="Get data updates" type="task">
+               <ielementLink iref="_-W0qgIImEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Pq4W0IIoEemtIaruMjdpGw" name="Contact broker" type="task">
+               <ielementLink iref="_EA5b8IIoEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_RBsYwIIoEemtIaruMjdpGw" name="Get metadata" type="task">
+               <ielementLink iref="_EA5b8IIoEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_VKXeUIIoEemtIaruMjdpGw" name="Data processing" type="task">
+               <ielementLink iref="_GORu8IInEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_aHm0YIIoEemtIaruMjdpGw" name="Enrich data" type="task">
+               <ielementLink iref="_VKXeUIIoEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_bt0kQIIoEemtIaruMjdpGw" name="Improve data quality" type="task">
+               <ielementLink iref="_VKXeUIIoEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_jMYAgIIoEemtIaruMjdpGw" name="Service provider" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_rQrOIIIoEemtIaruMjdpGw" name="Identity provider" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_xvSQUIIoEemtIaruMjdpGw" name="Data provider" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_5uY04IIoEemtIaruMjdpGw" name="Data app store" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_-OqiIIIoEemtIaruMjdpGw" name="Broker" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_F1PR8IIpEemtIaruMjdpGw" name="Clearing house" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

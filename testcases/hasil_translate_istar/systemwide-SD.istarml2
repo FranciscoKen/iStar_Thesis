@@ -1,0 +1,234 @@
+
+<istarml2 version="1.0">
+   <diagram name="systemwide-SD.ood">
+      <dependum id="_I_yfYHYVEem4ScOhUnnb3g" name="FUP Information resolved" type="goal">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_HwbwUHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_Kf8DgHYVEem4ScOhUnnb3g" name="FUP forms" type="resource">
+         <dependency>
+            <depender aref="_HwbwUHYVEem4ScOhUnnb3g" />
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_LXxqcHYVEem4ScOhUnnb3g" name="FUP data updated" type="goal">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_HwbwUHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_UvbWUHYVEem4ScOhUnnb3g" name="Patient details obtained" type="goal">
+         <dependency>
+            <depender aref="_HwbwUHYVEem4ScOhUnnb3g" />
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_XRIeEHYVEem4ScOhUnnb3g" name="HIV notifications" type="resource">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_ZUakcHYVEem4ScOhUnnb3g" name="Data completeness maximised" type="quality">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_a42LoHYVEem4ScOhUnnb3g" name="Forms received promptly" type="quality">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_cGmYMHYVEem4ScOhUnnb3g" name="Forms received accurately" type="quality">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_TX0qMHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_nvS5oHYVEem4ScOhUnnb3g" name="CD4 data" type="resource">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_mb270HYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_w8WfEHYVEem4ScOhUnnb3g" name="Treatment data" type="resource">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_rJE44HYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_1AoM0HYVEem4ScOhUnnb3g" name="Death reports" type="resource">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_zo1TcHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_7MOzcHYVEem4ScOhUnnb3g" name="Incidence data" type="resource">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_5SV5oHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_-3GisHYVEem4ScOhUnnb3g" name="Child dtaa" type="resource">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_-AV50HYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_HUV0wHYWEem4ScOhUnnb3g" name="Scottish data" type="resource">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_Fg7WYHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_NiIzwHYWEem4ScOhUnnb3g" name="Exposire code accurate" type="quality">
+         <dependency>
+            <depender aref="_LXKJ8HYWEem4ScOhUnnb3g" />
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_SNB1kHYWEem4ScOhUnnb3g" name="Cause of death category accurate" type="quality">
+         <dependency>
+            <depender aref="_LXKJ8HYWEem4ScOhUnnb3g" />
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_abzN0HYWEem4ScOhUnnb3g" name="Pre-checked forms" type="resource">
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g" />
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_lsVG4HYWEem4ScOhUnnb3g" name="Analysis data accurate" type="quality">
+         <dependency>
+            <depender aref="_LXKJ8HYWEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_phnWYHYWEem4ScOhUnnb3g" name="Trends in HIV spread identify effectively" type="quality">
+         <dependency>
+            <depender aref="_LXKJ8HYWEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_xwkU0HYWEem4ScOhUnnb3g" name="Data entered accurately" type="quality">
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_0MpVsHYWEem4ScOhUnnb3g" name="Derrived fields accurate" type="quality">
+         <dependency>
+            <depender aref="_dRb-MHYWEem4ScOhUnnb3g" />
+            <dependee aref="_VvyxsHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_56trwHYWEem4ScOhUnnb3g" name="Duplicates identified efficiently" type="quality">
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_8sVe0HYWEem4ScOhUnnb3g" name="New patients identified" type="goal">
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_Dl1tQHYXEem4ScOhUnnb3g" name="Existing patients identified" type="goal">
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_LAwmsHYXEem4ScOhUnnb3g" name="Input errors corrected" type="goal">
+         <dependency>
+            <depender aref="_VvyxsHYWEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_S4vPkHYXEem4ScOhUnnb3g" name="All HIV related deaths identified" type="goal">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_V92mYHYXEem4ScOhUnnb3g" name="Death reports validated" type="goal">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_XAVXEHYXEem4ScOhUnnb3g" name="FUP list" type="resource">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_bRsekHYXEem4ScOhUnnb3g" name="Data completeness maximised" type="quality">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_hRCK0HYXEem4ScOhUnnb3g" name="Patient linking maximised" type="quality">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_j3G1MHYXEem4ScOhUnnb3g" name="Data validation maximised" type="quality">
+         <dependency>
+            <depender aref="_dRb-MHYWEem4ScOhUnnb3g" />
+            <dependee aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <dependum id="_lUcV4HYXEem4ScOhUnnb3g" name="Patient exposures coded accurately" type="quality">
+         <dependency>
+            <depender aref="_GHZ9AHYVEem4ScOhUnnb3g" />
+            <dependee aref="_dRb-MHYWEem4ScOhUnnb3g" />
+         </dependency>
+      </dependum>
+      <actor id="_GHZ9AHYVEem4ScOhUnnb3g" name="Information officer" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_HwbwUHYVEem4ScOhUnnb3g" name="Nurse" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_TX0qMHYVEem4ScOhUnnb3g" name="Reporter" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_mb270HYVEem4ScOhUnnb3g" name="CD4" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_rJE44HYVEem4ScOhUnnb3g" name="SOPHID" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_zo1TcHYVEem4ScOhUnnb3g" name="ONS" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_5SV5oHYVEem4ScOhUnnb3g" name="Incidence" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_-AV50HYVEem4ScOhUnnb3g" name="ICH" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_Fg7WYHYWEem4ScOhUnnb3g" name="SCIEH" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_LXKJ8HYWEem4ScOhUnnb3g" name="Scientist" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_VvyxsHYWEem4ScOhUnnb3g" name="Inputter" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_dRb-MHYWEem4ScOhUnnb3g" name="HAP" type="actor">
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
+

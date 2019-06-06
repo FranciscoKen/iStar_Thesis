@@ -1,0 +1,104 @@
+
+<istarml2 version="1.0">
+   <diagram name="PBP-SR.ood">
+      <dependum id="_D0iWwIIvEemtIaruMjdpGw" name="Production traces be transmitted" type="quality">
+         <dependency>
+            <depender aref="_8twhUIIuEemtIaruMjdpGw" />
+            <dependee aref="_AIvacIIvEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <dependum id="_HblV8IIvEemtIaruMjdpGw" name="Market forecasts be disclosed" type="quality">
+         <dependency>
+            <depender aref="_AIvacIIvEemtIaruMjdpGw" />
+            <dependee aref="_8twhUIIuEemtIaruMjdpGw" />
+         </dependency>
+      </dependum>
+      <actor id="_8twhUIIuEemtIaruMjdpGw" name="Branded Pharmaceutical Company (BPC)" type="agent">
+         <actorLink aref="_Ks6j0IIvEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_AIvacIIvEemtIaruMjdpGw" name="Generic Pharmaceutical Compounder (GPC)" type="agent">
+         <actorLink aref="_Ks6j0IIvEemtIaruMjdpGw" type="participates-in" />
+         <boundary />
+      </actor>
+      <actor id="_Ks6j0IIvEemtIaruMjdpGw" name="Pharmaceutical Business Partner (PBP)" type="role">
+         <boundary>
+            <ielement id="_UcV2gIIvEemtIaruMjdpGw" name="Decision on data requests be made" type="goal" />
+            <ielement id="_WY5CwIIvEemtIaruMjdpGw" name="Share data directly" type="task">
+               <ielementLink iref="_gWG50IIvEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_hT1tYIIvEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_UcV2gIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Xb8bMIIvEemtIaruMjdpGw" name="Withhold data" type="task">
+               <ielementLink iref="_gWG50IIvEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_hT1tYIIvEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_UcV2gIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_YduoUIIvEemtIaruMjdpGw" name="Share data via mediating party" type="task">
+               <ielementLink iref="_hT1tYIIvEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_gWG50IIvEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_TvrvYIIwEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_UcV2gIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_gWG50IIvEemtIaruMjdpGw" name="Own data be secured" type="quality" />
+            <ielement id="_hT1tYIIvEemtIaruMjdpGw" name="Collaboration be mutually beneficial" type="quality" />
+            <ielement id="_1nbiYIIvEemtIaruMjdpGw" name="Give full access to own data" type="task">
+               <ielementLink iref="_TvrvYIIwEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_WY5CwIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_3Vql0IIvEemtIaruMjdpGw" name="Demand partner data" type="task">
+               <ielementLink iref="_TvrvYIIwEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_WY5CwIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_D3KXgIIwEemtIaruMjdpGw" name="Secrete own data" type="task">
+               <ielementLink iref="_TvrvYIIwEemtIaruMjdpGw" type="contribution" value="help" />
+               <ielementLink iref="_Xb8bMIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_FWjtsIIwEemtIaruMjdpGw" name="Hoard partner data" type="task">
+               <ielementLink iref="_TvrvYIIwEemtIaruMjdpGw" type="contribution" value="hurt" />
+               <ielementLink iref="_Xb8bMIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_I0HZsIIwEemtIaruMjdpGw" name="Co-develop data sharing protocol" type="task">
+               <ielementLink iref="_YduoUIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_LR0yQIIwEemtIaruMjdpGw" name="Comply with data sharing protocol" type="task">
+               <ielementLink iref="_YduoUIIvEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_TvrvYIIwEemtIaruMjdpGw" name="Data asymmetry be reduced" type="quality" />
+         </boundary>
+      </actor>
+      <actor id="_Re-GcIIvEemtIaruMjdpGw" name="Industrial Data Space (IDS)" type="agent">
+         <boundary>
+            <ielement id="_cWLrIIIwEemtIaruMjdpGw" name="Data sharing infrastructure be operated" type="goal" />
+            <ielement id="_ePJX4IIwEemtIaruMjdpGw" name="Support data sharing commitments" type="task">
+               <ielementLink iref="_cWLrIIIwEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_ifz70IIwEemtIaruMjdpGw" name="Track data exchanges" type="task">
+               <ielementLink iref="_ePJX4IIwEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_j47D0IIwEemtIaruMjdpGw" name="Monitor data usage" type="task">
+               <ielementLink iref="_ePJX4IIwEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_mzafAIIwEemtIaruMjdpGw" name="Implement data sharing protocols" type="task">
+               <ielementLink iref="_ePJX4IIwEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_qonO8IIwEemtIaruMjdpGw" name="Provide data sharing reports" type="task">
+               <ielementLink iref="_ePJX4IIwEemtIaruMjdpGw" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_z_EA8IIwEemtIaruMjdpGw" name="IDS Connector" type="resource">
+               <ielementLink iref="_ifz70IIwEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_02vP0IIwEemtIaruMjdpGw" name="IDS Monitor" type="resource">
+               <ielementLink iref="_j47D0IIwEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_3MFWkIIwEemtIaruMjdpGw" name="IDS Broker" type="resource">
+               <ielementLink iref="_mzafAIIwEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_5L3dAIIwEemtIaruMjdpGw" name="IDS Reporting" type="resource">
+               <ielementLink iref="_qonO8IIwEemtIaruMjdpGw" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

@@ -1,0 +1,60 @@
+<istarml2 version="1.0">
+   <diagram name="codeflattening-SR.ood">
+      <actor id="_U8kgYIBbEemSpuoVx5FKYQ" name="Cracker" type="role">
+         <boundary>
+            <ielement id="_W7PMgIBbEemSpuoVx5FKYQ" name="Produce modified versions of the program and redistirbute it" type="goal" />
+            <ielement id="_bQZ18IBbEemSpuoVx5FKYQ" name="Produce a crack program" type="task">
+               <ielementLink iref="_W7PMgIBbEemSpuoVx5FKYQ" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_djbBcIBbEemSpuoVx5FKYQ" name="Understand the code" type="quality">
+               <ielementLink iref="_bQZ18IBbEemSpuoVx5FKYQ" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_gdlFcIBbEemSpuoVx5FKYQ" name="Produce a crack that changes the original binary" type="goal">
+               <ielementLink iref="_bQZ18IBbEemSpuoVx5FKYQ" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_jgYIEIBbEemSpuoVx5FKYQ" name="Code lifting" type="task">
+               <ielementLink iref="_gdlFcIBbEemSpuoVx5FKYQ" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_nyk9EIBbEemSpuoVx5FKYQ" name="Reverse engineer the binary programs" type="goal">
+               <ielementLink iref="_djbBcIBbEemSpuoVx5FKYQ" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_rvYJ0IBbEemSpuoVx5FKYQ" name="Create control flow graph (static analysis) from the binary image" type="task">
+               <ielementLink iref="_nyk9EIBbEemSpuoVx5FKYQ" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_sw7mEIBeEemSpuoVx5FKYQ" name="Understand the branch instruction targets" type="quality">
+               <ielementLink iref="_rvYJ0IBbEemSpuoVx5FKYQ" type="refinement" value="or" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_L5LQcIBfEemSpuoVx5FKYQ" name="Defender" type="role">
+         <boundary>
+            <ielement id="_0GaJYIBfEemSpuoVx5FKYQ" name="Inhibit understanding of the program" type="quality" />
+            <ielement id="_2GGwQIBfEemSpuoVx5FKYQ" name="Obstruct static analysis of the application" type="quality">
+               <ielementLink iref="_0GaJYIBfEemSpuoVx5FKYQ" type="contribution" value="help" />
+            </ielement>
+            <ielement id="_5ETmwIBfEemSpuoVx5FKYQ" name="Run time speed" type="quality" />
+            <ielement id="_7ynAEIBfEemSpuoVx5FKYQ" name="Program size" type="quality" />
+            <ielement id="_DX7LoIBgEemSpuoVx5FKYQ" name="Obscure the control flow" type="task">
+               <ielementLink iref="_2GGwQIBfEemSpuoVx5FKYQ" type="contribution" value="help" />
+               <ielementLink iref="_sw7mEIBeEemSpuoVx5FKYQ" type="contribution" value="hurt" />
+            </ielement>
+            <ielement id="_Hup7UIBgEemSpuoVx5FKYQ" name="Translate the code to explicit basic blocks" type="task">
+               <ielementLink iref="_DX7LoIBgEemSpuoVx5FKYQ" type="decomposition" value="and" />
+            </ielement>
+            <ielement id="_LhwZgIBgEemSpuoVx5FKYQ" name="Flatten control flow with while/switch loops" type="task">
+               <ielementLink iref="_DX7LoIBgEemSpuoVx5FKYQ" type="decomposition" value="and" />
+            </ielement>
+            <ielement id="_0QBi8IBgEemSpuoVx5FKYQ" name="Replace the block with while loop and switch statement" type="task">
+               <ielementLink iref="_LhwZgIBgEemSpuoVx5FKYQ" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_ScN0wIBhEemSpuoVx5FKYQ" name="Translate go-to label to switch variables" type="task">
+               <ielementLink iref="_LhwZgIBgEemSpuoVx5FKYQ" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_VBuecIBhEemSpuoVx5FKYQ" name="Randomize the switch blocks" type="task">
+               <ielementLink iref="_LhwZgIBgEemSpuoVx5FKYQ" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+   </diagram>
+</istarml2>
+

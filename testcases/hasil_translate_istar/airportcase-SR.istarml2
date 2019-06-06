@@ -1,0 +1,332 @@
+
+<istarml2 version="1.0">
+   <diagram name="airportcase-SR.ood">
+      <dependum id="_Ujsx8ICeEemEIaXDJT8g1Q" name="Telephone services provided" type="goal">
+         <dependency>
+            <depender aref="_Tk3yMICeEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_123YkICaEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_cxDN4ICeEemEIaXDJT8g1Q" name="Added value services transported" type="goal">
+         <dependency>
+            <depender aref="_bfNLgICeEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_2YYUwICbEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_40z68ICbEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_novQgICbEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="__PVuYICbEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_4OVpcICeEemEIaXDJT8g1Q" name="Reachable access" type="quality">
+         <dependency>
+            <depender aref="_ok2MEICeEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_40z68ICbEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_771O4ICeEemEIaXDJT8g1Q" name="Full availability" type="quality">
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_123YkICaEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_-4lT4ICeEemEIaXDJT8g1Q" name="Telephone services provided" type="goal">
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_123YkICaEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_H9QZYICfEemEIaXDJT8g1Q" name="Information security" type="quality">
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_lLZ18ICcEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_SOAQcICfEemEIaXDJT8g1Q" name="Worldwide connections" type="quality">
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_DmWx8ICcEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_VZ5ksICfEemEIaXDJT8g1Q" name="Quality of services" type="goal">
+         <dependency>
+            <depender aref="_mY1ngICeEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_qyXpAICdEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_7cE7UICfEemEIaXDJT8g1Q" name="Destination IP addresses" type="resource">
+         <dependency>
+            <depender aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_F9RmAICcEemEIaXDJT8g1Q" />
+            <dependee aref="_5PfvAICfEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_-2Du4ICfEemEIaXDJT8g1Q" name="Routing status" type="resource">
+         <dependency>
+            <depender aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_F9RmAICcEemEIaXDJT8g1Q" />
+            <dependee aref="_5PfvAICfEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_CJ3pAICgEemEIaXDJT8g1Q" name="Up to date management of routing tables" type="quality">
+         <dependency>
+            <depender aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_F9RmAICcEemEIaXDJT8g1Q" />
+            <dependee aref="_5PfvAICfEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_XcPacICgEemEIaXDJT8g1Q" name="Quality of services information" type="resource">
+         <dependency>
+            <depender aref="_V1EoUICgEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_qyXpAICdEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_gL2O4ICgEemEIaXDJT8g1Q" name="Resources monitored" type="quality">
+         <dependency>
+            <depender aref="_cTKGEICgEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_ycfcEICdEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_ja6L4ICgEemEIaXDJT8g1Q" name="Recover from scratch" type="task">
+         <dependency>
+            <depender aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_0T2mUICdEemEIaXDJT8g1Q" />
+            <dependee aref="_cTKGEICgEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_t5iG4ICgEemEIaXDJT8g1Q" name="Good performance" type="quality">
+         <dependency>
+            <depender aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_1hlkwICdEemEIaXDJT8g1Q" />
+            <dependee aref="_cTKGEICgEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_4cST8ICgEemEIaXDJT8g1Q" name="Easy administration" type="quality">
+         <dependency>
+            <depender aref="_cTKGEICgEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_G5Xv8ICeEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_fGBZ0IChEemEIaXDJT8g1Q" name="Services consumption controlled" type="goal">
+         <dependency>
+            <depender aref="_EGppUIChEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_FGNwQICeEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_hAzEcIChEemEIaXDJT8g1Q" name="Services offered" type="resource">
+         <dependency>
+            <depender aref="_EGppUIChEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_1hlkwICdEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_vlO-QIChEemEIaXDJT8g1Q" name="Users information" type="resource">
+         <dependency>
+            <depender aref="_tgqecIChEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_DII6AICeEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_0MbL0IChEemEIaXDJT8g1Q" name="ISP services invoiced" type="goal">
+         <dependency>
+            <depender aref="_ytvnUIChEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_9i_PYICdEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_46XhoIChEemEIaXDJT8g1Q" name="Invoices emmited" type="goal">
+         <dependency>
+            <depender aref="_34spQIChEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_Mdff0ICeEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_7e0bYIChEemEIaXDJT8g1Q" name="Easy definition of services plan" type="quality">
+         <dependency>
+            <depender aref="_34spQIChEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_8bgC4ICdEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_97hHUIChEemEIaXDJT8g1Q" name="Accounting information" type="goal">
+         <dependency>
+            <depender aref="_34spQIChEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_DII6AICeEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_GimR4ICiEemEIaXDJT8g1Q" name="Users supported" type="goal">
+         <dependency>
+            <depender aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_6rgr8ICdEemEIaXDJT8g1Q" />
+            <dependee aref="_FOnhgICiEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_I-0csICiEemEIaXDJT8g1Q" name="User account and billing information" type="resource">
+         <dependency>
+            <depender aref="_FOnhgICiEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_6rgr8ICdEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_9i_PYICdEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_DII6AICeEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_ZiqCcICiEemEIaXDJT8g1Q" name="Telephone &amp; access resources" type="resource">
+         <dependency>
+            <depender aref="_XjrNQICiEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_uerNkICbEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_2YYUwICbEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_iD1ZUICiEemEIaXDJT8g1Q" name="Services invoiced" type="goal">
+         <dependency>
+            <depender aref="_WSstkICiEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_9i_PYICdEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_j3LmQICiEemEIaXDJT8g1Q" name="Added value services provided" type="quality">
+         <dependency>
+            <depender aref="_WSstkICiEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_Mdff0ICeEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_xsrWcICiEemEIaXDJT8g1Q" name="Voice and data infrastructure" type="resource">
+         <dependency>
+            <depender aref="_uZIiEICiEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_40z68ICbEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <dependum id="_3H-hgICiEemEIaXDJT8g1Q" name="Access from home" type="goal">
+         <dependency>
+            <depender aref="_WSstkICiEemEIaXDJT8g1Q" />
+            <dependee aref="_zxH0EICaEemEIaXDJT8g1Q" iref="_40z68ICbEemEIaXDJT8g1Q" />
+         </dependency>
+      </dependum>
+      <actor id="_zxH0EICaEemEIaXDJT8g1Q" name="IP Telephony system" type="actor">
+         <boundary>
+            <ielement id="_123YkICaEemEIaXDJT8g1Q" name="IP Telephony service provided" type="goal" />
+            <ielement id="_novQgICbEemEIaXDJT8g1Q" name="Communication established" type="goal">
+               <ielementLink iref="_123YkICaEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_pQ5hIICbEemEIaXDJT8g1Q" name="Services managed" type="goal">
+               <ielementLink iref="_123YkICaEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_qf_KcICbEemEIaXDJT8g1Q" name="Services billed" type="goal">
+               <ielementLink iref="_123YkICaEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_uerNkICbEemEIaXDJT8g1Q" name="Resources provided" type="goal">
+               <ielementLink iref="_123YkICaEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_2YYUwICbEemEIaXDJT8g1Q" name="Voices &amp; data accessed" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_40z68ICbEemEIaXDJT8g1Q" name="Voices &amp; data distributed" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="__PVuYICbEemEIaXDJT8g1Q" name="Voices &amp; data transported" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_DmWx8ICcEemEIaXDJT8g1Q" name="Connection established" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_F9RmAICcEemEIaXDJT8g1Q" name="Packages routed" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_euIQgICcEemEIaXDJT8g1Q" name="Commun. inf. stored" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_lLZ18ICcEemEIaXDJT8g1Q" name="Voice &amp; data compressed" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_o9QW8ICcEemEIaXDJT8g1Q" name="Voices &amp; data encryption" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_rV_I4ICcEemEIaXDJT8g1Q" name="Signalling provided" type="goal">
+               <ielementLink iref="_novQgICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+               <ielementLink iref="_qf_KcICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_yWc68ICcEemEIaXDJT8g1Q" name="Mobile network interconnected" type="goal">
+               <ielementLink iref="_DmWx8ICcEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_efAZ8ICdEemEIaXDJT8g1Q" name="International networks interconnected" type="goal">
+               <ielementLink iref="_DmWx8ICcEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_hCMvcICdEemEIaXDJT8g1Q" name="Local networks interconnected" type="goal">
+               <ielementLink iref="_DmWx8ICcEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_oUIE8ICdEemEIaXDJT8g1Q" name="Services configured" type="goal">
+               <ielementLink iref="_pQ5hIICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_qyXpAICdEemEIaXDJT8g1Q" name="Quality of services configured" type="goal">
+               <ielementLink iref="_oUIE8ICdEemEIaXDJT8g1Q" type="refinement" value="or" />
+            </ielement>
+            <ielement id="_ycfcEICdEemEIaXDJT8g1Q" name="Services monitorized" type="goal">
+               <ielementLink iref="_pQ5hIICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_0T2mUICdEemEIaXDJT8g1Q" name="Services recovered" type="goal">
+               <ielementLink iref="_pQ5hIICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_1hlkwICdEemEIaXDJT8g1Q" name="Performance tuned" type="goal">
+               <ielementLink iref="_pQ5hIICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_6rgr8ICdEemEIaXDJT8g1Q" name="Complaints supported" type="goal">
+               <ielementLink iref="_qf_KcICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_8bgC4ICdEemEIaXDJT8g1Q" name="Billing plans defined" type="goal">
+               <ielementLink iref="_qf_KcICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_9i_PYICdEemEIaXDJT8g1Q" name="Invoices emmited" type="goal">
+               <ielementLink iref="_qf_KcICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_DII6AICeEemEIaXDJT8g1Q" name="Users registered" type="goal">
+               <ielementLink iref="_qf_KcICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_FGNwQICeEemEIaXDJT8g1Q" name="Billing information stored" type="goal">
+               <ielementLink iref="_qf_KcICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_G5Xv8ICeEemEIaXDJT8g1Q" name="Prepaid cards emmited" type="goal">
+               <ielementLink iref="_qf_KcICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+            <ielement id="_Mdff0ICeEemEIaXDJT8g1Q" name="RI services billed" type="goal">
+               <ielementLink iref="_qf_KcICbEemEIaXDJT8g1Q" type="refinement" value="and" />
+            </ielement>
+         </boundary>
+      </actor>
+      <actor id="_Tk3yMICeEemEIaXDJT8g1Q" name="TC" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_bfNLgICeEemEIaXDJT8g1Q" name="ISP" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_mY1ngICeEemEIaXDJT8g1Q" name="User" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_ok2MEICeEemEIaXDJT8g1Q" name="HTU" type="actor">
+         <actorLink aref="_mY1ngICeEemEIaXDJT8g1Q" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_aP-i0ICfEemEIaXDJT8g1Q" name="InPr" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_5PfvAICfEemEIaXDJT8g1Q" name="DNS" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_V1EoUICgEemEIaXDJT8g1Q" name="TRA" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_cTKGEICgEemEIaXDJT8g1Q" name="SA" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_EGppUIChEemEIaXDJT8g1Q" name="TSD" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_tgqecIChEemEIaXDJT8g1Q" name="TBP" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_ytvnUIChEemEIaXDJT8g1Q" name="ISP" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_34spQIChEemEIaXDJT8g1Q" name="TC" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_FOnhgICiEemEIaXDJT8g1Q" name="Call center" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_WSstkICiEemEIaXDJT8g1Q" name="HTU" type="actor">
+         <actorLink aref="_XjrNQICiEemEIaXDJT8g1Q" type="is-a" />
+         <boundary />
+      </actor>
+      <actor id="_XjrNQICiEemEIaXDJT8g1Q" name="User" type="actor">
+         <boundary />
+      </actor>
+      <actor id="_uZIiEICiEemEIaXDJT8g1Q" name="TF" type="actor">
+         <actorLink aref="_WSstkICiEemEIaXDJT8g1Q" type="is-a" />
+         <boundary />
+      </actor>
+   </diagram>
+</istarml2>
