@@ -63,9 +63,12 @@ public class DOMParser {
                 NodeList actorLinkList = actorElement.getElementsByTagName("actorLink");
                 if(actorLinkList.getLength()>0){
                     //actor link exist
-                    Node currentActorLink = actorLinkList.item(0);
-                    Element actorLinkElement = (Element) currentActorLink;
-                    model.assignActorLink(actorLinkElement.getAttribute("type").equals("participates-in")? ActorLinkType.PARTICIPATESIN:ActorLinkType.ISA,currentActorID,actorLinkElement.getAttribute("aref"));
+                    for(int alli = 0;alli<actorLinkList.getLength();alli++){
+                        Node currentActorLink = actorLinkList.item(alli);
+                        Element actorLinkElement = (Element) currentActorLink;
+                        model.assignActorLink(actorLinkElement.getAttribute("type").equals("participates-in")? ActorLinkType.PARTICIPATESIN:ActorLinkType.ISA,currentActorID,actorLinkElement.getAttribute("aref"));
+                    }
+
                 }
 
                 //extract intentional elements

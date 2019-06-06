@@ -13,6 +13,8 @@ public class ModelValidator{
     }
 
     public void validateModel(IStarModel model) throws IStarException{
+
+        HashMap<String,String> temp_al = new HashMap<>();
         for(ActorLink al : model.getActorLinks()){
             if(!model.getActors().containsKey(al.getFrom())){
                 throw new IStarException(ExceptionMessages.referencedElementNotFoundException +"[Element"+al.getFrom()+"]");
@@ -28,6 +30,16 @@ public class ModelValidator{
                 && (model.getActors().get(al.getFrom()).getType().equals(ActorType.ROLE) || model.getActors().get(al.getFrom()).getType().equals(ActorType.ACTOR)))){
                     throw new IStarException(ExceptionMessages.heading+ExceptionMessages.isaWrongActorElementException +"[Element "+model.getActors().get(al.getFrom()).getName()+" and "+model.getActors().get(al.getTo()).getName()+"]");
                 }
+            }
+
+            System.out.println(al.getFrom()+" "+al.getTo());
+
+            //checks whether there are 2 actor links between two actors
+            if(temp_al.containsKey(al.getFrom()) && temp_al.containsValue(al.getTo()) ||
+            temp_al.containsKey(al.getTo()) && temp_al.containsValue(al.getFrom())){
+                throw new IStarException(ExceptionMessages.heading+ExceptionMessages.multipleActorLinksBetweenTwoActors+" ["+model.getActors().get(al.getFrom()).getName()+" & "+model.getActors().get(al.getTo()).getName()+"]");
+            } else {
+                temp_al.put(al.getFrom(),al.getTo());
             }
         }
 
@@ -142,8 +154,6 @@ public class ModelValidator{
             }
         }
 
-
-        //TODO implement ielement link check if refinement only and / or
         ArrayList<String> iElementToSets = getIElementToSet(model);
 
         for(String to : iElementToSets){

@@ -31,6 +31,8 @@ public class ExceptionMessages {
 
     public static final String ielementLinkINonexistingiElementException = "Intentional element not found. Intentional element link should only connects an intentional element with other intentional element";
 
+    public static final String multipleActorLinksBetweenTwoActors = "There should only be one actor link betweem two actors";
+
     public ExceptionMessages(){
 
     }

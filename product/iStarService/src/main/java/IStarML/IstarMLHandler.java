@@ -31,10 +31,16 @@ public class IstarMLHandler {
     public IstarMLHandler(String model){
 
         model = model.replaceAll("(<\\?xml(.*?)\\?>\n)","");
+
+        /*
+            Documentation:
+            the 2 lines of code below is a hotfix since ccistarml validates content of ypos and xpos in graphics element and the value should be positive.
+            Unfortunately openome are able to generate negative value hence ccistarml will throw an error.
+            Hence the value is zero-ed since in the end the element will be removed.
+            Validation process takes the string model while changing the model requires it to be transformed into Document type
+        */
         model = model.replaceAll("ypos=\"([-]([0-9])*)\"","ypos=\"0\"");
         model = model.replaceAll("xpos=\"([-]([0-9])*)\"","xpos=\"0\"");
-
-        System.out.println(model);
 
         this.model = model;
         this.file = new ccistarmlFile(this.model);
@@ -130,6 +136,8 @@ public class IstarMLHandler {
                 if(currentDependum.getAttribute("type").equals("softgoal")){
                     currentDependum.setAttribute("type","quality");
                 }
+
+                System.out.println(currentDependum.getAttribute("name"));
 
                 Element depender = (Element) currentDependum.getElementsByTagName("depender").item(0);
                 String dependerElmt = depender.getAttribute("iref");
