@@ -62,5 +62,6 @@ typings/
 
 .idea
 
-TEMP/class/
-TEMP/model/
+TEMP
+build
+out
