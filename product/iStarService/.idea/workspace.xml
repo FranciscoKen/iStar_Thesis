@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe08cbdd-9a29-4d0d-81b1-cb36554e5e3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/IStarML/IstarMLHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/IStarML/IstarMLHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.idea/modules/.gradle/" />
@@ -43,32 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2535">
-              <caret line="209" column="71" selection-start-line="209" selection-start-column="71" selection-end-line="209" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="-456">
+              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Model/IStarModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="585">
               <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -98,10 +71,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding>
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="299" column="46" lean-forward="true" selection-start-line="299" selection-start-column="46" selection-end-line="299" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#17749#17750#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="66" column="74" lean-forward="true" selection-start-line="66" selection-start-column="74" selection-end-line="66" selection-end-column="74" />
+            <state relative-caret-position="795">
+              <caret line="65" column="69" selection-start-line="65" selection-start-column="69" selection-end-line="65" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,7 +111,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
+            <state relative-caret-position="495">
               <caret line="33" column="125" selection-start-line="33" selection-start-column="125" selection-end-line="33" selection-end-column="125" />
             </state>
           </provider>
@@ -224,11 +223,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/XMLValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/ModelValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/Endpoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java" />
       </list>
     </option>
   </component>
@@ -243,7 +243,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,7 +355,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -553,12 +553,14 @@
       <workItem from="1559553924113" duration="1607000" />
       <workItem from="1559556878117" duration="1199000" />
       <workItem from="1559559374548" duration="1200000" />
-      <workItem from="1559826890829" duration="3575000" />
+      <workItem from="1559826890829" duration="4102000" />
+      <workItem from="1559891380573" duration="837000" />
+      <workItem from="1559894400743" duration="285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194564000" />
+    <option name="totallyTimeSpent" value="196213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,7 +575,7 @@
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2840909" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -6877,23 +6879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4380">
-          <caret line="299" column="55" selection-start-line="299" selection-start-column="55" selection-end-line="299" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/validator/XMLValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -6914,13 +6899,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2535">
-          <caret line="209" column="71" selection-start-line="209" selection-start-column="71" selection-end-line="209" selection-end-column="71" />
+        <state relative-caret-position="1320">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/IStarModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="65" column="69" selection-start-line="65" selection-start-column="69" selection-end-line="65" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="125" selection-start-line="33" selection-start-column="125" selection-end-line="33" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -6948,16 +6970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IStarML/IstarMLHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActorLink.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -6965,39 +6977,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/IStarModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/ClassGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        <state relative-caret-position="359">
+          <caret line="299" column="46" lean-forward="true" selection-start-line="299" selection-start-column="46" selection-end-line="299" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#17749#17750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/Endpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Exception/ExceptionMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="33" column="125" selection-start-line="33" selection-start-column="125" selection-end-line="33" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/validator/ModelValidator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClassGenerator/iStarOCL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Extractor/DOMParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="66" column="74" lean-forward="true" selection-start-line="66" selection-start-column="74" selection-end-line="66" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,6 +2,10 @@ package ClassGenerator;
 
 import java.util.ArrayList;
 
+/**
+ * A class representing a collection of OCL strings in a model
+ * @author Francisco Kenandi
+ */
 public class iStarOCL {
     private ArrayList<String> constraints;
 
