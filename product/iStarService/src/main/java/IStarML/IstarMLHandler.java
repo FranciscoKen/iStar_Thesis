@@ -213,11 +213,9 @@ public class IstarMLHandler {
         for(int l = 0 ; l<ielementLinkNodes.getLength();l++){
             Element currentiElementLink = (Element) ielementLinkNodes.item(l);
             if(currentiElementLink.getAttribute("type").equals("means-end")){
-                //TODO means end
                 currentiElementLink.setAttribute("type","refinement");
                 currentiElementLink.setAttribute("value","or");
             } else if(currentiElementLink.getAttribute("type").equals("decomposition")){
-                //TODO decomposition
                 if(ielements.get(currentiElementLink.getAttribute("iref")).equals("goal") ||
                         ielements.get(currentiElementLink.getAttribute("iref")).equals("task")){
                     currentiElementLink.setAttribute("type","refinement");
@@ -231,7 +229,6 @@ public class IstarMLHandler {
                     currentiElementLink.getParentNode().removeChild(currentiElementLink);
                 }
             } else if(currentiElementLink.getAttribute("type").equals("contribution")){
-                //TODO Contribution some+ some-
                 if(currentiElementLink.getAttribute("value").equals("some+")){
                     currentiElementLink.setAttribute("value","help");
                 } else if(currentiElementLink.getAttribute("value").equals("some-")){
