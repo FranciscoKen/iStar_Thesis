@@ -1,0 +1,22 @@
+.h1 {
+  text-align : center;
+}
+
+.title-container {
+  text-align : center;
+}
+
+.image-container {
+  text-align : center;
+  max-width : 50%;
+  height : auto;
+}
+
+.xml-container {
+  text-align : center;
+}
+
+.image-result {
+  text-align : center;
+  float:none;
+}
