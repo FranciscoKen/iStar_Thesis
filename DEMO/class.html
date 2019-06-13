@@ -58,6 +58,7 @@
     </div>
     
     <div class="container">
+      <h2>Upload a .istarml2 file</h2>
       <form enctype="multipart/form-data" method="post">
         <div class="input-group">
           <div class="input-group-prepend">
@@ -74,14 +75,19 @@
       </form>
     </div>
     <div class="container">
-      <div id='image-result'>
+      <div id='image-result' style="display:none;text-align:center;">
+          <h2>Your Class Image:</h2>
         <img class="img-thumbnail" style="display:none" id="class-result"/>
       </div>
     </div>
     <div class="container">
-      <div class="well">
-        <p id='ocl_result' style="display:none"></p>
+      <div id='ocl-result' style="display:none;margin:50px;">
+        <h2>Your OCL:</h2>
+        <div class="well">
+          <p id='ocl_result' style="display:none"></p>
+        </div>
       </div>
+        
     </div>
     <script src="uploader_class.js"></script>
   </body>

@@ -5,6 +5,7 @@ const successAlert = document.getElementById('success-alert');
 const failAlert = document.getElementById('fail-alert');
 var errorMessage = document.getElementById('error-message');
 const istarml2_result = document.getElementById('istarml2');
+const result_cont = document.getElementById('result_cont');
 
 
 form.addEventListener('submit',e=>{
@@ -23,26 +24,54 @@ form.addEventListener('submit',e=>{
     body:formData,
     headers:{
       'Access-Control-Allow-Origin':'*'
+    },
+  })
+  .then(response=>{
+    if(response.ok){
+      response.text()
+      .then(text =>{
+        successAlert.style.display='inline-block';
+        console.log(text);
+        var beautified_text = vkbeautify.xml(text);
+        istarml2_result.innerText = beautified_text.replace("(<\\?xml(.*?)\\?>\n)","");
+        istarml2_result.style.display ='inline-block';
+        result_cont.style.display = 'inline-block';
+        successAlert.style.display='block';
+      });
+      
+    } else {
+      response.text()
+      .then(text => {
+        console.log(text);
+        errorMessage.textContent=text;
+        failAlert.style.display='inline-block';
+      });
+      // response.json().then(json =>{
+      //   console.log(json.error)
+      //   errorMessage.textContent=json.error;
+      //   failAlert.style.display='inline-block';
+      // });
     }
-  })
-  .then(response=>response.text())
-  .then(text=>{
-    // if(response.ok){
-      // console.log(response.status);
-      successAlert.style.display='inline-block';
-      console.log(text);
-      istarml2_result.innerText = formatXML(text);
-      istarml2_result.style.display ='inline-block';
-      successAlert.style.display='block';
+  });
+  // .then(response=>response.text())
+  // .then(text=>{
+  //   // if(response.ok){
+  //     // console.log(response.status);
+  //     successAlert.style.display='inline-block';
+  //     console.log(text);
+  //     var beautified_text = vkbeautify.xml(text);
+  //     istarml2_result.innerText = beautified_text.replace("(<\\?xml(.*?)\\?>\n)","");
+  //     istarml2_result.style.display ='inline-block';
+  //     successAlert.style.display='block';
 
-    // } else {
-    //   response.json().then(json =>{
-    //     console.log(json.error)
-    //     errorMessage.textContent=json.error;
-    //     failAlert.style.display='inline-block';
-    //   })
-    // }
-  })
+  //   // } else {
+  //   //   response.json().then(json =>{
+  //   //     console.log(json.error)
+  //   //     errorMessage.textContent=json.error;
+  //   //     failAlert.style.display='inline-block';
+  //   //   })
+  //   // }
+  // })
 });
 
 function formatXML(input,indent)

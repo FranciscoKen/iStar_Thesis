@@ -9,6 +9,8 @@ var errorMessage = document.getElementById('error-message');
 var outside;
 const image_result = document.getElementById('class-result');
 const ocl_paragraph = document.getElementById('ocl_result');
+const image_cont = document.getElementById('image-result');
+const ocl_cont = document.getElementById('ocl-result');
 
 form.addEventListener('submit',e=>{
   e.preventDefault();
@@ -50,6 +52,7 @@ form.addEventListener('submit',e=>{
             outside = URL.createObjectURL(images)
             image_result.src=outside;
             image_result.style.display='inline-block';
+            image_cont.style.display='inline-block';
             successAlert.style.display='block';
         })
 
@@ -59,6 +62,7 @@ form.addEventListener('submit',e=>{
           console.log(text);
           ocl_paragraph.innerText = text;
           ocl_paragraph.style.display ='inline-block';
+          ocl_cont.style.display = 'inline-block';
           successAlert.style.display='block';
         })
 

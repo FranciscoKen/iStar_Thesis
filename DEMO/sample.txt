@@ -1,0 +1,248 @@
+&lt;istarml2 version=&apos;1.0&apos;&gt;
+  &lt;diagram&gt;
+    &lt;actor type=&apos;agent&apos; id=&apos;ac-1&apos; name=&apos;Mike White&apos;&gt;
+      &lt;boundary&gt;
+      &lt;/boundary&gt;
+      &lt;actorLink type=&apos;participates-in&apos; aref=&apos;ac-2&apos;/&gt;
+    &lt;/actor&gt;
+    &lt;actor type=&apos;role&apos; id=&apos;ac-2&apos; name=&apos;PhD student&apos;&gt;
+      &lt;boundary&gt;
+      &lt;/boundary&gt;
+      &lt;actorLink type=&apos;is-a&apos; aref=&apos;ac-3&apos;/&gt;
+    &lt;/actor&gt;
+    &lt;actor type=&apos;role&apos; id=&apos;ac-3&apos; name=&apos;Student&apos;&gt;
+      &lt;boundary&gt;
+        &lt;ielement
+          id=&apos;ie-1&apos;
+          type=&apos;goal&apos;
+          name=&apos;Travel organized&apos;&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-2&apos;
+          type=&apos;goal&apos;
+          name=&apos;Authorization obtained&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-1&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-3&apos;
+          type=&apos;goal&apos;
+          name=&apos;Trip booked&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-1&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-4&apos;
+          type=&apos;goal&apos;
+          name=&apos;Request prepared&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-2&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-5&apos;
+          type=&apos;goal&apos;
+          name=&apos;Authorization signed&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-2&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-6&apos;
+          type=&apos;task&apos;
+          name=&apos;Fill in paper form&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-4&apos;/&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;hurt&apos; iref=&apos;ie-8&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-7&apos;
+          type=&apos;task&apos;
+          name=&apos;Fill in online form&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-4&apos;/&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;help&apos; iref=&apos;ie-8&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-8&apos;
+          type=&apos;quality&apos;
+          name=&apos;No errors&apos;&gt;
+          &lt;ielementLink type=&apos;qualification&apos; iref=&apos;ie-4&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-9&apos;
+          type=&apos;task&apos;
+          name=&apos;Supervisor authorizes&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-5&apos;/&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;help&apos; iref=&apos;ie-11&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-10&apos;
+          type=&apos;task&apos;
+          name=&apos;Head-of-dept authorizes&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-5&apos;/&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;break&apos; iref=&apos;ie-11&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-11&apos;
+          type=&apos;quality&apos;
+          name=&apos;Quick booking&apos;&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;help&apos; iref=&apos;ie-21&apos;/&gt;
+          &lt;ielementLink type=&apos;qualification&apos; iref=&apos;ie-12&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-12&apos;
+          type=&apos;goal&apos;
+          name=&apos;Trip parts booked&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-3&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-13&apos;
+          type=&apos;task&apos;
+          name=&apos;Book bundle&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-3&apos;/&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;make&apos; iref=&apos;ie-22&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-14&apos;
+          type=&apos;goal&apos;
+          name=&apos;Tickets booked&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-12&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-15&apos;
+          type=&apos;goal&apos;
+          name=&apos;Accomodation booked&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-12&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-16&apos;
+          type=&apos;task&apos;
+          name=&apos;Agency buys tickets&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-14&apos;/&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;help&apos; iref=&apos;ie-22&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-17&apos;
+          type=&apos;task&apos;
+          name=&apos;Self-book tickets&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-14&apos;/&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;hurt&apos; iref=&apos;ie-22&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-18&apos;
+          type=&apos;task&apos;
+          name=&apos;Buy tickets&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-17&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-19&apos;
+          type=&apos;task&apos;
+          name=&apos;Pay for tickets&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-17&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-20&apos;
+          type=&apos;resource&apos;
+          name=&apos;Credit card&apos;&gt;
+          &lt;ielementLink type=&apos;neededBy&apos; iref=&apos;ie-19&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-21&apos;
+          type=&apos;quality&apos;
+          name=&apos;Comfort&apos;&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-22&apos;
+          type=&apos;quality&apos;
+          name=&apos;Minimal own payments&apos;&gt;
+          &lt;ielementLink type=&apos;contribution&apos; value=&apos;help&apos; iref=&apos;ie-21&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-23&apos;
+          type=&apos;goal&apos;
+          name=&apos;Conference hotel booked&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-15&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-24&apos;
+          type=&apos;goal&apos;
+          name=&apos;Budget hotel booked&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-15&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-25&apos;
+          type=&apos;task&apos;
+          name=&apos;Buy through booking.com&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-24&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-26&apos;
+          type=&apos;task&apos;
+          name=&apos;Buy through hotel website&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;or&apos; iref=&apos;ie-24&apos;/&gt;
+        &lt;/ielement&gt;
+      &lt;/boundary&gt;
+    &lt;/actor&gt;
+    &lt;actor type=&apos;agent&apos; id=&apos;ac-4&apos; name=&apos;Univ. of Wonder-Land&apos;&gt;
+      &lt;boundary&gt;
+      &lt;/boundary&gt;
+    &lt;/actor&gt;
+    &lt;actor type=&apos;agent&apos; id=&apos;ac-5&apos; name=&apos;Univ. trip mgmt IS&apos;&gt;
+      &lt;boundary&gt;
+        &lt;ielement 
+          id=&apos;ie-27&apos;
+          type=&apos;task&apos;
+          name=&apos;Process form&apos;&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-28&apos;
+          type=&apos;goal&apos;
+          name=&apos;Details validated&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-27&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-29&apos;
+          type=&apos;task&apos;
+          name=&apos;Request authorization&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-27&apos;/&gt;
+        &lt;/ielement&gt;
+        &lt;ielement
+          id=&apos;ie-30&apos;
+          type=&apos;task&apos;
+          name=&apos;Notify applicant&apos;&gt;
+          &lt;ielementLink type=&apos;refinement&apos; value=&apos;and&apos; iref=&apos;ie-27&apos;/&gt;
+        &lt;/ielement&gt;
+      &lt;/boundary&gt;
+      &lt;actorLink type=&apos;participates-in&apos; aref=&apos;ac-4&apos;/&gt;
+    &lt;/actor&gt;
+    &lt;actor type=&apos;actor&apos; id=&apos;ac-6&apos; name=&apos;Travel agency&apos;&gt;
+      &lt;boundary&gt;
+        &lt;ielement
+          id=&apos;ie-31&apos;
+          type=&apos;task&apos;
+          name=&apos;Book bundle via expedia&apos;&gt;
+        &lt;/ielement&gt;
+      &lt;/boundary&gt;
+    &lt;/actor&gt;
+    &lt;dependum
+      id=&apos;de-1&apos;
+      type=&apos;goal&apos;
+      name=&apos;Online form processed&apos;&gt;
+      &lt;dependency&gt;
+        &lt;depender iref=&apos;ie-6&apos; aref=&apos;ac-3&apos;/&gt;
+        &lt;dependee aref=&apos;ac-5&apos; iref=&apos;ie-27&apos;/&gt;
+      &lt;/dependency&gt;
+    &lt;/dependum&gt;
+    &lt;dependum
+      id=&apos;de-2&apos;
+      type=&apos;task&apos;
+      name=&apos;Buy flight tickets&apos;&gt;
+      &lt;dependency&gt;
+        &lt;depender aref=&apos;ac-3&apos; iref=&apos;ie-16&apos;/&gt;
+        &lt;dependee aref=&apos;ac-6&apos; iref=&apos;ie-31&apos;/&gt;
+      &lt;/dependency&gt;
+    &lt;/dependum&gt;
+    &lt;dependum
+      id=&apos;de-3&apos;
+      type=&apos;goal&apos;
+      name=&apos;Trip bundle booked&apos;&gt;
+      &lt;dependency&gt;
+        &lt;depender aref=&apos;ac-3&apos; iref=&apos;ie-13&apos;/&gt;
+        &lt;dependee aref=&apos;ac-6&apos; iref=&apos;ie-31&apos;/&gt;
+      &lt;/dependency&gt;
+    &lt;/dependum&gt;
+  &lt;/diagram&gt;
+&lt;/istarml2&gt;

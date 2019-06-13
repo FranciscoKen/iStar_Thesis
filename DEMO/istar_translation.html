@@ -58,6 +58,7 @@
     </div>
     
     <div class="container">
+      <h2>Upload a .istarml file</h2>
       <form enctype="multipart/form-data" method="post">
         <div class="input-group">
           <div class="input-group-prepend">
@@ -68,16 +69,25 @@
             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
           </div>
         </div>
-        <div style="text-align:center;margin: 10px;">
+        <div style="text-align:center;margin: 50px;">
           <input type="submit" value="Submit" class="btn btn-primary" name="submit">
         </div>
       </form>
     </div>
     <div class="container">
-      <div class="well">
-        <p id='istarml2' style="display:none"></p>
+      <div id='result_cont' style="margin:50px;">
+        <h2 style="text-align:center">Your Result:</h2>
+        <div class="well well-lg">
+          <pre>
+            <code>
+              <p id='istarml2' style="display:none">
+              </p>
+            </code>
+          </pre>
+        </div>
       </div>
     </div>
+    <script type="text/javascript" src="vkbeautify.js"></script>
     <script src="istar_translation.js"></script>  
   </body>
 </html>
